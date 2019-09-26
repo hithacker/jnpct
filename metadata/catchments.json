@@ -1,0 +1,16 @@
+{
+  "organisation": "Jashoda Narottam Public Charitable Trust",
+  "catchments": [
+    {
+      "name": "Dummy JNPCT",
+      "uuid": "cc52a898-4afe-45b1-a7d0-c7b6d0bc97d1",
+      "type": "Dummy",
+      "locations": [
+        {
+          "uuid": "8076151f-e53e-4854-bbfb-baf2d38aa894",
+          "comment": "Dummy"
+        }
+      ]
+    }
+  ]
+}

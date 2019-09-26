@@ -1,0 +1,13 @@
+[
+  {
+    "uuid": "726991ca-78de-4982-a677-278a3df64401",
+    "name": "admin@jnpct",
+    "password": "password",
+    "email": "openchssupport+staging+sewa@samanvayfoundation.org",
+    "phoneNumber": "+919999999999",
+    "organisationUUID": "2a8b0070-8869-41b6-94f8-c90a35d094f9",
+    "operatingIndividualScope": "None",
+    "admin": false,
+    "orgAdmin": true
+  }
+]
