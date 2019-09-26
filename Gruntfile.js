@@ -12,6 +12,7 @@ module.exports = IDI.configure({
             "dev": ["users/admin-user.json"],
         },
         "forms": [
+            "registration/registrationForm.json"
         ],
         "formMappings": [
             "metadata/formMappings.json"
@@ -26,6 +27,7 @@ module.exports = IDI.configure({
         "checklistDetails": [
         ],
         "concepts": [
+            "registration/registrationConcepts.json"
         ],
         "locations": [
             "metadata/locations.json"
@@ -40,7 +42,7 @@ module.exports = IDI.configure({
         "operationalPrograms": [
             "metadata/operationalPrograms.json"
         ],
-        "subjectTypes": [],
+        "subjectTypes": ["subjectTypes.json"],
         "operationalSubjectTypes": [
             "metadata/operationalSubjectTypes.json"
         ],
