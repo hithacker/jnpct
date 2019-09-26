@@ -1,0 +1,39 @@
+{
+  "name": "jnpct",
+  "version": "1.0.0",
+  "description": "Jashoda Narottam Public Charitable Trust OpenCHS implementation repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenCHS/jnpct.git",
+    "prettify-project": "prettier --write \"**/*.js\""
+  },
+  "keywords": [
+    "JNPCT",
+    "OpenCHS"
+  ],
+  "author": "",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/OpenCHS/jnpct/issues"
+  },
+  "homepage": "https://github.com/OpenCHS/jnpct#readme",
+  "dependencies": {
+    "openchs-idi": "github:openchs/openchs-idi#b6c57e051b91ed4bc2634f4f087dba51cc3a01c8",
+    "rules-config": "github:openchs/rules-config#24cc3d6fba5f7f4e8938f25a732f3594897232c1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-decorators": "^7.6.0",
+    "@babel/preset-env": "^7.6.2",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "openchs-models": "0.0.42",
+    "prettier": "^1.18.2",
+    "webpack": "^4.41.0"
+  }
+}
