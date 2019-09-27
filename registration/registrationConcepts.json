@@ -57,7 +57,9 @@
   {
     "name": "Number of family members",
     "uuid": "a01c2055-7483-4a19-98c1-80fdf955b50c",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "lowAbsolute": 0,
+    "highAbsolute": 99
   },
   {
     "uuid": "7d24f498-bd92-4f6e-9408-de1c154dbfc2",
