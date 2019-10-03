@@ -1,3 +1,12 @@
 {
   "organisationName": "Jashoda Narottam Public Charitable Trust",
-  "operationalPrograms": []}
+  "operationalPrograms": [
+    {
+      "uuid": "0f037a01-251f-4eec-8ee6-45808a7eb3c3",
+      "name": "Eligible couple",
+      "program": {
+        "uuid": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3"
+      }
+    }
+  ]
+}

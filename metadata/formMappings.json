@@ -3,5 +3,12 @@
     "uuid": "ee9aa4ee-1acc-4a5b-9174-3f6c17b9192b",
     "formUUID": "c22664a8-81ba-4442-956d-3e812a6d7bca",
     "comment": "Registration form"
+  },
+  {
+    "uuid": "9f81df1b-0c3f-4b05-9d50-d5017eb252d0",
+    "formUUID": "0b37b679-a33f-42b3-a455-a84eaea7b5d8",
+    "encounterTypeUUID": "null",
+    "programUUID": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
+    "comment": "Eligible couple enrolment"
   }
 ]
