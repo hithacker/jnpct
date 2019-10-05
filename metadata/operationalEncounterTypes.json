@@ -1,5 +1,12 @@
 {
   "organisationName": "Jashoda Narottam Public Charitable Trust",
   "operationalEncounterTypes": [
-     ]
+    {
+      "uuid": "7ea5120f-8e97-480c-87d6-35a926aa6b6c",
+      "name": "Eligible Couple Followup",
+      "encounterType": {
+        "uuid": "c487771e-738b-41f2-852e-d60c25d8afea"
+      }
+    }
+  ]
 }

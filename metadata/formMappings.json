@@ -7,8 +7,20 @@
   {
     "uuid": "9f81df1b-0c3f-4b05-9d50-d5017eb252d0",
     "formUUID": "0b37b679-a33f-42b3-a455-a84eaea7b5d8",
-    "encounterTypeUUID": "null",
     "programUUID": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
     "comment": "Eligible couple enrolment"
+  },
+  {
+    "uuid": "232bf7ef-3746-43ee-8243-2ebfa64a8ac7",
+    "formUUID": "1c8bd246-f46e-4250-88bc-1ca567ba03ce",
+    "encounterTypeUUID": "c487771e-738b-41f2-852e-d60c25d8afea",
+    "programUUID": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
+    "comment": "Eligible Couple Followup"
+  },
+  {
+    "uuid": "a3f855b8-557f-4033-b5b0-1af6ecac66fc",
+    "formUUID": "d40e8aa2-8cae-4b09-ad30-2da6c1690206",
+    "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
+    "comment": "Pregnancy Enrolment"
   }
 ]
