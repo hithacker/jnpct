@@ -36,7 +36,7 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
     }
 
     @WithName("what kind of risk occurred")
-    @WithStatusBuilder
+    @statusBuilder
     p2([], statusBuilder) {
          statusBuilder.show().when.valueInEnrolment("Risk in the last pregnancy").is.yes;
     }
