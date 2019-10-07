@@ -44,27 +44,33 @@
     "answers": [
       {
         "uuid": "75353c7b-d664-4b5c-87d9-0dbe7c413fdc",
-        "name": "Tuberculosis"
+        "name": "Tuberculosis",
+        "abnormal": true
       },
       {
         "uuid": "0a961dda-bd33-4f02-bc55-8cd41d34aeb0",
-        "name": "Blood Pressure"
+        "name": "Blood Pressure",
+        "abnormal": true
       },
       {
         "uuid": "ba147cdd-ecb8-47d7-a6eb-d3d5797aae34",
-        "name": "Heart disease"
+        "name": "Heart disease",
+        "abnormal": true
       },
       {
         "uuid": "02204d98-3965-4c63-a2a4-0cb5616bed0d",
-        "name": "Diabetes"
+        "name": "Diabetes",
+        "abnormal": true
       },
       {
         "uuid": "83a00220-667a-4d7a-97d2-5e659aa7e54a",
-        "name": "Asthama"
+        "name": "Asthama",
+        "abnormal": true
       },
       {
         "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
-        "name": "Other"
+        "name": "Other",
+        "abnormal": true
       },
       {
         "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
@@ -120,15 +126,18 @@
       },
       {
         "uuid": "0e91716e-435d-49cd-b842-621e804101b4",
-        "name": "4"
+        "name": "4",
+        "abnormal": true
       },
       {
         "uuid": "3555dd4d-4f4f-4779-ac9f-ffaed73ed33e",
-        "name": "5"
+        "name": "5",
+        "abnormal": true
       },
       {
         "uuid": "5dc7f00a-b93e-4b7b-863d-827c9349d390",
-        "name": "6 AND ABOVE"
+        "name": "6 AND ABOVE",
+        "abnormal": true
       }
     ]
   },
@@ -197,15 +206,18 @@
       },
       {
         "uuid": "4fcec28a-a56e-4049-8b84-67bab4863d91",
-        "name": "Still Birth"
+        "name": "Still Birth",
+        "abnormal": true
       },
       {
         "uuid": "25c486d0-db89-41ba-b151-962fd75f83c6",
-        "name": "MTP"
+        "name": "MTP",
+        "abnormal": true
       },
       {
         "uuid": "4ca3e92a-5871-4146-9271-6c35558d5a92",
-        "name": "ABO"
+        "name": "ABO",
+        "abnormal": true
       }
     ]
   },
@@ -306,43 +318,53 @@
     "answers": [
       {
         "uuid": "7f736089-d245-4116-aa9d-70219a4e1e70",
-        "name": "Prolong labour"
+        "name": "Prolong labour",
+        "abnormal": true
       },
       {
         "uuid": "dd010499-0458-4154-8c92-c0e1a989521d",
-        "name": "LSCS"
+        "name": "LSCS",
+        "abnormal": true
       },
       {
         "uuid": "623eddd1-a8f0-4a57-99be-a924fc7e7f34",
-        "name": "ANEMIA"
+        "name": "ANEMIA",
+        "abnormal": true
       },
       {
         "uuid": "116ba998-263c-49c5-a30e-ad8bfdbd2727",
-        "name": "ECLAMPSIA"
+        "name": "ECLAMPSIA",
+        "abnormal": true
       },
       {
         "uuid": "a29fc05e-3a4c-44b3-bb9e-827d0a6d0977",
-        "name": "PIH"
+        "name": "PIH",
+        "abnormal": true
       },
       {
         "uuid": "1487d377-e15e-46fe-9cf5-ac38b1482cce",
-        "name": "SICKLE CELL"
+        "name": "SICKLE CELL",
+        "abnormal": true
       },
       {
         "uuid": "56331346-a084-4205-88e1-acc7fcb9faee",
-        "name": "APH"
+        "name": "APH",
+        "abnormal": true
       },
       {
         "uuid": "02aa1fd0-4101-4166-8f91-e6abeed12a96",
-        "name": "MALPRESENTATION"
+        "name": "MALPRESENTATION",
+        "abnormal": true
       },
       {
         "uuid": "9f920a32-dad3-423a-a044-de72db342eec",
-        "name": "TWINS"
+        "name": "TWINS",
+        "abnormal": true
       },
       {
         "uuid": "9d8b6f28-6854-4992-9c83-00f50b592309",
-        "name": "BURNING MICTURATION"
+        "name": "BURNING MICTURATION",
+        "abnormal": true
       },
       {
         "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",

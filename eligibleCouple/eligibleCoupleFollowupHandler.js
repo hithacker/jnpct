@@ -44,6 +44,24 @@ class EligibleCoupleFollowupViewFilterHandlerJNPCT {
          statusBuilder.show().when.valueInEncounter("Does she missed period").is.yes;
     }
 
+    @WithName("LMP")
+    @WithStatusBuilder
+    F3([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Is She Pregnant?").is.yes;
+    }
+
+    @WithName("EDD")
+    @WithStatusBuilder
+    F4([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Is She Pregnant?").is.yes;
+    }
+
+    @WithName("Previous history of disease")
+    @WithStatusBuilder
+    F5([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Is She Pregnant?").is.yes;
+    }
+
 
 }
 
