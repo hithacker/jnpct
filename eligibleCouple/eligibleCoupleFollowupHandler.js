@@ -32,6 +32,7 @@ class EligibleCoupleFollowupViewFilterHandlerJNPCT {
         return new FormElementStatus(formElement.uuid, true, bmi);
     }
 
+
     @WithName("LMP Date")
     @WithStatusBuilder
     F1([], statusBuilder) {

@@ -74,7 +74,7 @@
       "displayOrder": 3,
       "formElements": [
         {
-          "name": "NUMBER OF  PREGNANCY",
+          "name": "Gravida",
           "uuid": "5da6291c-67ec-42ac-a566-f173a3a3453f",
           "keyValues": [],
           "type": "SingleSelect",
@@ -85,14 +85,23 @@
           "mandatory": true
         },
         {
-          "name": "Previous history of PREGNANCY",
-          "uuid": "e5580381-c6c6-499e-8fcf-e4b55dc11853",
+          "name": "Parity",
+          "uuid": "27cded88-492f-4fa8-9706-be2bafa99f7a",
           "keyValues": [],
-          "type": "SingleSelect",
           "concept": {
-            "uuid": "b84d790c-fbc2-4428-9cf2-90e720d36441"
+            "uuid": "3d4d2ff8-6fce-43df-bfbb-40aba8b10f43"
           },
           "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Number of Abortion",
+          "uuid": "e052a944-390c-449c-9efa-176859e1d3a1",
+          "keyValues": [],
+          "concept": {
+            "uuid": "3bf33915-bc67-4431-86eb-a38905be62cf"
+          },
+          "displayOrder": 3,
           "mandatory": true
         },
         {
@@ -102,7 +111,7 @@
           "concept": {
             "uuid": "9acef9b8-8212-49c0-b421-824f9314f319"
           },
-          "displayOrder": 3,
+          "displayOrder": 4,
           "mandatory": true
         },
         {
@@ -112,7 +121,7 @@
           "concept": {
             "uuid": "76333e77-9ff5-4caf-9a87-021e915f0e9f"
           },
-          "displayOrder": 4,
+          "displayOrder": 5,
           "mandatory": true
         },
         {
@@ -122,7 +131,7 @@
           "concept": {
             "uuid": "2a523870-c948-4418-8283-902c3494b607"
           },
-          "displayOrder": 5,
+          "displayOrder": 6,
           "mandatory": true
         },
         {
@@ -133,9 +142,27 @@
           "concept": {
             "uuid": "4c8e7665-30f1-4f65-b76e-b9132904ed69"
           },
-          "displayOrder": 6,
+          "displayOrder": 7,
           "mandatory": true
         },
+        {
+          "name": "Age of Youngest child",
+          "uuid": "83179a86-bc39-434c-9a78-369157c1d284",
+          "keyValues": [
+            {
+              "key": "durationOptions",
+              "value": [
+                "months"
+              ]
+            }
+          ],
+          "concept": {
+            "uuid": "4e89f7b0-0b3d-4902-8f78-6d45ac5614a9"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        },
+
         {
           "name": "Place of last delivery",
           "uuid": "e69dffe1-819b-4140-916b-3c73940560d5",
@@ -144,7 +171,7 @@
           "concept": {
             "uuid": "8e28efd9-7bc8-4870-929d-867ad9367962"
           },
-          "displayOrder": 7,
+          "displayOrder": 9,
           "mandatory": true
         },
         {
@@ -155,7 +182,7 @@
           "concept": {
             "uuid": "9b7af000-0354-4036-a7ab-1f07b43346df"
           },
-          "displayOrder": 8,
+          "displayOrder": 10,
           "mandatory": true
         },
         {
@@ -166,7 +193,7 @@
           "concept": {
             "uuid": "9f8e78d6-72fc-4f03-9dd9-3ec7f28639df"
           },
-          "displayOrder": 9,
+          "displayOrder": 11,
           "mandatory": true
         }
       ]

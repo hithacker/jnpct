@@ -108,7 +108,7 @@
     "name": "6 AND ABOVE"
   },
   {
-    "name": "NUMBER OF  PREGNANCY",
+    "name": "Gravida",
     "uuid": "bec0e4d4-8daf-4956-8906-0f579b4cf628",
     "dataType": "Coded",
     "answers": [
@@ -142,27 +142,14 @@
     ]
   },
   {
-    "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-    "name": "Yes"
+    "name": "Parity",
+    "uuid": "3d4d2ff8-6fce-43df-bfbb-40aba8b10f43",
+    "dataType": "Numeric"
   },
   {
-    "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-    "name": "No"
-  },
-  {
-    "name": "Previous history of PREGNANCY",
-    "uuid": "b84d790c-fbc2-4428-9cf2-90e720d36441",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-        "name": "Yes"
-      },
-      {
-        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-        "name": "No"
-      }
-    ]
+    "name": "Number of Abortion",
+    "uuid": "3bf33915-bc67-4431-86eb-a38905be62cf",
+    "dataType": "Numeric"
   },
   {
     "name": "Number of live childrens",
@@ -193,7 +180,7 @@
   },
   {
     "uuid": "4ca3e92a-5871-4146-9271-6c35558d5a92",
-    "name": "ABO"
+    "name": "Abortion"
   },
   {
     "name": "Result of last delivery",
@@ -216,11 +203,17 @@
       },
       {
         "uuid": "4ca3e92a-5871-4146-9271-6c35558d5a92",
-        "name": "ABO",
+        "name": "Abortion",
         "abnormal": true
       }
     ]
   },
+  {
+    "name": "Age of Youngest child",
+    "uuid": "4e89f7b0-0b3d-4902-8f78-6d45ac5614a9",
+    "dataType": "Date"
+  },
+
   {
     "uuid": "8cfae1cd-3e75-40e9-9244-6d083c0d86f7",
     "name": "Home"
