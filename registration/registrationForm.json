@@ -169,6 +169,10 @@
           "concept": {
             "uuid": "881d9628-eb4f-4056-ae10-09e4ef71cae4"
           },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
           "displayOrder": 15,
           "mandatory": false
         },
@@ -255,6 +259,10 @@
           "keyValues": [],
           "concept": {
             "uuid": "7170eabd-6f4f-4e30-b22e-85b20a4d854f"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{12}$",
+            "descriptionKey": "Required12Digits"
           },
           "displayOrder": 23,
           "mandatory": true

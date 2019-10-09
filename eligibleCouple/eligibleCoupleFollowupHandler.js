@@ -1,5 +1,4 @@
 const moment = require("moment");
-const _ = require("lodash");
 import {
     FormElementsStatusHelper,
     FormElementStatus,
@@ -32,6 +31,11 @@ class EligibleCoupleFollowupViewFilterHandlerJNPCT {
         return new FormElementStatus(formElement.uuid, true, bmi);
     }
 
+    height(programEncounter, formElement){
+        let value = programEncounter.getObservationReadableValue("Height");
+        let status = new FormElementStatus(formElement.uuid, true, value);
+        return status;
+    }
 
     @WithName("LMP Date")
     @WithStatusBuilder

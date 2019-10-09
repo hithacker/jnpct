@@ -38,19 +38,19 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
     @WithName('Parity')
     @WithStatusBuilder
     p2([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").containsAnyAnswerConceptName("2","3","4","5","6 AND ABOVE");
     }
 
     @WithName('Number of Abortion')
     @WithStatusBuilder
     p3([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").containsAnyAnswerConceptName("2","3","4","5","6 AND ABOVE");
     }
 
     @WithName('Number of live childrens')
     @WithStatusBuilder
     p4([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").containsAnyAnswerConceptName("2","3","4","5","6 AND ABOVE");
     }
 
     @WithName('MALE')
@@ -68,7 +68,7 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
     @WithName('Result of last delivery')
     @WithStatusBuilder
     p7([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").containsAnyAnswerConceptName("2","3","4","5","6 AND ABOVE");
     }
 
     @WithName('Age of Youngest child')
@@ -80,13 +80,13 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
     @WithName('Place of last delivery')
     @WithStatusBuilder
     p9([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").containsAnyAnswerConceptName("2","3","4","5","6 AND ABOVE");
     }
 
     @WithName('Risk in the last pregnancy')
     @WithStatusBuilder
     p10([], statusBuilder) {
-        statusBuilder.show().when.valueInEnrolment("Gravida").is.greaterThan(1);
+        statusBuilder.show().when.valueInEnrolment("Gravida").containsAnyAnswerConceptName("2","3","4","5","6 AND ABOVE");
     }
 
     @WithName("what kind of risk occurred")
