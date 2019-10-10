@@ -24,7 +24,7 @@ class EligibleCoupleFollowupViewFilterHandlerJNPCT {
 
     bmi(programEncounter, formElement) {
         let weight = programEncounter.getObservationValue('Weight');
-        let height = programEncounter.getObservationValue('Height');
+        let height = programEncounter.findObservationInEntireEnrolment('Height');
         let bmi = '';
         if (_.isNumber(height) && _.isNumber(weight)) {
             bmi = lib.C.calculateBMI(weight, height);
