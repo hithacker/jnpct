@@ -37,7 +37,7 @@ class EligibleCoupleFollowupViewFilterHandlerJNPCT {
 
     @WithName("Height")
     @WithStatusBuilder
-    abc71([programEncounter], statusBuilder) {
+    F1([programEncounter], statusBuilder) {
     statusBuilder.show().when.valueInEncounter("Height").is.defined
     .or.when.latestValueInPreviousEncounters("Height").is.notDefined
     return statusBuilder.build();
@@ -45,34 +45,15 @@ class EligibleCoupleFollowupViewFilterHandlerJNPCT {
 
     @WithName("LMP Date")
     @WithStatusBuilder
-    F1([], statusBuilder) {
+    F2([], statusBuilder) {
          statusBuilder.show().when.valueInEncounter("Does she missed period").is.yes;
     }
 
     @WithName("Is She Pregnant?")
     @WithStatusBuilder
-    F2([], statusBuilder) {
+    F3([], statusBuilder) {
          statusBuilder.show().when.valueInEncounter("Does she missed period").is.yes;
     }
-
-    @WithName("LMP")
-    @WithStatusBuilder
-    F3([], statusBuilder) {
-         statusBuilder.show().when.valueInEncounter("Is She Pregnant?").is.yes;
-    }
-
-    @WithName("EDD")
-    @WithStatusBuilder
-    F4([], statusBuilder) {
-         statusBuilder.show().when.valueInEncounter("Is She Pregnant?").is.yes;
-    }
-
-    @WithName("Previous history of disease")
-    @WithStatusBuilder
-    F5([], statusBuilder) {
-         statusBuilder.show().when.valueInEncounter("Is She Pregnant?").is.yes;
-    }
-
 
 }
 
