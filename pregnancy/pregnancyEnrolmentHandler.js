@@ -1,3 +1,4 @@
+const _ = require("lodash");
 import {
     FormElementsStatusHelper,
     FormElementStatus,
@@ -6,13 +7,14 @@ import {
     RuleFactory,
     StatusBuilderAnnotationFactory,
     VisitScheduleBuilder,
+    complicationsBuilder as ComplicationsBuilder,
     WithName
 } from 'rules-config/rules';
 import lib from '../lib';
 
 const PregnancyEnrolmentViewFilter = RuleFactory("d40e8aa2-8cae-4b09-ad30-2da6c1690206", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEnrolment', 'formElement');
-
+const PregnancyDecision = RuleFactory("d40e8aa2-8cae-4b09-ad30-2da6c1690206", "Decision");
 
 @PregnancyEnrolmentViewFilter("e9026eb6-99c0-4dd4-99f8-14f24f95719b", "JNPCT Pregnancy Enrolment View Filter", 100.0, {})
 class PregnancyEnrolmentViewFilterHandlerJNPCT {
@@ -97,6 +99,33 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
 
  }
 
+ @PregnancyDecision("df4df8fb-fe90-4fff-be78-d624e9ac094b", "Pregnancy Form Decision", 100.0, {})
+ export class PregnancyFormDecisionHandler {
+     static conditionDecisions(programEncounter) {
+         const complicationsBuilder = new ComplicationsBuilder({
+             programEncounter: programEncounter,
+             complicationsConcept: "Condition for Pregnancy"
+         });
+
+         complicationsBuilder
+             .addComplication("Underage Pregnancy")
+             .when.ageInYears.is.lessThanOrEqualTo(18)
+
+         complicationsBuilder
+             .addComplication("Old age Pregnancy")
+             .when.ageInYears.is.greaterThanOrEqualTo(30)
 
 
-module.exports = {PregnancyEnrolmentViewFilterHandlerJNPCT};
+        return complicationsBuilder.getComplications();
+
+ }
+
+    static exec(programEncounter, decisions, context, today) {
+        decisions.encounterDecisions.push(PregnancyFormDecisionHandler.conditionDecisions(programEncounter));
+        return decisions;
+ }
+
+}
+
+module.exports = {PregnancyEnrolmentViewFilterHandlerJNPCT,PregnancyFormDecisionHandler};
+
