@@ -80,7 +80,34 @@
         "name": "Don't Know"
       }
     ]
+  },
+  {
+    "uuid": "d1fef660-c8c0-449a-a34c-45cb32322d92",
+    "name": "Underweight"
+  },
+  {
+    "uuid": "755af092-b04e-430c-a3d1-06608fb92c02",
+    "name": "Overweight"
+  },
+  {
+    "name": "BMI Condition",
+    "uuid": "75ae56e2-ae0a-4d8b-8149-060efecaa301",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "d1fef660-c8c0-449a-a34c-45cb32322d92",
+        "name": "Underweight",
+        "abnormal": true
+      },
+      {
+        "uuid": "755af092-b04e-430c-a3d1-06608fb92c02",
+        "name": "Overweight",
+        "abnormal": true
+      }
+    ]
   }
+
+
 
 
 
