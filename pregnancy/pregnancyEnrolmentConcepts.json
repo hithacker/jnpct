@@ -377,19 +377,19 @@
     "dataType": "NA"
   },
   {
-    "name": "Condition for Pregnancy",
+    "name": "High Risk",
     "uuid": "703a46cd-dbfd-40e4-926a-c826d7320a24",
     "dataType": "Coded",
     "answers": [
       {
         "uuid": "b3e187a3-3f0d-4543-9c5b-512878366a07",
         "name": "Underage Pregnancy",
-        "dataType": "NA"
+        "abnormal": true
       },
       {
         "uuid": "223741a7-06bc-4df8-8443-73e3f3b1ad2a",
         "name": "Old age Pregnancy",
-        "dataType": "NA"
+        "abnormal": true
       }
     ]
   }

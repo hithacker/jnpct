@@ -101,10 +101,10 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
 
  @PregnancyDecision("df4df8fb-fe90-4fff-be78-d624e9ac094b", "Pregnancy Form Decision", 100.0, {})
  export class PregnancyFormDecisionHandler {
-     static conditionDecisions(programEncounter) {
+     static conditionDecisions(programEnrolment) {
          const complicationsBuilder = new ComplicationsBuilder({
-             programEncounter: programEncounter,
-             complicationsConcept: "Condition for Pregnancy"
+             programEnrolment: programEnrolment,
+             complicationsConcept: "High Risk"
          });
 
          complicationsBuilder
@@ -120,8 +120,8 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
 
  }
 
-    static exec(programEncounter, decisions, context, today) {
-        decisions.encounterDecisions.push(PregnancyFormDecisionHandler.conditionDecisions(programEncounter));
+    static exec(programEnrolment, decisions, context, today) {
+        decisions.encounterDecisions.push(PregnancyFormDecisionHandler.conditionDecisions(programEnrolment));
         return decisions;
  }
 
