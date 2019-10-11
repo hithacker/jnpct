@@ -1,0 +1,26 @@
+[
+  {
+    "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+    "name": "Yes"
+  },
+  {
+    "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+    "name": "No"
+  },
+  {
+    "name": "Mamta card",
+    "uuid": "4bb3dbde-01df-4f6d-85aa-41a38c8ee3d3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+
+    ]
+  }
+]

@@ -92,7 +92,7 @@
             "uuid": "3d4d2ff8-6fce-43df-bfbb-40aba8b10f43"
           },
           "displayOrder": 2,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Number of Abortion",
@@ -102,7 +102,7 @@
             "uuid": "3bf33915-bc67-4431-86eb-a38905be62cf"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Number of live childrens",
@@ -160,9 +160,8 @@
             "uuid": "4e89f7b0-0b3d-4902-8f78-6d45ac5614a9"
           },
           "displayOrder": 8,
-          "mandatory": true
+          "mandatory": false
         },
-
         {
           "name": "Place of last delivery",
           "uuid": "e69dffe1-819b-4140-916b-3c73940560d5",
