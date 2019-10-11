@@ -321,6 +321,374 @@
           "mandatory": false
         }
       ]
+    },
+    {
+      "uuid": "05fbc214-a24d-47be-970f-10cc2bdde2a0",
+      "name": "Pregnancy Complications",
+      "display": "Pregnancy Complications",
+      "displayOrder": 4,
+      "formElements": [
+        {
+          "name": "Is there any danger sign",
+          "uuid": "5542e313-eb77-4cd7-88a1-c4dbfd7ca636",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "c23f62f9-9f8f-48bf-8549-a15f0165adf1"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Other complications?",
+          "uuid": "a534341d-4c2f-4807-9560-5770799c4819",
+          "keyValues": [],
+          "concept": {
+            "uuid": "1dc2c60f-e1a8-4f9f-9b05-c8bc96110a91"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "7ed50c45-21aa-4fc6-83f3-08eb8251f545",
+      "name": "Per Abdominal Examination",
+      "display": "Per Abdominal Examination",
+      "displayOrder": 5,
+      "formElements": [
+        {
+          "name": "Foetal movements",
+          "uuid": "dd6bd195-cdd7-47c3-8cc3-f052b331206b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "d7ff8486-11bf-4e7a-ba53-acc443923a2c"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "e5c6cf79-869f-4fdc-9394-29ac5bbb6a02",
+      "name": "Lab Diagnostics - Blood",
+      "display": "Lab Diagnostics - Blood",
+      "displayOrder": 6,
+      "formElements": [
+        {
+          "name": "Blood Examination Date",
+          "uuid": "d85a48e5-f578-4835-8642-cf29a9c7e380",
+          "keyValues": [],
+          "concept": {
+            "uuid": "4b30fd1a-ed33-499b-81ea-9dbdfe917b08"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "H.B",
+          "uuid": "4f21d1ce-f097-42f8-9d3b-7a006a73fd77",
+          "keyValues": [],
+          "concept": {
+            "uuid": "057ab538-63ef-4c56-b37c-03651ad823e2"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Blood Sugar",
+          "uuid": "c27b6818-9538-41f7-b941-4be37be4903c",
+          "keyValues": [],
+          "concept": {
+            "uuid": "23cbc12a-64f7-438f-accb-a1736ea3cc03"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "VDRL",
+          "uuid": "02cdc37e-4856-4dd4-8825-13ea25e7ce4c",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5a48f80d-e956-403d-b192-93a80389faf2"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "HIV/AIDS Test",
+          "uuid": "ebcd7620-825b-4563-b61a-1db013720ae9",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "9c3f92c9-f3a6-49bc-a15e-e7909c8b61cc"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "HbsAg",
+          "uuid": "d39613b8-bb55-4447-a86e-b0ad1a58f1de",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "737145a8-3259-4afc-9523-ed5d5f2d9a5f"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Sickle cell test  done",
+          "uuid": "b532c991-6899-49ca-92e7-7adda1d872a1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "a226cc07-ea19-4bd1-9040-b3c3fdcb5363"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "IF YES, result of sickle cell test",
+          "uuid": "f0fe365c-30d6-434f-8efe-057277c991ff",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "c8722864-8f31-4e58-8a3b-ce2c8a549f2b"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        },
+        {
+          "name": "Urine Albumin",
+          "uuid": "9d288524-e225-4b2a-87dd-e1d11bd054e2",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "ddefc442-cb1f-432a-8e3d-0665dc620272"
+          },
+          "displayOrder": 9,
+          "mandatory": false
+        },
+        {
+          "name": "Urine Sugar",
+          "uuid": "4843cded-d4c0-4e56-943e-429813d91a58",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b6291b90-6f6e-4b15-be79-51e3284c4c81"
+          },
+          "displayOrder": 10,
+          "mandatory": false
+        },
+        {
+          "name": "Complete hospital checkup done",
+          "uuid": "519fa6b2-9a2d-439e-9fdb-3b91d7dbe5a1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b9bd871d-cb06-4895-907b-adda2572b8c9"
+          },
+          "displayOrder": 11,
+          "mandatory": true
+        },
+        {
+          "name": "if YES then write E.D.D as per USG",
+          "uuid": "7f83a70d-46de-47aa-9e23-91b43da80fde",
+          "keyValues": [],
+          "concept": {
+            "uuid": "0f2f8288-126f-4976-a7bb-09999f7d870e"
+          },
+          "displayOrder": 12,
+          "mandatory": true
+        },
+        {
+          "name": "USG Scanning Report - Number of foetus",
+          "uuid": "e40fd5a4-762d-4d90-a37f-7c710ded7d68",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "ba8274a2-5817-4f1b-a379-f945a285bb25"
+          },
+          "displayOrder": 13,
+          "mandatory": false
+        },
+        {
+          "name": "USG Scanning Report - Liquour",
+          "uuid": "0cde1e9a-c230-4cc9-89c2-1ffa2ce38730",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "0197f0ee-97a8-4f68-8049-083f7e81b1dd"
+          },
+          "displayOrder": 14,
+          "mandatory": false
+        },
+        {
+          "name": "USG Scanning Report - Placenta Previa",
+          "uuid": "681d509c-e838-4c40-bed0-cd8830c55ff3",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5aeb53d9-96a4-4e17-8b06-dd58df20771a"
+          },
+          "displayOrder": 15,
+          "mandatory": false
+        },
+        {
+          "name": "Foetal presentation",
+          "uuid": "22cb6d25-c653-42ac-a1bf-b2cfc902e119",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b0e836a1-8878-4798-881a-57a113824f0a"
+          },
+          "displayOrder": 16,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "407100f2-b4e6-46d5-a160-5d77cc1aa250",
+      "name": "COUNSELLING",
+      "display": "COUNSELLING",
+      "displayOrder": 7,
+      "formElements": [
+        {
+          "name": "Plan to do delivery?",
+          "uuid": "553cb11b-ad30-4747-957a-5a81c5923000",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "89265b99-db8c-483f-9ee9-c3b1bab45d91"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "PLACE OF DELIVERY",
+          "uuid": "ac32956f-4c72-4cee-9cd1-b420bac0f59d",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "f238d16a-558e-4c89-a28b-d44b56b78458"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Who will accompany at the time of delivery?",
+          "uuid": "42dac950-2ada-440a-9b75-160a0b5faa4f",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "52e86b2c-b237-45cd-bf68-6a5f766c8d93"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "COUNSELLING FOR 108",
+          "uuid": "1be32c8b-cc15-4b40-9dc0-9206e482c497",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "7b0fffa6-e9ee-408f-9d41-e86ba9a9371c"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "PLAN IN WHICH HOSPITAL",
+          "uuid": "3a0ac6c3-5c4f-493e-b5d6-a36e124f642b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5faf735d-40b1-4542-8dae-24a3f02603f1"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "MONEY SAVED",
+          "uuid": "5b068253-86f2-4513-a494-e10462291fdf",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "247d2f74-8404-4d7e-8873-60ed1c9e71c9"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "WHO GIVES BLOOD WHEN REQUIRED",
+          "uuid": "8322b080-cdef-46f7-b035-6ac1e05ac6bc",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "d3d98f88-f2df-42b4-bee5-1710fa5dbde9"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "MAKE CLOTHES READY FOR THE DELIVERY AND NEW BORN BABY",
+          "uuid": "ef82a5e9-507a-4eb7-b88a-372f8f4b19ec",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "c3f20991-a82e-4ce5-9f13-473256e52114"
+          },
+          "displayOrder": 8,
+          "mandatory": true
+        },
+        {
+          "name": "Counselling Done for the risk factors / Morbidities to all Family members",
+          "uuid": "24b8497f-6fea-489d-89cf-91b927baf739",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "c9d2db85-7709-4109-83cf-f6951ab4dbc3"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        },
+        {
+          "name": "Counselling done for the Government Scheme?",
+          "uuid": "c28716a3-8823-4f1e-be1f-0e51305718bb",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "f630f5ae-15bd-489d-9258-a989a70166a2"
+          },
+          "displayOrder": 10,
+          "mandatory": true
+        },
+        {
+          "name": "Chiranjivi yojna form is ready?",
+          "uuid": "5fd57e04-6b8b-4fab-b3db-b2d223aeaace",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b8576eff-bb29-49c6-ad34-d9970d7e5b36"
+          },
+          "displayOrder": 11,
+          "mandatory": true
+        },
+        {
+          "name": "Have you enrolled in any government scheme?",
+          "uuid": "33878ee3-ea16-451d-a2ea-4bd79fa16271",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5587d35b-de18-436c-832d-2dc1295407df"
+          },
+          "displayOrder": 12,
+          "mandatory": true
+        }
+      ]
     }
 
   ]
