@@ -40,8 +40,8 @@
     },
     {
       "uuid": "4275613d-833c-4b65-97b9-2fe488d4f7d6",
-      "name": "Medical History ",
-      "display": "Medical History ",
+      "name": "Medical History",
+      "display": "Medical History",
       "displayOrder": 2,
       "formElements": [
         {
