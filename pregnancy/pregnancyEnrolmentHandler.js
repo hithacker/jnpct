@@ -115,6 +115,29 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
              .addComplication("Old age Pregnancy")
              .when.ageInYears.is.greaterThanOrEqualTo(30)
 
+        complicationsBuilder
+            .addComplication("Previous history of disease")
+            .when.valueInEnrolment('Previous history of disease')
+            .containsAnyAnswerConceptName("Tuberculosis", "Blood Pressure",
+             "Heart disease","Diabetes","Asthama","Other");
+
+        complicationsBuilder
+            .addComplication("Gravida")
+            .when.valueInEnrolment('Gravida')
+            .containsAnyAnswerConceptName("1", "2",
+             "3","4","5","6 AND ABOVE");
+
+        complicationsBuilder
+            .addComplication("Result of last delivery")
+            .when.valueInEnrolment('Result of last delivery')
+            .containsAnyAnswerConceptName("Live Birth", "Still Birth",
+             "MTP","Abortion");
+
+        complicationsBuilder
+            .addComplication("what kind of risk occurred")
+            .when.valueInEnrolment('what kind of risk occurred')
+            .containsAnyAnswerConceptName("Prolong labour", "LSCS",
+             "ANEMIA","ECLAMPSIA","PIH","SICKLE CELL","APH","MALPRESENTATION","TWINS","BURNING MICTURATION");
 
         return complicationsBuilder.getComplications();
 

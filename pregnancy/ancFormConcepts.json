@@ -20,7 +20,374 @@
         "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
         "name": "No"
       }
-
+    ]
+  },
+  {
+    "name": "Do you have Iron/Folic acid tablets",
+    "uuid": "3ae2d1a2-734a-4dbf-a1bc-adc19e4e7fff",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is she taking iron/folic acid tablet?",
+    "uuid": "734d46fe-363a-4037-afb4-89ff87fbac5b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "IF YES THEN WRITE NUMBER OF TABLET SWALLOWED",
+    "uuid": "eccf536c-efbd-4705-9d13-5eaceab49e51",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Do you have Calcium tablets?",
+    "uuid": "bc5c6259-d504-4041-bacd-bbb718d8a845",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is she taking calcium tablet?",
+    "uuid": "2c2c44c6-b2c9-4c99-a0da-fcee2cddd14c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "IF YES THEN WRITE NUMBER OF CALCIUM TABLET SWALLOWED",
+    "uuid": "7fd17431-fada-43e3-891b-d9b311cce9f0",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "T.T vaccine recieved?",
+    "uuid": "8c1df96a-521a-4c59-b571-df0a2b961e7b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "TT 1",
+    "uuid": "515b0e64-4621-4f0e-8636-4b68a922decf",
+    "dataType": "Date"
+  },
+  {
+    "name": "TT 2",
+    "uuid": "4ad7f1d8-fa36-47b7-a3b6-83b8909c49ac",
+    "dataType": "Date"
+  },
+  {
+    "name": "TT Booster",
+    "uuid": "afdec7b2-ecb2-409a-a506-d6ae3c5f9676",
+    "dataType": "Date"
+  },
+  {
+    "name": "Does she using iodised salt?",
+    "uuid": "8b69adbf-2209-4b80-922d-676e4566d43a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does she get snacks from Anganwadi",
+    "uuid": "8058e4f8-c64a-446f-a5a7-3b7b0f111fa5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does she eat all the snacks",
+    "uuid": "09019dea-c24f-46da-bd2f-a2b2e7e5fd88",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Height",
+    "uuid": "7d9af174-9e58-4e96-a77c-8351a5a4152d",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Weight",
+    "uuid": "bab98eac-14a5-43c4-80ff-ccdb8c3ddf1b",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "BMI",
+    "uuid": "27803190-b702-4223-b9b4-64c75fdcf588",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "MUAC (in cms)",
+    "uuid": "915a4d71-6267-4190-af9f-882bbd07629e",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "B.P - Systolic",
+    "uuid": "d5d860cc-9165-45b5-8795-065c2ee0e5aa",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "B.P - Diastolic",
+    "uuid": "378241fc-b879-4037-bdc3-4746a7a11682",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "2bd804c1-d267-410f-81b5-390a39e6c6b2",
+    "name": "A+"
+  },
+  {
+    "uuid": "2af7b3a0-8646-4d58-abc4-fceac927d940",
+    "name": "B+"
+  },
+  {
+    "uuid": "0dab0fe3-bf6f-4d37-9d50-5c2dec5bd156",
+    "name": "AB+"
+  },
+  {
+    "uuid": "09a6c715-da7b-4dd5-aa73-4949be64f083",
+    "name": "O+"
+  },
+  {
+    "uuid": "48458cb4-6bcc-4474-bcc0-cd9e3e4712d1",
+    "name": "A-"
+  },
+  {
+    "uuid": "3067e276-7793-4906-a6e3-045822b0ffee",
+    "name": "B-"
+  },
+  {
+    "uuid": "f8ef2109-67f9-47cc-a461-10d02066c414",
+    "name": "AB-"
+  },
+  {
+    "uuid": "d75b6736-7c92-42ac-aa89-0d63093805ff",
+    "name": "O-"
+  },
+  {
+    "uuid": "18fc80be-129b-4346-9a25-9e99bccc7ec6",
+    "name": "Don't Know"
+  },
+  {
+    "name": "Blood Group",
+    "uuid": "1ba17bfc-1a27-4660-9ec5-e3e314d5eb2c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "2bd804c1-d267-410f-81b5-390a39e6c6b2",
+        "name": "A+"
+      },
+      {
+        "uuid": "2af7b3a0-8646-4d58-abc4-fceac927d940",
+        "name": "B+"
+      },
+      {
+        "uuid": "0dab0fe3-bf6f-4d37-9d50-5c2dec5bd156",
+        "name": "AB+"
+      },
+      {
+        "uuid": "09a6c715-da7b-4dd5-aa73-4949be64f083",
+        "name": "O+"
+      },
+      {
+        "uuid": "48458cb4-6bcc-4474-bcc0-cd9e3e4712d1",
+        "name": "A-"
+      },
+      {
+        "uuid": "3067e276-7793-4906-a6e3-045822b0ffee",
+        "name": "B-"
+      },
+      {
+        "uuid": "f8ef2109-67f9-47cc-a461-10d02066c414",
+        "name": "AB-"
+      },
+      {
+        "uuid": "d75b6736-7c92-42ac-aa89-0d63093805ff",
+        "name": "O-"
+      },
+      {
+        "uuid": "18fc80be-129b-4346-9a25-9e99bccc7ec6",
+        "name": "Don't Know"
+      }
+    ]
+  },
+  {
+    "name": "Temperature",
+    "uuid": "51f90d12-e4fb-4cb9-89d4-0c0b45629dbe",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "pedal oedema is present",
+    "uuid": "a82b2939-1298-4283-b08b-cbdc8616a54a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "IF yes then since how many days",
+    "uuid": "7b2672ae-c6ad-4e12-a408-9feac01183bf",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+    "name": "Present"
+  },
+  {
+    "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+    "name": "Absent"
+  },
+  {
+    "name": "Pallor",
+    "uuid": "b537a20f-7459-4e7d-9436-d6c702b2403e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+        "name": "Present"
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      }
+    ]
+  },
+  {
+    "name": "Has she been having convulsions?",
+    "uuid": "4e7ac362-0578-4b7b-9c3c-1bba0f14e691",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+        "name": "Present"
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      }
+    ]
+  },
+  {
+    "name": "Jaundice (Icterus)",
+    "uuid": "efd91533-e2d0-497e-a4dc-0b66a30ef233",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+        "name": "Present"
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      }
+    ]
+  },
+  {
+    "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+    "name": "Normal"
+  },
+  {
+    "uuid": "60332376-c494-42f2-ac70-5da910f2ddb9",
+    "name": "Retracted"
+  },
+  {
+    "uuid": "c9c4d34d-260b-4fce-a7ef-d92d94e7351e",
+    "name": "Flat"
+  },
+  {
+    "name": "Breast Examination - Nipple",
+    "uuid": "e6228ce1-29af-4c48-b41a-858802a5cbc6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal"
+      },
+      {
+        "uuid": "60332376-c494-42f2-ac70-5da910f2ddb9",
+        "name": "Retracted"
+      },
+      {
+        "uuid": "c9c4d34d-260b-4fce-a7ef-d92d94e7351e",
+        "name": "Flat"
+      }
     ]
   }
+
+
+
+
+
 ]
