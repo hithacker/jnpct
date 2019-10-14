@@ -103,7 +103,7 @@
             "uuid": "515b0e64-4621-4f0e-8636-4b68a922decf"
           },
           "displayOrder": 9,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "TT 2",
@@ -113,7 +113,7 @@
             "uuid": "4ad7f1d8-fa36-47b7-a3b6-83b8909c49ac"
           },
           "displayOrder": 10,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "TT Booster",
@@ -174,7 +174,7 @@
             "uuid": "7d9af174-9e58-4e96-a77c-8351a5a4152d"
           },
           "displayOrder": 1,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Weight",
@@ -194,7 +194,7 @@
             "uuid": "27803190-b702-4223-b9b4-64c75fdcf588"
           },
           "displayOrder": 3,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "MUAC (in cms)",
@@ -267,7 +267,7 @@
           "mandatory": true
         },
         {
-          "name": "IF yes then since how many days ",
+          "name": "IF yes then since how many days",
           "uuid": "a0db48b3-9317-416a-a1e5-16428ff806ae",
           "keyValues": [],
           "concept": {
@@ -495,7 +495,7 @@
           "mandatory": true
         },
         {
-          "name": "if YES then write E.D.D as per USG",
+          "name": "If YES then write E.D.D as per USG",
           "uuid": "7f83a70d-46de-47aa-9e23-91b43da80fde",
           "keyValues": [],
           "concept": {
@@ -689,7 +689,150 @@
           "mandatory": true
         }
       ]
+    },
+    {
+      "uuid": "71e495c3-e01b-47ff-8e5e-ebdc4de71167",
+      "name": "Nutritional Counselling",
+      "displayOrder": 8,
+      "display": "Nutritional Counselling",
+      "formElements": [
+        {
+          "name": "Diet Advice Dos",
+          "uuid": "3b288873-40a9-47ac-939e-1c78345ef549",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5d5b9e5d-0d66-4138-b6a4-c3c7ba321960",
+            "name": "Diet Advice Do's"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Diet Advice Donts",
+          "uuid": "8867749f-1a09-4336-bc0d-de49ac0185fe",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "7cdd0689-e7fc-43c2-b4fb-ef168fb7d9b0",
+            "name": "Diet Advice Don'ts"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Supplementary nutritional therapy",
+          "uuid": "a55cd1cb-ad7a-470e-8432-9d3534ca54a8",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "e6b81ecb-6261-4ea7-822b-efbd84b16ecd",
+            "name": "Supplementary nutritional therapy (advice)"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "4c55f756-9b14-40e6-8899-42f11695da35",
+      "name": "General Counselling",
+      "displayOrder": 9,
+      "display": "General Counselling",
+      "formElements": [
+        {
+          "name": "Rest and sleep",
+          "uuid": "664724e6-fb5c-4bb4-bb32-03a52322c03f",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "0b18da58-4e5d-4af0-ad82-c2cb67175e1a",
+            "name": "Rest and sleep (advice)"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Immunization Counselling",
+          "uuid": "695b91aa-70cc-4990-a02b-9dfa2d15abac",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "43f54817-6701-416f-a391-fb1cc4133cd8",
+            "name": "Immunization Counselling (advice)"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Coitus/Sex Counselling",
+          "uuid": "b23b060b-0532-4d75-8353-092f29dad43c",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5ec93cdf-007e-4027-8935-cc9df95fb3a1",
+            "name": "Coitus/Sex Counselling (advice)"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Illness management",
+          "uuid": "217a449f-c998-492d-aab2-ed6ba1ada5a7",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "77436bac-3168-40a9-8114-ffa2ce0b04fa",
+            "name": "Illness management (advice)"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Finance management",
+          "uuid": "451436ff-9d40-48d1-8bd4-8f045efba9ab",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "cf4a12aa-476f-478c-a6eb-644012117159",
+            "name": "Finance management (advice)"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        }
+      ]
+    },
+    {
+      "uuid": "53168a75-7528-40e1-817f-72df811f4a5b",
+      "name": "Administrative Counselling",
+      "displayOrder": 10,
+      "display": "Administrative Counselling",
+      "formElements": [
+        {
+          "name": "Government scheme information",
+          "uuid": "57e410ce-820c-4254-a773-30e90e511772",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "9f88aa7e-5983-4b18-98ad-7e62ac628272",
+            "name": "Government scheme information (advice)"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Ambulance services information",
+          "uuid": "521e9615-4d04-414d-a71f-a0e0ece53eb4",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "350b9426-48ab-4a72-9e67-af6017518786",
+            "name": "Ambulance services information (advice)"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        }
+      ]
     }
-
   ]
 }

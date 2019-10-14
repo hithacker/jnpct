@@ -170,12 +170,22 @@
   {
     "name": "Height",
     "uuid": "7d9af174-9e58-4e96-a77c-8351a5a4152d",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "lowAbsolute": 20,
+    "highAbsolute": 300,
+    "lowNormal": 30,
+    "highNormal": 200,
+    "unit": "cm"
   },
   {
     "name": "Weight",
     "uuid": "bab98eac-14a5-43c4-80ff-ccdb8c3ddf1b",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "lowAbsolute": 0,
+    "highAbsolute": 300,
+    "lowNormal": 1,
+    "highNormal": 100,
+    "unit": "kg"
   },
   {
     "name": "BMI",
@@ -190,12 +200,22 @@
   {
     "name": "B.P - Systolic",
     "uuid": "d5d860cc-9165-45b5-8795-065c2ee0e5aa",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "lowAbsolute": 20,
+    "highAbsolute": 190,
+    "lowNormal": 90,
+    "highNormal": 140,
+    "unit": "mm Hg"
   },
   {
     "name": "B.P - Diastolic",
     "uuid": "378241fc-b879-4037-bdc3-4746a7a11682",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "lowAbsolute": 10,
+    "highAbsolute": 120,
+    "lowNormal": 50,
+    "highNormal": 90,
+    "unit": "mm Hg"
   },
   {
     "uuid": "2bd804c1-d267-410f-81b5-390a39e6c6b2",
@@ -316,7 +336,8 @@
     "answers": [
       {
         "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
-        "name": "Present"
+        "name": "Present",
+        "abnormal": true
       },
       {
         "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
@@ -331,7 +352,8 @@
     "answers": [
       {
         "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
-        "name": "Present"
+        "name": "Present",
+        "abnormal": true
       },
       {
         "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
@@ -346,7 +368,8 @@
     "answers": [
       {
         "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
-        "name": "Present"
+        "name": "Present",
+        "abnormal": true
       },
       {
         "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
@@ -377,11 +400,13 @@
       },
       {
         "uuid": "60332376-c494-42f2-ac70-5da910f2ddb9",
-        "name": "Retracted"
+        "name": "Retracted",
+        "abnormal": true
       },
       {
         "uuid": "c9c4d34d-260b-4fce-a7ef-d92d94e7351e",
-        "name": "Flat"
+        "name": "Flat",
+        "abnormal": true
       }
     ]
   },
@@ -444,55 +469,68 @@
     "answers": [
       {
         "uuid": "59bbe194-20a5-484f-8fc8-7c29bf97aefb",
-        "name": "Malaria"
+        "name": "Malaria",
+        "abnormal": true
       },
       {
         "uuid": "5aeae397-60e2-4bc0-9813-1ce8125d700d",
-        "name": "eclampsia"
+        "name": "eclampsia",
+        "abnormal": true
       },
       {
         "uuid": "56331346-a084-4205-88e1-acc7fcb9faee",
-        "name": "APH"
+        "name": "APH",
+        "abnormal": true
       },
       {
         "uuid": "581e95c2-319c-43a6-a0f9-1dc93963813e",
-        "name": "Foul smelling menses"
+        "name": "Foul smelling menses",
+        "abnormal": true
       },
       {
         "uuid": "440291c1-9b98-4089-89b4-a7585bcedb55",
-        "name": "twin pregnancy"
+        "name": "twin pregnancy",
+        "abnormal": true
       },
       {
         "uuid": "137958fa-4666-44b2-880e-d5f1a639bb79",
-        "name": "fever"
+        "name": "fever",
+        "abnormal": true
       },
       {
         "uuid": "338c4e61-0bbc-4488-9c93-84912f87eb59",
-        "name": "difficult breathing"
+        "name": "difficult breathing",
+        "abnormal": true
       },
       {
         "uuid": "5f7c7a32-792f-4c09-9341-8f5ea0ded551",
-        "name": "severe vomiting"
+        "name": "severe vomiting",
+        "abnormal": true
       },
       {
         "uuid": "526b364e-97a0-4e70-9a53-97530e25989d",
-        "name": "problems in laboratory report"
+        "name": "problems in laboratory report",
+        "abnormal": true
       },
       {
         "uuid": "b794dcd7-1983-4296-bc5a-ab29d9f49392",
-        "name": "Blurred vision"
+        "name": "Blurred vision",
+        "abnormal": true
       },
       {
         "uuid": "7d7b2fb5-9a5a-4795-ac92-0da3f3920b1f",
-        "name": "Reduced fetal movement"
+        "name": "Reduced fetal movement",
+        "abnormal": true
       },
       {
         "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
-        "name": "Other"
+        "name": "Other",
+        "abnormal": true
       },
       {
         "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
-        "name": "None"
+        "name": "None",
+        "unique": true
       }
     ]
   },
@@ -516,11 +554,13 @@
       },
       {
         "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
-        "name": "Absent"
+        "name": "Absent",
+        "abnormal": true
       },
       {
         "uuid": "8c69760a-cb15-450d-b8f6-30894d9f3dd3",
-        "name": "Reduced"
+        "name": "Reduced",
+        "abnormal": true
       }
     ]
   },
@@ -532,7 +572,10 @@
   {
     "name": "H.B",
     "uuid": "057ab538-63ef-4c56-b37c-03651ad823e2",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "lowNormal": 12,
+    "highNormal": 15.5,
+    "unit": "g/dL"
   },
   {
     "name": "Blood Sugar",
@@ -554,7 +597,8 @@
     "answers": [
       {
         "uuid": "55451fda-7cc3-454b-b632-6925801c97d2",
-        "name": "Positive"
+        "name": "Positive",
+        "abnormal": true
       },
       {
         "uuid": "40677daf-6062-4ba9-a2a2-2771df1af583",
@@ -569,7 +613,8 @@
     "answers": [
       {
         "uuid": "55451fda-7cc3-454b-b632-6925801c97d2",
-        "name": "Positive"
+        "name": "Positive",
+        "abnormal": true
       },
       {
         "uuid": "40677daf-6062-4ba9-a2a2-2771df1af583",
@@ -584,7 +629,8 @@
     "answers": [
       {
         "uuid": "55451fda-7cc3-454b-b632-6925801c97d2",
-        "name": "Positive"
+        "name": "Positive",
+        "abnormal": true
       },
       {
         "uuid": "40677daf-6062-4ba9-a2a2-2771df1af583",
@@ -626,15 +672,18 @@
     "answers": [
       {
         "uuid": "e141d616-3d4d-4934-ba9e-75d61914d25a",
-        "name": "DISEASE"
+        "name": "DISEASE",
+        "abnormal": true
       },
       {
         "uuid": "5a807893-c34a-41f0-8be3-35416a55f0e4",
-        "name": "TRAIT"
+        "name": "TRAIT",
+        "abnormal": true
       },
       {
         "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
-        "name": "Normal"
+        "name": "Normal",
+        "abnormal": true
       }
     ]
   },
@@ -669,23 +718,28 @@
       },
       {
         "uuid": "ae09c05f-b0e6-492f-bae0-321335aacf84",
-        "name": "Trace"
+        "name": "Trace",
+        "abnormal": true
       },
       {
         "uuid": "57d1fde3-57c1-4c2f-bcbf-293987661e4c",
-        "name": "+1"
+        "name": "+1",
+        "abnormal": true
       },
       {
         "uuid": "1fd8daa1-1695-488d-9fd1-ccef866f874a",
-        "name": "+2"
+        "name": "+2",
+        "abnormal": true
       },
       {
         "uuid": "982911aa-17c7-4970-ba74-a1d0c5fb9d62",
-        "name": "+3"
+        "name": "+3",
+        "abnormal": true
       },
       {
         "uuid": "d1d21757-9104-404c-b3e6-5473d7127508",
-        "name": "+4"
+        "name": "+4",
+        "abnormal": true
       }
     ]
   },
@@ -700,23 +754,28 @@
       },
       {
         "uuid": "ae09c05f-b0e6-492f-bae0-321335aacf84",
-        "name": "Trace"
+        "name": "Trace",
+        "abnormal": true
       },
       {
         "uuid": "57d1fde3-57c1-4c2f-bcbf-293987661e4c",
-        "name": "+1"
+        "name": "+1",
+        "abnormal": true
       },
       {
         "uuid": "1fd8daa1-1695-488d-9fd1-ccef866f874a",
-        "name": "+2"
+        "name": "+2",
+        "abnormal": true
       },
       {
         "uuid": "982911aa-17c7-4970-ba74-a1d0c5fb9d62",
-        "name": "+3"
+        "name": "+3",
+        "abnormal": true
       },
       {
         "uuid": "d1d21757-9104-404c-b3e6-5473d7127508",
-        "name": "+4"
+        "name": "+4",
+        "abnormal": true
       }
     ]
   },
@@ -736,7 +795,7 @@
     ]
   },
   {
-    "name": "if YES then write E.D.D as per USG",
+    "name": "If YES then write E.D.D as per USG",
     "uuid": "0f2f8288-126f-4976-a7bb-09999f7d870e",
     "dataType": "Date"
   },
@@ -767,15 +826,18 @@
       },
       {
         "uuid": "71be1f71-6589-46a5-9a50-c77a1dd93a04",
-        "name": "Two"
+        "name": "Two",
+        "abnormal": true
       },
       {
         "uuid": "05568801-d09e-49b2-a392-7f5d9f84fdd3",
-        "name": "Three"
+        "name": "Three",
+        "abnormal": true
       },
       {
         "uuid": "1eaf3f52-b4f6-43bc-998f-44dfed64246d",
-        "name": "More than Three"
+        "name": "More than Three",
+        "abnormal": true
       }
     ]
   },
@@ -798,11 +860,13 @@
       },
       {
         "uuid": "c6b2e6f5-ee9f-47ea-bcef-d679c8a66acd",
-        "name": "Increased"
+        "name": "Increased",
+        "abnormal": true
       },
       {
         "uuid": "3bf8c853-cc5a-410e-80d1-a94bd08a76cb",
-        "name": "Decreased"
+        "name": "Decreased",
+        "abnormal": true
       }
     ]
   },
@@ -821,7 +885,8 @@
     "answers": [
       {
         "uuid": "1bcf80d6-e958-4401-af72-159700d8eb9a",
-        "name": "Previa"
+        "name": "Previa",
+        "abnormal": true
       },
       {
         "uuid": "2b37a7d3-3e0c-493b-a0c8-db68e4e90ce3",
@@ -852,11 +917,13 @@
       },
       {
         "uuid": "dd5c1140-bf9c-46d1-9003-0a7e7e2def6d",
-        "name": "Breech"
+        "name": "Breech",
+        "abnormal": true
       },
       {
         "uuid": "0a62c84f-a546-4f6c-bf0f-2ec57a86cf24",
-        "name": "Transverse"
+        "name": "Transverse",
+        "abnormal": true
       }
     ]
   },
@@ -1191,5 +1258,252 @@
         "name": "No"
       }
     ]
+  },
+  {
+    "name": "Irregular weight gain",
+    "uuid": "11826355-4123-49ad-bf3a-ad35bf9f2f83"
+  },
+  {
+    "name": "Low BMI",
+    "uuid": "150537e9-0243-4494-98b0-e463ca542f67"
+  },
+  {
+    "name": "High BMI",
+    "uuid": "6f183da6-a9f1-4552-a91a-70fc89268af0"
+  },
+  {
+    "name": "Rh Negative Blood Group",
+    "uuid": "3f09b215-43b9-4919-8b62-f9ec5559aa25"
+  },
+  {
+    "name": "Pedal Edema Present",
+    "uuid": "14b52e4a-5403-436d-8ac8-017712a6377a"
+  },
+  {
+    "uuid": "8166f673-2822-4673-9620-d42e75dad085",
+    "name": "Hypertension"
+  },
+  {
+    "uuid": "b92892c5-2c24-40f9-9c1d-f7b657879ab3",
+    "name": "Severe Anemia"
+  },
+  {
+    "uuid": "e52a66a9-539b-4380-9f97-6c5fb2e07d21",
+    "name": "Moderate Anemia"
+  },
+  {
+    "uuid": "338225e9-ce9a-427c-86c7-6d2f848afb7f",
+    "name": "High blood sugar"
+  },
+  {
+    "uuid": "5a1c0faa-8631-4ebc-9be4-e0c5b0ca2e59",
+    "name": "Low Temperature"
+  },
+  {
+    "uuid": "ab68f724-ef71-485c-8d5c-62e18b6ce92e",
+    "name": "High Temperature"
+  },
+  {
+    "name": "Pallor Present",
+    "uuid": "d20958e6-97a0-4a0b-b528-f149357756a3"
+  },
+  {
+    "name": "Having convulsions",
+    "uuid": "6da5f403-7f53-44e3-a5a0-9f709fd6bc37"
+  },
+
+
+  
+  {
+    "name": "High Risk Conditions",
+    "uuid": "0ca1c6a2-001b-475a-9813-1d905df9e81b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Irregular weight gain",
+        "uuid": "11826355-4123-49ad-bf3a-ad35bf9f2f83",
+        "abnormal": true
+      },
+      {
+        "name": "Low BMI",
+        "uuid": "150537e9-0243-4494-98b0-e463ca542f67",
+        "abnormal": true
+      },
+      {
+        "name": "High BMI",
+        "uuid": "6f183da6-a9f1-4552-a91a-70fc89268af0",
+        "abnormal": true
+      },
+      {
+        "name": "Rh Negative Blood Group",
+        "uuid": "3f09b215-43b9-4919-8b62-f9ec5559aa25",
+        "abnormal": true
+      },
+      {
+        "name": "Pedal Edema Present",
+        "uuid": "14b52e4a-5403-436d-8ac8-017712a6377a",
+        "abnormal": true
+      },
+      {
+        "name": "Having convulsions",
+        "uuid": "6da5f403-7f53-44e3-a5a0-9f709fd6bc37",
+        "abnormal": true
+      },
+      {
+        "name": "Jaundice (Icterus)",
+        "uuid": "efd91533-e2d0-497e-a4dc-0b66a30ef233",
+        "abnormal": true
+      },
+      {
+        "name": "Breast Examination - Nipple",
+        "uuid": "e6228ce1-29af-4c48-b41a-858802a5cbc6",
+        "abnormal": true
+      },
+      {
+        "uuid": "8166f673-2822-4673-9620-d42e75dad085",
+        "name": "Hypertension",
+        "abnormal": true
+      },
+      {
+        "uuid": "b92892c5-2c24-40f9-9c1d-f7b657879ab3",
+        "name": "Severe Anemia",
+        "abnormal": true
+      },
+      {
+        "uuid": "e52a66a9-539b-4380-9f97-6c5fb2e07d21",
+        "name": "Moderate Anemia",
+        "abnormal": true
+      },
+      {
+        "uuid": "338225e9-ce9a-427c-86c7-6d2f848afb7f",
+        "name": "High blood sugar",
+        "abnormal": true
+      },
+      {
+        "name": "VDRL",
+        "uuid": "5a48f80d-e956-403d-b192-93a80389faf2",
+        "abnormal": true
+      },
+      {
+        "name": "HIV/AIDS Test",
+        "uuid": "9c3f92c9-f3a6-49bc-a15e-e7909c8b61cc",
+        "abnormal": true
+      },
+      {
+        "name": "HbsAg",
+        "uuid": "737145a8-3259-4afc-9523-ed5d5f2d9a5f",
+        "abnormal": true
+      },
+      {
+        "name": "Sickling Test",
+        "uuid": "c8722864-8f31-4e58-8a3b-ce2c8a549f2b",
+        "abnormal": true
+      },
+      {
+        "name": "Urine Albumin",
+        "uuid": "ddefc442-cb1f-432a-8e3d-0665dc620272",
+        "abnormal": true
+      },
+      {
+        "name": "Urine Sugar",
+        "uuid": "b6291b90-6f6e-4b15-be79-51e3284c4c81",
+        "abnormal": true
+      },
+      {
+        "name": "USG Scanning Report - Number of foetus",
+        "uuid": "ba8274a2-5817-4f1b-a379-f945a285bb25",
+        "abnormal": true
+      },
+      {
+        "name": "USG Scanning Report - Liquour",
+        "uuid": "0197f0ee-97a8-4f68-8049-083f7e81b1dd",
+        "abnormal": true
+      },
+      {
+        "name": "USG Scanning Report - Placenta Previa",
+        "uuid": "5aeb53d9-96a4-4e17-8b06-dd58df20771a",
+        "abnormal": true
+      },
+      {
+        "name": "Foetal presentation",
+        "uuid": "b0e836a1-8878-4798-881a-57a113824f0a",
+        "abnormal": true
+      },
+      {
+        "uuid": "5a1c0faa-8631-4ebc-9be4-e0c5b0ca2e59",
+        "name": "Low Temperature",
+        "abnormal": true
+      },
+      {
+        "uuid": "ab68f724-ef71-485c-8d5c-62e18b6ce92e",
+        "name": "High Temperature",
+        "abnormal": true
+      },
+      {
+        "name": "Pallor Present",
+        "uuid": "d20958e6-97a0-4a0b-b528-f149357756a3",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Diet Advice Do's",
+    "uuid": "5d5b9e5d-0d66-4138-b6a4-c3c7ba321960",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Diet Advice Don'ts",
+    "uuid": "7cdd0689-e7fc-43c2-b4fb-ef168fb7d9b0",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Supplementary nutritional therapy (advice)",
+    "uuid": "e6b81ecb-6261-4ea7-822b-efbd84b16ecd",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Rest and sleep (advice)",
+    "uuid": "0b18da58-4e5d-4af0-ad82-c2cb67175e1a",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Immunization Counselling (advice)",
+    "uuid": "43f54817-6701-416f-a391-fb1cc4133cd8",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Coitus/Sex Counselling (advice)",
+    "uuid": "5ec93cdf-007e-4027-8935-cc9df95fb3a1",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Illness management (advice)",
+    "uuid": "77436bac-3168-40a9-8114-ffa2ce0b04fa",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Finance management (advice)",
+    "uuid": "cf4a12aa-476f-478c-a6eb-644012117159",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Government scheme information (advice)",
+    "uuid": "9f88aa7e-5983-4b18-98ad-7e62ac628272",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Ambulance services information (advice)",
+    "uuid": "350b9426-48ab-4a72-9e67-af6017518786",
+    "dataType": "Coded",
+    "answers": []
   }
 ]

@@ -9,7 +9,7 @@ import {
     StatusBuilderAnnotationFactory,
     VisitScheduleBuilder,
     complicationsBuilder as ComplicationsBuilder,
-    WithName,
+    WithName
 } from 'rules-config/rules';
 import lib from '../lib';
 
