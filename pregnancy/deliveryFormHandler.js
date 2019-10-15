@@ -1,3 +1,5 @@
+const moment = require("moment");
+const _ = require("lodash");
 import {
     FormElementsStatusHelper,
     FormElementStatus,
@@ -14,7 +16,7 @@ import lib from '../lib';
 const DeliveryFormViewFilter = RuleFactory("cbe0f44c-580a-4311-ae34-cef2e4b35330", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
 
-@DeliveryFormViewFilter("2f291a9a-3e66-4417-97c7-13474981f6f9", "JNPCT Delivery Form View Filter", 100.0, {})
+@DeliveryFormViewFilter("1aaaefb2-3de7-4876-b465-85948b6ff159", "JNPCT Delivery Form View Filter", 100.0, {})
 class PregnancyDeliveryFormViewFilterJNPCT {
     static exec(programEncounter, formElementGroup, today) {
         return FormElementsStatusHelper
@@ -40,22 +42,132 @@ class PregnancyDeliveryFormViewFilterJNPCT {
     @WithStatusBuilder
     d3([], statusBuilder) {
          statusBuilder.show().when.valueInEncounter("Delivery outcome")
-           .containsAnyAnswerConceptName("Live Birth","Live and Still Birth","Neonatal Death");
+           .containsAnswerConceptNameOtherThan("Still Birth");
      }
 
-    @WithStatusBuilder
-    numberOfDaysStayedAtHospital([], statusBuilder) {
-        statusBuilder.show().when.valueInEncounter('Delivery outcome')
-            .containsAnyAnswerConceptName("Live Birth", "Still Birth", "Live birth and Still birth","Neonatal Death")
-            .and.when.valueInEncounter('Place of delivery')
-            .containsAnswerConceptName('HOSPITAL');
+    @WithName('Number of days stayed at the hospital')
+    d4(programEncounter, formElement) {
+        const days = moment(programEncounter.getObservationReadableValue('Date of discharge'))
+            .diff(programEncounter.getObservationReadableValue('Date of delivery'), 'days');
+        const value = isFinite(days) ? days : undefined;
+        return new FormElementStatus(formElement.uuid, true, value);
     }
 
-    genderOfNewBorn2(programEncounter, formElement) {
-        return this._showWhenNoOfBabiesIsMoreThan(programEncounter, formElement, 1);
+    genderOfNewborn2(programEncounter, formElement, no) {
+        const statusBuilder = new FormElementStatusBuilder({
+            programEncounter: programEncounter,
+            formElement: formElement
+        });
+        statusBuilder.show().when.valueInEncounter("Number of babies")
+              .defined.and.greaterThan(1);
+        return statusBuilder.build();
     }
 
+    weightOfNewborn2(programEncounter, formElement, no) {
+         const statusBuilder = new FormElementStatusBuilder({
+             programEncounter: programEncounter,
+             formElement: formElement
+         });
+         statusBuilder.show().when.valueInEncounter("Number of babies")
+             .defined.and.greaterThan(1);
+         return statusBuilder.build();
+     }
 
+    genderOfNewborn3(programEncounter, formElement, no) {
+         const statusBuilder = new FormElementStatusBuilder({
+             programEncounter: programEncounter,
+             formElement: formElement
+         });
+         statusBuilder.show().when.valueInEncounter("Number of babies")
+             .defined.and.greaterThan(2);
+         return statusBuilder.build();
+     }
+
+    weightOfNewborn3(programEncounter, formElement, no) {
+         const statusBuilder = new FormElementStatusBuilder({
+             programEncounter: programEncounter,
+             formElement: formElement
+         });
+         statusBuilder.show().when.valueInEncounter("Number of babies")
+             .defined.and.greaterThan(2);
+         return statusBuilder.build();
+     }
+
+    numberOfStillbornBabies(programEncounter, formElement) {
+        const statusBuilder = new FormElementStatusBuilder({
+            programEncounter: programEncounter,
+            formElement: formElement
+        });
+        statusBuilder.show().when.valueInEncounter("Delivery outcome")
+            .containsAnyAnswerConceptName("Live and Still Birth", "Still Birth");
+        const status = statusBuilder.build();
+        // status.value = this._getNoOfStillBornBabies(programEncounter);
+        return status;
+    }
+
+    genderOfStillborn1(programEncounter, formElement) {
+        const statusBuilder = new FormElementStatusBuilder({
+            programEncounter: programEncounter,
+            formElement: formElement
+        });
+        statusBuilder.show().when.valueInEncounter("Delivery outcome")
+            .containsAnyAnswerConceptName("Live and Still Birth", "Still Birth");
+        const status = statusBuilder.build();
+        // status.value = this._getNoOfStillBornBabies(programEncounter);
+        return status;
+    }
+
+    weightOfStillborn1(programEncounter, formElement) {
+        const statusBuilder = new FormElementStatusBuilder({
+            programEncounter: programEncounter,
+            formElement: formElement
+        });
+        statusBuilder.show().when.valueInEncounter("Delivery outcome")
+            .containsAnyAnswerConceptName("Live and Still Birth", "Still Birth");
+        const status = statusBuilder.build();
+        // status.value = this._getNoOfStillBornBabies(programEncounter);
+        return status;
+    }
+
+    genderOfStillborn2(programEncounter, formElement, no) {
+         const statusBuilder = new FormElementStatusBuilder({
+             programEncounter: programEncounter,
+             formElement: formElement
+         });
+         statusBuilder.show().when.valueInEncounter("Number of Stillborn babies")
+             .defined.and.greaterThan(1);
+         return statusBuilder.build();
+     }
+
+    weightOfStillborn2InGms(programEncounter, formElement, no) {
+         const statusBuilder = new FormElementStatusBuilder({
+             programEncounter: programEncounter,
+             formElement: formElement
+         });
+         statusBuilder.show().when.valueInEncounter("Number of Stillborn babies")
+             .defined.and.greaterThan(1);
+         return statusBuilder.build();
+     }
+
+    genderOfStillborn3(programEncounter, formElement, no) {
+         const statusBuilder = new FormElementStatusBuilder({
+             programEncounter: programEncounter,
+             formElement: formElement
+         });
+         statusBuilder.show().when.valueInEncounter("Number of Stillborn babies")
+             .defined.and.greaterThan(2);
+         return statusBuilder.build();
+    }
+
+    weightOfStillborn3InGms(programEncounter, formElement, no) {
+         const statusBuilder = new FormElementStatusBuilder({
+             programEncounter: programEncounter,
+             formElement: formElement
+         });
+         statusBuilder.show().when.valueInEncounter("Number of Stillborn babies")
+             .defined.and.greaterThan(2);
+         return statusBuilder.build();
+     }
 }
 
 module.exports = {PregnancyDeliveryFormViewFilterJNPCT};

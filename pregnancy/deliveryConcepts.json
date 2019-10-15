@@ -2,7 +2,7 @@
   {
     "name": "Date of delivery",
     "uuid": "d1effb17-12e7-42b4-8791-8a7c4a7c1a64",
-    "dataType": "Numeric"
+    "dataType": "Date"
   },
   {
     "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
