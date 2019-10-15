@@ -17,6 +17,7 @@ module.exports = IDI.configure({
             "eligibleCouple/eligibleCoupleFollowupForm.json",
             "pregnancy/pregnancyEnrolmentForm.json",
             "pregnancy/ancForm.json",
+            "pregnancy/deliveryForm.json"
         ],
         "formMappings": [
             "metadata/formMappings.json"
@@ -34,7 +35,8 @@ module.exports = IDI.configure({
             "registration/registrationConcepts.json",
              "eligibleCouple/eligibleCoupleConcepts.json",
              "pregnancy/pregnancyEnrolmentConcepts.json",
-             "pregnancy/ancFormConcepts.json"
+             "pregnancy/ancFormConcepts.json",
+             "pregnancy/deliveryConcepts.json"
         ],
         "locations": [
             "metadata/locations.json"

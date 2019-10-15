@@ -1,0 +1,306 @@
+{
+  "name": "Delivery Form",
+  "uuid": "cbe0f44c-580a-4311-ae34-cef2e4b35330",
+  "formType": "ProgramEncounter",
+  "formElementGroups": [
+    {
+      "uuid": "07c91713-3056-4876-a58b-645cafbda27d",
+      "name": "Mother Delivery Service Details",
+      "displayOrder": 1,
+      "display": "Service Details",
+      "formElements": [
+        {
+          "name": "Date of delivery",
+          "uuid": "00b020f9-3dee-4e3f-b3d0-464f83a53392",
+          "concept": {
+            "uuid": "d1effb17-12e7-42b4-8791-8a7c4a7c1a64",
+            "name": "Date of delivery"
+          },
+          "displayOrder": 0,
+          "mandatory": true
+        },
+        {
+          "name": "Place of delivery",
+          "uuid": "1bfbcd60-5b30-4f84-9427-323f966dd167",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "95ee3ade-e926-4f8e-a6b9-6c4086a4db3a",
+            "name": "Place of delivery"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Delivery pack used ?",
+          "uuid": "64029f75-6bd2-4c4b-b02d-f7f0248831f5",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "ab201e49-cf1c-44c0-8a86-0545a2d57227"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        
+        {
+          "name": "Date of discharge",
+          "uuid": "110f012a-21d0-43d6-a188-a18aaa042cf4",
+          "keyValues": [],
+          "concept": {
+            "uuid": "94f0dddd-0b11-45d7-8aae-7ba9f08b3bb4",
+            "name": "Date of discharge"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Number of days stayed at the hospital",
+          "uuid": "42174d8d-245b-4f55-afb6-d30e0c6f7966",
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
+          "concept": {
+            "uuid": "a2c7a7b3-ef6d-42d1-8d4b-b8b140625c4c"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Week of Gestation",
+          "uuid": "33e0b29d-2f8c-4a56-850a-f36ed433b1d2",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f38349e4-afad-4bed-897b-dfb32d8c4c08"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Delivered By",
+          "uuid": "649bc752-52c0-4628-a364-ccb0c43b1f29",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "c07b4a59-8155-4015-a220-a20c80da9f75",
+            "name": "Delivered by"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        }
+      ]
+    },
+    {
+      "uuid": "94047386-ae36-4048-9151-e7137f66992b",
+      "name": "Mother Delivery Medical Details",
+      "display": "Medical Details",
+      "displayOrder": 2,
+      "formElements": [
+        {
+          "name": "Type of delivery",
+          "uuid": "85e4e095-2c00-49db-95d3-da2810c69c13",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "3a896aa4-db6c-42b1-abab-9fb89bd62c79"
+          },
+          "displayOrder": 1,
+          "mandatory": true
+        },
+        {
+          "name": "Delivery outcome",
+          "uuid": "53eeceaa-f625-4726-9313-4ab416e9fed1",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "eb1dd4c0-0465-4865-a357-7325184b29ad"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Delivery complication",
+          "uuid": "0f4173e9-c781-4df4-9d7c-5a71c0394578",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "d63cf4d8-e890-4b0f-b331-25aa87f61cc3"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Number of babies",
+          "uuid": "6f648ce4-14bb-4914-a218-64be66902d58",
+          "keyValues": [],
+          "concept": {
+            "uuid": "facf00bd-b1db-4304-b0e4-e484d7e3db29"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Gender of Newborn1",
+          "uuid": "d09d9fbd-2641-4527-aa8b-67f2939b610b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "d3de7fbb-9851-41b8-9b6a-4c183f4986ea"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Weight of Newborn1",
+          "uuid": "3a014d28-36fc-4552-b8c1-51fbd928f64d",
+          "keyValues": [],
+          "concept": {
+            "uuid": "f0a5edd9-5250-4f27-bc0d-0536b13c8a25"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        },
+        {
+          "name": "Gender of Newborn2",
+          "uuid": "f8c7dd61-453e-4066-a884-96c68071a81b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "3f0c5c4e-40bd-476d-a0ae-3a7e19c78c83"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Weight of Newborn2",
+          "uuid": "653ab723-416c-40eb-8f88-c42eab46c760",
+          "keyValues": [],
+          "concept": {
+            "uuid": "b24b1d7d-5c08-495e-a8fc-e0c2c854d694"
+          },
+          "displayOrder": 8,
+          "mandatory": false
+        },
+        {
+          "name": "Gender of Newborn3",
+          "uuid": "199e2105-da61-4550-9635-b1ae6b436fe7",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "8dda0b63-3d60-4a09-888b-e40683c32776"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        },
+        {
+          "name": "Weight of Newborn3",
+          "uuid": "9fd5b4d0-c1b4-4053-85fb-9a64f31311c2",
+          "keyValues": [],
+          "concept": {
+            "uuid": "fe7784c0-61ef-481a-98be-7ebeff7cfdde"
+          },
+          "displayOrder": 10,
+          "mandatory": false
+        },
+        {
+          "name": "Number of Stillborn babies",
+          "uuid": "6e538df9-95d6-4ef3-829f-164ca4b737ea",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a738b2ba-84a9-4e4f-9e0c-0f2bbafc44b0"
+          },
+          "displayOrder": 11,
+          "mandatory": true
+        },
+        {
+          "name": "Gender of Stillborn1",
+          "uuid": "ff596e91-ac66-4612-b085-af07f6230b40",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "f35f29b3-5c6e-4b8e-a2d9-3847a7f4af3d"
+          },
+          "displayOrder": 12,
+          "mandatory": false
+        },
+        {
+          "name": "Weight of Stillborn1",
+          "uuid": "b44b7c3c-57b0-454a-9a3c-53e5964c97e6",
+          "keyValues": [],
+          "concept": {
+            "uuid": "69114ef1-3fd1-4a57-b58d-c6e7169fd65c"
+          },
+          "displayOrder": 13,
+          "mandatory": false
+        },
+        {
+          "name": "Gender of Stillborn2",
+          "uuid": "21af3a23-f874-4135-94f0-c1e17dabba64",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "ac7d6e60-93c2-4227-b9fa-87ede2c8af96"
+          },
+          "displayOrder": 14,
+          "mandatory": false
+        },
+        {
+          "name": "Weight of Stillborn2 (in Gms)",
+          "uuid": "cc42a064-8487-46cd-99eb-8d4040fbe5be",
+          "keyValues": [],
+          "concept": {
+            "uuid": "bed2de93-e2ea-4677-8301-2e6b1173b248"
+          },
+          "displayOrder": 15,
+          "mandatory": false
+        },
+        {
+          "name": "Gender of Stillborn3",
+          "uuid": "c5f50f20-2590-41c8-a515-befcc5649c54",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "e28df31b-1434-4dc5-8a65-baa6eb8e30cc"
+          },
+          "displayOrder": 16,
+          "mandatory": false
+        },
+        {
+          "name": "Weight of Stillborn3 (in Gms)",
+          "uuid": "89415fb1-3d96-4189-9cf0-07347a9b3d97",
+          "keyValues": [],
+          "concept": {
+            "uuid": "46601220-c8f7-4e1a-bab2-8176ca92f130"
+          },
+          "displayOrder": 17,
+          "mandatory": false
+        },
+        {
+          "name": "Mother with high risk",
+          "uuid": "06241845-7f32-466f-99f6-e7a578af9ef9",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "96147a70-1bd0-4210-8260-56c956bf05da"
+          },
+          "displayOrder": 18,
+          "mandatory": true
+        },
+        {
+          "name": "Aarogya Saheli present durinng the time of delivery?",
+          "uuid": "7ee51734-bd5e-478a-9274-8893a8700467",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "df02e753-a400-436b-870b-97482d131e06"
+          },
+          "displayOrder": 19,
+          "mandatory": true
+        }
+      ]
+    }
+  ]
+}

@@ -5,5 +5,6 @@ module.exports = _.merge({},
     require('./eligibleCouple/eligibleCoupleFollowupHandler'),
     require('./pregnancy/pregnancyEnrolmentHandler'),
     require('./pregnancy/ancFormHandler'),
+     require('./pregnancy/deliveryFormHandler'),
 
 );
