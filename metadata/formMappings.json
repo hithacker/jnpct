@@ -36,5 +36,11 @@
     "encounterTypeUUID": "f1dbb45f-ed4a-4696-a68d-23cce75afc6f",
     "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
     "comment": "Delivery Form"
+  },
+  {
+    "uuid": "bc4927b6-b6e2-42d2-80ed-8d881c00761b",
+    "formUUID": "95796c7b-cb70-48f5-893f-c0c8afbc3785",
+    "programUUID": "b54328b6-3e9a-4df7-915e-5b54cd772d43",
+    "comment": "Child Enrolment"
   }
 ]

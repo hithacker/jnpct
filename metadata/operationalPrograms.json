@@ -3,18 +3,26 @@
   "operationalPrograms": [
     {
       "uuid": "0f037a01-251f-4eec-8ee6-45808a7eb3c3",
-      "name": "Eligible Couple",
+      "name": "Eligible couple",
       "program": {
         "uuid": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
-        "comment": "Eligible Couple"
+        "comment": "Eligible couple"
       }
     },
     {
       "uuid": "0d9321b2-4bb8-437d-b191-cc39ee00e75a",
-      "name": "Pregnancy Enrolment",
+      "name": "Pregnancy",
       "program": {
         "uuid": "26d3e45e-7174-433f-b4a7-db1524648252",
-        "comment": "Pregnancy Enrolment"
+        "comment": "Pregnancy"
+      }
+    },
+    {
+      "uuid": "70e4db05-c79a-406c-89be-54f8d77f643a",
+      "name": "Child",
+      "program": {
+        "uuid": "b54328b6-3e9a-4df7-915e-5b54cd772d43",
+        "comment": "Child"
       }
     }
   ]

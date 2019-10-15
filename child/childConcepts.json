@@ -1,0 +1,69 @@
+[
+  {
+    "uuid": "09843fd1-7122-480a-8a46-613eaffb9fe5",
+    "name": "Birth"
+  },
+  {
+    "uuid": "c117760d-33ec-48b7-adee-2fbf5fa36382",
+    "name": "In Migration"
+  },
+  {
+    "uuid": "356807c4-b3b0-4ac8-be77-9ea97be5c529",
+    "name": "Retrospective Registration"
+  },
+  {
+    "name": "Registration done at",
+    "uuid": "1685fcf0-6e2c-4165-bba0-605e1f54dfcc",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "09843fd1-7122-480a-8a46-613eaffb9fe5",
+            "name": "Birth"
+          },
+          {
+            "uuid": "c117760d-33ec-48b7-adee-2fbf5fa36382",
+            "name": "In Migration"
+          },
+          {
+            "uuid": "356807c4-b3b0-4ac8-be77-9ea97be5c529",
+            "name": "Retrospective Registration"
+          }
+    ]
+  },
+  {
+    "name": "Is child getting registered at Birth",
+    "uuid": "f1a9ede3-1b9b-4b1a-a8fb-6a3bb8f1cc19",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Current Weight",
+    "uuid": "3a97f7b0-990c-4b2b-b0e1-a4c8b45c3573",
+    "dataType": "Numeric",
+    "lowAbsolute": 0,
+    "highAbsolute": 300,
+    "lowNormal": 1,
+    "highNormal": 100,
+    "unit": "kg"
+  },
+  {
+    "name": "Birth Weight",
+    "uuid": "c82cd1c8-d0a9-4237-b791-8d64e52b6c4a",
+    "unit": "kg",
+    "dataType": "Numeric",
+    "lowNormal": 2.5
+  }
+  
+
+  
+  
+]
