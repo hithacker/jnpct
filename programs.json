@@ -1,12 +1,17 @@
 [
   {
-    "name": "Eligible Couple",
+    "name": "Eligible couple",
     "uuid": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
     "colour": "orangered"
   },
   {
-    "name": "Pregnancy Enrolment",
+    "name": "Pregnancy",
     "uuid": "26d3e45e-7174-433f-b4a7-db1524648252",
     "colour": "darkmagenta"
+  },
+  {
+    "name": "Child",
+    "uuid": "b54328b6-3e9a-4df7-915e-5b54cd772d43",
+    "colour": "yellow"
   }
 ]
