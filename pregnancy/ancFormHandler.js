@@ -200,7 +200,6 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
        statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
    }
 
-
    @WithStatusBuilder
    planInWhichHospital([], statusBuilder) {
        statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
@@ -270,7 +269,7 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
              .when.valueInEncounter('BMI').greaterThan(24.9);
 
         complicationsBuilder.addComplication("Rh Negative Blood Group")
-             .when.valueInRegistration("Blood group").containsAnyAnswerConceptName("A+","B+","AB+","O+", "A-","AB-","O-", "B-");
+             .when.valueInEncounter("Blood Group").containsAnyAnswerConceptName("A-","AB-","O-","B-");
 
         complicationsBuilder.addComplication("Pedal Edema Present")
              .when.valueInEncounter("pedal oedema is present").containsAnswerConceptName("Yes");
@@ -297,10 +296,10 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
             .when.valueInEncounter("Jaundice (Icterus)").containsAnswerConceptName("Present");
 
        complicationsBuilder.addComplication("Breast Examination - Nipple")
-             .when.valueInRegistration("Breast Examination - Nipple").containsAnyAnswerConceptName("Retracted", "Flat");
+             .when.valueInEncounter("Breast Examination - Nipple").containsAnyAnswerConceptName("Retracted", "Flat");
 
        complicationsBuilder.addComplication("Is there any danger sign")
-             .when.valueInRegistration("Is there any danger sign")
+             .when.valueInEncounter("Is there any danger sign")
              .containsAnyAnswerConceptName("Malaria","eclampsia","APH","Foul smelling menses","twin pregnancy",
              "fever","difficult breathing","severe vomiting","problems in laboratory report",
              "Blurred vision","Reduced fetal movement", "Other");

@@ -219,39 +219,50 @@
   },
   {
     "uuid": "2bd804c1-d267-410f-81b5-390a39e6c6b2",
-    "name": "A+"
+    "name": "A+",
+    "dataType": "NA"
   },
   {
     "uuid": "2af7b3a0-8646-4d58-abc4-fceac927d940",
-    "name": "B+"
+    "name": "B+",
+    "dataType": "NA"
   },
   {
     "uuid": "0dab0fe3-bf6f-4d37-9d50-5c2dec5bd156",
-    "name": "AB+"
+    "name": "AB+",
+    "dataType": "NA"
+
   },
   {
     "uuid": "09a6c715-da7b-4dd5-aa73-4949be64f083",
-    "name": "O+"
+    "name": "O+",
+    "dataType": "NA"
+
   },
   {
     "uuid": "48458cb4-6bcc-4474-bcc0-cd9e3e4712d1",
-    "name": "A-"
+    "name": "A-",
+    "dataType": "NA"
   },
   {
     "uuid": "3067e276-7793-4906-a6e3-045822b0ffee",
-    "name": "B-"
+    "name": "B-",
+    "dataType": "NA"
   },
   {
     "uuid": "f8ef2109-67f9-47cc-a461-10d02066c414",
-    "name": "AB-"
+    "name": "AB-",
+    "dataType": "NA"
   },
   {
     "uuid": "d75b6736-7c92-42ac-aa89-0d63093805ff",
-    "name": "O-"
+    "name": "O-",
+    "dataType": "NA"
   },
   {
     "uuid": "18fc80be-129b-4346-9a25-9e99bccc7ec6",
-    "name": "Don't Know"
+    "name": "Don't Know",
+    "dataType": "NA"
   },
   {
     "name": "Blood Group",
@@ -1273,7 +1284,8 @@
   },
   {
     "name": "Rh Negative Blood Group",
-    "uuid": "3f09b215-43b9-4919-8b62-f9ec5559aa25"
+    "uuid": "3f09b215-43b9-4919-8b62-f9ec5559aa25",
+    "dataType": "NA"
   },
   {
     "name": "Pedal Edema Present",
@@ -1311,9 +1323,10 @@
     "name": "Having convulsions",
     "uuid": "6da5f403-7f53-44e3-a5a0-9f709fd6bc37"
   },
-
-
-  
+  {
+    "name": "Sickling Test",
+    "uuid": "c8722864-8f31-4e58-8a3b-ce2c8a549f2b"
+  },
   {
     "name": "High Risk Conditions",
     "uuid": "0ca1c6a2-001b-475a-9813-1d905df9e81b",
@@ -1336,8 +1349,7 @@
       },
       {
         "name": "Rh Negative Blood Group",
-        "uuid": "3f09b215-43b9-4919-8b62-f9ec5559aa25",
-        "abnormal": true
+        "uuid": "3f09b215-43b9-4919-8b62-f9ec5559aa25"
       },
       {
         "name": "Pedal Edema Present",
@@ -1442,6 +1454,16 @@
       {
         "name": "Pallor Present",
         "uuid": "d20958e6-97a0-4a0b-b528-f149357756a3",
+        "abnormal": true
+      },
+      {
+        "name": "Foetal movements",
+        "uuid": "d7ff8486-11bf-4e7a-ba53-acc443923a2c",
+        "abnormal": true
+      },
+      {
+        "name": "Is there any danger sign",
+        "uuid": "c23f62f9-9f8f-48bf-8549-a15f0165adf1",
         "abnormal": true
       }
     ]
