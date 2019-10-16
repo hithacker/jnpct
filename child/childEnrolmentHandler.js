@@ -26,7 +26,7 @@ class ChildEnrolmentFormHandler {
     @WithStatusBuilder
     a2([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment('Is child getting registered at Birth')
-            .containsAnyAnswerConceptName("No");
+            .containsAnyAnswerConceptName("Yes");
     }
 
 }
