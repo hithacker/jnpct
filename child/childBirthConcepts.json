@@ -1,0 +1,420 @@
+[
+  {
+    "uuid": "b830bf12-ae8f-45ab-bfa2-fc3267c91af3",
+    "name": "Subcenter"
+  },
+  {
+    "uuid": "33b9bd66-6e40-4d7c-93f6-0b5103fff319",
+    "name": "Primary Health Center"
+  },
+  {
+    "uuid": "acc0c7ac-7bda-445b-af7c-21f50985d0c2",
+    "name": "Regional Hospital"
+  },
+  {
+    "uuid": "5ab46f09-23a8-439b-9e8e-484b56220753",
+    "name": "Private Hospital"
+  },
+  {
+    "uuid": "8c916f17-930e-45d1-a26f-d4fea6cab6e6",
+    "name": "During Transportation like Ambulance etc"
+  },
+  {
+    "name": "Place of Birth",
+    "uuid": "a9002492-13f9-4778-8082-2d8d58862912",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "a52c402a-f4a9-4312-a999-e6d3fc7f0b21",
+        "name": "Home"
+      },
+      {
+        "uuid": "b830bf12-ae8f-45ab-bfa2-fc3267c91af3",
+        "name": "Subcenter"
+      },
+      {
+        "uuid": "33b9bd66-6e40-4d7c-93f6-0b5103fff319",
+        "name": "Primary Health Center"
+      },
+      {
+        "uuid": "acc0c7ac-7bda-445b-af7c-21f50985d0c2",
+        "name": "Regional Hospital"
+      },
+      {
+        "uuid": "5ab46f09-23a8-439b-9e8e-484b56220753",
+        "name": "Private Hospital"
+      },
+      {
+        "uuid": "8c916f17-930e-45d1-a26f-d4fea6cab6e6",
+        "name": "During Transportation like Ambulance etc"
+      }
+    ]
+  },
+  {
+    "uuid": "c80713af-1586-4335-aaea-31cf0c4f05eb",
+    "name": "Term (37-38 weeks)"
+  },
+  {
+    "uuid": "3c165447-1fff-4dfe-90fd-c1642f9fccff",
+    "name": "Preterm (<28 Weeks)"
+  },
+  {
+    "uuid": "739eaf36-9d2d-4804-bbee-9c953299da96",
+    "name": "Very Preterm"
+  },
+  {
+    "name": "Gestational age category at birth",
+    "uuid": "01168515-86a6-4ddf-beb9-13c80ff2aaa1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c80713af-1586-4335-aaea-31cf0c4f05eb",
+        "name": "Term (37-38 weeks)"
+      },
+      {
+        "uuid": "3c165447-1fff-4dfe-90fd-c1642f9fccff",
+        "name": "Preterm (<28 Weeks)",
+        "abnormal": true
+      },
+      {
+        "uuid": "739eaf36-9d2d-4804-bbee-9c953299da96",
+        "name": "Very Preterm",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "uuid": "712ab679-0248-47a8-878b-5aa942d22f89",
+    "name": "Delay Cry"
+  },
+  {
+    "uuid": "9979eea6-1ad7-42c4-9d09-ca8ae3b71364",
+    "name": "No Cry"
+  },
+  {
+    "uuid": "f480f17e-f46a-469d-9f85-fe8fbb7b073e",
+    "name": "Cry"
+  },
+  {
+    "name": "Did the baby cry soon after birth?",
+    "uuid": "dffe45ff-7784-4fb9-96a0-83fa0ed4420d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "712ab679-0248-47a8-878b-5aa942d22f89",
+        "name": "Delay Cry",
+        "abnormal": true
+      },
+      {
+        "uuid": "9979eea6-1ad7-42c4-9d09-ca8ae3b71364",
+        "name": "No Cry",
+        "abnormal": true
+      },
+      {
+        "uuid": "f480f17e-f46a-469d-9f85-fe8fbb7b073e",
+        "name": "Cry"
+      }
+    ]
+  } ,
+  {
+    "name": "Did breast feeding start within 1 hour of birth?",
+    "uuid": "90086c0d-33a6-4044-b3e8-bbef93796517",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "When did breast feeding start?",
+    "uuid": "38ca808e-8247-4c89-aee2-494262b2cc43",
+    "dataType": "Numeric",
+    "unit": "days"
+  },
+  {
+    "name": "Was colostrum given?",
+    "uuid": "5f42d5e5-8405-40ae-ab2f-77b5992e7359",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Was any kind of sweet liquid tried to child?",
+    "uuid": "4a24ed38-5d6c-4c77-8574-aed4ccaa4537",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Was child wrapped in 3-4 folded clothes?",
+    "uuid": "37a2e804-b377-4a94-8628-252a6ae83b67",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },  
+  {
+    "uuid": "129219e9-93b2-41d3-8b1b-0f1e829ea239",
+    "name": "Cleft Lip"
+  },
+  {
+    "uuid": "2f4cadfd-6887-4efe-b8e0-4297f2baab80",
+    "name": "Cleft Palate"
+  },
+  {
+    "uuid": "b72e894e-eb1a-427c-96d1-7bf467338f43",
+    "name": "Umblical Hernia"
+  },
+  {
+    "uuid": "a6fcdf9d-9f38-4d45-a32a-0abf56311751",
+    "name": "Inguinal Hernia"
+  },
+  {
+    "uuid": "13235232-6081-428b-ad3a-b6621e18127d",
+    "name": "Congenital Heart Disease"
+  },
+  {
+    "uuid": "d066186b-9781-4a63-9dc1-3bcdefdd0378",
+    "name": "Neural tube defects, Imperforated Anus"
+  },
+  {
+    "name": "Birth Defects",
+    "uuid": "a6ad7816-154d-4007-8fb5-ef36ed19af95",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "129219e9-93b2-41d3-8b1b-0f1e829ea239",
+            "name": "Cleft Lip",
+            "abnormal": true
+          },
+          {
+            "uuid": "2f4cadfd-6887-4efe-b8e0-4297f2baab80",
+            "name": "Cleft Palate",
+            "abnormal": true
+          },
+          {
+            "uuid": "b72e894e-eb1a-427c-96d1-7bf467338f43",
+            "name": "Umblical Hernia",
+            "abnormal": true
+          },
+          {
+            "uuid": "a6fcdf9d-9f38-4d45-a32a-0abf56311751",
+            "name": "Inguinal Hernia",
+            "abnormal": true
+          },
+          {
+            "uuid": "13235232-6081-428b-ad3a-b6621e18127d",
+            "name": "Congenital Heart Disease",
+            "abnormal": true
+          },
+          {
+            "uuid": "d066186b-9781-4a63-9dc1-3bcdefdd0378",
+            "name": "Neural tube defects, Imperforated Anus",
+            "abnormal": true
+          },
+          {
+            "uuid": "776026cf-fb20-4d3b-8138-f19cc9588874",
+            "name": " Club foot",
+            "abnormal": true
+          },
+        {
+            "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+            "name": "Other",
+            "abnormal": true
+          },
+          {
+            "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
+            "name": "None",
+            "unique": true
+          }
+    ]
+  },
+  {
+    "name": "Other Birth Defect",
+    "uuid": "959ad8b6-2388-4b15-8bce-bd511fb97815",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "dd46bef9-6bb7-4062-b10a-62f5c8a76000",
+    "name": "Blue/Pale"
+  },
+  {
+    "uuid": "ec30ab42-7105-4b2e-8d59-94920b3a3d3a",
+    "name": "Body pink but hands and feet blue/pale"
+  },
+  {
+    "uuid": "98c3bab3-d500-4de0-9412-b10b99190627",
+    "name": "Completely pink"
+  },
+  {
+    "name": "Colour of child",
+    "uuid": "35870e21-f4a7-4df1-980a-b77954928f66",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "dd46bef9-6bb7-4062-b10a-62f5c8a76000",
+            "name": "Blue/Pale",
+            "abnormal": true
+          },
+          {
+            "uuid": "ec30ab42-7105-4b2e-8d59-94920b3a3d3a",
+            "name": "Body pink but hands and feet blue/pale",
+            "abnormal": true
+          },
+          {
+            "uuid": "98c3bab3-d500-4de0-9412-b10b99190627",
+            "name": "Completely pink"
+          }
+    ]
+  },
+  {
+    "name": "Icterus present within 24 hrs of birth?",
+    "uuid": "b0306743-3879-46f0-b963-f41447d1891b",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+            "name": "Present"
+          },
+          {
+            "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+            "name": "Absent"
+          }
+    ]
+  },
+  {
+    "name": "Is child breathing regularly?",
+    "uuid": "397e9057-446b-4076-8676-92b79281601b",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+            "name": "Yes"
+          },
+          {
+            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+            "name": "No"
+          }
+    ]
+  },
+  {
+    "name": "Is there life threatening abnormality?",
+    "uuid": "92264531-33df-4ad3-97ce-89ef2a9eb514",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+            "name": "Yes"
+          },
+          {
+            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+            "name": "No"
+          }
+    ]
+  },
+  {
+    "name": "Is foam coming out from child's mouth?",
+    "uuid": "9f3a91ea-7e87-4cb7-b40c-426d20adc737",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+            "name": "Yes"
+          },
+          {
+            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+            "name": "No"
+          }
+    ]
+  },
+  {
+    "name": "Is any kind of cyst or tumor present on neck, back and on lower back?",
+    "uuid": "737ae4e7-f38a-4aef-a6aa-d9ad1642494a",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+            "name": "Yes"
+          },
+          {
+            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+            "name": "No"
+          }
+    ]
+  },
+  {
+    "name": "Is umbelical cord of newborn tied properly?",
+    "uuid": "e1711f03-e9ff-4356-b018-5f08c1ee6207",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+            "name": "Yes"
+          },
+          {
+            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+            "name": "No"
+          }
+    ]
+  },
+  {
+    "name": "Is blood coming out from any part of body?",
+    "uuid": "09573558-edb4-41c6-a2a7-55484158c96e",
+    "dataType": "Coded",
+    "answers": [
+        {
+            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+            "name": "Yes"
+          },
+          {
+            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+            "name": "No"
+          }
+    ]
+  },
+  {
+    "name": "Temperature in °C",
+    "uuid": "b0b2e912-5433-4594-8d86-2098c57d671a",
+    "dataType": "Numeric",
+    "lowNormal": 36.11,
+    "highNormal": 37.2,
+    "unit": "°C"
+  },
+  {
+    "name": "Child Respiratory Rate",
+    "uuid": "20401dea-a7ee-480a-8980-6cb419f732fe",
+    "dataType": "Numeric",
+    "lowNormal": 30,
+    "highNormal": 60,
+    "unit": "breaths/minute"
+  }
+]
