@@ -8,14 +8,15 @@ import {
     RuleFactory,
     StatusBuilderAnnotationFactory,
     VisitScheduleBuilder,
-    ProgramRule,
     complicationsBuilder as ComplicationsBuilder,
     WithName
 } from 'rules-config/rules';
 import lib from '../lib';
 
+
 const DeliveryFormViewFilter = RuleFactory("cbe0f44c-580a-4311-ae34-cef2e4b35330", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
+
 
 @DeliveryFormViewFilter("1aaaefb2-3de7-4876-b465-85948b6ff159", "JNPCT Delivery Form View Filter", 100.0, {})
 class PregnancyDeliveryFormViewFilterJNPCT {
@@ -171,6 +172,30 @@ class PregnancyDeliveryFormViewFilterJNPCT {
      }
 
 }
+const DeliveryFormDecision = RuleFactory("cbe0f44c-580a-4311-ae34-cef2e4b35330", "Decision");
 
+@DeliveryFormDecision("8c1d83f5-0fcf-49f1-8237-7ce3690f6db0", "Delivery Form Decision", 100.0, {})
+class DeliveryFormVisitDecision {
+    static exec(programEncounter, decisions, context, today) {
+        decisions = {
+            "enrolmentDecisions": [],
+            "encounterDecisions": [],
+            "registrationDecisions": []
+        };
+        if (programEncounter.encounterType.name === 'Delivery Form')
+            this.determineDurationOfPregnancy(programEncounter, decisions['encounterDecisions']);
+        return decisions;
+    }
 
-module.exports = {PregnancyDeliveryFormViewFilterJNPCT};
+    static determineDurationOfPregnancy(programEncounter, enrolmentDecisions) {
+        let edd = programEncounter.getObservationValue('Estimated Date of Delivery');
+        const gestationalWeek = lib.calculations.gestationalAgeForEDD(edd, today);
+        if (gestationalWeek < 36 ) { encounterDecisions.push({name: "Gestational week is less than 36", value: "Preterm"});
+        if (gestationalWeek > 40 ) { encounterDecisions.push({name: "Gestational week is greater than 40", value: "Full Preterm"});
+     }
+   }
+}
+
+}
+
+module.exports = {PregnancyDeliveryFormViewFilterJNPCT,DeliveryFormVisitDecision};

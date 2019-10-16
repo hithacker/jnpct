@@ -283,11 +283,8 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
         complicationsBuilder.addComplication("Hypertension")
             .when.valueInEncounter("B.P - Diastolic").greaterThanOrEqualTo(90);
 
-        complicationsBuilder.addComplication('Low Temperature')
-          .when.valueInEncounter('Temperature').lessThan(97.5);
-
         complicationsBuilder.addComplication("High Temperature")
-           .when.valueInEncounter("Temperature").greaterThan(99.5);
+           .when.valueInEncounter("Temperature").greaterThan(37.5);
 
        complicationsBuilder.addComplication("Having convulsions")
             .when.valueInEncounter("Has she been having convulsions?").containsAnswerConceptName("Present");
