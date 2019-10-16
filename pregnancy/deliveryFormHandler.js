@@ -8,6 +8,7 @@ import {
     RuleFactory,
     StatusBuilderAnnotationFactory,
     VisitScheduleBuilder,
+    ProgramRule,
     complicationsBuilder as ComplicationsBuilder,
     WithName
 } from 'rules-config/rules';
@@ -168,6 +169,8 @@ class PregnancyDeliveryFormViewFilterJNPCT {
              .defined.and.greaterThan(2);
          return statusBuilder.build();
      }
+
 }
+
 
 module.exports = {PregnancyDeliveryFormViewFilterJNPCT};

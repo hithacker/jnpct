@@ -220,7 +220,8 @@
   },
   {
     "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
-    "name": "None"
+    "name": "None",
+    "unique": true
   },
   {
     "name": "Delivery complication",
