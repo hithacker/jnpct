@@ -42,7 +42,6 @@
           "displayOrder": 2,
           "mandatory": true
         },
-        
         {
           "name": "Date of discharge",
           "uuid": "110f012a-21d0-43d6-a188-a18aaa042cf4",

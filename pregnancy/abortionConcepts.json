@@ -1,0 +1,180 @@
+[
+  {
+    "name": "Date of Abortion/MTP",
+    "uuid": "7ee9f366-ab54-4056-a3a9-37c9a5ea69ca",
+    "dataType": "Date"
+  },
+  {
+    "uuid": "4ca3e92a-5871-4146-9271-6c35558d5a92",
+    "name": "Abortion"
+  },
+  {
+    "uuid": "25c486d0-db89-41ba-b151-962fd75f83c6",
+    "name": "MTP"
+  },
+  {
+    "name": "Whether Abortion or MTP",
+    "uuid": "5e63efa3-2fea-4cbd-bc0d-cabdb1a70471",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4ca3e92a-5871-4146-9271-6c35558d5a92",
+        "name": "Abortion"
+      },
+      {
+        "uuid": "25c486d0-db89-41ba-b151-962fd75f83c6",
+        "name": "MTP"
+      }
+    ]
+  },
+  {
+    "uuid": "13d96f0b-e8d3-4a3c-9691-0ce98a413efa",
+    "name": "Induced"
+  },
+  {
+    "uuid": "4946e637-0b4f-4eae-a19a-fbe064e83bb8",
+    "name": "Spontaneous"
+  },
+  {
+    "name": "Type of Abortion",
+    "uuid": "a5775008-5ac7-433f-b8bf-ca4b91efb9be",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "13d96f0b-e8d3-4a3c-9691-0ce98a413efa",
+        "name": "Induced"
+      },
+      {
+        "uuid": "4946e637-0b4f-4eae-a19a-fbe064e83bb8",
+        "name": "Spontaneous"
+      }
+    ]
+  },
+  {
+    "name": "Period of gestation in weeks at the time of Abortion/MTP",
+    "uuid": "d0c0173f-fb19-4735-98b3-5e190c646e54",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "caf4ec71-8339-47ec-8e9b-d7a99d2443f7",
+    "name": "Institutional"
+  },
+  {
+    "uuid": "a52c402a-f4a9-4312-a999-e6d3fc7f0b21",
+    "name": "HOME"
+  },
+  {
+    "name": "Place of Abortion",
+    "uuid": "1d3250bb-ddee-46b3-8936-35ce2300b426",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "caf4ec71-8339-47ec-8e9b-d7a99d2443f7",
+        "name": "Institutional"
+      },
+      {
+        "uuid": "a52c402a-f4a9-4312-a999-e6d3fc7f0b21",
+        "name": "Home"
+      }
+    ]
+  },
+  {
+    "name": "Date Of Discharge For A/M",
+    "uuid": "e09d26e0-1774-441b-bc05-7bb50f60a948",
+    "dataType": "Date"
+  },
+  {
+    "uuid": "334cad4d-faf0-4b01-992d-b9a9bdc23631",
+    "name": "Abdominal Pain"
+  },
+  {
+    "uuid": "dd6cb19b-bd3c-4733-a8cd-04ccf2e4c4f6",
+    "name": "Per Vaginal Bleeding"
+  },
+  {
+    "uuid": "bfa4858e-ea7b-4e59-b0f0-c28316748f9a",
+    "name": "Fever"
+  },
+  {
+    "uuid": "02fa01a5-d78d-443f-80ed-3473002027ed",
+    "name": "Abdominal Problem"
+  },
+  {
+    "uuid": "91894b12-f191-4cf5-a836-3b565e978353",
+    "name": "Vaginal Problem"
+  },
+  {
+    "uuid": "d34039cf-84b4-4b16-83c2-26ab7d86ca04",
+    "name": "Urinaltion Difficulties"
+  },
+  {
+    "uuid": "dff0c9ea-de8f-486b-9cbf-b10557ec637b",
+    "name": "Cesearean incision problems"
+  },
+  {
+    "uuid": "5a986073-3af9-4836-abca-ea492b1de6e3",
+    "name": "Feeling Hot or chills"
+  },
+  {
+    "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+    "name": "Other"
+  },
+  {
+    "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
+    "name": "None"
+  },
+  {
+    "name": "Post Abortion/MTP Complications",
+    "uuid": "c25875ea-43fa-4158-9f1c-93748f28afbe",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "334cad4d-faf0-4b01-992d-b9a9bdc23631",
+        "name": "Abdominal Pain"
+      },
+      {
+        "uuid": "dd6cb19b-bd3c-4733-a8cd-04ccf2e4c4f6",
+        "name": "Per Vaginal Bleeding"
+      },
+      {
+        "uuid": "bfa4858e-ea7b-4e59-b0f0-c28316748f9a",
+        "name": "Fever"
+      },
+      {
+        "uuid": "02fa01a5-d78d-443f-80ed-3473002027ed",
+        "name": "Abdominal Problem"
+      },
+      {
+        "uuid": "91894b12-f191-4cf5-a836-3b565e978353",
+        "name": "Vaginal Problem"
+      },
+      {
+        "uuid": "d34039cf-84b4-4b16-83c2-26ab7d86ca04",
+        "name": "Urinaltion Difficulties"
+      },
+      {
+        "uuid": "dff0c9ea-de8f-486b-9cbf-b10557ec637b",
+        "name": "Cesearean incision problems"
+      },
+      {
+        "uuid": "5a986073-3af9-4836-abca-ea492b1de6e3",
+        "name": "Feeling Hot or chills"
+      },
+      {
+        "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+        "name": "Other"
+      },
+      {
+        "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
+        "name": "None",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Other Post Abortion/MTP complication",
+    "uuid": "c934d6f6-4dd9-40ce-a155-f46b72d2491c",
+    "dataType": "Text"
+  }
+
+]
