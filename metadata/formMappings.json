@@ -42,5 +42,12 @@
     "formUUID": "95796c7b-cb70-48f5-893f-c0c8afbc3785",
     "programUUID": "b54328b6-3e9a-4df7-915e-5b54cd772d43",
     "comment": "Child Enrolment"
+  },
+  {
+    "uuid": "19adae3d-c06a-4b74-b57b-985ae684b7c3",
+    "formUUID": "f410de41-c0cc-4bac-a5a2-2e98d10572e9",
+    "encounterTypeUUID": "7101cfc3-1e1c-4535-adbb-871179f9ddd8",
+    "programUUID": "b54328b6-3e9a-4df7-915e-5b54cd772d43",
+    "comment": "Birth Form"
   }
 ]

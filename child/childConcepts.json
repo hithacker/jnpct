@@ -1,36 +1,5 @@
 [
-  {
-    "uuid": "09843fd1-7122-480a-8a46-613eaffb9fe5",
-    "name": "Birth"
-  },
-  {
-    "uuid": "c117760d-33ec-48b7-adee-2fbf5fa36382",
-    "name": "In Migration"
-  },
-  {
-    "uuid": "356807c4-b3b0-4ac8-be77-9ea97be5c529",
-    "name": "Retrospective Registration"
-  },
-  {
-    "name": "Registration done at",
-    "uuid": "1685fcf0-6e2c-4165-bba0-605e1f54dfcc",
-    "dataType": "Coded",
-    "answers": [
-        {
-            "uuid": "09843fd1-7122-480a-8a46-613eaffb9fe5",
-            "name": "Birth"
-          },
-          {
-            "uuid": "c117760d-33ec-48b7-adee-2fbf5fa36382",
-            "name": "In Migration"
-          },
-          {
-            "uuid": "356807c4-b3b0-4ac8-be77-9ea97be5c529",
-            "name": "Retrospective Registration"
-          }
-    ]
-  },
-  {
+ {
     "name": "Is child getting registered at Birth",
     "uuid": "f1a9ede3-1b9b-4b1a-a8fb-6a3bb8f1cc19",
     "dataType": "Coded",
@@ -61,9 +30,5 @@
     "unit": "kg",
     "dataType": "Numeric",
     "lowNormal": 2.5
-  }
-  
-
-  
-  
+  }  
 ]
