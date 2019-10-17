@@ -21,6 +21,17 @@
           "mandatory": true
         },
         {
+          "name": "Birth Weight",
+          "uuid": "e8f903e7-643e-4835-8f22-7dfa3206f078",
+          "keyValues": [],
+          "concept": {
+            "name": "Birth Weight",
+            "uuid": "c82cd1c8-d0a9-4237-b791-8d64e52b6c4a"
+          },
+          "displayOrder":1.1,
+          "mandatory": true
+        },
+        {
           "name": "Gestational age category at birth",
           "uuid": "337757cb-49d2-4f92-ad21-e3a690b3c7e6",
           "keyValues": [],

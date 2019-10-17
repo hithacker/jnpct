@@ -19,14 +19,14 @@ class ChildEnrolmentFormHandler {
     @WithStatusBuilder
     a1([], statusBuilder) {
             statusBuilder.show().when.valueInEnrolment('Is child getting registered at Birth')
-            .containsAnyAnswerConceptName("No");
+            .containsAnswerConceptName("No");
     }
 
     @WithName('Birth Weight')
     @WithStatusBuilder
     a2([], statusBuilder) {
         statusBuilder.show().when.valueInEnrolment('Is child getting registered at Birth')
-            .containsAnyAnswerConceptName("Yes");
+            .containsAnswerConceptName("Yes");
     }
 
 }
