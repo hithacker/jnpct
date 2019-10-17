@@ -243,7 +243,7 @@
           },
           {
             "uuid": "776026cf-fb20-4d3b-8138-f19cc9588874",
-            "name": " Club foot",
+            "name": "Club foot",
             "abnormal": true
           },
         {
@@ -416,5 +416,127 @@
     "lowNormal": 30,
     "highNormal": 60,
     "unit": "breaths/minute"
+  },
+  {
+    "uuid": "9b7e8550-7ad7-4a7a-b223-eec5a900c289",
+    "name": "Low birth weight"
+  },
+  {
+    "uuid": "fbdf79a3-4665-4943-86c8-7358a521d105",
+    "name": "Gestational age at birth is not in term" 
+  },
+  {
+    "uuid": "06ee1bad-4665-4e1c-bf4a-9be542842730",
+    "name": "Baby did not cry soon after birth" 
+  },
+  {
+    "uuid": "574b81d1-3635-4bdf-8ba0-9b1827f14e98",
+    "name": "Baby did not breast feed within 1 hour of birth" 
+  },
+  {
+    "uuid": "6c4bde90-87bc-419e-8b72-626e6530d8f7",
+    "name": "Colour of child is not normal" 
+  },
+  {
+    "uuid": "a3f99163-5d60-4717-9721-26703f0b48cb",
+    "name": "Icterus present" 
+  },
+  {
+    "uuid": "87ff2ecc-7121-44a3-a78a-5fe427bac895",
+    "name": "High temperature" 
+  },
+  {
+    "name": "High Risk Child",
+    "uuid": "66c20b18-4b1c-4b12-a623-d0a786b63c74",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "9b7e8550-7ad7-4a7a-b223-eec5a900c289",
+        "name": "Low birth weight",
+        "abnormal":true
+      },
+      {
+        "uuid": "fbdf79a3-4665-4943-86c8-7358a521d105",
+        "name": "Gestational age at birth is not in term",
+        "abnormal":true
+      },
+      {
+        "uuid": "06ee1bad-4665-4e1c-bf4a-9be542842730",
+        "name": "Baby did not cry soon after birth",
+        "abnormal":true
+      },
+      {
+        "uuid": "574b81d1-3635-4bdf-8ba0-9b1827f14e98",
+        "name": "Baby did not breast feed within 1 hour of birth",
+        "abnormal":true
+      },
+      {
+        "uuid": "6c4bde90-87bc-419e-8b72-626e6530d8f7",
+        "name": "Colour of child is not normal",
+        "abnormal":true
+      },
+      {
+        "uuid": "a3f99163-5d60-4717-9721-26703f0b48cb",
+        "name": "Icterus present",
+        "abnormal":true
+      },
+      {
+        "uuid": "87ff2ecc-7121-44a3-a78a-5fe427bac895",
+        "name": "High temperature",
+        "abnormal":true
+      }
+    ]
+  },
+  {
+    "uuid": "0e33a0c7-b53d-4ccc-a634-66667d8058a0",
+    "name": "Refer child to hospital immediately and keep child warm in clothes" 
+  },
+  {
+    "uuid": "0db8a507-8e8d-470d-bb6b-7f1a5b586034",
+    "name": "Life threatening abnormality" 
+  },
+  {
+    "uuid":"6de7ea7d-311a-4e9a-af33-bd46ef1baa1f",
+    "name":"Foam coming out from child's mouth"
+  },
+  {
+    "uuid":"87c0b893-49b0-4ff3-89ea-cc3ef658f8f2",
+    "name":"Blood is coming from body part"
+  },
+  {
+    "uuid":"e5e878f8-e2d5-4bc5-8f7b-8ba96031cb6e",
+    "name":"High respiratory rate"
+  },
+  {
+    "name": "Refer to the hospital for",
+    "uuid": "18cfc41a-2110-484e-a3c6-3f5592387324",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "0e33a0c7-b53d-4ccc-a634-66667d8058a0",
+        "name": "Refer child to hospital immediately and keep child warm in clothes" ,
+        "abnormal":true
+      },
+      {
+        "uuid": "0db8a507-8e8d-470d-bb6b-7f1a5b586034",
+        "name": "Life threatening abnormality",
+        "abnormal":true
+      },
+      {
+        "uuid":"6de7ea7d-311a-4e9a-af33-bd46ef1baa1f",
+        "name":"Foam coming out from child's mouth",
+        "abnormal":true
+      },
+      {
+        "uuid":"87c0b893-49b0-4ff3-89ea-cc3ef658f8f2",
+        "name":"Blood is coming from body part",
+        "abnormal": true
+      },
+      {
+        "uuid":"e5e878f8-e2d5-4bc5-8f7b-8ba96031cb6e",
+        "name":"High respiratory rate",
+        "abnormal":true
+      }
+    ]
   }
 ]
