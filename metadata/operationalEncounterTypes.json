@@ -35,6 +35,13 @@
       "encounterType": {
         "uuid": "ec4af29e-049d-4e3a-aef1-b660b74706ff"
       }
+    },
+    {
+      "uuid": "b7867b79-4037-4c6d-9e65-03283b78bd5b",
+      "name": "Abortion Followup Form",
+      "encounterType": {
+        "uuid": "d029ef9a-04ca-4364-b447-9a2c1f0e2fa9"
+      }
     }
   ]
 }

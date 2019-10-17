@@ -19,6 +19,7 @@ module.exports = IDI.configure({
             "pregnancy/ancForm.json",
             "pregnancy/deliveryForm.json",
             "pregnancy/abortionForm.json",
+            "pregnancy/abortionFollowupForm.json",
             "child/childEnrolment.json",
             "child/childBirthForm.json"
         ],
