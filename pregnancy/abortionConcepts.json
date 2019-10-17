@@ -176,6 +176,7 @@
     "uuid": "c934d6f6-4dd9-40ce-a155-f46b72d2491c",
     "dataType": "Text"
   },
+
   {
     "name": "Date of Visit",
     "uuid": "2efb07ff-b2d4-4c7f-88e0-bb9d13fb3103",
@@ -197,7 +198,7 @@
     "unit": "mm Hg"
   },
   {
-    "name": "Bp Diastolic",
+    "name": "BP Diastolic",
     "uuid": "a5998291-545a-4de2-861e-e307354f462c",
     "dataType": "Numeric",
     "lowAbsolute": 10,
@@ -226,13 +227,13 @@
     "dataType": "NA"
   },
   {
+    "uuid": "9520d934-ba8d-4572-9cae-df36039698ff",
     "name": "Difficulty breathing",
-    "uuid": "39ae8b52-1f43-4254-b4f2-957d9aedf3b8",
     "dataType": "NA"
   },
   {
+    "uuid": "845f450f-7863-458b-a27e-935f4ec7ad5c",
     "name": "Bad headache",
-    "uuid": "5a6ab8bb-fb14-4747-a66e-3961d718a83e",
     "dataType": "NA"
   },
   {
@@ -245,20 +246,20 @@
     "dataType": "Coded",
     "answers": [
       {
-        "name": "Blurred vision",
         "uuid": "b794dcd7-1983-4296-bc5a-ab29d9f49392",
+        "name": "Blurred vision",
         "abnormal": true,
         "dataType": "NA"
       },
       {
+        "uuid": "9520d934-ba8d-4572-9cae-df36039698ff",
         "name": "Difficulty breathing",
-        "uuid": "39ae8b52-1f43-4254-b4f2-957d9aedf3b8",
         "abnormal": true,
         "dataType": "NA"
       },
       {
+        "uuid": "845f450f-7863-458b-a27e-935f4ec7ad5c",
         "name": "Bad headache",
-        "uuid": "5a6ab8bb-fb14-4747-a66e-3961d718a83e",
         "abnormal": true,
         "dataType": "NA"
       },
@@ -270,7 +271,7 @@
     ]
   },
   {
-    "uuid": "0d1865b2-90ec-43a0-b353-777090984944",
+    "uuid": "334cad4d-faf0-4b01-992d-b9a9bdc23631",
     "name": "Abdominal pain"
   },
   {
@@ -287,7 +288,7 @@
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "0d1865b2-90ec-43a0-b353-777090984944",
+        "uuid": "334cad4d-faf0-4b01-992d-b9a9bdc23631",
         "name": "Abdominal pain",
         "abnormal": true
       },
@@ -479,25 +480,25 @@
     ]
   },
   {
-    "uuid": "f3afa967-855a-4285-989e-1eb65682bb1f",
+    "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
     "name": "Present"
   },
   {
-    "uuid": "8827e072-002b-4c5b-a833-f2af981e77d6",
+    "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
     "name": "Absent"
   },
   {
     "name": "Convulsions",
-    "uuid": "5a9b91f0-3c3e-4d40-bb26-39bb5c4a9654",
+    "uuid": "1c0e744f-33cb-4792-be6c-6e6ddd178bfe",
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "f3afa967-855a-4285-989e-1eb65682bb1f",
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
         "name": "Present",
         "abnormal": true
       },
       {
-        "uuid": "8827e072-002b-4c5b-a833-f2af981e77d6",
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
         "name": "Absent"
       }
     ]
@@ -524,7 +525,7 @@
   },
   {
     "name": "Post partum dipression symptoms",
-    "uuid": "b4992afd-41c7-4acc-9249-629dcfd081be",
+    "uuid": "cfec5288-ca3e-48c3-a1f2-332038ad2241",
     "dataType": "Coded",
     "answers": [
       {
@@ -552,7 +553,157 @@
         "name": "No problem"
       }
     ]
-  }
+  },
 
+  {
+    "name": "Diet Advice Do's",
+    "uuid": "5d5b9e5d-0d66-4138-b6a4-c3c7ba321960",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Diet Advice Don'ts",
+    "uuid": "7cdd0689-e7fc-43c2-b4fb-ef168fb7d9b0",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Supplementary nutritional therapy (advice)",
+    "uuid": "e6b81ecb-6261-4ea7-822b-efbd84b16ecd",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Rest and sleep advice Dos",
+    "uuid": "0b18da58-4e5d-4af0-ad82-c2cb67175e1a",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Rest and sleep advice Donts",
+    "uuid": "368bf985-a91a-4c88-a8f7-7bd7b5a70e42",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Hygiene advice",
+    "uuid": "cddc0438-74a1-4bcb-843c-34a47da7c1e4",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "uuid": "263244f7-ef63-406d-a4ad-74ef254bc13e",
+    "name": "Low Systolic"
+  },
+  {
+    "uuid": "9c0e3992-3f72-4efe-aca8-fb160676fc1e",
+    "name": "High Systolic"
+  },
+  {
+    "uuid": "adae209e-00e4-4ac1-b280-76120c88c0c1",
+    "name": "Low Diastolic"
+  },
+  {
+    "uuid": "88038bd6-5a24-457b-9505-02a9bdf0ff8a",
+    "name": "High Diastolic"
+  },
+  {
+    "uuid": "c81c3955-5606-43a8-966d-ada70ac8aadd",
+    "name": "Abnormal Hb"
+  },
+  {
+    "uuid": "a1f6ba05-1e8d-4039-8b06-2569632c93e3",
+    "name": "Abdominal problems"
+  },
+  {
+    "uuid": "80053d9c-a067-407e-9725-0b4868ff3205",
+    "name": "Vaginal problems"
+  },
+  {
+    "uuid": "65db42a2-d8cc-463d-8dc5-58614cb42cfb",
+    "name": "Breast-related problems"
+  },
+  {
+    "uuid": "43563424-9071-424f-8aac-d9a2daf96415",
+    "name": "Post-Partum Depression Symptoms"
+  },
+  {
+    "name": "Refer to the hospital for",
+    "uuid": "e800d635-6128-4939-acbb-6524a0426455",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "263244f7-ef63-406d-a4ad-74ef254bc13e",
+        "name": "Low Systolic",
+        "abnormal": true
+      },
+      {
+        "uuid": "9c0e3992-3f72-4efe-aca8-fb160676fc1e",
+        "name": "High Systolic",
+        "abnormal": true
+      },
+      {
+        "uuid": "adae209e-00e4-4ac1-b280-76120c88c0c1",
+        "name": "Low Diastolic",
+        "abnormal": true
+      },
+      {
+        "uuid": "88038bd6-5a24-457b-9505-02a9bdf0ff8a",
+        "name": "High Diastolic",
+        "abnormal": true
+      },
+      {
+        "uuid": "ab68f724-ef71-485c-8d5c-62e18b6ce92e",
+        "name": "High Temperature",
+        "abnormal": true
+      },
+      {
+        "uuid": "c81c3955-5606-43a8-966d-ada70ac8aadd",
+        "name": "Abnormal Hb",
+        "abnormal": true
+      },
+      {
+        "uuid": "3d99ab9e-9cf5-4db2-a8e9-e5054242dcd2",
+        "name": "Post-Partum Haemorrhage symptoms",
+        "abnormal": true
+      },
+      {
+        "uuid": "a1f6ba05-1e8d-4039-8b06-2569632c93e3",
+        "name": "Abdominal problems",
+        "abnormal": true
+      },
+      {
+        "uuid": "80053d9c-a067-407e-9725-0b4868ff3205",
+        "name": "Vaginal problems",
+        "abnormal": true
+      },
+      {
+        "uuid": "585e291e-1f3d-41fa-b6f4-3dcd96cf1560",
+        "name": "Any difficulties with urinating",
+        "abnormal": true
+      },
+      {
+        "uuid": "65db42a2-d8cc-463d-8dc5-58614cb42cfb",
+        "name": "Breast-related problems",
+        "abnormal": true
+      },
+      {
+        "uuid": "426b8f0f-b57b-4d2e-964b-b1838d2159c5",
+        "name": "Does feel hot or have the chills?",
+        "abnormal": true
+      },
+      {
+        "uuid": "1c0e744f-33cb-4792-be6c-6e6ddd178bfe",
+        "name": "Convulsions",
+        "abnormal": true
+      },
+      {
+        "uuid": "43563424-9071-424f-8aac-d9a2daf96415",
+        "name": "Post-Partum Depression Symptoms",
+        "abnormal": true
+      }
+
+    ]
+  }
 
 ]
