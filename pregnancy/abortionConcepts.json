@@ -479,25 +479,17 @@
     ]
   },
   {
-    "uuid": "f3afa967-855a-4285-989e-1eb65682bb1f",
-    "name": "Present"
-  },
-  {
-    "uuid": "8827e072-002b-4c5b-a833-f2af981e77d6",
-    "name": "Absent"
-  },
-  {
     "name": "Convulsions",
     "uuid": "5a9b91f0-3c3e-4d40-bb26-39bb5c4a9654",
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "f3afa967-855a-4285-989e-1eb65682bb1f",
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
         "name": "Present",
         "abnormal": true
       },
       {
-        "uuid": "8827e072-002b-4c5b-a833-f2af981e77d6",
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
         "name": "Absent"
       }
     ]
