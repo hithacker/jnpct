@@ -72,7 +72,7 @@ class PregnancyAbortionDecision {
            .when.valueInEncounter("Any vaginal problems")
            .containsAnyAnswerConceptName("Heavy bleeding per vaginum", "Bad-smelling lochia", "Infected perineum suture");
 
-      referralBuilder.addComplication("Urination difficulties")
+      referralBuilder.addComplication("Any difficulties with urinating")
             .when.valueInEncounter("Any difficulties with urinating")
             .containsAnyAnswerConceptName("Difficulty passing urine", "Burning Urination");
 

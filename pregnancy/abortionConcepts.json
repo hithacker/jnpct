@@ -223,7 +223,7 @@
     "dataType": "NA"
   },
   {
-    "uuid": "39ae8b52-1f43-4254-b4f2-957d9aedf3b8",
+    "uuid": "338c4e61-0bbc-4488-9c93-84912f87eb59",
     "name": "Difficulty breathing",
     "dataType": "NA"
   },
@@ -248,7 +248,7 @@
         "dataType": "NA"
       },
       {
-        "uuid": "39ae8b52-1f43-4254-b4f2-957d9aedf3b8",
+        "uuid": "338c4e61-0bbc-4488-9c93-84912f87eb59",
         "name": "Difficulty breathing",
         "abnormal": true,
         "dataType": "NA"
@@ -456,7 +456,6 @@
     ]
   },
   {
-<<<<<<< HEAD
 
     "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
     "name": "Present"
@@ -466,8 +465,6 @@
     "name": "Absent"
   },
   {
-=======
->>>>>>> 339546eeec400897234157557f512f2f31611025
     "name": "Convulsions",
     "uuid": "1c0e744f-33cb-4792-be6c-6e6ddd178bfe",
     "dataType": "Coded",
