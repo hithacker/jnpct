@@ -456,7 +456,7 @@
     ]
   },
   {
-<<<<<<< HEAD
+
     "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
     "name": "Present"
   },
@@ -465,8 +465,6 @@
     "name": "Absent"
   },
   {
-=======
->>>>>>> 6afdd7873f0dec3d649eeceefc76b47041ec1d1f
     "name": "Convulsions",
     "uuid": "1c0e744f-33cb-4792-be6c-6e6ddd178bfe",
     "dataType": "Coded",
