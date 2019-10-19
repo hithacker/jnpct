@@ -568,7 +568,7 @@
           "mandatory": true
         },
         {
-          "name": "PLACE OF DELIVERY",
+          "name": "Place of delivery",
           "uuid": "ac32956f-4c72-4cee-9cd1-b420bac0f59d",
           "keyValues": [],
           "type": "SingleSelect",

@@ -30,14 +30,14 @@ class PregnancyDeliveryFormViewFilterJNPCT {
      @WithStatusBuilder
      d1([], statusBuilder) {
          statusBuilder.show().when.valueInEncounter("Place of delivery")
-            .containsAnswerConceptName("HOME");
+            .containsAnswerConceptName("Home");
      }
 
     @WithName("Date of discharge")
     @WithStatusBuilder
     d2([], statusBuilder) {
          statusBuilder.show().when.valueInEncounter("Place of delivery")
-            .containsAnswerConceptName("HOSPITAL");
+            .containsAnswerConceptName("Hospital");
      }
 
     @WithName("Number of babies")

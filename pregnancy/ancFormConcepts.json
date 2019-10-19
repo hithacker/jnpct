@@ -966,24 +966,24 @@
   },
   {
     "uuid": "a52c402a-f4a9-4312-a999-e6d3fc7f0b21",
-    "name": "HOME"
+    "name": "Home"
   },
   {
     "uuid": "c5de89d4-3d59-43a9-a188-294a814b0e98",
-    "name": "HOSPITAL"
+    "name": "Hospital"
   },
   {
-    "name": "PLACE OF DELIVERY",
+    "name": "Place of delivery",
     "uuid": "f238d16a-558e-4c89-a28b-d44b56b78458",
     "dataType": "Coded",
     "answers": [
       {
         "uuid": "a52c402a-f4a9-4312-a999-e6d3fc7f0b21",
-        "name": "HOME"
+        "name": "Home"
       },
       {
         "uuid": "c5de89d4-3d59-43a9-a188-294a814b0e98",
-        "name": "HOSPITAL"
+        "name": "Hospital"
       }
     ]
   },
