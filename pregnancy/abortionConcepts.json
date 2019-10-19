@@ -527,7 +527,161 @@
       }
     ]
   },
-
+  {
+    "uuid": "4aabf46f-b8ca-4c12-a2e0-0354d75ff583",
+    "name": "Indurated"
+  },
+  {
+    "uuid": "8cd0a697-bebd-4a1a-b1ee-57a8b047a830",
+    "name": "Looks Red"
+  },
+  {
+    "uuid": "3f7db11f-4b83-47af-b3d9-ee6e1b41cddf",
+    "name": "Filled with pus"
+  },
+  {
+    "uuid": "9d5efbcd-de97-426d-a955-30432d9cadaa",
+    "name": "Discharge from wound"
+  },
+  {
+    "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+    "name": "Normal"
+  },
+  {
+    "name": "How is the incision area?",
+    "uuid": "403aabf9-ec66-49ed-8615-f62ca33de2f0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4aabf46f-b8ca-4c12-a2e0-0354d75ff583",
+        "name": "Indurated",
+        "abnormal": true
+      },
+      {
+        "uuid": "8cd0a697-bebd-4a1a-b1ee-57a8b047a830",
+        "name": "Looks Red",
+        "abnormal": true
+      },
+      {
+        "uuid": "3f7db11f-4b83-47af-b3d9-ee6e1b41cddf",
+        "name": "Filled with pus",
+        "abnormal": true
+      },
+      {
+        "uuid": "9d5efbcd-de97-426d-a955-30432d9cadaa",
+        "name": "Discharge from wound",
+        "abnormal": true
+      },
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Pain in hypogastrium?",
+    "uuid": "9cabab3b-b206-4b53-ac7b-9524517819a6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Burning micturation?",
+    "uuid": "056689c5-ba68-4e85-b515-7c342769e47b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "uuid": "0e42d156-578c-42f6-99d4-75568c73577e",
+    "name": "6"
+  },
+  {
+    "uuid": "c192849f-6727-44fc-a791-7a1bd9853608",
+    "name": "more"
+  },
+  {
+    "name": "How many pads changed?",
+    "uuid": "2d522614-ad6c-4673-b6af-ca5a366540cc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ccc99207-9a72-417f-ac7d-e735e565789b",
+        "name": "1"
+      },
+      {
+        "uuid": "5b0b2111-2f93-4a91-bf2f-a838e68532fa",
+        "name": "2"
+      },
+      {
+        "uuid": "ecf27357-4e52-48af-95c8-178853e9c6d9",
+        "name": "3"
+      },
+      {
+        "uuid": "0e91716e-435d-49cd-b842-621e804101b4",
+        "name": "4"
+      },
+      {
+        "uuid": "3555dd4d-4f4f-4779-ac9f-ffaed73ed33e",
+        "name": "5"
+      },
+      {
+        "uuid": "0e42d156-578c-42f6-99d4-75568c73577e",
+        "name": "6"
+      },
+      {
+        "uuid": "c192849f-6727-44fc-a791-7a1bd9853608",
+        "name": "more"
+      }
+    ]
+  },
+  {
+    "name": "Does she taking iron tablet?",
+    "uuid": "b28d26ac-2337-4651-bb55-123b71ee39f3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does she taking calcium tablet?",
+    "uuid": "a34575f1-1373-48d1-b94a-2e1421bb3348",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
   {
     "name": "Diet Advice Do's",
     "uuid": "5d5b9e5d-0d66-4138-b6a4-c3c7ba321960",
@@ -561,6 +715,30 @@
   {
     "name": "Hygiene advice",
     "uuid": "cddc0438-74a1-4bcb-843c-34a47da7c1e4",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Breast Feeding advice",
+    "uuid": "77afb064-ad7d-44b8-be27-2686726cc409",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Immunization advice",
+    "uuid": "f860273e-29f0-4b44-9da2-a54e15ea12fe",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Family Planning advice Dos",
+    "uuid": "79f8e116-6ce4-47d0-9580-99e718d2234f",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Family Planning advice Donts",
+    "uuid": "6438bcf0-ca7a-4235-a8e1-f17fe08720c5",
     "dataType": "Coded",
     "answers": []
   },
