@@ -176,7 +176,7 @@
   {
     "name": "Date of Visit",
     "uuid": "2efb07ff-b2d4-4c7f-88e0-bb9d13fb3103",
-    "dataType": "Numeric"
+    "dataType": "Date"
   },
   {
     "name": "Which Day after Abortion?",
@@ -597,10 +597,6 @@
     "name": "Breast-related problems"
   },
   {
-    "uuid": "43563424-9071-424f-8aac-d9a2daf96415",
-    "name": "Post-Partum Depression Symptoms"
-  },
-  {
     "name": "Refer to the hospital for",
     "uuid": "7c958617-ad77-41ac-b125-d9f33569e202",
     "dataType": "Coded",
@@ -626,8 +622,8 @@
         "abnormal": true
       },
       {
-        "uuid": "ab68f724-ef71-485c-8d5c-62e18b6ce92e",
-        "name": "High Temperature",
+        "uuid": "137958fa-4666-44b2-880e-d5f1a639bb79",
+        "name": "Fever",
         "abnormal": true
       },
       {
@@ -671,11 +667,10 @@
         "abnormal": true
       },
       {
-        "uuid": "43563424-9071-424f-8aac-d9a2daf96415",
-        "name": "Post-Partum Depression Symptoms",
+        "uuid": "cfec5288-ca3e-48c3-a1f2-332038ad2241",
+        "name": "Post partum dipression symptoms",
         "abnormal": true
       }
-
     ]
   }
 

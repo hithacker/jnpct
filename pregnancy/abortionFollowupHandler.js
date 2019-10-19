@@ -32,6 +32,14 @@ class AbortionFollowupViewFilterHandlerJNPCT {
             .containsAnswerConceptName("Other");
    }
 
+    @WithName('Which Day after Abortion?')
+    f2(programEncounter, formElement) {
+        const days = moment(programEncounter.getObservationReadableValue('Date of Visit'))
+         .diff(programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP', programEncounter), 'days');
+        const value = isFinite(days) ? days : undefined;
+      return new FormElementStatus(formElement.uuid, true, value);
+    }
+
 }
 
 @Decision('efe29b09-8d78-41d9-9f16-00cc39515a19', 'PregnancyAbortionDecision', 100.0, {})
@@ -54,7 +62,7 @@ class PregnancyAbortionDecision {
        referralBuilder.addComplication("High Diastolic")
               .when.valueInEncounter("BP Diastolic").greaterThan(90);
 
-       referralBuilder.addComplication("High Temperature")
+       referralBuilder.addComplication("Fever")
            .when.valueInEncounter("Temperature").greaterThan(37.5);
 
        referralBuilder.addComplication("Abnormal Hb")
@@ -88,8 +96,8 @@ class PregnancyAbortionDecision {
              .when.valueInEncounter("Convulsions")
              .containsAnswerConceptName("Present");
 
-    referralBuilder.addComplication("Post-Partum Depression Symptoms")
-        .when.valueInEncounter("Post-Partum Depression Symptoms")
+    referralBuilder.addComplication("Post partum dipression symptoms")
+        .when.valueInEncounter("Post partum dipression symptoms")
         .containsAnyAnswerConceptName("Insomnia", "Irritability", "Loss of appetite", "Weakness");
 
 
