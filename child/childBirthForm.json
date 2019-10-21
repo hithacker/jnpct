@@ -240,7 +240,7 @@
           "uuid": "033a828a-4cb2-4c57-8e58-6cbd6861b696",
           "keyValues": [],
           "concept": {
-            "name": "Temperature in °C",
+            "name": "Temperature of infant",
             "uuid": "b0b2e912-5433-4594-8d86-2098c57d671a"
           },
           "displayOrder": 1,

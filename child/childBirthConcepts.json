@@ -402,7 +402,7 @@
     ]
   },
   {
-    "name": "Temperature in °C",
+    "name": "Temperature of infant",
     "uuid": "b0b2e912-5433-4594-8d86-2098c57d671a",
     "dataType": "Numeric",
     "lowNormal": 36.11,

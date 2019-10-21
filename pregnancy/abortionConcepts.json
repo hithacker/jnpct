@@ -223,7 +223,7 @@
     "dataType": "NA"
   },
   {
-    "uuid": "338c4e61-0bbc-4488-9c93-84912f87eb59",
+    "uuid": "39ae8b52-1f43-4254-b4f2-957d9aedf3b8",
     "name": "Difficulty breathing",
     "dataType": "NA"
   },
@@ -248,7 +248,7 @@
         "dataType": "NA"
       },
       {
-        "uuid": "338c4e61-0bbc-4488-9c93-84912f87eb59",
+        "uuid": "39ae8b52-1f43-4254-b4f2-957d9aedf3b8",
         "name": "Difficulty breathing",
         "abnormal": true,
         "dataType": "NA"

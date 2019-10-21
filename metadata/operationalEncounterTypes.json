@@ -30,6 +30,14 @@
       }
     },
     {
+      "uuid": "659323b5-b9b8-41d8-b4e6-223c33d25495",
+      "name": "Child PNC",
+      "encounterType": {
+        "uuid": "9de58542-d280-4041-b879-5e7a5ff83fc2",
+        "name": "Child PNC" 
+      }
+    },
+    {
       "uuid": "fb4ebfa4-ede7-4d48-85dc-8ac0eb72c96b",
       "name": "Abortion Form",
       "encounterType": {

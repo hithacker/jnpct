@@ -75,7 +75,7 @@ class BirthFormDecisions {
         .containsAnyAnswerConceptName("Blue/Pale","Body pink but hands and feet blue/pale");
 
         complicationsBuilder.addComplication("High temperature")
-        .when.valueInEncounter("Temperature in °C").is.greaterThan(37.5);
+        .when.valueInEncounter("Temperature of infant").is.greaterThan(37.5);
 
         return complicationsBuilder.getComplications();
     }
