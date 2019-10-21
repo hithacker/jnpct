@@ -775,6 +775,10 @@
     "name": "Breast-related problems"
   },
   {
+    "uuid": "6a2300f3-d135-4f42-aab4-132f0b375af0",
+    "name": "High Fever"
+  },
+  {
     "name": "Refer to the hospital for",
     "uuid": "7c958617-ad77-41ac-b125-d9f33569e202",
     "dataType": "Coded",
@@ -800,8 +804,8 @@
         "abnormal": true
       },
       {
-        "uuid": "137958fa-4666-44b2-880e-d5f1a639bb79",
-        "name": "Fever",
+        "uuid": "6a2300f3-d135-4f42-aab4-132f0b375af0",
+        "name": "High Fever",
         "abnormal": true
       },
       {
@@ -847,6 +851,26 @@
       {
         "uuid": "cfec5288-ca3e-48c3-a1f2-332038ad2241",
         "name": "Post partum dipression symptoms",
+        "abnormal": true
+      },
+      {
+        "uuid": "403aabf9-ec66-49ed-8615-f62ca33de2f0",
+        "name": "How is the incision area?",
+        "abnormal": true
+      },
+      {
+        "uuid": "9cabab3b-b206-4b53-ac7b-9524517819a6",
+        "name": "Pain in hypogastrium?",
+        "abnormal": true
+      },
+      {
+        "uuid": "056689c5-ba68-4e85-b515-7c342769e47b",
+        "name": "Burning micturation?",
+        "abnormal": true
+      },
+      {
+        "uuid": "2d522614-ad6c-4673-b6af-ca5a366540cc",
+        "name": "How many pads changed?",
         "abnormal": true
       }
     ]

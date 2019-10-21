@@ -8,6 +8,7 @@ module.exports = _.merge({},
     require('./pregnancy/deliveryFormHandler'),
     require('./pregnancy/abortionFormHandler'),
     require('./pregnancy/abortionFollowupHandler'),
+    require('./pregnancy/motherPNCHandler.js'),
     require('./child/childEnrolmentHandler.js'),
     require('./child/childBirthFormHandler.js')
 );

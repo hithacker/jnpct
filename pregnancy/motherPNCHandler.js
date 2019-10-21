@@ -13,37 +13,49 @@ import {
 } from 'rules-config/rules';
 import lib from '../lib';
 
-const AbortionFollowupViewFilter = RuleFactory("20e3c4e9-1e58-4a11-ba5c-9f3c745c7ef7", "ViewFilter");
+const PncFormViewFilter = RuleFactory("c4123189-c7b6-49e1-bbf3-82b3127750b2", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
-const Decision = RuleFactory('20e3c4e9-1e58-4a11-ba5c-9f3c745c7ef7', 'Decision');
+const motherDecision = RuleFactory('c4123189-c7b6-49e1-bbf3-82b3127750b2', 'Decision');
 
 
-@AbortionFollowupViewFilter("93f40b00-3e92-4f70-b430-cd5f4b90b8a5", "JNPCT Abortion Followup View Filter", 100.0, {})
-class AbortionFollowupViewFilterHandlerJNPCT {
+@PncFormViewFilter("d1d50ccd-d334-40a6-9c80-8c357f05b6dd", "JNPCT Pnc Form View Filter", 100.0, {})
+class PncFormViewFilterHandlerJNPCT {
     static exec(programEncounter, formElementGroup, today) {
         return FormElementsStatusHelper
-            .getFormElementsStatusesWithoutDefaults(new AbortionFollowupViewFilterHandlerJNPCT(), programEncounter, formElementGroup, today);
+            .getFormElementsStatusesWithoutDefaults(new PncFormViewFilterHandlerJNPCT(), programEncounter, formElementGroup, today);
     }
 
    @WithName("Other breast related problems")
    @WithStatusBuilder
-   f1([], statusBuilder) {
+   p1([], statusBuilder) {
          statusBuilder.show().when.valueInEncounter("Any breast problems")
             .containsAnswerConceptName("Other");
    }
 
     @WithName('Which Day after Abortion?')
-    f2(programEncounter, formElement) {
+    p2(programEncounter, formElement) {
         const days = moment(programEncounter.getObservationReadableValue('Date of Visit'))
          .diff(programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP', programEncounter), 'days');
         const value = isFinite(days) ? days : undefined;
       return new FormElementStatus(formElement.uuid, true, value);
     }
 
+    @WithName("IF YES THEN WRITE NUMBER OF TABLET SWALLOWED")
+    @WithStatusBuilder
+    p3([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Does she taking iron tablet?").is.yes;
+    }
+
+    @WithName("IF YES THEN WRITE NUMBER OF CALCIUM TABLET SWALLOWED")
+    @WithStatusBuilder
+    p4([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Does she taking calcium tablet?").is.yes;
+    }
+
 }
 
-@Decision('efe29b09-8d78-41d9-9f16-00cc39515a19', 'PregnancyAbortionDecision', 100.0, {})
-class PregnancyAbortionDecision {
+@motherDecision('78a5405e-c490-4a07-9eee-d88dd0a93217', 'PregnancyMotherPncDecision', 100.0, {})
+class PregnancyMotherPncDecision {
     static referToTheHospital(programEncounter) {
         const referralBuilder = new ComplicationsBuilder({
             programEncounter: programEncounter,
@@ -89,6 +101,10 @@ class PregnancyAbortionDecision {
              .containsAnyAnswerConceptName("Cracked Nipple", "Nipple hardness", "Breast hardness",
              "Breast engorgement", "Breast abcess","Other");
 
+    referralBuilder.addComplication("How is the incision area?")
+        .when.valueInEncounter("How is the incision area?")
+        .containsAnyAnswerConceptName("Indurated", "Looks Red", "Filled with pus", "Discharge from wound");
+
      referralBuilder.addComplication("Does feel hot or have the chills?")
             .when.valueInEncounter("Does feel hot or have the chills?").is.yes;
 
@@ -100,16 +116,25 @@ class PregnancyAbortionDecision {
         .when.valueInEncounter("Post partum dipression symptoms")
         .containsAnyAnswerConceptName("Insomnia", "Irritability", "Loss of appetite", "Weakness");
 
+    referralBuilder.addComplication("Pain in hypogastrium?")
+             .when.valueInEncounter("Pain in hypogastrium?").is.yes;
+
+    referralBuilder.addComplication("Burning micturation?")
+              .when.valueInEncounter("Burning micturation?").is.yes;
+
+    referralBuilder.addComplication("How many pads changed?")
+           .when.valueInEncounter("How many pads changed?")
+           .containsAnyAnswerConceptName("6", "more");
 
         return referralBuilder.getComplications();
     }
 
     static exec(programEncounter, decisions, context, today) {
-        decisions.encounterDecisions.push(PregnancyAbortionDecision.referToTheHospital(programEncounter));
+        decisions.encounterDecisions.push(PregnancyMotherPncDecision.referToTheHospital(programEncounter));
         return decisions;
     }
 
 }
 
-module.exports = {AbortionFollowupViewFilterHandlerJNPCT,PregnancyAbortionDecision};
+module.exports = {PncFormViewFilterHandlerJNPCT,PregnancyMotherPncDecision};
 
