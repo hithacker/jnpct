@@ -8,6 +8,10 @@
     "name": "No"
   },
   {
+    "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+    "name": "Not yet decided"
+  },
+  {
     "name": "Mamta card",
     "uuid": "4bb3dbde-01df-4f6d-85aa-41a38c8ee3d3",
     "dataType": "Coded",
@@ -91,21 +95,6 @@
     "name": "IF YES THEN WRITE NUMBER OF CALCIUM TABLET SWALLOWED",
     "uuid": "7fd17431-fada-43e3-891b-d9b311cce9f0",
     "dataType": "Numeric"
-  },
-  {
-    "name": "T.T vaccine recieved?",
-    "uuid": "8c1df96a-521a-4c59-b571-df0a2b961e7b",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-        "name": "Yes"
-      },
-      {
-        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-        "name": "No"
-      }
-    ]
   },
   {
     "name": "TT 1",
@@ -943,11 +932,11 @@
   },
   {
     "uuid": "4b938434-c187-48e0-a136-3899b6b3b95d",
-    "name": "PIYAR"
+    "name": "Piyar"
   },
   {
     "uuid": "a85fff2b-063b-413a-98c8-85a5039a2429",
-    "name": "SASRU"
+    "name": "Sasru"
   },
   {
     "name": "Plan to do delivery?",
@@ -956,11 +945,15 @@
     "answers": [
       {
         "uuid": "4b938434-c187-48e0-a136-3899b6b3b95d",
-        "name": "PIYAR"
+        "name": "Piyar"
       },
       {
         "uuid": "a85fff2b-063b-413a-98c8-85a5039a2429",
-        "name": "SASRU"
+        "name": "Sasru"
+      },
+      {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
       }
     ]
   },
@@ -984,52 +977,33 @@
       {
         "uuid": "c5de89d4-3d59-43a9-a188-294a814b0e98",
         "name": "Hospital"
+      },
+      {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
       }
     ]
   },
-  {
-    "uuid": "7d24f498-bd92-4f6e-9408-de1c154dbfc2",
-    "name": "Husband"
-  },
-  {
-    "uuid": "020da307-e31c-494d-bce8-31b4af7426f2",
-    "name": "mother"
-  },
-  {
-    "uuid": "f0d36a07-fb54-43f3-8241-b600029bd1be",
-    "name": "mother in law"
-  },
+  
   {
     "uuid": "5f068502-a4e2-4598-b54a-74716d8020be",
-    "name": "sister"
+    "name": "Sister"
   },
   {
     "uuid": "e49ada2c-266c-49b1-8244-08035052ea0c",
-    "name": "sister in law"
-  },
-  {
-    "uuid": "fea36bb3-b14f-418d-bafc-13b5ff23923b",
-    "name": "brother"
-  },
-  {
-    "uuid": "eb95d606-2666-46e1-b2f9-ab69853998d1",
-    "name": "father"
-  },
-  {
-    "uuid": "acf06368-f1f5-4a2d-80f6-0ee571791f1f",
-    "name": "father in law"
+    "name": "Sister-in-law"
   },
   {
     "uuid": "538d4324-3870-46f9-8172-e2f300da51f8",
-    "name": "brother in law"
+    "name": "Brother-in-law"
   },
   {
     "uuid": "aa4ea2ad-9bc9-4a60-8778-fcfa84f01378",
-    "name": "other relatives"
+    "name": "Other relatives"
   },
   {
-    "name": "Who will accompany at the time of delivery?",
-    "uuid": "52e86b2c-b237-45cd-bf68-6a5f766c8d93",
+    "name": "Who will be accompaning you at the time of delivery?",
+    "uuid": "348bda11-61e5-4feb-bdc9-f6d40cc51614",
     "dataType": "Coded",
     "answers": [
       {
@@ -1037,40 +1011,44 @@
         "name": "Husband"
       },
       {
-        "uuid": "020da307-e31c-494d-bce8-31b4af7426f2",
-        "name": "mother"
+        "uuid": "b232bcab-0b3f-4d56-ae8b-e0267f0a6738",
+        "name": "Mother"
       },
       {
-        "uuid": "f0d36a07-fb54-43f3-8241-b600029bd1be",
-        "name": "mother in law"
+        "uuid": "edba6b48-d111-4379-81df-20f5d547904c",
+        "name": "Mother-in-law"
       },
       {
         "uuid": "5f068502-a4e2-4598-b54a-74716d8020be",
-        "name": "sister"
+        "name": "Sister"
       },
       {
         "uuid": "e49ada2c-266c-49b1-8244-08035052ea0c",
-        "name": "sister in law"
+        "name": "Sister-in-law"
       },
       {
-        "uuid": "fea36bb3-b14f-418d-bafc-13b5ff23923b",
-        "name": "brother"
+        "uuid": "b7d4cfd4-7bd4-4e12-bd9b-5a4f4427bc20",
+        "name": "Brother"
       },
       {
-        "uuid": "eb95d606-2666-46e1-b2f9-ab69853998d1",
-        "name": "father"
+        "uuid": "60bd2230-5ada-451a-a020-532d48173a8c",
+        "name": "Father"
       },
       {
-        "uuid": "acf06368-f1f5-4a2d-80f6-0ee571791f1f",
-        "name": "father in law"
+        "uuid": "08258f9a-4cd4-4ccb-8c31-549033f34a3e",
+        "name": "Father-in-law"
       },
       {
         "uuid": "538d4324-3870-46f9-8172-e2f300da51f8",
-        "name": "brother in law"
+        "name": "Brother-in-law"
       },
       {
         "uuid": "aa4ea2ad-9bc9-4a60-8778-fcfa84f01378",
-        "name": "other relatives"
+        "name": "Other relatives"
+      },
+      {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
       }
     ]
   },
@@ -1149,6 +1127,10 @@
       {
         "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
         "name": "Other"
+      },
+       {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
       }
     ]
   },
@@ -1168,8 +1150,8 @@
     ]
   },
   {
-    "name": "WHO GIVES BLOOD WHEN REQUIRED",
-    "uuid": "d3d98f88-f2df-42b4-bee5-1710fa5dbde9",
+    "name": "Who will give blood if required",
+    "uuid": "477bdbfa-5f15-460c-93d9-fa60ad3ce387",
     "dataType": "Coded",
     "answers": [
       {
@@ -1177,24 +1159,28 @@
         "name": "Husband"
       },
       {
-        "uuid": "fea36bb3-b14f-418d-bafc-13b5ff23923b",
-        "name": "brother"
+        "uuid": "b7d4cfd4-7bd4-4e12-bd9b-5a4f4427bc20",
+        "name": "Brother"
       },
       {
-        "uuid": "eb95d606-2666-46e1-b2f9-ab69853998d1",
-        "name": "father"
+        "uuid": "60bd2230-5ada-451a-a020-532d48173a8c",
+        "name": "Father"
       },
       {
-        "uuid": "acf06368-f1f5-4a2d-80f6-0ee571791f1f",
-        "name": "father in law"
+        "uuid": "08258f9a-4cd4-4ccb-8c31-549033f34a3e",
+        "name": "Father-in-law"
       },
       {
         "uuid": "538d4324-3870-46f9-8172-e2f300da51f8",
-        "name": "brother in law"
+        "name": "Brother-in-law"
       },
       {
         "uuid": "aa4ea2ad-9bc9-4a60-8778-fcfa84f01378",
-        "name": "other relatives"
+        "name": "Other relatives"
+      },
+      {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
       }
     ]
   },

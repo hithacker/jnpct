@@ -85,17 +85,6 @@
           "mandatory":true
         },
         {
-          "name": "T.T vaccine recieved?",
-          "uuid": "a61f5a89-2436-4973-96fe-de8eacad0f9b",
-          "keyValues": [],
-          "type": "SingleSelect",
-          "concept": {
-            "uuid": "8c1df96a-521a-4c59-b571-df0a2b961e7b"
-          },
-          "displayOrder": 8,
-          "mandatory": true
-        },
-        {
           "name": "TT 1",
           "uuid": "f01e3fbd-6793-4ce1-a909-4d8f3ce79207",
           "keyValues": [],
@@ -579,12 +568,13 @@
           "mandatory": true
         },
         {
-          "name": "Who will accompany at the time of delivery?",
+          "name": "Who will be accompaning you at the time of delivery?",
           "uuid": "42dac950-2ada-440a-9b75-160a0b5faa4f",
           "keyValues": [],
           "type": "MultiSelect",
           "concept": {
-            "uuid": "52e86b2c-b237-45cd-bf68-6a5f766c8d93"
+            "name": "Who will be accompaning you at the time of delivery?",
+            "uuid": "348bda11-61e5-4feb-bdc9-f6d40cc51614"
           },
           "displayOrder": 3,
           "mandatory": true
@@ -623,12 +613,13 @@
           "mandatory": true
         },
         {
-          "name": "WHO GIVES BLOOD WHEN REQUIRED",
+          "name": "Who will give blood if required",
           "uuid": "8322b080-cdef-46f7-b035-6ac1e05ac6bc",
           "keyValues": [],
           "type": "MultiSelect",
           "concept": {
-            "uuid": "d3d98f88-f2df-42b4-bee5-1710fa5dbde9"
+            "name": "Who will give blood if required",
+            "uuid": "477bdbfa-5f15-460c-93d9-fa60ad3ce387"
           },
           "displayOrder": 7,
           "mandatory": true

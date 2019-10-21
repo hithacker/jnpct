@@ -3,11 +3,9 @@ const _ = require("lodash");
 import {
     FormElementsStatusHelper,
     FormElementStatus,
-    FormElementStatusBuilder,
     RuleCondition,
     RuleFactory,
     StatusBuilderAnnotationFactory,
-    VisitScheduleBuilder,
     complicationsBuilder as ComplicationsBuilder,
     WithName
 } from 'rules-config/rules';
@@ -17,27 +15,23 @@ const AncFormViewFilter = RuleFactory("9bf17b07-3e6b-414a-a96e-086fc9c5ef6a", "V
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
 const ancDecision = RuleFactory("9bf17b07-3e6b-414a-a96e-086fc9c5ef6a", "Decision");
 
+const getCurrentWeek = (programEncounter) => {
+    const lmpDate = programEncounter.programEnrolment.getObservationValue('Last menstrual period');
+    return (Math.round(moment(programEncounter.encounterDateTime).diff(lmpDate, 'weeks', true)));
+}
+
+const getCurrentTrimester = (programEncounter) => {
+    // console.log('programEncounter.programEnrolment',programEncounter.programEnrolment);
+    // console.log('programEncounter.encounterDateTime',programEncounter.encounterDateTime);
+    const currentTrimester = lib.calculations.currentTrimester(programEncounter.programEnrolment,programEncounter.encounterDateTime);
+    // console.log('current trimester',currentTrimester);
+    return currentTrimester;
+}
+
 const isAbnormalWeightGain = (programEncounter) => {
     const {programEnrolment, encounterDateTime} = programEncounter;
     return !lib.calculations.isNormalWeightGain(programEnrolment, programEncounter, encounterDateTime);
 };
-
-const isBelowNormalWeightGain = (programEncounter) => {
-    const {programEnrolment, encounterDateTime} = programEncounter;
-    return lib.calculations.isBelowNormalWeightGain(programEnrolment, programEncounter, encounterDateTime);
-};
-
-const calculateBMI = (programEncounter) => {
-    const latestHeightObs = programEncounter.programEnrolment.findLatestObservationInEntireEnrolment('Height', programEncounter);
-    const currentWeightObs = programEncounter.findObservation("Weight");
-
-    const latestHeight = latestHeightObs && latestHeightObs.getReadableValue();
-    const currentWeight = currentWeightObs && currentWeightObs.getReadableValue();
-    return _.some([currentWeight, latestHeight], _.isNil) ?
-                null
-                : lib.C.calculateBMI(currentWeight, latestHeight);
-};
-
 
 @AncFormViewFilter("2f291a9a-3e66-4417-97c7-13474981f6f9", "JNPCT Anc Form View Filter", 100.0, {})
 class PregnancyAncFormViewFilterHandlerJNPCT {
@@ -106,20 +100,6 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
          statusBuilder.show().when.valueInEncounter("Sickle cell test  done").is.yes;
     }
 
-    @WithName("If YES then write E.D.D as per USG")
-    @WithStatusBuilder
-    a8([], statusBuilder) {
-         statusBuilder.show().when.valueInEncounter("Complete hospital checkup done").is.yes;
-    }
-
-    @WithName("If YES then write E.D.D as per USG")
-    @WithStatusBuilder
-    a9([programEncounter], statusBuilder) {
-    statusBuilder.show().when.valueInEncounter("If YES then write E.D.D as per USG").is.defined
-    .or.when.latestValueInPreviousEncounters("If YES then write E.D.D as per USG").is.notDefined
-    return statusBuilder.build();
-    }
-
     @WithName("USG Scanning Report - Number of foetus")
     @WithStatusBuilder
     a10([programEncounter], statusBuilder) {
@@ -152,100 +132,332 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
     return statusBuilder.build();
     }
 
-   @WithName("T.T vaccine recieved?")
-   @WithStatusBuilder
-   a14([], statusBuilder) {
-        statusBuilder.show().when.latestValueInPreviousEncounters('T.T vaccine recieved?').is.notDefined
-            .or.when.valueInEncounter('T.T vaccine recieved?').is.defined;
-    }
-
     @WithName("TT 1")
-    @WithStatusBuilder
-    a15([], statusBuilder) {
-        statusBuilder.show().when.latestValueInPreviousEncounters('TT 1').is.notDefined
-            .or.when.valueInEncounter('TT 1').is.defined;
-    }
-    @WithName("TT 2")
-    @WithStatusBuilder
-    a16([], statusBuilder) {
-        statusBuilder.show().when.latestValueInPreviousEncounters('TT 2').is.notDefined
-            .or.when.valueInEncounter('TT 2').is.defined;
-    }
+    a15(programEncounter, formElement) {
+     const context = {programEncounter, formElement};
+
+     if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT 1")
+     .is.defined.matches()) {
+     return new FormElementStatus(formElement.uuid, false);
+        }
+ 
+     if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT 1")
+                 .is.defined
+             .and.when.latestValueInPreviousEncounters("TT 2")
+                 .is.defined.matches())
+             return new FormElementStatus(formElement.uuid, false);
+ 
+     if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT Booster")
+                 .is.defined.matches()) {
+                 return new FormElementStatus(formElement.uuid, false);
+         }
+ 
+     return new FormElementStatus(formElement.uuid, true);
+ 
+       }
+    
+   @WithName("TT 2")
+   a16(programEncounter, formElement) {
+    const context = {programEncounter, formElement};
+
+    if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT 2")
+                .is.defined.matches()) {
+                return new FormElementStatus(formElement.uuid, false);
+        }
+
+    if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT 1")
+                .is.defined
+            .and.when.latestValueInPreviousEncounters("TT 2")
+                .is.defined.matches())
+            return new FormElementStatus(formElement.uuid, false);
+
+    if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT Booster")
+                .is.defined.matches()) {
+                return new FormElementStatus(formElement.uuid, false);
+        }
+
+    return new FormElementStatus(formElement.uuid, true);
+
+      }
 
    @WithName("TT Booster")
-   @WithStatusBuilder
-   a17([], statusBuilder) {
-        statusBuilder.show().when.latestValueInPreviousEncounters('TT Booster').is.notDefined
-            .or.when.valueInEncounter('TT Booster').is.defined;
+   a17(programEncounter, formElement) {
+    const context = {programEncounter, formElement};
+
+    if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT 1")
+                .is.defined
+            .and.when.latestValueInPreviousEncounters("TT 2")
+                .is.defined.matches())
+            return new FormElementStatus(formElement.uuid, false);
+
+    if (new RuleCondition(context).when.latestValueInPreviousEncounters("TT Booster")
+                .is.defined.matches()) {
+                return new FormElementStatus(formElement.uuid, false);
+        }
+
+         return new FormElementStatus(formElement.uuid, true);
+      }
+
+    @WithName("Blood Group")
+    @WithStatusBuilder
+    a18([], statusBuilder) {
+         statusBuilder.show().when.latestValueInPreviousEncounters('Blood Group').is.notDefined
+         .or.containsAnswerConceptName("Don't Know");
+     }
+
+
+    @WithName("Complete hospital checkup done")
+    a31(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+        
+        // statusBuilder.show.whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
+        //  .and.when.latestValueInPreviousEncounters("Complete hospital checkup done").not.containsAnswerConceptName("Yes");
+
+         if (new RuleCondition(context).whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
+                .and.when.latestValueInPreviousEncounters("Complete hospital checkup done").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
+            .and.when.latestValueInPreviousEncounters("Complete hospital checkup done")
+            .containsAnswerConceptName("No").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+
+         return new FormElementStatus(formElement.uuid, false);
     }
 
-
-   @WithStatusBuilder
-   planToDoDelivery([], statusBuilder) {
-      statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
+    @WithName("If YES then write E.D.D as per USG")
+    @WithStatusBuilder
+    a8([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Complete hospital checkup done").is.yes
+         .and.when.latestValueInPreviousEncounters("If YES then write E.D.D as per USG").is.notDefined;
     }
 
-   @WithStatusBuilder
-   placeOfDelivery([], statusBuilder) {
-      statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+    // @WithName("If YES then write E.D.D as per USG")
+    // @WithStatusBuilder
+    // a9([programEncounter], statusBuilder) {
+    // statusBuilder.show().when.valueInEncounter("If YES then write E.D.D as per USG").is.defined
+    // .or.when.latestValueInPreviousEncounters("If YES then write E.D.D as per USG").is.notDefined
+    // return statusBuilder.build();
+    // }
 
-   @WithStatusBuilder
-   whoWillAccompanyAtTheTimeOfDelivery([], statusBuilder) {
-      statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+    @WithName("Plan to do delivery?")
+    a19(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("Plan to do delivery?").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
-   @WithStatusBuilder
-   counsellingFor108([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("Plan to do delivery?")
+            .containsAnswerConceptName("Not yet decided").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
-   @WithStatusBuilder
-   planInWhichHospital([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+            return new FormElementStatus(formElement.uuid, false);
+    }
 
-   @WithStatusBuilder
-   moneySaved([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+    @WithName("Place of delivery")
+    a20(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("Place of delivery").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
-   @WithStatusBuilder
-   whoGivesBloodWhenRequired([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("Place of delivery")
+            .containsAnswerConceptName("Not yet decided").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
-   @WithStatusBuilder
-   makeClothesReadyForTheDeliveryAndNewBornBaby([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+            return new FormElementStatus(formElement.uuid, false);
+    }
 
-   @WithStatusBuilder
-   counsellingDoneForTheRiskFactorsMorbiditiesToAllFamilyMembers([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+    @WithName("Who will be accompaning you at the time of delivery?")
+    a21(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("Who will be accompaning you at the time of delivery?").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
-   @WithStatusBuilder
-   counsellingDoneForTheGovernmentScheme([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("Who will be accompaning you at the time of delivery?")
+            .containsAnswerConceptName("Not yet decided").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
-   @WithStatusBuilder
-   chiranjiviYojnaFormIsReady([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+            return new FormElementStatus(formElement.uuid, false);
+    }
 
-   @WithStatusBuilder
-   haveYouEnrolledInAnyGovernmentScheme([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(5);
-   }
+    @WithName("COUNSELLING FOR 108")
+    a22(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("COUNSELLING FOR 108").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
-   @WithStatusBuilder
-   completeHospitalCheckupDone([], statusBuilder) {
-       statusBuilder.show().whenItem(moment(statusBuilder.context.programEncounter).diff(statusBuilder.context.programEncounter.programEnrolment.getObservationValue('Last menstrual period'), 'months', true)).is.greaterThan(3);
-   }
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("COUNSELLING FOR 108")
+            .containsAnswerConceptName("No").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
+            return new FormElementStatus(formElement.uuid, false);
+    }
+    @WithName("PLAN IN WHICH HOSPITAL")
+    a23(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("PLAN IN WHICH HOSPITAL").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
 
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("PLAN IN WHICH HOSPITAL")
+            .containsAnswerConceptName("Not yet decided").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+            return new FormElementStatus(formElement.uuid, false);
+    }
+
+    @WithName("MONEY SAVED")
+    a24(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("MONEY SAVED").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("MONEY SAVED")
+            .containsAnswerConceptName("No").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+            return new FormElementStatus(formElement.uuid, false);
+    }
+
+    @WithName("Who will give blood if required")
+    a25(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("Who will give blood if required").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("Who will give blood if required")
+            .containsAnswerConceptName("Not yet decided").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+            return new FormElementStatus(formElement.uuid, false);
+    }
+
+    @WithName("MAKE CLOTHES READY FOR THE DELIVERY AND NEW BORN BABY")
+    a26(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("MAKE CLOTHES READY FOR THE DELIVERY AND NEW BORN BABY").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("MAKE CLOTHES READY FOR THE DELIVERY AND NEW BORN BABY")
+            .containsAnswerConceptName("No").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+            return new FormElementStatus(formElement.uuid, false);
+    }
+
+    @WithName("Counselling Done for the risk factors / Morbidities to all Family members")
+    a27(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("Counselling Done for the risk factors / Morbidities to all Family members")
+                .is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("Counselling Done for the risk factors / Morbidities to all Family members")
+            .containsAnswerConceptName("No").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+            return new FormElementStatus(formElement.uuid, false);
+    }
+
+    @WithName("Counselling done for the Government Scheme?")
+    a28(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("Counselling done for the Government Scheme?").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("Counselling done for the Government Scheme?")
+            .containsAnswerConceptName("No").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+            return new FormElementStatus(formElement.uuid, false);
+    }
+
+    @WithName("Chiranjivi yojna form is ready?")
+    a29(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("Chiranjivi yojna form is ready?").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("Chiranjivi yojna form is ready?")
+            .containsAnswerConceptName("No").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+            return new FormElementStatus(formElement.uuid, false);
+    }
+
+    @WithName("Have you enrolled in any government scheme?")
+    a30(programEncounter,formElement) {
+        const context = {programEncounter, formElement};
+             
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+                .and.when.latestValueInPreviousEncounters("Have you enrolled in any government scheme?").is.notDefined.matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+        if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
+            .and.when.latestValueInPreviousEncounters("Have you enrolled in any government scheme?")
+            .containsAnswerConceptName("No").matches()) {
+            return new FormElementStatus(formElement.uuid, true);
+        }
+
+            return new FormElementStatus(formElement.uuid, false);
+    }
 }
 
 @ancDecision("efcef7fd-fa11-4ed9-b389-d977755c883d", "Anc Form Decision", 100.0, {})
