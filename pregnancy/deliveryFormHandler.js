@@ -195,13 +195,13 @@ class DeliveryFormVisitDecision {
  static determineDurationOfPregnancy(programEncounter) {
     const complicationsBuilder = new ComplicationsBuilder({
         programEncounter: programEncounter,
-        complicationsConcept: "Gestational age category at birth"
+        complicationsConcept: "Gestational age category at delivery"
     });
 
-    complicationsBuilder.addComplication("Week of Gestation")//Very preterm
+    complicationsBuilder.addComplication("Very preterm")//Very preterm
     .when.valueInEncounter("Week of Gestation").is.lessThan(36);
 
-    complicationsBuilder.addComplication("Week of Gestation")//Preterm (<28 weeks)
+    complicationsBuilder.addComplication("Preterm")//
     .when.valueInEncounter("Week of Gestation").is.lessThan(38);
    
     return complicationsBuilder.getComplications();
