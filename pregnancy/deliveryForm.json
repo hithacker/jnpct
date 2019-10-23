@@ -71,7 +71,12 @@
         {
           "name": "Week of Gestation",
           "uuid": "33e0b29d-2f8c-4a56-850a-f36ed433b1d2",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
           "concept": {
             "uuid": "f38349e4-afad-4bed-897b-dfb32d8c4c08"
           },

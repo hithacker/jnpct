@@ -431,6 +431,39 @@
         "name": "No"
       }
     ]
+  },
+  {
+    "uuid": "c80713af-1586-4335-aaea-31cf0c4f05eb",
+    "name": "Term (37-38 weeks)"
+  },
+  {
+    "uuid": "3c165447-1fff-4dfe-90fd-c1642f9fccff",
+    "name": "Preterm (<28 Weeks)"
+  },
+  {
+    "uuid": "739eaf36-9d2d-4804-bbee-9c953299da96",
+    "name": "Very Preterm"
+  },
+  {
+    "name": "Gestational age category at birth",
+    "uuid": "01168515-86a6-4ddf-beb9-13c80ff2aaa1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "c80713af-1586-4335-aaea-31cf0c4f05eb",
+        "name": "Term (37-38 weeks)"
+      },
+      {
+        "uuid": "3c165447-1fff-4dfe-90fd-c1642f9fccff",
+        "name": "Preterm (<28 Weeks)",
+        "abnormal": true
+      },
+      {
+        "uuid": "739eaf36-9d2d-4804-bbee-9c953299da96",
+        "name": "Very Preterm",
+        "abnormal": true
+      }
+    ]
   }
 
 ]

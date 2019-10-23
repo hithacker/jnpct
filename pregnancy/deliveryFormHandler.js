@@ -171,31 +171,42 @@ class PregnancyDeliveryFormViewFilterJNPCT {
          return statusBuilder.build();
      }
 
+     weekOfGestation(programEncounter, formElement) {
+        let edd = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Estimated Date of Delivery', programEncounter);
+        let dateOfDelivery = programEncounter.getObservationReadableValue('Date of delivery');
+        let weekOfGestation = '';
+        // if(!_.isEmpty(dateOfDelivery) && !_.isEmpty(edd))
+        //  weekOfGestation = 40 - moment(edd).diff(dateOfDelivery, 'weeks')
+        weekOfGestation =   lib.calculations.gestationalAgeForEDD(edd,dateOfDelivery);    
+    
+        return new FormElementStatus(formElement.uuid, true, weekOfGestation);
+    }
+
 }
 const DeliveryFormDecision = RuleFactory("cbe0f44c-580a-4311-ae34-cef2e4b35330", "Decision");
 
 @DeliveryFormDecision("8c1d83f5-0fcf-49f1-8237-7ce3690f6db0", "Delivery Form Decision", 100.0, {})
 class DeliveryFormVisitDecision {
-    static exec(programEncounter, decisions, context, today) {
-        decisions = {
-            "enrolmentDecisions": [],
-            "encounterDecisions": [],
-            "registrationDecisions": []
-        };
-        if (programEncounter.encounterType.name === 'Delivery Form')
-            this.determineDurationOfPregnancy(programEncounter, decisions['encounterDecisions']);
+   static exec(programEncounter, decisions, context, today) {
+        decisions.encounterDecisions.push(DeliveryFormVisitDecision.determineDurationOfPregnancy(programEncounter));
         return decisions;
-    }
+ }
 
-    static determineDurationOfPregnancy(programEncounter, enrolmentDecisions) {
-        let edd = programEncounter.getObservationValue('Estimated Date of Delivery');
-        const gestationalWeek = lib.calculations.gestationalAgeForEDD(edd, today);
-        if (gestationalWeek < 36 ) { encounterDecisions.push({name: "Gestational week is less than 36", value: "Preterm"});
-        if (gestationalWeek > 40 ) { encounterDecisions.push({name: "Gestational week is greater than 40", value: "Full Preterm"});
-     }
-   }
+ static determineDurationOfPregnancy(programEncounter) {
+    const complicationsBuilder = new ComplicationsBuilder({
+        programEncounter: programEncounter,
+        complicationsConcept: "Gestational age category at birth"
+    });
+
+    complicationsBuilder.addComplication("Week of Gestation")//Very preterm
+    .when.valueInEncounter("Week of Gestation").is.lessThan(36);
+
+    complicationsBuilder.addComplication("Week of Gestation")//Preterm (<28 weeks)
+    .when.valueInEncounter("Week of Gestation").is.lessThan(38);
+   
+    return complicationsBuilder.getComplications();
 }
 
 }
 
-module.exports = {PregnancyDeliveryFormViewFilterJNPCT,DeliveryFormVisitDecision};
+module.exports = {PregnancyDeliveryFormViewFilterJNPCT, DeliveryFormVisitDecision};

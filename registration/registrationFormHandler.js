@@ -1,13 +1,7 @@
   import {
     RuleFactory,
     FormElementsStatusHelper,
-    FormElementStatusBuilder,
     StatusBuilderAnnotationFactory,
-    WithStatusBuilder,
-    FormElementStatus,
-    VisitScheduleBuilder,
-    ProgramRule,
-    RuleCondition,
     WithName
   } from 'rules-config/rules';
 
@@ -53,9 +47,7 @@
   j5([], statusBuilder) {
         statusBuilder.show().when.valueInRegistration("Toilet facility present").is.yes;
   }
-
-
-
+  
  }
 
 
