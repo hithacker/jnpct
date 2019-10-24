@@ -172,14 +172,8 @@
     "uuid": "c934d6f6-4dd9-40ce-a155-f46b72d2491c",
     "dataType": "Text"
   },
-
   {
-    "name": "Date of Visit",
-    "uuid": "2efb07ff-b2d4-4c7f-88e0-bb9d13fb3103",
-    "dataType": "Date"
-  },
-  {
-    "name": "Which Day after Abortion?",
+    "name": "Which day after Delivery",
     "uuid": "14db9754-cb53-4948-ab69-ea18956bf8da",
     "dataType": "Numeric"
   },
@@ -779,6 +773,34 @@
     "name": "High Fever"
   },
   {
+    "uuid": "d3596f1c-48a7-495f-81fc-78ace5a24a47",
+    "name": "Difficulties with urinating"
+  },
+  {
+    "uuid": "0c2874d3-b923-4ff9-a61a-6a66695017a4",
+    "name": "Feels hot or have the chills"
+  },
+  {
+    "uuid": "c6379692-3a51-4eea-8aba-3e9a2db96762",
+    "name": "Incision area not normal"
+  }, 
+  {
+    "uuid": "84a28076-4cb2-48bc-bdb4-04f7759458bd",
+    "name": "Convulsions present"
+  },
+  {
+    "uuid": "80142eb2-e7ea-400f-825c-13ba46c3e891",
+    "name": "Pain in hypogastrium"
+  },
+  {
+    "uuid": "b2b9e51f-5636-4242-86bd-181cd286db8b",
+    "name": "Burning micturation"
+  },
+  {
+    "uuid": "6308907f-0238-4916-bbda-d44e8b439b63",
+    "name": "PPH"
+  },
+  {
     "name": "Refer to the hospital for",
     "uuid": "7c958617-ad77-41ac-b125-d9f33569e202",
     "dataType": "Coded",
@@ -829,8 +851,8 @@
         "abnormal": true
       },
       {
-        "uuid": "585e291e-1f3d-41fa-b6f4-3dcd96cf1560",
-        "name": "Any difficulties with urinating",
+        "uuid": "d3596f1c-48a7-495f-81fc-78ace5a24a47",
+        "name": "Difficulties with urinating",
         "abnormal": true
       },
       {
@@ -839,13 +861,13 @@
         "abnormal": true
       },
       {
-        "uuid": "426b8f0f-b57b-4d2e-964b-b1838d2159c5",
-        "name": "Does feel hot or have the chills?",
+        "uuid": "0c2874d3-b923-4ff9-a61a-6a66695017a4",
+        "name": "Feels hot or have the chills",
         "abnormal": true
       },
       {
-        "uuid": "1c0e744f-33cb-4792-be6c-6e6ddd178bfe",
-        "name": "Convulsions",
+        "uuid": "84a28076-4cb2-48bc-bdb4-04f7759458bd",
+        "name": "Convulsions present",
         "abnormal": true
       },
       {
@@ -854,23 +876,23 @@
         "abnormal": true
       },
       {
-        "uuid": "403aabf9-ec66-49ed-8615-f62ca33de2f0",
-        "name": "How is the incision area?",
+        "uuid": "c6379692-3a51-4eea-8aba-3e9a2db96762",
+        "name": "Incision area not normal",
         "abnormal": true
       },
       {
-        "uuid": "9cabab3b-b206-4b53-ac7b-9524517819a6",
-        "name": "Pain in hypogastrium?",
+        "uuid": "80142eb2-e7ea-400f-825c-13ba46c3e891",
+        "name": "Pain in hypogastrium",
         "abnormal": true
       },
       {
-        "uuid": "056689c5-ba68-4e85-b515-7c342769e47b",
-        "name": "Burning micturation?",
+        "uuid": "b2b9e51f-5636-4242-86bd-181cd286db8b",
+        "name": "Burning micturation",
         "abnormal": true
       },
       {
-        "uuid": "2d522614-ad6c-4673-b6af-ca5a366540cc",
-        "name": "How many pads changed?",
+        "uuid": "6308907f-0238-4916-bbda-d44e8b439b63",
+        "name": "PPH",
         "abnormal": true
       }
     ]

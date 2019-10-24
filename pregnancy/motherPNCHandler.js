@@ -32,7 +32,7 @@ class PncFormViewFilterHandlerJNPCT {
             .containsAnswerConceptName("Other");
    }
 
-    @WithName('Which Day after Abortion?')
+    @WithName('Which day after Delivery')
     p2(programEncounter, formElement) {
         const days = moment(programEncounter.getObservationReadableValue('Date of Visit'))
          .diff(programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP', programEncounter), 'days');
@@ -92,7 +92,7 @@ class PregnancyMotherPncDecision {
            .when.valueInEncounter("Any vaginal problems")
            .containsAnyAnswerConceptName("Heavy bleeding per vaginum", "Bad-smelling lochia", "Infected perineum suture");
 
-      referralBuilder.addComplication("Any difficulties with urinating")
+      referralBuilder.addComplication("Difficulties with urinating")
             .when.valueInEncounter("Any difficulties with urinating")
             .containsAnyAnswerConceptName("Difficulty passing urine", "Burning Urination");
 
@@ -101,14 +101,14 @@ class PregnancyMotherPncDecision {
              .containsAnyAnswerConceptName("Cracked Nipple", "Nipple hardness", "Breast hardness",
              "Breast engorgement", "Breast abcess","Other");
 
-    referralBuilder.addComplication("How is the incision area?")
+    referralBuilder.addComplication("Incision area not normal")
         .when.valueInEncounter("How is the incision area?")
         .containsAnyAnswerConceptName("Indurated", "Looks Red", "Filled with pus", "Discharge from wound");
 
-     referralBuilder.addComplication("Does feel hot or have the chills?")
+     referralBuilder.addComplication("Feels hot or have the chills")
             .when.valueInEncounter("Does feel hot or have the chills?").is.yes;
 
-    referralBuilder.addComplication("Convulsions")
+    referralBuilder.addComplication("Convulsions present")
              .when.valueInEncounter("Convulsions")
              .containsAnswerConceptName("Present");
 
@@ -116,13 +116,13 @@ class PregnancyMotherPncDecision {
         .when.valueInEncounter("Post partum dipression symptoms")
         .containsAnyAnswerConceptName("Insomnia", "Irritability", "Loss of appetite", "Weakness");
 
-    referralBuilder.addComplication("Pain in hypogastrium?")
+    referralBuilder.addComplication("Pain in hypogastrium")
              .when.valueInEncounter("Pain in hypogastrium?").is.yes;
 
-    referralBuilder.addComplication("Burning micturation?")
+    referralBuilder.addComplication("Burning micturation")
               .when.valueInEncounter("Burning micturation?").is.yes;
 
-    referralBuilder.addComplication("How many pads changed?")
+    referralBuilder.addComplication("PPH")
            .when.valueInEncounter("How many pads changed?")
            .containsAnyAnswerConceptName("6", "more");
 
