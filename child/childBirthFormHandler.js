@@ -32,11 +32,6 @@ class ChildBirthFormHandler {
 
 }
 
-const group1Complications = ['Convulsions without fever',
-     'PV leaking',
-     'Per vaginal bleeding',
-     'Excessive vomiting and inability to consume anything orally in last 24 hours'];
-
 @birthFormDecision("1896e74b-02a7-4019-ba82-aa5053330d65", "BirthFormDecisions", 100.0, {})
 class BirthFormDecisions {
     static highRisks(programEncounter) {
