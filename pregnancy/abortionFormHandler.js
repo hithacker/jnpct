@@ -42,7 +42,7 @@ class AbortionFormViewFilterHandlerJNPCT {
             .containsAnswerConceptName("Other");
   }
 
-  @WithName("Date Of Discharge For A/M")
+  @WithName("Date of discharge from hospital")
   @WithStatusBuilder
   m4([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter("Whether Abortion or MTP")

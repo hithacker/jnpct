@@ -10,16 +10,6 @@
       "displayOrder": 1,
       "formElements": [
         {
-          "name": "Date of Visit",
-          "uuid": "def55a9d-2a0d-4588-ae41-4a3a1712131b",
-          "keyValues": [],
-          "concept": {
-            "uuid": "2efb07ff-b2d4-4c7f-88e0-bb9d13fb3103"
-          },
-          "displayOrder": 1,
-          "mandatory": true
-        },
-        {
           "name": "Which Day after Abortion?",
           "uuid": "3d38b4f8-2697-4bd1-bda2-561877b3d1db",
           "keyValues": [],

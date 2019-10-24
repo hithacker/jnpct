@@ -63,7 +63,7 @@
           "mandatory": true
         },
         {
-          "name": "Date Of Discharge For A/M",
+          "name": "Date of discharge from hospital",
           "uuid": "24e868e9-c105-42ae-a9f2-e66e2b07b0d5",
           "keyValues": [],
           "concept": {
