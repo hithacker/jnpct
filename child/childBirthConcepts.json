@@ -127,7 +127,8 @@
       },
       {
         "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-        "name": "No"
+        "name": "No",
+        "abnormal": true
       }
     ]
   },
@@ -303,7 +304,8 @@
     "answers": [
         {
             "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
-            "name": "Present"
+            "name": "Present",
+            "abnormal": true
           },
           {
             "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
@@ -322,7 +324,8 @@
           },
           {
             "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
+            "name": "No",
+            "abnormal": true
           }
     ]
   },
@@ -333,7 +336,8 @@
     "answers": [
         {
             "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
+            "name": "Yes",
+            "abnormal": true
           },
           {
             "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
@@ -348,7 +352,8 @@
     "answers": [
         {
             "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
+            "name": "Yes",
+            "abnormal": true
           },
           {
             "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
@@ -393,7 +398,8 @@
     "answers": [
         {
             "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
+            "name": "Yes",
+            "abnormal": true
           },
           {
             "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
@@ -514,7 +520,7 @@
     "answers": [
       {
         "uuid": "0e33a0c7-b53d-4ccc-a634-66667d8058a0",
-        "name": "Refer child to hospital immediately and keep child warm in clothes" ,
+        "name": "Refer child to hospital immediately and keep child warm in clothes",
         "abnormal":true
       },
       {

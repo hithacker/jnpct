@@ -29,7 +29,7 @@
             "uuid": "c82cd1c8-d0a9-4237-b791-8d64e52b6c4a"
           },
           "displayOrder":1.1,
-          "mandatory": true
+          "mandatory": false
         },
         {
           "name": "Gestational age category at birth",
