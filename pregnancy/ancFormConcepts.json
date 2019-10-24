@@ -685,8 +685,7 @@
       },
       {
         "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
-        "name": "Normal",
-        "abnormal": true
+        "name": "Normal"
       }
     ]
   },
@@ -1305,6 +1304,58 @@
     "uuid": "c8722864-8f31-4e58-8a3b-ce2c8a549f2b"
   },
   {
+    "name": "Breast Examination -Nipple not normal",
+    "uuid": "f9d18a55-fca1-4fcc-9fbe-dcb98511b565"
+  },
+  {
+    "name": "Danger sign(s) present",
+    "uuid": "3cd32356-b5da-44fb-b005-b636c29e2925"
+  },
+  {
+    "name": "VDRL Postitve",
+    "uuid": "e9973f97-506d-4b7e-9959-2dc4d1f5b96e"
+  },
+  {
+    "name": "HIV/AIDS Positive",
+    "uuid": "f10358ee-145c-422e-b5d6-70f4df8f5c87"
+  },
+  {
+    "name": "HbsAg Positive",
+    "uuid": "aa7c5a0e-f7a8-4c8a-a9cc-c07259282e8d"
+  },
+  {
+    "name": "Sickle cell present",
+    "uuid": "3b8759ee-ee1c-41af-ac0d-b7870ef6f52c"
+  },
+  {
+    "name": "Foetal movements not normal",
+    "uuid": "8dfba5d6-20ad-469a-804b-2e62260d0bcf"
+  },
+  {
+    "name": "Foetal presentation not Cephalic",
+    "uuid": "4896c66f-cf76-4e3a-8efd-12f118e9b0d3"
+  },
+  {
+    "name": "Number of foetus more than 1",
+    "uuid": "80e65127-670c-446d-99da-9cff76691a8e"
+  },
+  {
+    "name": "Liquour is not at normal level",
+    "uuid": "6674da47-27b4-4c87-bed1-f5feb298b80a"
+  },
+  {
+    "name": "Placenta Previa present",
+    "uuid": "af829866-636c-47c4-8eff-7ff8bca88c59"
+  },
+  {
+    "name": "Urine Sugar present",
+    "uuid": "27484286-2788-4f06-b275-bf90cbf196a7"
+  },
+  {
+    "name": "Urine Albumin present",
+    "uuid": "f20a0c5e-449d-4fb1-ade2-870aac1dc699"
+  },
+  {
     "name": "High Risk Conditions",
     "uuid": "0ca1c6a2-001b-475a-9813-1d905df9e81b",
     "dataType": "Coded",
@@ -1344,8 +1395,8 @@
         "abnormal": true
       },
       {
-        "name": "Breast Examination - Nipple",
-        "uuid": "e6228ce1-29af-4c48-b41a-858802a5cbc6",
+        "name": "Breast Examination -Nipple not normal",
+        "uuid": "f9d18a55-fca1-4fcc-9fbe-dcb98511b565",
         "abnormal": true
       },
       {
@@ -1369,53 +1420,53 @@
         "abnormal": true
       },
       {
-        "name": "VDRL",
-        "uuid": "5a48f80d-e956-403d-b192-93a80389faf2",
+        "name": "VDRL Postitve",
+        "uuid": "e9973f97-506d-4b7e-9959-2dc4d1f5b96e",
         "abnormal": true
       },
       {
-        "name": "HIV/AIDS Test",
-        "uuid": "9c3f92c9-f3a6-49bc-a15e-e7909c8b61cc",
+        "name": "HIV/AIDS Positive",
+        "uuid": "f10358ee-145c-422e-b5d6-70f4df8f5c87",
         "abnormal": true
       },
       {
-        "name": "HbsAg",
-        "uuid": "737145a8-3259-4afc-9523-ed5d5f2d9a5f",
+        "name": "HbsAg Positive",
+        "uuid": "aa7c5a0e-f7a8-4c8a-a9cc-c07259282e8d",
         "abnormal": true
       },
       {
-        "name": "Sickling Test",
-        "uuid": "c8722864-8f31-4e58-8a3b-ce2c8a549f2b",
+        "name": "Sickle cell present",
+        "uuid": "3b8759ee-ee1c-41af-ac0d-b7870ef6f52c",
         "abnormal": true
       },
       {
-        "name": "Urine Albumin",
-        "uuid": "ddefc442-cb1f-432a-8e3d-0665dc620272",
+        "name": "Urine Albumin present",
+        "uuid": "f20a0c5e-449d-4fb1-ade2-870aac1dc699",
         "abnormal": true
       },
       {
-        "name": "Urine Sugar",
-        "uuid": "b6291b90-6f6e-4b15-be79-51e3284c4c81",
+        "name": "Urine Sugar present",
+        "uuid": "27484286-2788-4f06-b275-bf90cbf196a7",
         "abnormal": true
       },
       {
-        "name": "USG Scanning Report - Number of foetus",
-        "uuid": "ba8274a2-5817-4f1b-a379-f945a285bb25",
+        "name": "Number of foetus more than 1",
+        "uuid": "80e65127-670c-446d-99da-9cff76691a8e",
         "abnormal": true
       },
       {
-        "name": "USG Scanning Report - Liquour",
-        "uuid": "0197f0ee-97a8-4f68-8049-083f7e81b1dd",
+        "name": "Liquour is not at normal level",
+        "uuid": "6674da47-27b4-4c87-bed1-f5feb298b80a",
         "abnormal": true
       },
       {
-        "name": "USG Scanning Report - Placenta Previa",
-        "uuid": "5aeb53d9-96a4-4e17-8b06-dd58df20771a",
+        "name": "Placenta Previa present",
+        "uuid": "af829866-636c-47c4-8eff-7ff8bca88c59",
         "abnormal": true
       },
       {
-        "name": "Foetal presentation",
-        "uuid": "b0e836a1-8878-4798-881a-57a113824f0a",
+        "name": "Foetal presentation not Cephalic",
+        "uuid": "4896c66f-cf76-4e3a-8efd-12f118e9b0d3",
         "abnormal": true
       },
       {
@@ -1429,13 +1480,13 @@
         "abnormal": true
       },
       {
-        "name": "Foetal movements",
-        "uuid": "d7ff8486-11bf-4e7a-ba53-acc443923a2c",
+        "name": "Foetal movements not normal",
+        "uuid": "8dfba5d6-20ad-469a-804b-2e62260d0bcf",
         "abnormal": true
       },
       {
-        "name": "Is there any danger sign",
-        "uuid": "c23f62f9-9f8f-48bf-8549-a15f0165adf1",
+        "name": "Danger sign(s) present",
+        "uuid": "3cd32356-b5da-44fb-b005-b636c29e2925",
         "abnormal": true
       }
     ]

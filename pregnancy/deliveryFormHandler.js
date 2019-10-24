@@ -182,6 +182,12 @@ class PregnancyDeliveryFormViewFilterJNPCT {
         return new FormElementStatus(formElement.uuid, true, weekOfGestation);
     }
 
+    @WithName("Place of delivery")
+    @WithStatusBuilder
+    a33([], statusBuilder) {
+         statusBuilder.skipAnswers('Not yet decided');
+     }
+
 }
 const DeliveryFormDecision = RuleFactory("cbe0f44c-580a-4311-ae34-cef2e4b35330", "Decision");
 

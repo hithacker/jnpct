@@ -43,10 +43,16 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
 
     @WithName("Mamta card")
     @WithStatusBuilder
-    a1([programEncounter], statusBuilder) {
-    statusBuilder.show().when.valueInEncounter("Mamta card").is.defined
-    .or.when.latestValueInPreviousEncounters("Mamta card").is.notDefined
-    return statusBuilder.build();
+    a1([], statusBuilder) {
+         statusBuilder.show().when.latestValueInPreviousEncounters('Mamta card').is.notDefined
+         .or.containsAnswerConceptName("No");
+     }
+   
+    @WithName("Does she eat all the snacks")
+    @WithStatusBuilder
+    ab2([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Does she get snacks from Anganwadi")
+         .containsAnswerConceptName('Yes');
     }
 
     @WithName("IF YES THEN WRITE NUMBER OF TABLET SWALLOWED")
@@ -61,13 +67,11 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
          statusBuilder.show().when.valueInEncounter("Is she taking calcium tablet?").is.yes;
     }
 
-
     @WithName("Height")
     @WithStatusBuilder
-    a4([programEncounter], statusBuilder) {
+    a4([], statusBuilder) {
     statusBuilder.show().when.valueInEncounter("Height").is.defined
-    .or.when.latestValueInPreviousEncounters("Height").is.notDefined
-    return statusBuilder.build();
+    .or.when.latestValueInPreviousEncounters("Height").is.notDefined;
     }
 
     bmi(programEncounter, formElement) {
@@ -88,12 +92,11 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
 
     @WithName("Sickle cell test  done")
     @WithStatusBuilder
-    a6([programEncounter], statusBuilder) {
-    statusBuilder.show().when.valueInEncounter("Sickle cell test  done").is.defined
-    .or.when.latestValueInPreviousEncounters("Sickle cell test  done").is.notDefined
-    return statusBuilder.build();
-    }
-
+    a6([], statusBuilder) {
+         statusBuilder.show().when.latestValueInPreviousEncounters('Sickle cell test  done').is.notDefined
+         .or.containsAnswerConceptName("No");
+     }
+       
     @WithName("IF YES, result of sickle cell test")
     @WithStatusBuilder
     a7([], statusBuilder) {
@@ -102,7 +105,7 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
 
     @WithName("USG Scanning Report - Number of foetus")
     @WithStatusBuilder
-    a10([programEncounter], statusBuilder) {
+    a10([], statusBuilder) {
     statusBuilder.show().when.valueInEncounter("USG Scanning Report - Number of foetus").is.defined
     .or.when.latestValueInPreviousEncounters("USG Scanning Report - Number of foetus").is.notDefined
     return statusBuilder.build();
@@ -235,14 +238,6 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
          .and.when.latestValueInPreviousEncounters("If YES then write E.D.D as per USG").is.notDefined;
     }
 
-    // @WithName("If YES then write E.D.D as per USG")
-    // @WithStatusBuilder
-    // a9([programEncounter], statusBuilder) {
-    // statusBuilder.show().when.valueInEncounter("If YES then write E.D.D as per USG").is.defined
-    // .or.when.latestValueInPreviousEncounters("If YES then write E.D.D as per USG").is.notDefined
-    // return statusBuilder.build();
-    // }
-
     @WithName("Plan to do delivery?")
     a19(programEncounter,formElement) {
         const context = {programEncounter, formElement};
@@ -267,13 +262,17 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
              
         if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
                 .and.when.latestValueInPreviousEncounters("Place of delivery").is.notDefined.matches()) {
-            return new FormElementStatus(formElement.uuid, true);
+                    const status = new FormElementStatus(formElement.uuid, true);
+                        // status.answersToSkip = ["On the way"];
+                    return status;
         }
 
         if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
             .and.when.latestValueInPreviousEncounters("Place of delivery")
-            .containsAnswerConceptName("Not yet decided").matches()) {
-            return new FormElementStatus(formElement.uuid, true);
+            .containsAnswerConceptName("Not yet decided").matches()) {                
+                const status = new FormElementStatus(formElement.uuid, true);
+                    // status.answersToSkip = ["On the way"];
+                return status;
         }
 
             return new FormElementStatus(formElement.uuid, false);
@@ -458,6 +457,7 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
 
             return new FormElementStatus(formElement.uuid, false);
     }
+
 }
 
 @ancDecision("efcef7fd-fa11-4ed9-b389-d977755c883d", "Anc Form Decision", 100.0, {})
@@ -504,10 +504,10 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
        complicationsBuilder.addComplication("Jaundice (Icterus)")
             .when.valueInEncounter("Jaundice (Icterus)").containsAnswerConceptName("Present");
 
-       complicationsBuilder.addComplication("Breast Examination - Nipple")
+       complicationsBuilder.addComplication("Breast Examination -Nipple not normal")
              .when.valueInEncounter("Breast Examination - Nipple").containsAnyAnswerConceptName("Retracted", "Flat");
 
-       complicationsBuilder.addComplication("Is there any danger sign")
+       complicationsBuilder.addComplication("Danger sign(s) present")
              .when.valueInEncounter("Is there any danger sign")
              .containsAnyAnswerConceptName("Malaria","eclampsia","APH","Foul smelling menses","twin pregnancy",
              "fever","difficult breathing","severe vomiting","problems in laboratory report",
@@ -516,37 +516,37 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
        complicationsBuilder.addComplication("High blood sugar")
                .when.valueInEncounter("Blood Sugar").is.greaterThanOrEqualTo(140);
 
-       complicationsBuilder.addComplication("VDRL")
+       complicationsBuilder.addComplication("VDRL Postitve")
               .when.valueInEncounter("VDRL").containsAnswerConceptName("Positive");
 
-       complicationsBuilder.addComplication("HIV/AIDS Test")
+       complicationsBuilder.addComplication("HIV/AIDS Positive")
               .when.valueInEncounter("HIV/AIDS Test").containsAnswerConceptName("Positive");
 
-       complicationsBuilder.addComplication("HbsAg")
+       complicationsBuilder.addComplication("HbsAg Positive")
              .when.valueInEncounter("HbsAg").containsAnswerConceptName("Positive");
 
-       complicationsBuilder.addComplication("Sickling Test")
+       complicationsBuilder.addComplication("Sickle cell present")
            .when.valueInEncounter("IF YES, result of sickle cell test").containsAnyAnswerConceptName("DISEASE", "TRAIT","Normal");
 
-       complicationsBuilder.addComplication("Urine Albumin")
+       complicationsBuilder.addComplication("Urine Albumin present")
            .when.valueInEncounter("Urine Albumin").containsAnyAnswerConceptName("Trace", "+1", "+2", "+3", "+4");
 
-       complicationsBuilder.addComplication("Urine Sugar")
+       complicationsBuilder.addComplication("Urine Sugar present")
            .when.valueInEncounter("Urine Sugar").containsAnyAnswerConceptName("Trace", "+1", "+2", "+3", "+4");
 
-       complicationsBuilder.addComplication("USG Scanning Report - Number of foetus")
+       complicationsBuilder.addComplication("Number of foetus more than 1")
            .when.valueInEncounter("USG Scanning Report - Number of foetus").containsAnyAnswerConceptName("Two", "Three", "More than three");
 
-       complicationsBuilder.addComplication("USG Scanning Report - Liquour")
+       complicationsBuilder.addComplication("Liquour is not at normal level")
           .when.valueInEncounter("USG Scanning Report - Liquour").containsAnyAnswerConceptName("Increased", "Decreased");
 
-       complicationsBuilder.addComplication("USG Scanning Report - Placenta Previa")
+       complicationsBuilder.addComplication("Placenta Previa present")
           .when.valueInEncounter("USG Scanning Report - Placenta Previa").containsAnyAnswerConceptName("Previa");
 
-       complicationsBuilder.addComplication("Foetal presentation")
+       complicationsBuilder.addComplication("Foetal presentation not Cephalic")
           .when.valueInEncounter("Foetal presentation").containsAnyAnswerConceptName("Transverse", "Breech");
 
-       complicationsBuilder.addComplication("Foetal movements")
+       complicationsBuilder.addComplication("Foetal movements not normal")
          .when.valueInEncounter("Foetal movements").containsAnyAnswerConceptName("Absent", "Reduced");
 
        complicationsBuilder

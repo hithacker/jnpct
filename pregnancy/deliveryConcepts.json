@@ -13,10 +13,6 @@
     "name": "No"
   },
   {
-    "uuid": "f8f41024-a0eb-4a04-bd9c-fcffbf4cced2",
-    "name": "ON THE WAY"
-  },
-  {
     "name": "Place of delivery",
     "uuid": "95ee3ade-e926-4f8e-a6b9-6c4086a4db3a",
     "dataType": "Coded",
@@ -30,8 +26,8 @@
         "name": "Hospital"
       },
       {
-        "uuid": "f8f41024-a0eb-4a04-bd9c-fcffbf4cced2",
-        "name": "ON THE WAY"
+        "uuid": "0c773b70-4b20-4713-a45c-c0f3b39db87f",
+        "name": "On the way"
       }
     ]
   },
