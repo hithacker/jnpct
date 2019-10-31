@@ -13,25 +13,6 @@
     "name": "No"
   },
   {
-    "name": "Place of delivery",
-    "uuid": "95ee3ade-e926-4f8e-a6b9-6c4086a4db3a",
-    "dataType": "Coded",
-    "answers": [
-      {
-        "uuid": "8cfae1cd-3e75-40e9-9244-6d083c0d86f7",
-        "name": "Home"
-      },
-      {
-        "uuid": "fcca20e2-f837-4b78-a52f-1d187bca389a",
-        "name": "Hospital"
-      },
-      {
-        "uuid": "0c773b70-4b20-4713-a45c-c0f3b39db87f",
-        "name": "On the way"
-      }
-    ]
-  },
-  {
     "name": "Delivery pack used ?",
     "uuid": "ab201e49-cf1c-44c0-8a86-0545a2d57227",
     "dataType": "Coded",

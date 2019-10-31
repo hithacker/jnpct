@@ -259,7 +259,7 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
     @WithName("Place of delivery")
     a20(programEncounter,formElement) {
         const context = {programEncounter, formElement};
-             
+        
         if (new RuleCondition(context).whenItem(getCurrentWeek(programEncounter)).is.greaterThanOrEqualTo(21)
                 .and.when.latestValueInPreviousEncounters("Place of delivery").is.notDefined.matches()) {
                     const status = new FormElementStatus(formElement.uuid, true);
@@ -271,7 +271,7 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
             .and.when.latestValueInPreviousEncounters("Place of delivery")
             .containsAnswerConceptName("Not yet decided").matches()) {                
                 const status = new FormElementStatus(formElement.uuid, true);
-                    // status.answersToSkip = ["On the way"];
+                    // status.answersToSkip = {answersToSkip};
                 return status;
         }
 
