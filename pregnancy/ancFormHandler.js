@@ -21,10 +21,7 @@ const getCurrentWeek = (programEncounter) => {
 }
 
 const getCurrentTrimester = (programEncounter) => {
-    // console.log('programEncounter.programEnrolment',programEncounter.programEnrolment);
-    // console.log('programEncounter.encounterDateTime',programEncounter.encounterDateTime);
     const currentTrimester = lib.calculations.currentTrimester(programEncounter.programEnrolment,programEncounter.encounterDateTime);
-    // console.log('current trimester',currentTrimester);
     return currentTrimester;
 }
 

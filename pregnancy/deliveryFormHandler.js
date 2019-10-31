@@ -47,12 +47,29 @@ class PregnancyDeliveryFormViewFilterJNPCT {
            .containsAnswerConceptNameOtherThan("Still Birth");
      }
 
+     @WithName("Gender of Newborn1")
+    @WithStatusBuilder
+    d31([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Delivery outcome")
+           .containsAnswerConceptNameOtherThan("Still Birth");
+     }
+
+     @WithName("Weight of Newborn1")
+    @WithStatusBuilder
+    d32([], statusBuilder) {
+         statusBuilder.show().when.valueInEncounter("Delivery outcome")
+           .containsAnswerConceptNameOtherThan("Still Birth");
+     }
+
     @WithName('Number of days stayed at the hospital')
     d4(programEncounter, formElement) {
         const days = moment(programEncounter.getObservationReadableValue('Date of discharge'))
             .diff(programEncounter.getObservationReadableValue('Date of delivery'), 'days');
         const value = isFinite(days) ? days : undefined;
-        return new FormElementStatus(formElement.uuid, true, value);
+        const visibility = new RuleCondition({programEncounter}).valueInEncounter("Place of delivery")
+            .containsAnswerConceptName("Hospital")
+            .matches();
+        return new FormElementStatus(formElement.uuid, visibility, value);
     }
 
     genderOfNewborn2(programEncounter, formElement, no) {
@@ -204,8 +221,8 @@ class DeliveryFormVisitDecision {
         complicationsConcept: "Gestational age category at delivery"
     });
 
-    complicationsBuilder.addComplication("Preterm")//Very preterm
-    .when.valueInEncounter("Week of Gestation").is.lessThanE(36);
+    complicationsBuilder.addComplication("Very preterm")//
+    .when.valueInEncounter("Week of Gestation").is.lessThan(36);
 
     complicationsBuilder.addComplication("Full term")//
     .when.valueInEncounter("Week of Gestation").is.greaterThanOrEqualTo(36);

@@ -12,7 +12,12 @@
         {
           "name": "Which day after Delivery",
           "uuid": "b8bc48d9-e9bc-4eea-87f9-c37a66a2b55a",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
           "concept": {
             "uuid": "14db9754-cb53-4948-ab69-ea18956bf8da"
           },

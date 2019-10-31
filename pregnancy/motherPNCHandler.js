@@ -34,9 +34,9 @@ class PncFormViewFilterHandlerJNPCT {
 
     @WithName('Which day after Delivery')
     p2(programEncounter, formElement) {
-        const days = moment(programEncounter.getObservationReadableValue('Date of Visit'))
-         .diff(programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP', programEncounter), 'days');
-        const value = isFinite(days) ? days : undefined;
+        const days = moment(programEncounter.encounterDateTime) 
+        .diff(programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of delivery'), 'days');
+         const value = isFinite(days) ? days : undefined;
       return new FormElementStatus(formElement.uuid, true, value);
     }
 

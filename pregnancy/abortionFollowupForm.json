@@ -12,7 +12,12 @@
         {
           "name": "Which Day after Abortion?",
           "uuid": "3d38b4f8-2697-4bd1-bda2-561877b3d1db",
-          "keyValues": [],
+          "keyValues": [
+            {
+              "key": "editable",
+              "value": false
+            }
+          ],
           "concept": {
             "uuid": "14db9754-cb53-4948-ab69-ea18956bf8da"
           },

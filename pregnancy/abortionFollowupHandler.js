@@ -34,11 +34,11 @@ class AbortionFollowupViewFilterHandlerJNPCT {
 
     @WithName('Which Day after Abortion?')
     f2(programEncounter, formElement) {
-        const days = moment(programEncounter.getObservationReadableValue('Date of Visit'))
-         .diff(programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP', programEncounter), 'days');
-        const value = isFinite(days) ? days : undefined;
+        const days = moment(programEncounter.encounterDateTime) 
+        .diff(programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP'), 'days');
+         const value = isFinite(days) ? days : undefined;
       return new FormElementStatus(formElement.uuid, true, value);
-    }
+     }
 
 }
 

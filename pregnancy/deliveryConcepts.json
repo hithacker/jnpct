@@ -207,39 +207,48 @@
     "answers": [
       {
         "uuid": "7f736089-d245-4116-aa9d-70219a4e1e70",
-        "name": "Prolong labour"
+        "name": "Prolong labour",
+        "abnormal":true
       },
       {
         "uuid": "9f920a32-dad3-423a-a044-de72db342eec",
-        "name": "TWINS"
+        "name": "TWINS",
+        "abnormal":true
       },
       {
         "uuid": "116ba998-263c-49c5-a30e-ad8bfdbd2727",
-        "name": "ECLAMPSIA"
+        "name": "ECLAMPSIA",
+        "abnormal":true
       },
       {
         "uuid": "9c39c194-ffa8-4196-922d-a3b76fa2e676",
-        "name": "difficulty in placental delivery"
+        "name": "difficulty in placental delivery",
+        "abnormal":true
       },
       {
         "uuid": "1fe4d292-405b-4ae9-8484-8c87b80e8214",
-        "name": "Haemorrhage"
+        "name": "Haemorrhage",
+        "abnormal":true
       },
       {
         "uuid": "6e501af4-7831-47ab-8f1c-ee0c09830a4e",
-        "name": "any part child rather than head come first"
+        "name": "any part child rather than head come first",
+        "abnormal":true
       },
       {
         "uuid": "56331346-a084-4205-88e1-acc7fcb9faee",
-        "name": "APH"
+        "name": "APH",
+        "abnormal":true
       },
       {
         "uuid": "05059567-b2bd-4c1b-b9c1-c13fd0407431",
-        "name": "Vaginal tear"
+        "name": "Vaginal tear",
+        "abnormal":true
       },
       {
         "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
-        "name": "Other"
+        "name": "Other",
+        "abnormal":true
       },
       {
         "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
@@ -419,10 +428,6 @@
     ]
   },
   {
-    "uuid": "7f9eac8f-5383-4def-b180-70e7221bcc91",
-    "name": "Preterm"
-  },
-  {
     "uuid": "0c4c4c69-4484-4822-a0f7-711538b74d96",
     "name": "Full term"
   },
@@ -432,8 +437,8 @@
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "7f9eac8f-5383-4def-b180-70e7221bcc91",
-        "name": "Preterm",
+        "uuid": "739eaf36-9d2d-4804-bbee-9c953299da96",
+        "name": "Very Preterm",
         "abnormal": true
       },
       {
