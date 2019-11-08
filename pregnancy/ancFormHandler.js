@@ -261,6 +261,7 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
                 .and.when.latestValueInPreviousEncounters("Place of delivery").is.notDefined.matches()) {
                     const status = new FormElementStatus(formElement.uuid, true);
                         // status.answersToSkip = ["On the way"];
+                        status.answersToSkip = [formElement.getAnswerWithConceptName("On the way")]; 
                     return status;
         }
 
@@ -269,6 +270,7 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
             .containsAnswerConceptName("Not yet decided").matches()) {                
                 const status = new FormElementStatus(formElement.uuid, true);
                     // status.answersToSkip = {answersToSkip};
+                    status.answersToSkip = [formElement.getAnswerWithConceptName("On the way")]; 
                 return status;
         }
 
@@ -523,7 +525,7 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
              .when.valueInEncounter("HbsAg").containsAnswerConceptName("Positive");
 
        complicationsBuilder.addComplication("Sickle cell present")
-           .when.valueInEncounter("IF YES, result of sickle cell test").containsAnyAnswerConceptName("DISEASE", "TRAIT","Normal");
+           .when.valueInEncounter("IF YES, result of sickle cell test").containsAnyAnswerConceptName("DISEASE", "TRAIT");
 
        complicationsBuilder.addComplication("Urine Albumin present")
            .when.valueInEncounter("Urine Albumin").containsAnyAnswerConceptName("Trace", "+1", "+2", "+3", "+4");
