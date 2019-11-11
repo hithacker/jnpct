@@ -28,25 +28,22 @@ module.exports = IDI.configure({
         "formMappings": [
             "metadata/formMappings.json"
         ],
-        "formDeletions": [
-        ],
-        "formAdditions": [
-        ],
+        "formDeletions": [],
+        "formAdditions": [],
         "catchments": [
             "metadata/catchments.json"
         ],
-        "checklistDetails": [
-        ],
+        "checklistDetails": [],
         "concepts": [
             "registration/registrationConcepts.json",
-             "eligibleCouple/eligibleCoupleConcepts.json",
-             "pregnancy/pregnancyEnrolmentConcepts.json",
-             "pregnancy/ancFormConcepts.json",
-             "pregnancy/deliveryConcepts.json",
-             "pregnancy/abortionConcepts.json",
-             "child/childConcepts.json",
-             "child/childBirthConcepts.json",
-             "child/childPNCConcepts.json"
+            "eligibleCouple/eligibleCoupleConcepts.json",
+            "pregnancy/pregnancyEnrolmentConcepts.json",
+            "pregnancy/ancFormConcepts.json",
+            "child/childBirthConcepts.json",
+            "pregnancy/deliveryConcepts.json",
+            "pregnancy/abortionConcepts.json",
+            "child/childConcepts.json",
+            "child/childPNCConcepts.json"
         ],
         "locations": [
             "metadata/locations.json"
