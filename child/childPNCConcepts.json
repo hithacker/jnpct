@@ -941,10 +941,11 @@
   {
     "name": "Weight of infant at time to stoped to do KMC",
     "uuid": "78511bef-1c10-47a0-98cb-a91aff6f1c3c",
-    "dataType": "Numeric"
+    "dataType": "Numeric",
+    "unit": "kg"
   },
   {
-    "name": "Does child require to refer if morbidity found ",
+    "name": "Does child require to refer if morbidity found",
     "uuid": "e8a74be5-e817-4992-87df-abab41753f38",
     "dataType": "Coded",
     "answers": [

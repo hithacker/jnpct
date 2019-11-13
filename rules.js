@@ -10,5 +10,6 @@ module.exports = _.merge({},
     require('./pregnancy/abortionFollowupHandler'),
     require('./pregnancy/motherPNCHandler.js'),
     require('./child/childEnrolmentHandler.js'),
-    require('./child/childBirthFormHandler.js')
+    require('./child/childBirthFormHandler.js'),
+    require('./child/childPNCHandler.js')
 );
