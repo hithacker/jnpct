@@ -428,6 +428,10 @@
     ]
   },
   {
+    "uuid": "597291ea-92aa-4a9c-9f14-28e92a8fe204",
+    "name": "Preterm"
+  },
+  {
     "uuid": "0c4c4c69-4484-4822-a0f7-711538b74d96",
     "name": "Full term"
   },
@@ -437,8 +441,8 @@
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "739eaf36-9d2d-4804-bbee-9c953299da96",
-        "name": "Very Preterm",
+        "uuid": "597291ea-92aa-4a9c-9f14-28e92a8fe204",
+        "name": "Preterm",
         "abnormal": true
       },
       {

@@ -221,7 +221,7 @@ class DeliveryFormVisitDecision {
         complicationsConcept: "Gestational age category at delivery"
     });
 
-    complicationsBuilder.addComplication("Very Preterm")//
+    complicationsBuilder.addComplication("Preterm")//
     .when.valueInEncounter("Week of Gestation").is.lessThan(36);
 
     complicationsBuilder.addComplication("Full term")//
