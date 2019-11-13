@@ -428,7 +428,7 @@
     ]
   },
   {
-    "uuid": "597291ea-92aa-4a9c-9f14-28e92a8fe204",
+    "uuid": "7f9eac8f-5383-4def-b180-70e7221bcc91",
     "name": "Preterm"
   },
   {
@@ -441,7 +441,7 @@
     "dataType": "Coded",
     "answers": [
       {
-        "uuid": "597291ea-92aa-4a9c-9f14-28e92a8fe204",
+        "uuid": "7f9eac8f-5383-4def-b180-70e7221bcc91",
         "name": "Preterm",
         "abnormal": true
       },
