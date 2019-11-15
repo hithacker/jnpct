@@ -115,7 +115,7 @@
         "name": "Cry"
       }
     ]
-  } ,
+  },
   {
     "name": "Did breast feeding start within 1 hour of birth?",
     "uuid": "90086c0d-33a6-4044-b3e8-bbef93796517",
@@ -182,7 +182,7 @@
         "name": "No"
       }
     ]
-  },  
+  },
   {
     "uuid": "129219e9-93b2-41d3-8b1b-0f1e829ea239",
     "name": "Cleft Lip"
@@ -212,51 +212,51 @@
     "uuid": "a6ad7816-154d-4007-8fb5-ef36ed19af95",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "129219e9-93b2-41d3-8b1b-0f1e829ea239",
-            "name": "Cleft Lip",
-            "abnormal": true
-          },
-          {
-            "uuid": "2f4cadfd-6887-4efe-b8e0-4297f2baab80",
-            "name": "Cleft Palate",
-            "abnormal": true
-          },
-          {
-            "uuid": "b72e894e-eb1a-427c-96d1-7bf467338f43",
-            "name": "Umblical Hernia",
-            "abnormal": true
-          },
-          {
-            "uuid": "a6fcdf9d-9f38-4d45-a32a-0abf56311751",
-            "name": "Inguinal Hernia",
-            "abnormal": true
-          },
-          {
-            "uuid": "13235232-6081-428b-ad3a-b6621e18127d",
-            "name": "Congenital Heart Disease",
-            "abnormal": true
-          },
-          {
-            "uuid": "d066186b-9781-4a63-9dc1-3bcdefdd0378",
-            "name": "Neural tube defects, Imperforated Anus",
-            "abnormal": true
-          },
-          {
-            "uuid": "776026cf-fb20-4d3b-8138-f19cc9588874",
-            "name": "Club foot",
-            "abnormal": true
-          },
-        {
-            "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
-            "name": "Other",
-            "abnormal": true
-          },
-          {
-            "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
-            "name": "None",
-            "unique": true
-          }
+      {
+        "uuid": "129219e9-93b2-41d3-8b1b-0f1e829ea239",
+        "name": "Cleft Lip",
+        "abnormal": true
+      },
+      {
+        "uuid": "2f4cadfd-6887-4efe-b8e0-4297f2baab80",
+        "name": "Cleft Palate",
+        "abnormal": true
+      },
+      {
+        "uuid": "b72e894e-eb1a-427c-96d1-7bf467338f43",
+        "name": "Umblical Hernia",
+        "abnormal": true
+      },
+      {
+        "uuid": "a6fcdf9d-9f38-4d45-a32a-0abf56311751",
+        "name": "Inguinal Hernia",
+        "abnormal": true
+      },
+      {
+        "uuid": "13235232-6081-428b-ad3a-b6621e18127d",
+        "name": "Congenital Heart Disease",
+        "abnormal": true
+      },
+      {
+        "uuid": "d066186b-9781-4a63-9dc1-3bcdefdd0378",
+        "name": "Neural tube defects, Imperforated Anus",
+        "abnormal": true
+      },
+      {
+        "uuid": "776026cf-fb20-4d3b-8138-f19cc9588874",
+        "name": "Club foot",
+        "abnormal": true
+      },
+      {
+        "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+        "name": "Other",
+        "abnormal": true
+      },
+      {
+        "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
+        "name": "None",
+        "unique": true
+      }
     ]
   },
   {
@@ -281,20 +281,20 @@
     "uuid": "35870e21-f4a7-4df1-980a-b77954928f66",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "dd46bef9-6bb7-4062-b10a-62f5c8a76000",
-            "name": "Blue/Pale",
-            "abnormal": true
-          },
-          {
-            "uuid": "ec30ab42-7105-4b2e-8d59-94920b3a3d3a",
-            "name": "Body pink but hands and feet blue/pale",
-            "abnormal": true
-          },
-          {
-            "uuid": "98c3bab3-d500-4de0-9412-b10b99190627",
-            "name": "Completely pink"
-          }
+      {
+        "uuid": "dd46bef9-6bb7-4062-b10a-62f5c8a76000",
+        "name": "Blue/Pale",
+        "abnormal": true
+      },
+      {
+        "uuid": "ec30ab42-7105-4b2e-8d59-94920b3a3d3a",
+        "name": "Body pink but hands and feet blue/pale",
+        "abnormal": true
+      },
+      {
+        "uuid": "98c3bab3-d500-4de0-9412-b10b99190627",
+        "name": "Completely pink"
+      }
     ]
   },
   {
@@ -302,15 +302,15 @@
     "uuid": "b0306743-3879-46f0-b963-f41447d1891b",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
-            "name": "Present",
-            "abnormal": true
-          },
-          {
-            "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
-            "name": "Absent"
-          }
+      {
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+        "name": "Present",
+        "abnormal": true
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      }
     ]
   },
   {
@@ -318,15 +318,15 @@
     "uuid": "397e9057-446b-4076-8676-92b79281601b",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No",
-            "abnormal": true
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No",
+        "abnormal": true
+      }
     ]
   },
   {
@@ -334,15 +334,15 @@
     "uuid": "92264531-33df-4ad3-97ce-89ef2a9eb514",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes",
-            "abnormal": true
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -350,15 +350,15 @@
     "uuid": "9f3a91ea-7e87-4cb7-b40c-426d20adc737",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes",
-            "abnormal": true
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -366,15 +366,15 @@
     "uuid": "737ae4e7-f38a-4aef-a6aa-d9ad1642494a",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes",
-            "abnormal":true
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -382,15 +382,15 @@
     "uuid": "e1711f03-e9ff-4356-b018-5f08c1ee6207",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No",
-            "abnormal":true
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No",
+        "abnormal": true
+      }
     ]
   },
   {
@@ -398,15 +398,15 @@
     "uuid": "09573558-edb4-41c6-a2a7-55484158c96e",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes",
-            "abnormal": true
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -431,27 +431,27 @@
   },
   {
     "uuid": "fbdf79a3-4665-4943-86c8-7358a521d105",
-    "name": "Gestational age at birth is not in term" 
+    "name": "Gestational age at birth is not in term"
   },
   {
     "uuid": "06ee1bad-4665-4e1c-bf4a-9be542842730",
-    "name": "Baby did not cry soon after birth" 
+    "name": "Baby did not cry soon after birth"
   },
   {
     "uuid": "574b81d1-3635-4bdf-8ba0-9b1827f14e98",
-    "name": "Baby did not breast feed within 1 hour of birth" 
+    "name": "Baby did not breast feed within 1 hour of birth"
   },
   {
     "uuid": "6c4bde90-87bc-419e-8b72-626e6530d8f7",
-    "name": "Colour of child is not normal" 
+    "name": "Colour of child is not normal"
   },
   {
     "uuid": "a3f99163-5d60-4717-9721-26703f0b48cb",
-    "name": "Icterus present" 
+    "name": "Icterus present"
   },
   {
     "uuid": "87ff2ecc-7121-44a3-a78a-5fe427bac895",
-    "name": "High temperature" 
+    "name": "High temperature"
   },
   {
     "name": "High Risk Child",
@@ -461,59 +461,198 @@
       {
         "uuid": "9b7e8550-7ad7-4a7a-b223-eec5a900c289",
         "name": "Low birth weight",
-        "abnormal":true
+        "abnormal": true
       },
       {
         "uuid": "fbdf79a3-4665-4943-86c8-7358a521d105",
         "name": "Gestational age at birth is not in term",
-        "abnormal":true
+        "abnormal": true
       },
       {
         "uuid": "06ee1bad-4665-4e1c-bf4a-9be542842730",
         "name": "Baby did not cry soon after birth",
-        "abnormal":true
+        "abnormal": true
       },
       {
         "uuid": "574b81d1-3635-4bdf-8ba0-9b1827f14e98",
         "name": "Baby did not breast feed within 1 hour of birth",
-        "abnormal":true
+        "abnormal": true
       },
       {
         "uuid": "6c4bde90-87bc-419e-8b72-626e6530d8f7",
         "name": "Colour of child is not normal",
-        "abnormal":true
+        "abnormal": true
       },
       {
         "uuid": "a3f99163-5d60-4717-9721-26703f0b48cb",
         "name": "Icterus present",
-        "abnormal":true
+        "abnormal": true
       },
       {
         "uuid": "87ff2ecc-7121-44a3-a78a-5fe427bac895",
         "name": "High temperature",
-        "abnormal":true
+        "abnormal": true
       }
     ]
   },
   {
     "uuid": "0e33a0c7-b53d-4ccc-a634-66667d8058a0",
-    "name": "Refer child to hospital immediately and keep child warm in clothes" 
+    "name": "Refer child to hospital immediately and keep child warm in clothes"
   },
   {
     "uuid": "0db8a507-8e8d-470d-bb6b-7f1a5b586034",
-    "name": "Life threatening abnormality" 
+    "name": "Life threatening abnormality"
   },
   {
-    "uuid":"6de7ea7d-311a-4e9a-af33-bd46ef1baa1f",
-    "name":"Foam coming out from child's mouth"
+    "uuid": "6de7ea7d-311a-4e9a-af33-bd46ef1baa1f",
+    "name": "Foam coming out from child's mouth"
   },
   {
-    "uuid":"87c0b893-49b0-4ff3-89ea-cc3ef658f8f2",
-    "name":"Blood is coming from body part"
+    "uuid": "87c0b893-49b0-4ff3-89ea-cc3ef658f8f2",
+    "name": "Blood is coming from body part"
   },
   {
-    "uuid":"e5e878f8-e2d5-4bc5-8f7b-8ba96031cb6e",
-    "name":"High respiratory rate"
+    "uuid": "e5e878f8-e2d5-4bc5-8f7b-8ba96031cb6e",
+    "name": "High respiratory rate"
+  },
+  {
+    "name": "Not breathing properly",
+    "uuid": "047586ed-c286-4ccd-a93e-c66f02a44b5f"
+  },
+  {
+    "name": "Not paases stool and urine within 24  hour",
+    "uuid": "05c4e2c0-eb64-45a9-a432-73de678dbc71"
+  },
+  {
+    "name": "palate/lips in child's mouth",
+    "uuid": "719cb646-6fc5-450d-b92a-42010e7ed6c2"
+  },
+  {
+    "name": "Blood coming out from part of body",
+    "uuid": "745f345b-7f20-4cc7-842d-e615dae23339"
+  },
+  {
+    "name": "There is visible jaundice",
+    "uuid": "da99e2c1-e7a1-4471-9b57-6301a679c016"
+  },
+  {
+    "name": "There is grunting sound",
+    "uuid": "635ecfd4-6af0-4a53-a79f-d5eb45b4e3eb"
+  },
+  {
+    "name": "Abnormal Color",
+    "uuid": "b78f15e1-9806-4eba-a0b6-a4e0c7b3a926"
+  },
+  {
+    "name": "Less Infants Movement",
+    "uuid": "3e78d599-6ea6-4086-a685-e90cb6d32713"
+  },
+  {
+    "name": "Low Temperature of infant",
+    "uuid": "0857b1db-78f6-451f-bda1-2d78a8d33021"
+  },
+  {
+    "name": "High Temperature of infant",
+    "uuid": "2d6cc2ba-a8b8-46cb-9843-e9b68f8581f4"
+  },
+  {
+    "name": "Abnormal Condition of umbelicus",
+    "uuid": "58521c2d-3793-41aa-b3a2-2e12990e2f44"
+  },
+  {
+    "name": "Abnormal attachment while sucking",
+    "uuid": "0037c5c3-b853-49cf-9550-cbc86d4f337a"
+  },
+  {
+    "name": "Not suckling",
+    "uuid": "78714944-8141-45c8-8a1e-8a805a26f14f"
+  },
+  {
+    "name": "Difficulty in breastfeeding",
+    "uuid": "4f432e7a-0642-4455-a6ac-a9b955ecf64d"
+  },
+  {
+    "name": "Bleeding from part of body",
+    "uuid": "e2ca6a3e-75af-48f9-a1f1-4a475034d35a"
+  },
+  {
+    "name": "Infant vomiting",
+    "uuid": "720a1e15-fc8e-4581-8022-f61b75ae7589"
+  },
+  {
+    "name": "infant's abdomen look gasious",
+    "uuid": "ce058bd3-881d-4c7c-94be-db644522e171"
+  },
+  {
+    "name": "infant looks icteric",
+    "uuid": "f44aed1f-d16d-48d8-81f3-e3df92d5620c"
+  },
+  {
+    "name": "infant looks cynosed",
+    "uuid": "aa577db1-ef9e-49f5-975f-4d5b4b5e48f7"
+  },
+  {
+    "name": "infant looks abnormal",
+    "uuid": "251f9b7f-aeb4-49ff-a751-829454aa31ed"
+  },
+  {
+    "name": "cleft pallet seen in infant's mouth",
+    "uuid": "138e9949-cab1-49da-8ebf-04a88f398c22"
+  },
+  {
+    "name": "there is visible tumor",
+    "uuid": "2352f372-e2eb-4241-9ac3-23147199d123"
+  },
+  {
+    "name": "Continuously foam is coming from mouth",
+    "uuid": "db7de6a1-777e-423e-8318-13aefc0262e3"
+  },
+  {
+    "name": "infant has watery diarrhoea",
+    "uuid": "71e703b0-8a09-4989-86fb-3d99e973b14e"
+  },
+  {
+    "name": "Keep child warm in cloths",
+    "uuid": "707730c0-8429-4bf2-ab42-4759a5ca8158"
+  },
+  {
+    "name": "Keep child in 3-4 folded cloths",
+    "uuid": "cbccf058-9a17-44a2-8609-7e9168c2c310"
+  },
+  {
+    "name": "Give PCM",
+    "uuid": "abac7686-a4bf-4213-8063-af0576bfba80"
+  },{
+    "name": "apply 0.25%GV lotion, give first dose of cotri ",
+    "uuid": "05768762-83eb-4a1d-a447-8c9eb5469728"
+  },
+  {
+    "name": "Explain mother for proper suckling position",
+    "uuid": "c89a4329-6282-4053-928d-61a9764e3a24"
+  },
+  {
+    "name": "Expain mother for exclusive breastfeeding",
+    "uuid": "b30b55a8-de5d-4017-b371-2239ccf6a73a"
+  },
+  {
+    "name": "Expain mother for breastfeeding more than 10 times",
+    "uuid": "c5f41477-5f6d-43bd-95d4-7ffc981b3f06"
+  },
+  {
+    "name": "Expain mother to increase frequency of breastfeeding",
+    "uuid": "0bdbedd8-5031-4c51-aca0-e502635fa90f"
+  },
+  {
+    "name": "Give primary treatment",
+    "uuid": "b789d3ad-dadf-41d8-9e0f-f38a05c3f91e"
+  },
+  {
+    "name": "Apply 0.25 % GV lotion  two times a day",
+    "uuid": "20937379-c6b8-4edf-a01b-f0639b8291ee"
+  },
+  {
+    "name": "if 10 or above pustules are present then give primary treatment and refer , if less than 10 pustule then apply 0.5% GV lotion and give cotri syrup two times for 5 days.",
+    "uuid": "1de1865b-0376-4e93-9d0c-a08974c2671c"
   },
   {
     "name": "Refer to the hospital for",
@@ -523,28 +662,202 @@
       {
         "uuid": "0e33a0c7-b53d-4ccc-a634-66667d8058a0",
         "name": "Refer child to hospital immediately and keep child warm in clothes",
-        "abnormal":true
+        "abnormal": true
       },
       {
         "uuid": "0db8a507-8e8d-470d-bb6b-7f1a5b586034",
         "name": "Life threatening abnormality",
-        "abnormal":true
-      },
-      {
-        "uuid":"6de7ea7d-311a-4e9a-af33-bd46ef1baa1f",
-        "name":"Foam coming out from child's mouth",
-        "abnormal":true
-      },
-      {
-        "uuid":"87c0b893-49b0-4ff3-89ea-cc3ef658f8f2",
-        "name":"Blood is coming from body part",
         "abnormal": true
       },
       {
-        "uuid":"e5e878f8-e2d5-4bc5-8f7b-8ba96031cb6e",
-        "name":"High respiratory rate",
-        "abnormal":true
+        "uuid": "6de7ea7d-311a-4e9a-af33-bd46ef1baa1f",
+        "name": "Foam coming out from child's mouth",
+        "abnormal": true
+      },
+      {
+        "uuid": "87c0b893-49b0-4ff3-89ea-cc3ef658f8f2",
+        "name": "Blood is coming from body part",
+        "abnormal": true
+      },
+      {
+        "uuid": "e5e878f8-e2d5-4bc5-8f7b-8ba96031cb6e",
+        "name": "High respiratory rate",
+        "abnormal": true
+      },
+      {
+        "name": "Not breathing properly",
+        "uuid": "047586ed-c286-4ccd-a93e-c66f02a44b5f",
+        "abnormal": true
+      },
+      {
+        "name": "Not paases stool and urine within 24  hour",
+        "uuid": "05c4e2c0-eb64-45a9-a432-73de678dbc71",
+        "abnormal": true
+      },
+      {
+        "name": "palate/lips in child's mouth",
+        "uuid": "719cb646-6fc5-450d-b92a-42010e7ed6c2",
+        "abnormal": true
+      },
+      {
+        "name": "Blood coming out from part of body",
+        "uuid": "745f345b-7f20-4cc7-842d-e615dae23339",
+        "abnormal": true
+      },
+      {
+        "name": "There is visible jaundice",
+        "uuid": "da99e2c1-e7a1-4471-9b57-6301a679c016",
+        "abnormal": true
+      },
+      {
+        "name": "There is grunting sound",
+        "uuid": "635ecfd4-6af0-4a53-a79f-d5eb45b4e3eb",
+        "abnormal": true
+      },
+      {
+        "name": "Abnormal Color",
+        "uuid": "b78f15e1-9806-4eba-a0b6-a4e0c7b3a926",
+        "abnormal": true
+      },
+      {
+        "name": "Less Infants Movement",
+        "uuid": "3e78d599-6ea6-4086-a685-e90cb6d32713",
+        "abnormal": true
+      },
+      {
+        "name": "Low Temperature of infant",
+        "uuid": "0857b1db-78f6-451f-bda1-2d78a8d33021",
+        "abnormal": true
+      },
+      {
+        "name": "High Temperature of infant",
+        "uuid": "2d6cc2ba-a8b8-46cb-9843-e9b68f8581f4",
+        "abnormal": true
+      },
+      {
+        "name": "Abnormal Condition of umbelicus",
+        "uuid": "58521c2d-3793-41aa-b3a2-2e12990e2f44",
+        "abnormal": true
+      },
+      {
+        "name": "Abnormal attachment while sucking",
+        "uuid": "0037c5c3-b853-49cf-9550-cbc86d4f337a",
+        "abnormal": true
+      },
+      {
+        "name": "Not suckling",
+        "uuid": "78714944-8141-45c8-8a1e-8a805a26f14f",
+        "abnormal": true
+      },
+      {
+        "name": "Difficulty in breastfeeding",
+        "uuid": "4f432e7a-0642-4455-a6ac-a9b955ecf64d",
+        "abnormal": true
+      },
+      {
+        "name": "Bleeding from part of body",
+        "uuid": "e2ca6a3e-75af-48f9-a1f1-4a475034d35a",
+        "abnormal": true
+      },
+      {
+        "name": "Infant vomiting",
+        "uuid": "720a1e15-fc8e-4581-8022-f61b75ae7589",
+        "abnormal": true
+      },
+      {
+        "name": "infant's abdomen look gasious",
+        "uuid": "ce058bd3-881d-4c7c-94be-db644522e171",
+        "abnormal": true
+      },
+      {
+        "name": "infant looks icteric",
+        "uuid": "f44aed1f-d16d-48d8-81f3-e3df92d5620c",
+        "abnormal": true
+      },
+      {
+        "name": "infant looks cynosed",
+        "uuid": "aa577db1-ef9e-49f5-975f-4d5b4b5e48f7",
+        "abnormal": true
+      },
+      {
+        "name": "infant looks abnormal",
+        "uuid": "251f9b7f-aeb4-49ff-a751-829454aa31ed",
+        "abnormal": true
+      },
+      {
+        "name": "cleft pallet seen in infant's mouth",
+        "uuid": "138e9949-cab1-49da-8ebf-04a88f398c22",
+        "abnormal": true
+      },
+      {
+        "name": "there is visible tumor",
+        "uuid": "2352f372-e2eb-4241-9ac3-23147199d123",
+        "abnormal": true
+      },
+      {
+        "name": "Continuously foam is coming from mouth",
+        "uuid": "db7de6a1-777e-423e-8318-13aefc0262e3",
+        "abnormal": true
+      },
+      {
+        "name": "infant has watery diarrhoea",
+        "uuid": "71e703b0-8a09-4989-86fb-3d99e973b14e",
+        "abnormal": true
+      }
+
+
+    ]
+  },
+  {
+    "name": "Counsel mother",
+    "uuid": "fe87690a-afa6-4bd3-98e3-fa65c065e99a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Keep child warm in cloths",
+        "uuid": "707730c0-8429-4bf2-ab42-4759a5ca8158"
+      },
+      {
+        "name": "Keep child in 3-4 folded cloths",
+        "uuid": "cbccf058-9a17-44a2-8609-7e9168c2c310"
+      },
+      {
+        "name": "Give PCM",
+        "uuid": "abac7686-a4bf-4213-8063-af0576bfba80"
+      },
+      {
+        "name": "apply 0.25%GV lotion, give first dose of cotri ",
+        "uuid": "05768762-83eb-4a1d-a447-8c9eb5469728"
+      },
+      {
+        "name": "Explain mother for proper suckling position",
+        "uuid": "c89a4329-6282-4053-928d-61a9764e3a24"
+      },
+      {
+        "name": "Expain mother for exclusive breastfeeding",
+        "uuid": "b30b55a8-de5d-4017-b371-2239ccf6a73a"
+      },
+      {
+        "name": "Expain mother for breastfeeding more than 10 times",
+        "uuid": "c5f41477-5f6d-43bd-95d4-7ffc981b3f06"
+      },
+      {
+        "name": "Expain mother to increase frequency of breastfeeding",
+        "uuid": "0bdbedd8-5031-4c51-aca0-e502635fa90f"
+      },
+      {
+        "name": "Give primary treatment",
+        "uuid": "b789d3ad-dadf-41d8-9e0f-f38a05c3f91e"
+      },
+      {
+        "name": "Apply 0.25 % GV lotion  two times a day",
+        "uuid": "20937379-c6b8-4edf-a01b-f0639b8291ee"
+      },
+      {
+        "name": "if 10 or above pustules are present then give primary treatment and refer , if less than 10 pustule then apply 0.5% GV lotion and give cotri syrup two times for 5 days.",
+        "uuid": "1de1865b-0376-4e93-9d0c-a08974c2671c"
       }
     ]
+
   }
 ]

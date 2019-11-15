@@ -62,7 +62,7 @@ class PregnancyAbortionDecision {
        referralBuilder.addComplication("High Diastolic")
               .when.valueInEncounter("BP Diastolic").greaterThan(90);
 
-       referralBuilder.addComplication("High Fever")
+       referralBuilder.addComplication("cc")
            .when.valueInEncounter("Temperature").greaterThan(37.5);
 
        referralBuilder.addComplication("Abnormal Hb")

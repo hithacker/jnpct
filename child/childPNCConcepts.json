@@ -914,6 +914,11 @@
     ]
   },
   {
+    "name": "Todays weight of infant?",
+    "uuid": "d2b5b24b-3c04-4dcb-b705-344fb1313380",
+    "dataType": "Numeric"
+  },
+  {
     "name": "If infant's weight is less than 2.5kg then did KMC?",
     "uuid": "d21d1844-362b-426c-a5d4-c45ab5fc1690",
     "dataType": "Coded",
@@ -927,6 +932,12 @@
         "name": "No"
       }
     ]
+  },
+  {
+    "name": "Weight at the time of KMC started to do",
+    "uuid": "81d81392-d0e6-40ce-84bd-4fd0eba04719",
+    "dataType": "Numeric",
+    "unit": "kg"
   },
   {
     "name": "In last 24 hours for how many times did KMC?",
