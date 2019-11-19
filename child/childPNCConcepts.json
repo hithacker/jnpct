@@ -1091,7 +1091,45 @@
         "name": "Private Hospital"
       }
     ]
+  },
+  {
+    "name": "Baby Warming Dos",
+    "uuid": "f006c0b1-d6ad-44b4-b347-0f8ba148048d",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Baby Warming Donts",
+    "uuid": "7113c221-0113-4593-b23a-b7f9495da255",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Breast Feeding - Do's",
+    "uuid": "3657a1ae-83cb-4204-82b0-0745d29541c2",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Hygiene",
+    "uuid": "73187abb-c46f-4b07-ae8f-8832850f911c",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Child PNC Weight -Do's",
+    "uuid": "063fd686-1070-405b-89a6-cbf5e3c79f0f",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Registration Immunisation - Do's",
+    "uuid": "c13e5e72-2c93-4462-be0b-010263bb2e02",
+    "dataType": "Coded",
+    "answers": []
   }
+
+
   
   
   
