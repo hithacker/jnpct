@@ -769,6 +769,88 @@
           "mandatory": true
         }
       ]
+    },
+    {
+      "uuid": "74d14a57-af10-4dd7-994a-11b4421b88af",
+      "name": "Baby warming Counselling",
+      "display": "Baby warming Counselling",
+      "displayOrder": 6,
+      "formElements": [
+        {
+          "name": "Baby Warming Dos",
+          "uuid": "9ffd5e46-8cac-4bb6-a95e-1a903d4f3b97",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "f006c0b1-d6ad-44b4-b347-0f8ba148048d",
+            "name": "Baby Warming Dos"
+          },
+          "displayOrder": 1,
+          "mandatory": false
+        },
+        {
+          "name": "Baby Warming Donts",
+          "uuid": "5fddd664-fcf5-4c35-b533-020fc6bac235",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "7113c221-0113-4593-b23a-b7f9495da255",
+            "name": "Baby Warming Donts"
+          },
+          "displayOrder": 2,
+          "mandatory": false
+        },
+        {
+          "name": "Breast Feeding - Do's",
+          "uuid": "8c73e0b7-6887-4283-9c86-3f84044ec9b8",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "3657a1ae-83cb-4204-82b0-0745d29541c2",
+            "name": "Breast Feeding - Do's"
+          },
+          "displayOrder": 3,
+          "mandatory": false
+        },
+        {
+          "name": "Hygiene",
+          "uuid": "8daa96de-df99-491c-9a11-144c72ef5fc4",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "73187abb-c46f-4b07-ae8f-8832850f911c",
+            "name": "Hygiene"
+          },
+          "displayOrder": 4,
+          "mandatory": false
+        },
+        {
+          "name": "Child PNC Weight -Do's",
+          "uuid": "d39d3772-bae1-4c51-8d92-c4459ee19aba",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "063fd686-1070-405b-89a6-cbf5e3c79f0f",
+            "name": "Child PNC Weight -Do's"
+          },
+          "displayOrder": 5,
+          "mandatory": false
+        },
+        {
+          "name": "Registration Immunisation - Do's",
+          "uuid": "226f3464-3941-4fff-94e9-6f6c3e59e086",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "c13e5e72-2c93-4462-be0b-010263bb2e02",
+            "name": "Registration Immunisation - Do's"
+          },
+          "displayOrder": 6,
+          "mandatory": false
+        }
+
+
+      ]
     }
   ]
 }
