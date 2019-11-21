@@ -197,6 +197,7 @@ class ChildPNCHandler {
 
 
     @WithName("If infant's weight is less than 2.5kg then did KMC?")
+    @WithName("Weight at the time of KMC started to do")
     @WithName("In last 24 hours for how many times did KMC?")
     @WithName("In one time for how many minutes did KMC?")
     @WithName("Weight of infant at time to stoped to do KMC")
