@@ -427,7 +427,8 @@
             "uuid": "7d9656d9-e872-47ff-ba34-131d0602e7d8"
           },
           "displayOrder":8,
-          "mandatory": true
+          "mandatory": true,
+          "voided": true
         },
         {
           "name": "Is there anything given other than breastfeeding for infant",
@@ -444,6 +445,7 @@
           "name": "Things given other than bresatfeeding",
           "uuid": "22a53602-4f6a-40d0-a13f-a5d6428f2f51",
           "keyValues": [],
+          "type": "MultiSelect",
           "concept": {
             "name": "Things given other than bresatfeeding",
             "uuid": "8c96d4e2-efd5-4886-acc6-e9438522a25b"
