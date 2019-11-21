@@ -19,12 +19,12 @@ class ChildPNCHandler {
             .getFormElementsStatusesWithoutDefaults(new ChildPNCHandler(), programEncounter, formElementGroup, today);
     }
 
-    @WithName('Is child breathing regularly?')
+    @WithName('Whether child breathing regularly?')
     @WithStatusBuilder
     dummy11([programEncounter], statusBuilder) {
         const birthPlace = programEncounter.programEnrolment.findLatestObservationInEntireEnrolment("Place of Birth");
         const condition1 = birthPlace && birthPlace.getReadableValue() === 'Home';
-        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters('Is child breathing regularly?', programEncounter);
+        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters('Whether child breathing regularly?', programEncounter);
         const condition2 = _.isEmpty(formPreviouslyFilled) || _.isEmpty(formPreviouslyFilled.getReadableValue());
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
@@ -59,12 +59,12 @@ class ChildPNCHandler {
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
 
-    @WithName('Is there life threatening abnormality?')
+    @WithName('Is there any life threatening abnormality?')
     @WithStatusBuilder
     dummy15([programEncounter], statusBuilder) {
         const birthPlace = programEncounter.programEnrolment.findLatestObservationInEntireEnrolment("Place of Birth");
         const condition1 = birthPlace && birthPlace.getReadableValue() === 'Home';
-        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters('Is there life threatening abnormality?', programEncounter);
+        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters('Is there any life threatening abnormality?', programEncounter);
         const condition2 = _.isEmpty(formPreviouslyFilled) || _.isEmpty(formPreviouslyFilled.getReadableValue());
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
@@ -79,12 +79,12 @@ class ChildPNCHandler {
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
 
-    @WithName("Is foam coming out from child's mouth?")
+    @WithName("Does foam coming out from child's mouth?")
     @WithStatusBuilder
     dummy17([programEncounter], statusBuilder) {
         const birthPlace = programEncounter.programEnrolment.findLatestObservationInEntireEnrolment("Place of Birth");
         const condition1 = birthPlace && birthPlace.getReadableValue() === 'Home';
-        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters("Is foam coming out from child's mouth?", programEncounter);
+        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters("Does foam coming out from child's mouth?", programEncounter);
         const condition2 = _.isEmpty(formPreviouslyFilled) || _.isEmpty(formPreviouslyFilled.getReadableValue());
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
@@ -109,22 +109,22 @@ class ChildPNCHandler {
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
 
-    @WithName("Is any kind of cyst or tumor present on neck, back and on lower back?")
+    @WithName("Does any kind of cyst or tumor present on neck, back and on lower back?")
     @WithStatusBuilder
     dummy20([programEncounter], statusBuilder) {
         const birthPlace = programEncounter.programEnrolment.findLatestObservationInEntireEnrolment("Place of Birth");
         const condition1 = birthPlace && birthPlace.getReadableValue() === 'Home';
-        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters("Is any kind of cyst or tumor present on neck, back and on lower back?", programEncounter);
+        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters("Does any kind of cyst or tumor present on neck, back and on lower back?", programEncounter);
         const condition2 = _.isEmpty(formPreviouslyFilled) || _.isEmpty(formPreviouslyFilled.getReadableValue());
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
 
-    @WithName("Is umbelical cord of newborn tied properly?")
+    @WithName("Does umbelical cord of newborn tied properly?")
     @WithStatusBuilder
     dummy21([programEncounter], statusBuilder) {
         const birthPlace = programEncounter.programEnrolment.findLatestObservationInEntireEnrolment("Place of Birth");
         const condition1 = birthPlace && birthPlace.getReadableValue() === 'Home';
-        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters("Is umbelical cord of newborn tied properly?", programEncounter);
+        const formPreviouslyFilled = programEncounter.programEnrolment.findLatestObservationFromPreviousEncounters("Does umbelical cord of newborn tied properly?", programEncounter);
         const condition2 = _.isEmpty(formPreviouslyFilled) || _.isEmpty(formPreviouslyFilled.getReadableValue());
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
@@ -236,7 +236,7 @@ class PncDecision {
             .is.no;
 
         decisionBuilder.addComplication("Keep child warm in cloths")
-            .when.valueInEncounter("Is there life threatening abnormality?")
+            .when.valueInEncounter("Is there any life threatening abnormality?")
             .is.no;
 
         decisionBuilder.addComplication("Keep child in 3-4 folded cloths")
@@ -342,7 +342,7 @@ class PncDecision {
             complicationsConcept: "Refer to the hospital for"
         });
         decisionBuilder.addComplication("Not breathing properly")
-            .when.valueInEncounter("Is child breathing regularly?")
+            .when.valueInEncounter("Whether child breathing regularly?")
             .is.no;
 
         decisionBuilder.addComplication("No Active Movement of hands and legs")
@@ -354,7 +354,7 @@ class PncDecision {
             .is.no;
 
         decisionBuilder.addComplication("Life threatening abnormality")
-            .when.valueInEncounter("Is there life threatening abnormality?")
+            .when.valueInEncounter("Is there any life threatening abnormality?")
             .is.yes;
 
         decisionBuilder.addComplication("palate/lips in child's mouth")

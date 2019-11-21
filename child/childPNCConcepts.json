@@ -4,14 +4,30 @@
     "uuid": "e401ebe8-07e0-4f34-bcf8-8a8c3eaf3b9d",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Whether child breathing regularly?",
+    "uuid": "6c3250f8-8380-4f72-97e7-d5ce9e41338a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No",
+        "abnormal": true
+      }
     ]
   },
   {
@@ -19,14 +35,14 @@
     "uuid": "7ee92cf1-1661-420f-8eaf-9b7249779058",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -34,14 +50,31 @@
     "uuid": "bb279686-d296-4378-858a-f88532454430",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Is there any life threatening abnormality?",
+    "uuid": "186e42dc-515f-4415-8a48-e7709123c060",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -49,14 +82,31 @@
     "uuid": "0277a00d-20d5-436e-8070-205d29a458d2",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does foam coming out from child's mouth?",
+    "uuid": "23456b1a-29bb-4a16-952c-9476f7751dd0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -64,14 +114,14 @@
     "uuid": "b6930840-0515-4805-8ade-30431f95122e",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -79,14 +129,45 @@
     "uuid": "f51ec371-e402-4ce6-b680-7d82002f1717",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does any kind of cyst or tumor present on neck, back and on lower back?",
+    "uuid": "972d4847-b8d4-49cc-b0ae-b3fbe4125283",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does umbelical cord of newborn tied properly?",
+    "uuid": "714fc100-13c3-418c-aa76-e2ca24e0d6f3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -94,29 +175,31 @@
     "uuid": "648faf63-17f1-4ec6-a9b9-78d1edb4061a",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
-  } ,
+  },
   {
     "name": "Does infant has any problem now?",
     "uuid": "d48fca1d-8344-499c-bcf7-86ce64606f74",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -129,14 +212,14 @@
     "uuid": "58d017ed-56e3-426c-add1-e06f2af19e01",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -144,14 +227,14 @@
     "uuid": "3f8b75b0-41aa-4f38-82bd-459ac8b8fa37",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -159,14 +242,14 @@
     "uuid": "bc9c3023-5d55-4172-a883-f83ab449deff",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -190,24 +273,24 @@
     "uuid": "56aec7ea-d2aa-4439-a531-59d0acc402dd",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "6e48319b-4729-48ad-bab0-90a11ee057c0",
-            "name": "Pinkish"
-          },
-          {
-            "uuid": "76d88d95-b025-4872-aa0c-319df25d0e00",
-            "name": "Whitish"
-          },
-          {
-            "uuid": "0397b6af-4249-4a70-a3cd-8b79972edff9",
-            "name": "Bluish"
-          },
-          {
-            "uuid": "93e9481e-d0fd-4535-92dc-991dfec2a1f8",
-            "name": "Yellowish"
-          }
+      {
+        "uuid": "6e48319b-4729-48ad-bab0-90a11ee057c0",
+        "name": "Pinkish"
+      },
+      {
+        "uuid": "76d88d95-b025-4872-aa0c-319df25d0e00",
+        "name": "Whitish"
+      },
+      {
+        "uuid": "0397b6af-4249-4a70-a3cd-8b79972edff9",
+        "name": "Bluish"
+      },
+      {
+        "uuid": "93e9481e-d0fd-4535-92dc-991dfec2a1f8",
+        "name": "Yellowish"
+      }
     ]
-  }, 
+  },
   {
     "uuid": "7797f702-06a8-4352-bb17-ad4030ab5704",
     "name": "Less than normal"
@@ -217,14 +300,14 @@
     "uuid": "db74f827-c052-4c0a-9df3-9d34dcddea6f",
     "dataType": "Coded",
     "answers": [
-        {
+      {
         "uuid": "7797f702-06a8-4352-bb17-ad4030ab5704",
         "name": "Less than normal"
-        },
-        {
+      },
+      {
         "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
         "name": "Normal"
-        }
+      }
     ]
   },
   {
@@ -244,18 +327,18 @@
     "uuid": "e58035a6-32f4-4728-8ebb-7a8ab3e1b082",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "fb293475-f5c2-4e94-bcd6-65c74874e290",
-            "name": "White medicine or white powder"
-          },
-          {
-            "uuid": "734501f8-a137-4384-9b29-a39adc391bc3",
-            "name": "Any home substace applied (Kunku, Oil, Sindur, Raakh)"
-          },
-          {
-            "uuid": "dd41b242-ac0b-4ca4-b20c-18eb7a9a4e59",
-            "name": "Nothing applied"
-          }
+      {
+        "uuid": "fb293475-f5c2-4e94-bcd6-65c74874e290",
+        "name": "White medicine or white powder"
+      },
+      {
+        "uuid": "734501f8-a137-4384-9b29-a39adc391bc3",
+        "name": "Any home substace applied (Kunku, Oil, Sindur, Raakh)"
+      },
+      {
+        "uuid": "dd41b242-ac0b-4ca4-b20c-18eb7a9a4e59",
+        "name": "Nothing applied"
+      }
     ]
   },
   {
@@ -279,22 +362,22 @@
     "uuid": "90c1f569-76e9-433c-a0fe-096d179ef8de",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "d18300a1-30b6-430b-89a0-4036ae843d75",
-            "name": "Properly covered and head also covered"
-          },
-          {
-            "uuid": "548ad96f-9b2a-492c-989d-334e840eefec",
-            "name": "Properly covered but head is opened"
-          },
-          {
-            "uuid": "ab3b4d93-1095-46cd-9806-565c89255d66",
-            "name": "Poorly covered"
-          },
-          {
-            "uuid": "878ce4a1-1852-4a7d-b0dc-046237ac39d1",
-            "name": "Infant is kept open"
-          }
+      {
+        "uuid": "d18300a1-30b6-430b-89a0-4036ae843d75",
+        "name": "Properly covered and head also covered"
+      },
+      {
+        "uuid": "548ad96f-9b2a-492c-989d-334e840eefec",
+        "name": "Properly covered but head is opened"
+      },
+      {
+        "uuid": "ab3b4d93-1095-46cd-9806-565c89255d66",
+        "name": "Poorly covered"
+      },
+      {
+        "uuid": "878ce4a1-1852-4a7d-b0dc-046237ac39d1",
+        "name": "Infant is kept open"
+      }
     ]
   },
   {
@@ -302,14 +385,14 @@
     "uuid": "cdf5f2b6-ec61-4dc3-8260-61960d1239ce",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -329,18 +412,18 @@
     "uuid": "9a5019fa-cd87-441c-8b8c-f2373987178f",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "38a9a14e-fb8a-4252-bb5b-c71b910b98ac",
-            "name": "Thermometer not functioning"
-          },
-          {
-            "uuid": "94910035-3c9a-4507-95c4-e4d6636a3399",
-            "name": "Batteries down"
-          },
-          {
-            "uuid": "8bb8a9f3-796c-44ab-b0ec-9ceb7732a783",
-            "name": "Not carried"
-          }
+      {
+        "uuid": "38a9a14e-fb8a-4252-bb5b-c71b910b98ac",
+        "name": "Thermometer not functioning"
+      },
+      {
+        "uuid": "94910035-3c9a-4507-95c4-e4d6636a3399",
+        "name": "Batteries down"
+      },
+      {
+        "uuid": "8bb8a9f3-796c-44ab-b0ec-9ceb7732a783",
+        "name": "Not carried"
+      }
     ]
   },
   {
@@ -360,18 +443,18 @@
     "uuid": "cadf0874-1446-411a-9e97-cf8a67a234e1",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "a2c03a08-7a09-492d-a879-1c2013634478",
-            "name": "Abdomen and limbs feel normal"
-          },
-          {
-            "uuid": "28ece283-3fd1-4acd-9117-6f3f73b4b303",
-            "name": "Abdomen and limbs feel cold on touch"
-          },
-          {
-            "uuid": "a5759399-0eb9-47b6-8612-a94de6f74f4e",
-            "name": "Abdomen and limbs all feel hot on touch"
-          }
+      {
+        "uuid": "a2c03a08-7a09-492d-a879-1c2013634478",
+        "name": "Abdomen and limbs feel normal"
+      },
+      {
+        "uuid": "28ece283-3fd1-4acd-9117-6f3f73b4b303",
+        "name": "Abdomen and limbs feel cold on touch"
+      },
+      {
+        "uuid": "a5759399-0eb9-47b6-8612-a94de6f74f4e",
+        "name": "Abdomen and limbs all feel hot on touch"
+      }
     ]
   },
   {
@@ -386,28 +469,27 @@
     "uuid": "57b4123a-dc82-4287-b64d-f0ed72b517bf",
     "name": "Looks red"
   },
- 
   {
     "name": "Condition of umbelicus",
     "uuid": "df75e2e6-4d5f-4ed8-a24e-14ce72da1e10",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "e87d4409-a6ce-4940-a8ec-ca041ef98b12",
-            "name": "Draining pus or any discharge"
-          },
-          {
-            "uuid": "16eb131c-d8ea-4030-929e-f4dc07931c2d",
-            "name": "blood coming out"
-          },
-          {
-            "uuid": "57b4123a-dc82-4287-b64d-f0ed72b517bf",
-            "name": "Looks red"
-          },
-          {
-            "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
-            "name": "Normal"
-            }
+      {
+        "uuid": "e87d4409-a6ce-4940-a8ec-ca041ef98b12",
+        "name": "Draining pus or any discharge"
+      },
+      {
+        "uuid": "16eb131c-d8ea-4030-929e-f4dc07931c2d",
+        "name": "blood coming out"
+      },
+      {
+        "uuid": "57b4123a-dc82-4287-b64d-f0ed72b517bf",
+        "name": "Looks red"
+      },
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal"
+      }
     ]
   },
   {
@@ -433,18 +515,18 @@
     "uuid": "60baea86-df95-443c-bac4-852482d2b2a8",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "9890a88c-3ed0-4f67-b97d-ed2031c999f2",
-            "name": "Good - Normal"
-          },
-          {
-            "uuid": "adc25383-1e47-438a-b2f1-360f7502f737",
-            "name": "Loose and not attached well"
-          },
-          {
-            "uuid": "58a29a8f-6fb1-452e-a813-c9d33ffd2f11",
-            "name": "No attachment at all"
-          }
+      {
+        "uuid": "9890a88c-3ed0-4f67-b97d-ed2031c999f2",
+        "name": "Good - Normal"
+      },
+      {
+        "uuid": "adc25383-1e47-438a-b2f1-360f7502f737",
+        "name": "Loose and not attached well"
+      },
+      {
+        "uuid": "58a29a8f-6fb1-452e-a813-c9d33ffd2f11",
+        "name": "No attachment at all"
+      }
     ]
   },
   {
@@ -452,14 +534,14 @@
     "uuid": "5e309ac3-1b96-4965-a94a-2341f834a7c0",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -467,14 +549,14 @@
     "uuid": "80144e66-99dc-4404-bacc-f33554ea97fb",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -482,14 +564,14 @@
     "uuid": "144796e8-cfcd-47dd-befc-bf62a3f87056",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -497,14 +579,14 @@
     "uuid": "93ad1180-08dc-4717-b722-fa672bfed796",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -512,14 +594,14 @@
     "uuid": "df81c4bf-7d9a-411a-8a66-4796e0116043",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -527,14 +609,14 @@
     "uuid": "7d9656d9-e872-47ff-ba34-131d0602e7d8",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -542,14 +624,14 @@
     "uuid": "26d47b4e-9b2f-45bd-9044-41596b330183",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -592,56 +674,55 @@
     "uuid": "49dd2b88-782f-4959-9f4e-908a5c110109",
     "name": "Gripe water"
   },
-  
   {
     "name": "Things given other than bresatfeeding",
     "uuid": "8c96d4e2-efd5-4886-acc6-e9438522a25b",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "ebc63756-9eed-456c-b3d9-a83f1054fc84",
-            "name": "Honey"
-          },
-          {
-            "uuid": "341ea2c1-970b-468d-a34d-576f02b5ce91",
-            "name": "Ghee"
-          },
-          {
-            "uuid": "7a6bcd2a-3340-4c6e-bea6-9be0a9d8d7cb",
-            "name": "Jaggery"
-          },
-          {
-            "uuid": "e7e6f4cd-5a08-45e9-a51b-5ffa7e825002",
-            "name": "Sugar"
-          },
-          {
-            "uuid": "218941d6-7078-437a-9255-ab237c852f04",
-            "name": "Jaggery syrup"
-          },
-          {
-            "uuid": "823b4fb5-01b1-467d-a605-02ea8770ed1a",
-            "name": "External milk"
-          },
-          {
-            "uuid": "ec694351-b1cc-42ff-b7fa-4f4aa2461da4",
-            "name": "Ghuti"
-          },
-          {
-            "uuid": "4a8c3947-2d49-45d7-b49c-e5fea11b09e0",
-            "name": "Kathvaat"
-          },
-          {
-            "uuid": "358dc7b9-a0f5-484a-b4b1-da780e17cfb9",
-            "name": "Somvaa 34"
-          },
-          {
-            "uuid": "49dd2b88-782f-4959-9f4e-908a5c110109",
-            "name": "Gripe water"
-          },
-          {
-          "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
-          "name": "Other"
-          }
+      {
+        "uuid": "ebc63756-9eed-456c-b3d9-a83f1054fc84",
+        "name": "Honey"
+      },
+      {
+        "uuid": "341ea2c1-970b-468d-a34d-576f02b5ce91",
+        "name": "Ghee"
+      },
+      {
+        "uuid": "7a6bcd2a-3340-4c6e-bea6-9be0a9d8d7cb",
+        "name": "Jaggery"
+      },
+      {
+        "uuid": "e7e6f4cd-5a08-45e9-a51b-5ffa7e825002",
+        "name": "Sugar"
+      },
+      {
+        "uuid": "218941d6-7078-437a-9255-ab237c852f04",
+        "name": "Jaggery syrup"
+      },
+      {
+        "uuid": "823b4fb5-01b1-467d-a605-02ea8770ed1a",
+        "name": "External milk"
+      },
+      {
+        "uuid": "ec694351-b1cc-42ff-b7fa-4f4aa2461da4",
+        "name": "Ghuti"
+      },
+      {
+        "uuid": "4a8c3947-2d49-45d7-b49c-e5fea11b09e0",
+        "name": "Kathvaat"
+      },
+      {
+        "uuid": "358dc7b9-a0f5-484a-b4b1-da780e17cfb9",
+        "name": "Somvaa 34"
+      },
+      {
+        "uuid": "49dd2b88-782f-4959-9f4e-908a5c110109",
+        "name": "Gripe water"
+      },
+      {
+        "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+        "name": "Other"
+      }
     ]
   },
   {
@@ -649,14 +730,14 @@
     "uuid": "d5993485-2b05-4ef8-a980-0f62a9e2b3e4",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
@@ -664,21 +745,21 @@
     "uuid": "4f440c38-c2f8-4489-9b98-53e7faebb9f5",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-            "name": "Yes"
-          },
-          {
-            "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
-            "name": "No"
-          }
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
     ]
   },
   {
     "name": "How many times breastfeeding given to child in last 24 hours",
     "uuid": "6ca3c61e-2dda-49ad-a9b4-7eb719874c27",
     "dataType": "Numeric"
-  },  
+  },
   {
     "uuid": "a0c0bb56-2995-4b39-a03d-5b5207093ae4",
     "name": "More than 5 times"
@@ -692,14 +773,14 @@
     "uuid": "fff940b1-7cfc-40b1-8145-1fa3794ebdcd",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "a0c0bb56-2995-4b39-a03d-5b5207093ae4",
-            "name": "More than 5 times"
-          },
-          {
-            "uuid": "51b91c37-c65b-4777-bcf5-aabf5b8735f3",
-            "name": "Less than 5 times"
-          }
+      {
+        "uuid": "a0c0bb56-2995-4b39-a03d-5b5207093ae4",
+        "name": "More than 5 times"
+      },
+      {
+        "uuid": "51b91c37-c65b-4777-bcf5-aabf5b8735f3",
+        "name": "Less than 5 times"
+      }
     ]
   },
   {
@@ -719,18 +800,18 @@
     "uuid": "8c18e07c-ca8f-4f62-823d-1618fac5912c",
     "dataType": "Coded",
     "answers": [
-        {
-            "uuid": "1be4f4fe-8abb-4afc-ae81-7c9ece00ee74",
-            "name": "On first day"
-          },
-          {
-            "uuid": "6f6ac611-ff9c-4142-b6bc-b54184247722",
-            "name": "In first week"
-          },
-          {
-            "uuid": "9526a9d1-2ef5-490b-8df6-1e7c1799b168",
-            "name": "After 7 days of birth"
-          }
+      {
+        "uuid": "1be4f4fe-8abb-4afc-ae81-7c9ece00ee74",
+        "name": "On first day"
+      },
+      {
+        "uuid": "6f6ac611-ff9c-4142-b6bc-b54184247722",
+        "name": "In first week"
+      },
+      {
+        "uuid": "9526a9d1-2ef5-490b-8df6-1e7c1799b168",
+        "name": "After 7 days of birth"
+      }
     ]
   },
   {
@@ -815,7 +896,8 @@
     "answers": [
       {
         "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
-        "name": "Yes"
+        "name": "Yes",
+        "abnormal": true
       },
       {
         "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
@@ -1085,7 +1167,7 @@
       {
         "uuid": "23bf2ac6-4abc-4bd4-9a3e-52c5c6e3f9e1",
         "name": "PHC"
-      },    
+      },
       {
         "uuid": "5ab46f09-23a8-439b-9e8e-484b56220753",
         "name": "Private Hospital"
@@ -1128,38 +1210,4 @@
     "dataType": "Coded",
     "answers": []
   }
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 ]
