@@ -57,6 +57,13 @@
       "encounterType": {
         "uuid": "a2e2aee7-5226-4a94-9cec-00e5bfa137a4"
       }
+    },
+    {
+      "uuid": "65fe2029-a5d8-455d-980e-c8a57576d8df",
+      "name": "Child Followup Form",
+      "encounterType": {
+        "uuid": "3348db59-a01d-447e-a4b6-0d369023152d"
+      }
     }
   ]
 }

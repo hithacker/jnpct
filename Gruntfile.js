@@ -23,7 +23,8 @@ module.exports = IDI.configure({
             "pregnancy/motherPNCForm.json",
             "child/childEnrolment.json",
             "child/childBirthForm.json",
-            "child/childPNCForm.json"
+            "child/childPNCForm.json",
+            "child/childFollowupForm.json"
         ],
         "formMappings": [
             "metadata/formMappings.json"
@@ -43,7 +44,8 @@ module.exports = IDI.configure({
             "pregnancy/deliveryConcepts.json",
             "pregnancy/abortionConcepts.json",
             "child/childConcepts.json",
-            "child/childPNCConcepts.json"
+            "child/childPNCConcepts.json",
+            "child/childFollowupConcepts.json"
         ],
         "locations": [
             "metadata/locations.json"

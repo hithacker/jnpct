@@ -226,6 +226,7 @@ class PncDecision {
         return decisions;
     }
 
+
     static counseling(programEncounter) {
         const decisionBuilder = new ComplicationsBuilder({
             programEncounter: programEncounter,
