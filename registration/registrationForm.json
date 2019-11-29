@@ -1,0 +1,275 @@
+{
+  "name": "Registration",
+  "uuid": "c22664a8-81ba-4442-956d-3e812a6d7bca",
+  "formType": "IndividualProfile",
+  "formElementGroups": [
+    {
+      "uuid": "b470d24b-c4f4-467b-910b-e0f5fbffb9bb",
+      "name": "Details",
+      "display": "Details",
+      "displayOrder": 1,
+      "formElements": [
+        {
+          "name": "Marital status",
+          "uuid": "770a06ac-31d5-4bdc-85b4-8daeedcede9e",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "a20a030b-9bef-4ef8-ba8a-88e2b23c1478"
+          },
+          "displayOrder": 1,
+          "mandatory":true
+        },
+        {
+          "name": "Number of family members",
+          "uuid": "3b2e9bff-eb4c-4d84-accd-9d74e5edd67e",
+          "keyValues": [],
+          "concept": {
+            "uuid": "a01c2055-7483-4a19-98c1-80fdf955b50c"
+          },
+          "displayOrder": 2,
+          "mandatory": true
+        },
+        {
+          "name": "Who is decision making person in family",
+          "uuid": "ab1a7479-35b4-4469-93f6-94fcfe91996c",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "f4028968-bbac-4a66-8fe7-df081321414f"
+          },
+          "displayOrder": 3,
+          "mandatory": true
+        },
+        {
+          "name": "Ration card",
+          "uuid": "8644b68d-81ef-41c3-9c28-55f9ae33328b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "8eb5a6ce-7b8a-45cc-a066-fcceca3708f7"
+          },
+          "displayOrder": 4,
+          "mandatory": true
+        },
+        {
+          "name": "Caste",
+          "uuid": "bd8811a7-3d02-45c4-ac3e-a3a017ea9341",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "ba25ac4c-784a-4723-8e15-a965a0d63b50"
+          },
+          "displayOrder": 5,
+          "mandatory": true
+        },
+        {
+          "name": "Subcaste",
+          "uuid": "7c6f8ba5-8015-4b85-bdeb-212dcca7a160",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5f20070c-1cfe-4e0b-b0db-70dffee99394"
+          },
+          "displayOrder": 6,
+          "mandatory": true
+        },
+        {
+          "name": "Religion",
+          "uuid": "826a15fb-258b-41e5-a329-f7f7e084d85f",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "b9c9d807-7064-46fd-8dc7-1640345dc8cb"
+          },
+          "displayOrder": 7,
+          "mandatory": true
+        },
+        {
+          "name": "Satipati family",
+          "uuid": "d7710e31-173a-4547-bed3-4c5b3de14599",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "4e90fc18-7bf1-4722-87c3-f3b2bd5d1d7d"
+          },
+          "displayOrder": 8,
+          "mandatory":true
+        },
+        {
+          "name": "Addiction",
+          "uuid": "0dedd3e8-7bb8-44ba-8322-602db8012de5",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "0a668e5b-f3c2-4fc6-8589-d2abda26658b"
+          },
+          "displayOrder": 9,
+          "mandatory": true
+        },
+        {
+          "name": "Addiction - Please specify",
+          "uuid": "ce47c898-0f17-40f7-80c2-4d7a83ce267b",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "e0a3086c-8d69-479e-bf44-258bc27b8105"
+          },
+          "displayOrder": 10,
+          "mandatory": true
+        },
+        {
+          "name": "Very poor family",
+          "uuid": "6d62de04-bdb6-4728-9e32-ce45d9bac129",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "89fe78b2-20a9-45f1-90e3-119a7bc95ce3"
+          },
+          "displayOrder": 11,
+          "mandatory": true
+        },
+        {
+          "name": "Occupation of mother",
+          "uuid": "c60b9c11-c6cd-4fd3-a202-bf0512bd4bcb",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "6f03e969-f0bf-4438-a528-5d2ce3b70e15"
+          },
+          "displayOrder": 12,
+          "mandatory": false
+        },
+        {
+          "name": "Occupation of husband",
+          "uuid": "e5315158-8257-49c0-bdf6-13d66d4cc53b",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "65a5101b-38fc-4962-876e-e0f8b9ba4cec"
+          },
+          "displayOrder": 13,
+          "mandatory": false
+        },
+        {
+          "name": "Mother's education",
+          "uuid": "940bcc92-47a8-4f79-b27f-15a3231e5e75",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "e42f5b28-bee4-4a01-aff0-922d823d0075"
+          },
+          "displayOrder": 14,
+          "mandatory": false
+        },
+        {
+          "name": "Mobile number",
+          "uuid": "f1d84e47-6017-4a18-b909-ee0ece2e33f7",
+          "keyValues": [],
+          "concept": {
+            "uuid": "881d9628-eb4f-4056-ae10-09e4ef71cae4"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{10}$",
+            "descriptionKey": "Required10Digits"
+          },
+          "displayOrder": 15,
+          "mandatory": false
+        },
+        {
+          "name": "Specialy abled",
+          "uuid": "afeb9ee9-7423-436d-973b-53f32a4d2a62",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "5f0b2fa0-ed20-4d6b-a8b5-3fed09dac067"
+          },
+          "displayOrder": 16,
+          "mandatory": true
+        },
+        {
+          "name": "Specially abled - Please specify",
+          "uuid": "10cffd1e-db4f-449d-9cf5-8b8e7fb6f81a",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "a154508a-9d8b-49d9-9d78-b61cbc9daf7f"
+          },
+          "displayOrder": 17,
+          "mandatory":true
+        },
+        {
+          "name": "Any long-term illnesses",
+          "uuid": "87f91861-f71b-4689-abce-fcda31db2ae2",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "d009887c-6d29-4c47-9e34-21e3b9298f44"
+          },
+          "displayOrder": 18,
+          "mandatory": true
+        },
+        {
+          "name": "Long-term illness - Please specify",
+          "uuid": "6dbb497a-43cb-4f8c-b7f4-ac970c9df796",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "7fa81959-a016-4569-920d-47dee242b27a"
+          },
+          "displayOrder": 19,
+          "mandatory": true
+        },
+        {
+          "name": "Toilet facility present",
+          "uuid": "4fce85a7-cf35-41bd-b232-02ffc46791cb",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "54105452-1752-4661-9d30-2d99bd2d04fa"
+          },
+          "displayOrder": 20,
+          "mandatory": true
+        },
+        {
+          "name": "Using the toilet regularly",
+          "uuid": "c12f8d4b-7b9f-4564-b645-ff94d8fab9e8",
+          "keyValues": [],
+          "type": "SingleSelect",
+          "concept": {
+            "uuid": "59db93f0-0963-4e49-87b6-485efb705561"
+          },
+          "displayOrder": 21,
+          "mandatory": true
+        },
+        {
+          "name": "Source of drinking water",
+          "uuid": "8bbd207b-90eb-49e0-82e1-b8f914eab552",
+          "keyValues": [],
+          "type": "MultiSelect",
+          "concept": {
+            "uuid": "789733c4-42ba-4da3-89e6-71da227cf4c2"
+          },
+          "displayOrder": 22,
+          "mandatory": true
+        },
+        {
+          "name": "Aadhaar card",
+          "uuid": "11e2b227-1fb1-4e4b-b306-429564b31937",
+          "keyValues": [],
+          "concept": {
+            "uuid": "7170eabd-6f4f-4e30-b22e-85b20a4d854f"
+          },
+          "validFormat": {
+            "regex": "^[0-9]{12}$",
+            "descriptionKey": "Required12Digits"
+          },
+          "displayOrder": 23,
+          "mandatory": true
+        }
+
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,901 @@
+[
+  {
+    "name": "Date of Abortion/MTP",
+    "uuid": "7ee9f366-ab54-4056-a3a9-37c9a5ea69ca",
+    "dataType": "Date"
+  },
+  {
+    "uuid": "4ca3e92a-5871-4146-9271-6c35558d5a92",
+    "name": "Abortion"
+  },
+  {
+    "uuid": "25c486d0-db89-41ba-b151-962fd75f83c6",
+    "name": "MTP"
+  },
+  {
+    "name": "Whether Abortion or MTP",
+    "uuid": "5e63efa3-2fea-4cbd-bc0d-cabdb1a70471",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4ca3e92a-5871-4146-9271-6c35558d5a92",
+        "name": "Abortion"
+      },
+      {
+        "uuid": "25c486d0-db89-41ba-b151-962fd75f83c6",
+        "name": "MTP"
+      }
+    ]
+  },
+  {
+    "uuid": "13d96f0b-e8d3-4a3c-9691-0ce98a413efa",
+    "name": "Induced"
+  },
+  {
+    "uuid": "4946e637-0b4f-4eae-a19a-fbe064e83bb8",
+    "name": "Spontaneous"
+  },
+  {
+    "name": "Type of Abortion",
+    "uuid": "a5775008-5ac7-433f-b8bf-ca4b91efb9be",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "13d96f0b-e8d3-4a3c-9691-0ce98a413efa",
+        "name": "Induced"
+      },
+      {
+        "uuid": "4946e637-0b4f-4eae-a19a-fbe064e83bb8",
+        "name": "Spontaneous"
+      }
+    ]
+  },
+  {
+    "name": "Period of gestation in weeks at the time of Abortion/MTP",
+    "uuid": "d0c0173f-fb19-4735-98b3-5e190c646e54",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "caf4ec71-8339-47ec-8e9b-d7a99d2443f7",
+    "name": "Institutional"
+  },
+  {
+    "name": "Place of Abortion",
+    "uuid": "1d3250bb-ddee-46b3-8936-35ce2300b426",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "caf4ec71-8339-47ec-8e9b-d7a99d2443f7",
+        "name": "Institutional"
+      },
+      {
+        "uuid": "8cfae1cd-3e75-40e9-9244-6d083c0d86f7",
+        "name": "Home"
+      }
+    ]
+  },
+  {
+    "name": "Date Of Discharge For A/M",
+    "uuid": "e09d26e0-1774-441b-bc05-7bb50f60a948",
+    "dataType": "Date"
+  },
+  {
+    "uuid": "334cad4d-faf0-4b01-992d-b9a9bdc23631",
+    "name": "Abdominal Pain"
+  },
+  {
+    "uuid": "dd6cb19b-bd3c-4733-a8cd-04ccf2e4c4f6",
+    "name": "Per Vaginal Bleeding"
+  },
+  {
+    "uuid": "bfa4858e-ea7b-4e59-b0f0-c28316748f9a",
+    "name": "Fever"
+  },
+  {
+    "uuid": "02fa01a5-d78d-443f-80ed-3473002027ed",
+    "name": "Abdominal Problem"
+  },
+  {
+    "uuid": "91894b12-f191-4cf5-a836-3b565e978353",
+    "name": "Vaginal Problem"
+  },
+  {
+    "uuid": "d34039cf-84b4-4b16-83c2-26ab7d86ca04",
+    "name": "Urinaltion Difficulties"
+  },
+  {
+    "uuid": "dff0c9ea-de8f-486b-9cbf-b10557ec637b",
+    "name": "Cesearean incision problems"
+  },
+  {
+    "uuid": "5a986073-3af9-4836-abca-ea492b1de6e3",
+    "name": "Feeling Hot or chills"
+  },
+  {
+    "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+    "name": "Other"
+  },
+  {
+    "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
+    "name": "None"
+  },
+  {
+    "name": "Post Abortion/MTP Complications",
+    "uuid": "c25875ea-43fa-4158-9f1c-93748f28afbe",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "334cad4d-faf0-4b01-992d-b9a9bdc23631",
+        "name": "Abdominal Pain"
+      },
+      {
+        "uuid": "dd6cb19b-bd3c-4733-a8cd-04ccf2e4c4f6",
+        "name": "Per Vaginal Bleeding"
+      },
+      {
+        "uuid": "bfa4858e-ea7b-4e59-b0f0-c28316748f9a",
+        "name": "Fever"
+      },
+      {
+        "uuid": "02fa01a5-d78d-443f-80ed-3473002027ed",
+        "name": "Abdominal Problem"
+      },
+      {
+        "uuid": "91894b12-f191-4cf5-a836-3b565e978353",
+        "name": "Vaginal Problem"
+      },
+      {
+        "uuid": "d34039cf-84b4-4b16-83c2-26ab7d86ca04",
+        "name": "Urinaltion Difficulties"
+      },
+      {
+        "uuid": "dff0c9ea-de8f-486b-9cbf-b10557ec637b",
+        "name": "Cesearean incision problems"
+      },
+      {
+        "uuid": "5a986073-3af9-4836-abca-ea492b1de6e3",
+        "name": "Feeling Hot or chills"
+      },
+      {
+        "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+        "name": "Other"
+      },
+      {
+        "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
+        "name": "None",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Other Post Abortion/MTP complication",
+    "uuid": "c934d6f6-4dd9-40ce-a155-f46b72d2491c",
+    "dataType": "Text"
+  },
+  {
+    "name": "Which day after Delivery",
+    "uuid": "14db9754-cb53-4948-ab69-ea18956bf8da",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "BP Systolic",
+    "uuid": "9bdb7db1-b1ac-477c-a278-e130c077fc77",
+    "dataType": "Numeric",
+    "lowAbsolute": 20,
+    "highAbsolute": 190,
+    "lowNormal": 90,
+    "highNormal": 140,
+    "unit": "mm Hg"
+  },
+  {
+    "name": "BP Diastolic",
+    "uuid": "a5998291-545a-4de2-861e-e307354f462c",
+    "dataType": "Numeric",
+    "lowAbsolute": 10,
+    "highAbsolute": 120,
+    "lowNormal": 50,
+    "highNormal": 90,
+    "unit": "mm Hg"
+  },
+  {
+    "name": "Temperature",
+    "uuid": "51f90d12-e4fb-4cb9-89d4-0c0b45629dbe",
+    "dataType": "Numeric",
+    "lowNormal": 36.11,
+    "highNormal": 37.2,
+    "unit": "°C"
+  },
+  {
+    "name": "Hb % Level",
+    "uuid": "9f6eb23b-9e82-47da-b22b-290a840365df",
+    "dataType": "Numeric",
+    "lowNormal": 11
+  },
+  {
+    "uuid": "b794dcd7-1983-4296-bc5a-ab29d9f49392",
+    "name": "Blurred vision",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "39ae8b52-1f43-4254-b4f2-957d9aedf3b8",
+    "name": "Difficulty breathing",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "845f450f-7863-458b-a27e-935f4ec7ad5c",
+    "name": "Bad headache",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "e33d0f2e-944b-4320-b5da-f1d7b70bfda0",
+    "name": "No problem"
+  },
+  {
+    "name": "Post-Partum Haemorrhage symptoms",
+    "uuid": "3d99ab9e-9cf5-4db2-a8e9-e5054242dcd2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "b794dcd7-1983-4296-bc5a-ab29d9f49392",
+        "name": "Blurred vision",
+        "abnormal": true,
+        "dataType": "NA"
+      },
+      {
+        "uuid": "39ae8b52-1f43-4254-b4f2-957d9aedf3b8",
+        "name": "Difficulty breathing",
+        "abnormal": true,
+        "dataType": "NA"
+      },
+      {
+        "uuid": "845f450f-7863-458b-a27e-935f4ec7ad5c",
+        "name": "Bad headache",
+        "abnormal": true,
+        "dataType": "NA"
+      },
+      {
+        "uuid": "e33d0f2e-944b-4320-b5da-f1d7b70bfda0",
+        "name": "No problem",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "uuid": "334cad4d-faf0-4b01-992d-b9a9bdc23631",
+    "name": "Abdominal pain"
+  },
+  {
+    "uuid": "36e5c95d-f0e3-4c3c-9378-21d3a3eeb4f3",
+    "name": "Uterus is soft or tender"
+  },
+  {
+    "name": "Any abdominal problems",
+    "uuid": "eb34a8a4-34e3-469f-9458-4ebe488ae1a8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "334cad4d-faf0-4b01-992d-b9a9bdc23631",
+        "name": "Abdominal pain",
+        "abnormal": true
+      },
+      {
+        "uuid": "36e5c95d-f0e3-4c3c-9378-21d3a3eeb4f3",
+        "name": "Uterus is soft or tender",
+        "abnormal": true
+      },
+      {
+        "uuid": "e33d0f2e-944b-4320-b5da-f1d7b70bfda0",
+        "name": "No problem",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "uuid": "f819f73c-2098-463f-b05e-e6bdda02a899",
+    "name": "Heavy bleeding per vaginum"
+  },
+  {
+    "uuid": "95760457-175d-4131-bd1f-c1ff166f3d04",
+    "name": "Bad-smelling lochia"
+  },
+  {
+    "uuid": "fb97bb1d-0906-420b-92d4-c0e32f5de281",
+    "name": "Infected perineum suture"
+  },
+  {
+    "name": "Any vaginal problems",
+    "uuid": "97584ff6-7545-4220-9bbe-5b1f1a59566c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "f819f73c-2098-463f-b05e-e6bdda02a899",
+        "name": "Heavy bleeding per vaginum",
+        "abnormal": true
+      },
+      {
+        "uuid": "95760457-175d-4131-bd1f-c1ff166f3d04",
+        "name": "Bad-smelling lochia",
+        "abnormal": true
+      },
+      {
+        "uuid": "fb97bb1d-0906-420b-92d4-c0e32f5de281",
+        "name": "Infected perineum suture",
+        "abnormal": true
+      },
+      {
+        "uuid": "e33d0f2e-944b-4320-b5da-f1d7b70bfda0",
+        "name": "No problem",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "uuid": "f8bb75ab-8bec-4439-8019-e4217448fb2d",
+    "name": "Difficulty passing urine"
+  },
+  {
+    "uuid": "c10f577c-926f-4a61-a49b-19e62411ee66",
+    "name": "Burning Urination"
+  },
+  {
+    "uuid": "092b3d79-ab79-4e75-b679-d6e53d55428d",
+    "name": "No difficulties"
+  },
+  {
+    "name": "Any difficulties with urinating",
+    "uuid": "585e291e-1f3d-41fa-b6f4-3dcd96cf1560",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "f8bb75ab-8bec-4439-8019-e4217448fb2d",
+        "name": "Difficulty passing urine",
+        "abnormal": true
+      },
+      {
+        "uuid": "c10f577c-926f-4a61-a49b-19e62411ee66",
+        "name": "Burning Urination",
+        "abnormal": true
+      },
+      {
+        "uuid": "092b3d79-ab79-4e75-b679-d6e53d55428d",
+        "name": "No difficulties",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "uuid": "4e805b00-dc83-4b54-8bd5-8abc1847ba75",
+    "name": "Cracked Nipple"
+  },
+  {
+    "uuid": "e708ccc1-53d3-4cf0-92df-9883f9601749",
+    "name": "Nipple hardness"
+  },
+  {
+    "uuid": "95b8c000-0128-4051-a97f-d16e209a8e73",
+    "name": "Breast hardness"
+  },
+  {
+    "uuid": "d529ba9a-a050-4efc-b7ea-77127fff2144",
+    "name": "Breast engorgement"
+  },
+  {
+    "uuid": "c05c0ba4-f36d-4011-9d26-ff749bf4fef5",
+    "name": "Breast abcess"
+  },
+  {
+    "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+    "name": "Other"
+  },
+  {
+    "name": "Any breast problems",
+    "uuid": "092b60b6-9df8-4186-ba94-8487163152da",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4e805b00-dc83-4b54-8bd5-8abc1847ba75",
+        "name": "Cracked Nipple",
+        "abnormal": true
+      },
+      {
+        "uuid": "e708ccc1-53d3-4cf0-92df-9883f9601749",
+        "name": "Nipple hardness",
+        "abnormal": true
+      },
+      {
+        "uuid": "95b8c000-0128-4051-a97f-d16e209a8e73",
+        "name": "Breast hardness",
+        "abnormal": true
+      },
+      {
+        "uuid": "d529ba9a-a050-4efc-b7ea-77127fff2144",
+        "name": "Breast engorgement",
+        "abnormal": true
+      },
+      {
+        "uuid": "c05c0ba4-f36d-4011-9d26-ff749bf4fef5",
+        "name": "Breast abcess",
+        "abnormal": true
+      },
+      {
+        "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+        "name": "Other",
+        "abnormal": true
+      },
+      {
+        "uuid": "e33d0f2e-944b-4320-b5da-f1d7b70bfda0",
+        "name": "No problem",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Other breast related problems",
+    "uuid": "10d266f5-6cff-47b6-a486-fe4e91ad58ad",
+    "dataType": "Text"
+  },
+  {
+    "name": "Does feel hot or have the chills?",
+    "uuid": "426b8f0f-b57b-4d2e-964b-b1838d2159c5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+
+    "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+    "name": "Present"
+  },
+  {
+    "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+    "name": "Absent"
+  },
+  {
+    "name": "Convulsions",
+    "uuid": "1c0e744f-33cb-4792-be6c-6e6ddd178bfe",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+        "name": "Present",
+        "abnormal": true
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      }
+    ]
+  },
+  {
+    "uuid": "e831dc25-ba61-4759-8526-02ef7a6ce2b3",
+    "name": "Insomnia"
+  },
+  {
+    "uuid": "6ffc3067-f0fc-41e6-9d83-e105574b2487",
+    "name": "Irritability"
+  },
+  {
+    "uuid": "8538aa63-f570-4003-9c4e-449764309e7c",
+    "name": "Loss of Appetite"
+  },
+  {
+    "uuid": "85a88662-40de-4e0c-b123-6022230df8be",
+    "name": "Weakness"
+  },
+  {
+    "name": "Post partum dipression symptoms",
+    "uuid": "cfec5288-ca3e-48c3-a1f2-332038ad2241",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "e831dc25-ba61-4759-8526-02ef7a6ce2b3",
+        "name": "Insomnia",
+        "abnormal": true
+      },
+      {
+        "uuid": "6ffc3067-f0fc-41e6-9d83-e105574b2487",
+        "name": "Irritability",
+        "abnormal": true
+      },
+      {
+        "uuid": "8538aa63-f570-4003-9c4e-449764309e7c",
+        "name": "Loss of Appetite",
+        "abnormal": true
+      },
+      {
+        "uuid": "85a88662-40de-4e0c-b123-6022230df8be",
+        "name": "Weakness",
+        "abnormal": true
+      },
+      {
+        "uuid": "e33d0f2e-944b-4320-b5da-f1d7b70bfda0",
+        "name": "No problem"
+      }
+    ]
+  },
+  {
+    "uuid": "4aabf46f-b8ca-4c12-a2e0-0354d75ff583",
+    "name": "Indurated"
+  },
+  {
+    "uuid": "8cd0a697-bebd-4a1a-b1ee-57a8b047a830",
+    "name": "Looks Red"
+  },
+  {
+    "uuid": "3f7db11f-4b83-47af-b3d9-ee6e1b41cddf",
+    "name": "Filled with pus"
+  },
+  {
+    "uuid": "9d5efbcd-de97-426d-a955-30432d9cadaa",
+    "name": "Discharge from wound"
+  },
+  {
+    "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+    "name": "Normal"
+  },
+  {
+    "name": "How is the incision area?",
+    "uuid": "403aabf9-ec66-49ed-8615-f62ca33de2f0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4aabf46f-b8ca-4c12-a2e0-0354d75ff583",
+        "name": "Indurated",
+        "abnormal": true
+      },
+      {
+        "uuid": "8cd0a697-bebd-4a1a-b1ee-57a8b047a830",
+        "name": "Looks Red",
+        "abnormal": true
+      },
+      {
+        "uuid": "3f7db11f-4b83-47af-b3d9-ee6e1b41cddf",
+        "name": "Filled with pus",
+        "abnormal": true
+      },
+      {
+        "uuid": "9d5efbcd-de97-426d-a955-30432d9cadaa",
+        "name": "Discharge from wound",
+        "abnormal": true
+      },
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Pain in hypogastrium?",
+    "uuid": "9cabab3b-b206-4b53-ac7b-9524517819a6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Burning micturation?",
+    "uuid": "056689c5-ba68-4e85-b515-7c342769e47b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "uuid": "0e42d156-578c-42f6-99d4-75568c73577e",
+    "name": "6"
+  },
+  {
+    "uuid": "c192849f-6727-44fc-a791-7a1bd9853608",
+    "name": "more"
+  },
+  {
+    "name": "How many pads changed?",
+    "uuid": "2d522614-ad6c-4673-b6af-ca5a366540cc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ccc99207-9a72-417f-ac7d-e735e565789b",
+        "name": "1"
+      },
+      {
+        "uuid": "5b0b2111-2f93-4a91-bf2f-a838e68532fa",
+        "name": "2"
+      },
+      {
+        "uuid": "ecf27357-4e52-48af-95c8-178853e9c6d9",
+        "name": "3"
+      },
+      {
+        "uuid": "0e91716e-435d-49cd-b842-621e804101b4",
+        "name": "4"
+      },
+      {
+        "uuid": "3555dd4d-4f4f-4779-ac9f-ffaed73ed33e",
+        "name": "5"
+      },
+      {
+        "uuid": "0e42d156-578c-42f6-99d4-75568c73577e",
+        "name": "6"
+      },
+      {
+        "uuid": "c192849f-6727-44fc-a791-7a1bd9853608",
+        "name": "more"
+      }
+    ]
+  },
+  {
+    "name": "Does she taking iron tablet?",
+    "uuid": "b28d26ac-2337-4651-bb55-123b71ee39f3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does she taking calcium tablet?",
+    "uuid": "a34575f1-1373-48d1-b94a-2e1421bb3348",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Diet Advice Do's",
+    "uuid": "5d5b9e5d-0d66-4138-b6a4-c3c7ba321960",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Diet Advice Don'ts",
+    "uuid": "7cdd0689-e7fc-43c2-b4fb-ef168fb7d9b0",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Supplementary nutritional therapy (advice)",
+    "uuid": "e6b81ecb-6261-4ea7-822b-efbd84b16ecd",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Rest and sleep advice Dos",
+    "uuid": "0b18da58-4e5d-4af0-ad82-c2cb67175e1a",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Rest and sleep advice Donts",
+    "uuid": "368bf985-a91a-4c88-a8f7-7bd7b5a70e42",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Hygiene advice",
+    "uuid": "cddc0438-74a1-4bcb-843c-34a47da7c1e4",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Breast Feeding advice",
+    "uuid": "77afb064-ad7d-44b8-be27-2686726cc409",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Immunization advice",
+    "uuid": "f860273e-29f0-4b44-9da2-a54e15ea12fe",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Family Planning advice Dos",
+    "uuid": "79f8e116-6ce4-47d0-9580-99e718d2234f",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Family Planning advice Donts",
+    "uuid": "6438bcf0-ca7a-4235-a8e1-f17fe08720c5",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "uuid": "263244f7-ef63-406d-a4ad-74ef254bc13e",
+    "name": "Low Systolic"
+  },
+  {
+    "uuid": "9c0e3992-3f72-4efe-aca8-fb160676fc1e",
+    "name": "High Systolic"
+  },
+  {
+    "uuid": "adae209e-00e4-4ac1-b280-76120c88c0c1",
+    "name": "Low Diastolic"
+  },
+  {
+    "uuid": "88038bd6-5a24-457b-9505-02a9bdf0ff8a",
+    "name": "High Diastolic"
+  },
+  {
+    "uuid": "c81c3955-5606-43a8-966d-ada70ac8aadd",
+    "name": "Abnormal Hb"
+  },
+  {
+    "uuid": "a1f6ba05-1e8d-4039-8b06-2569632c93e3",
+    "name": "Abdominal problems"
+  },
+  {
+    "uuid": "80053d9c-a067-407e-9725-0b4868ff3205",
+    "name": "Vaginal problems"
+  },
+  {
+    "uuid": "65db42a2-d8cc-463d-8dc5-58614cb42cfb",
+    "name": "Breast-related problems"
+  },
+  {
+    "uuid": "6a2300f3-d135-4f42-aab4-132f0b375af0",
+    "name": "High Fever"
+  },
+  {
+    "uuid": "d3596f1c-48a7-495f-81fc-78ace5a24a47",
+    "name": "Difficulties with urinating"
+  },
+  {
+    "uuid": "0c2874d3-b923-4ff9-a61a-6a66695017a4",
+    "name": "Feels hot or have the chills"
+  },
+  {
+    "uuid": "c6379692-3a51-4eea-8aba-3e9a2db96762",
+    "name": "Incision area not normal"
+  }, 
+  {
+    "uuid": "84a28076-4cb2-48bc-bdb4-04f7759458bd",
+    "name": "Convulsions present"
+  },
+  {
+    "uuid": "80142eb2-e7ea-400f-825c-13ba46c3e891",
+    "name": "Pain in hypogastrium"
+  },
+  {
+    "uuid": "b2b9e51f-5636-4242-86bd-181cd286db8b",
+    "name": "Burning micturation"
+  },
+  {
+    "uuid": "6308907f-0238-4916-bbda-d44e8b439b63",
+    "name": "PPH"
+  },
+  {
+    "name": "Refer to the hospital for",
+    "uuid": "7c958617-ad77-41ac-b125-d9f33569e202",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "263244f7-ef63-406d-a4ad-74ef254bc13e",
+        "name": "Low Systolic",
+        "abnormal": true
+      },
+      {
+        "uuid": "9c0e3992-3f72-4efe-aca8-fb160676fc1e",
+        "name": "High Systolic",
+        "abnormal": true
+      },
+      {
+        "uuid": "adae209e-00e4-4ac1-b280-76120c88c0c1",
+        "name": "Low Diastolic",
+        "abnormal": true
+      },
+      {
+        "uuid": "88038bd6-5a24-457b-9505-02a9bdf0ff8a",
+        "name": "High Diastolic",
+        "abnormal": true
+      },
+      {
+        "uuid": "6a2300f3-d135-4f42-aab4-132f0b375af0",
+        "name": "High Fever",
+        "abnormal": true
+      },
+      {
+        "uuid": "c81c3955-5606-43a8-966d-ada70ac8aadd",
+        "name": "Abnormal Hb",
+        "abnormal": true
+      },
+      {
+        "uuid": "3d99ab9e-9cf5-4db2-a8e9-e5054242dcd2",
+        "name": "Post-Partum Haemorrhage symptoms",
+        "abnormal": true
+      },
+      {
+        "uuid": "a1f6ba05-1e8d-4039-8b06-2569632c93e3",
+        "name": "Abdominal problems",
+        "abnormal": true
+      },
+      {
+        "uuid": "80053d9c-a067-407e-9725-0b4868ff3205",
+        "name": "Vaginal problems",
+        "abnormal": true
+      },
+      {
+        "uuid": "d3596f1c-48a7-495f-81fc-78ace5a24a47",
+        "name": "Difficulties with urinating",
+        "abnormal": true
+      },
+      {
+        "uuid": "65db42a2-d8cc-463d-8dc5-58614cb42cfb",
+        "name": "Breast-related problems",
+        "abnormal": true
+      },
+      {
+        "uuid": "0c2874d3-b923-4ff9-a61a-6a66695017a4",
+        "name": "Feels hot or have the chills",
+        "abnormal": true
+      },
+      {
+        "uuid": "84a28076-4cb2-48bc-bdb4-04f7759458bd",
+        "name": "Convulsions present",
+        "abnormal": true
+      },
+      {
+        "uuid": "cfec5288-ca3e-48c3-a1f2-332038ad2241",
+        "name": "Post partum dipression symptoms",
+        "abnormal": true
+      },
+      {
+        "uuid": "c6379692-3a51-4eea-8aba-3e9a2db96762",
+        "name": "Incision area not normal",
+        "abnormal": true
+      },
+      {
+        "uuid": "80142eb2-e7ea-400f-825c-13ba46c3e891",
+        "name": "Pain in hypogastrium",
+        "abnormal": true
+      },
+      {
+        "uuid": "b2b9e51f-5636-4242-86bd-181cd286db8b",
+        "name": "Burning micturation",
+        "abnormal": true
+      },
+      {
+        "uuid": "6308907f-0238-4916-bbda-d44e8b439b63",
+        "name": "PPH",
+        "abnormal": true
+      }
+    ]
+  }
+
+]

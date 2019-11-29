@@ -1,0 +1,1213 @@
+[
+  {
+    "name": "Is the child pinkish in colour?",
+    "uuid": "e401ebe8-07e0-4f34-bcf8-8a8c3eaf3b9d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Whether child breathing regularly?",
+    "uuid": "6c3250f8-8380-4f72-97e7-d5ce9e41338a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Is body temprature warm?",
+    "uuid": "7ee92cf1-1661-420f-8eaf-9b7249779058",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is there active movement of hands and legs?",
+    "uuid": "bb279686-d296-4378-858a-f88532454430",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Is there any life threatening abnormality?",
+    "uuid": "186e42dc-515f-4415-8a48-e7709123c060",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Examine for cleft palate/lips in child's mouth?",
+    "uuid": "0277a00d-20d5-436e-8070-205d29a458d2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does foam coming out from child's mouth?",
+    "uuid": "23456b1a-29bb-4a16-952c-9476f7751dd0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does child paases stool and urine within 24  hour",
+    "uuid": "b6930840-0515-4805-8ade-30431f95122e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is there anal opening present?",
+    "uuid": "f51ec371-e402-4ce6-b680-7d82002f1717",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does any kind of cyst or tumor present on neck, back and on lower back?",
+    "uuid": "972d4847-b8d4-49cc-b0ae-b3fbe4125283",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does umbelical cord of newborn tied properly?",
+    "uuid": "714fc100-13c3-418c-aa76-e2ca24e0d6f3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is there visible jaundice?",
+    "uuid": "648faf63-17f1-4ec6-a9b9-78d1edb4061a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does infant has any problem now?",
+    "uuid": "d48fca1d-8344-499c-bcf7-86ce64606f74",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Problem with infant",
+    "uuid": "96ded0c5-3937-40b7-ab27-7a82126bd60c",
+    "dataType": "Text"
+  },
+  {
+    "name": "Is there any grunting sound?",
+    "uuid": "58d017ed-56e3-426c-add1-e06f2af19e01",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is there chest indrawing?",
+    "uuid": "3f8b75b0-41aa-4f38-82bd-459ac8b8fa37",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is there nasal flaring?",
+    "uuid": "bc9c3023-5d55-4172-a883-f83ab449deff",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "uuid": "6e48319b-4729-48ad-bab0-90a11ee057c0",
+    "name": "Pinkish"
+  },
+  {
+    "uuid": "76d88d95-b025-4872-aa0c-319df25d0e00",
+    "name": "Whitish"
+  },
+  {
+    "uuid": "0397b6af-4249-4a70-a3cd-8b79972edff9",
+    "name": "Bluish"
+  },
+  {
+    "uuid": "93e9481e-d0fd-4535-92dc-991dfec2a1f8",
+    "name": "Yellowish"
+  },
+  {
+    "name": "How is the colour of infant",
+    "uuid": "56aec7ea-d2aa-4439-a531-59d0acc402dd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "6e48319b-4729-48ad-bab0-90a11ee057c0",
+        "name": "Pinkish"
+      },
+      {
+        "uuid": "76d88d95-b025-4872-aa0c-319df25d0e00",
+        "name": "Whitish"
+      },
+      {
+        "uuid": "0397b6af-4249-4a70-a3cd-8b79972edff9",
+        "name": "Bluish"
+      },
+      {
+        "uuid": "93e9481e-d0fd-4535-92dc-991dfec2a1f8",
+        "name": "Yellowish"
+      }
+    ]
+  },
+  {
+    "uuid": "7797f702-06a8-4352-bb17-ad4030ab5704",
+    "name": "Less than normal"
+  },
+  {
+    "name": "Look at the infants movement",
+    "uuid": "db74f827-c052-4c0a-9df3-9d34dcddea6f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "7797f702-06a8-4352-bb17-ad4030ab5704",
+        "name": "Less than normal"
+      },
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal"
+      }
+    ]
+  },
+  {
+    "uuid": "fb293475-f5c2-4e94-bcd6-65c74874e290",
+    "name": "White medicine or white powder"
+  },
+  {
+    "uuid": "734501f8-a137-4384-9b29-a39adc391bc3",
+    "name": "Any home substace applied (Kunku, Oil, Sindur, Raakh)"
+  },
+  {
+    "uuid": "dd41b242-ac0b-4ca4-b20c-18eb7a9a4e59",
+    "name": "Nothing applied"
+  },
+  {
+    "name": "Is anything applied on umbelicus?",
+    "uuid": "e58035a6-32f4-4728-8ebb-7a8ab3e1b082",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "fb293475-f5c2-4e94-bcd6-65c74874e290",
+        "name": "White medicine or white powder"
+      },
+      {
+        "uuid": "734501f8-a137-4384-9b29-a39adc391bc3",
+        "name": "Any home substace applied (Kunku, Oil, Sindur, Raakh)"
+      },
+      {
+        "uuid": "dd41b242-ac0b-4ca4-b20c-18eb7a9a4e59",
+        "name": "Nothing applied"
+      }
+    ]
+  },
+  {
+    "uuid": "d18300a1-30b6-430b-89a0-4036ae843d75",
+    "name": "Properly covered and head also covered"
+  },
+  {
+    "uuid": "548ad96f-9b2a-492c-989d-334e840eefec",
+    "name": "Properly covered but head is opened"
+  },
+  {
+    "uuid": "ab3b4d93-1095-46cd-9806-565c89255d66",
+    "name": "Poorly covered"
+  },
+  {
+    "uuid": "878ce4a1-1852-4a7d-b0dc-046237ac39d1",
+    "name": "Infant is kept open"
+  },
+  {
+    "name": "Is infant coverred with 3-4 folded cloth?",
+    "uuid": "90c1f569-76e9-433c-a0fe-096d179ef8de",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "d18300a1-30b6-430b-89a0-4036ae843d75",
+        "name": "Properly covered and head also covered"
+      },
+      {
+        "uuid": "548ad96f-9b2a-492c-989d-334e840eefec",
+        "name": "Properly covered but head is opened"
+      },
+      {
+        "uuid": "ab3b4d93-1095-46cd-9806-565c89255d66",
+        "name": "Poorly covered"
+      },
+      {
+        "uuid": "878ce4a1-1852-4a7d-b0dc-046237ac39d1",
+        "name": "Infant is kept open"
+      }
+    ]
+  },
+  {
+    "name": "Is temperature recorded?",
+    "uuid": "cdf5f2b6-ec61-4dc3-8260-61960d1239ce",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "uuid": "38a9a14e-fb8a-4252-bb5b-c71b910b98ac",
+    "name": "Thermometer not functioning"
+  },
+  {
+    "uuid": "94910035-3c9a-4507-95c4-e4d6636a3399",
+    "name": "Batteries down"
+  },
+  {
+    "uuid": "8bb8a9f3-796c-44ab-b0ec-9ceb7732a783",
+    "name": "Not carried"
+  },
+  {
+    "name": "Reason for not recording temperature",
+    "uuid": "9a5019fa-cd87-441c-8b8c-f2373987178f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "38a9a14e-fb8a-4252-bb5b-c71b910b98ac",
+        "name": "Thermometer not functioning"
+      },
+      {
+        "uuid": "94910035-3c9a-4507-95c4-e4d6636a3399",
+        "name": "Batteries down"
+      },
+      {
+        "uuid": "8bb8a9f3-796c-44ab-b0ec-9ceb7732a783",
+        "name": "Not carried"
+      }
+    ]
+  },
+  {
+    "uuid": "a2c03a08-7a09-492d-a879-1c2013634478",
+    "name": "Abdomen and limbs feel normal"
+  },
+  {
+    "uuid": "28ece283-3fd1-4acd-9117-6f3f73b4b303",
+    "name": "Abdomen and limbs feel cold on touch"
+  },
+  {
+    "uuid": "a5759399-0eb9-47b6-8612-a94de6f74f4e",
+    "name": "Abdomen and limbs all feel hot on touch"
+  },
+  {
+    "name": "How you feel infants temprature on touch?",
+    "uuid": "cadf0874-1446-411a-9e97-cf8a67a234e1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "a2c03a08-7a09-492d-a879-1c2013634478",
+        "name": "Abdomen and limbs feel normal"
+      },
+      {
+        "uuid": "28ece283-3fd1-4acd-9117-6f3f73b4b303",
+        "name": "Abdomen and limbs feel cold on touch"
+      },
+      {
+        "uuid": "a5759399-0eb9-47b6-8612-a94de6f74f4e",
+        "name": "Abdomen and limbs all feel hot on touch"
+      }
+    ]
+  },
+  {
+    "uuid": "e87d4409-a6ce-4940-a8ec-ca041ef98b12",
+    "name": "Draining pus or any discharge"
+  },
+  {
+    "uuid": "16eb131c-d8ea-4030-929e-f4dc07931c2d",
+    "name": "blood coming out"
+  },
+  {
+    "uuid": "57b4123a-dc82-4287-b64d-f0ed72b517bf",
+    "name": "Looks red"
+  },
+  {
+    "name": "Condition of umbelicus",
+    "uuid": "df75e2e6-4d5f-4ed8-a24e-14ce72da1e10",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "e87d4409-a6ce-4940-a8ec-ca041ef98b12",
+        "name": "Draining pus or any discharge"
+      },
+      {
+        "uuid": "16eb131c-d8ea-4030-929e-f4dc07931c2d",
+        "name": "blood coming out"
+      },
+      {
+        "uuid": "57b4123a-dc82-4287-b64d-f0ed72b517bf",
+        "name": "Looks red"
+      },
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal"
+      }
+    ]
+  },
+  {
+    "name": "When was first breastfeed given to child?",
+    "uuid": "bc203ffc-00bf-42ed-988c-97cc954d1061",
+    "dataType": "Numeric",
+    "unit": "days"
+  },
+  {
+    "uuid": "9890a88c-3ed0-4f67-b97d-ed2031c999f2",
+    "name": "Good - Normal"
+  },
+  {
+    "uuid": "adc25383-1e47-438a-b2f1-360f7502f737",
+    "name": "Loose and not attached well"
+  },
+  {
+    "uuid": "58a29a8f-6fb1-452e-a813-c9d33ffd2f11",
+    "name": "No attachment at all"
+  },
+  {
+    "name": "How is the infant attachment while sucking?",
+    "uuid": "60baea86-df95-443c-bac4-852482d2b2a8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "9890a88c-3ed0-4f67-b97d-ed2031c999f2",
+        "name": "Good - Normal"
+      },
+      {
+        "uuid": "adc25383-1e47-438a-b2f1-360f7502f737",
+        "name": "Loose and not attached well"
+      },
+      {
+        "uuid": "58a29a8f-6fb1-452e-a813-c9d33ffd2f11",
+        "name": "No attachment at all"
+      }
+    ]
+  },
+  {
+    "name": "Is mouth wide open",
+    "uuid": "5e309ac3-1b96-4965-a94a-2341f834a7c0",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is lower lip turned outword",
+    "uuid": "80144e66-99dc-4404-bacc-f33554ea97fb",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is more areola visible above than below the mouth",
+    "uuid": "144796e8-cfcd-47dd-befc-bf62a3f87056",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Not suckling at all?",
+    "uuid": "93ad1180-08dc-4717-b722-fa672bfed796",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Not suckling effectively",
+    "uuid": "df81c4bf-7d9a-411a-8a66-4796e0116043",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Suckling effectively",
+    "uuid": "7d9656d9-e872-47ff-ba34-131d0602e7d8",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is there anything given other than breastfeeding for infant",
+    "uuid": "26d47b4e-9b2f-45bd-9044-41596b330183",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "uuid": "ebc63756-9eed-456c-b3d9-a83f1054fc84",
+    "name": "Honey"
+  },
+  {
+    "uuid": "341ea2c1-970b-468d-a34d-576f02b5ce91",
+    "name": "Ghee"
+  },
+  {
+    "uuid": "7a6bcd2a-3340-4c6e-bea6-9be0a9d8d7cb",
+    "name": "Jaggery"
+  },
+  {
+    "uuid": "e7e6f4cd-5a08-45e9-a51b-5ffa7e825002",
+    "name": "Sugar"
+  },
+  {
+    "uuid": "218941d6-7078-437a-9255-ab237c852f04",
+    "name": "Jaggery syrup"
+  },
+  {
+    "uuid": "823b4fb5-01b1-467d-a605-02ea8770ed1a",
+    "name": "External milk"
+  },
+  {
+    "uuid": "ec694351-b1cc-42ff-b7fa-4f4aa2461da4",
+    "name": "Ghuti"
+  },
+  {
+    "uuid": "4a8c3947-2d49-45d7-b49c-e5fea11b09e0",
+    "name": "Kathvaat"
+  },
+  {
+    "uuid": "358dc7b9-a0f5-484a-b4b1-da780e17cfb9",
+    "name": "Somvaa 34"
+  },
+  {
+    "uuid": "49dd2b88-782f-4959-9f4e-908a5c110109",
+    "name": "Gripe water"
+  },
+  {
+    "name": "Things given other than bresatfeeding",
+    "uuid": "8c96d4e2-efd5-4886-acc6-e9438522a25b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "ebc63756-9eed-456c-b3d9-a83f1054fc84",
+        "name": "Honey"
+      },
+      {
+        "uuid": "341ea2c1-970b-468d-a34d-576f02b5ce91",
+        "name": "Ghee"
+      },
+      {
+        "uuid": "7a6bcd2a-3340-4c6e-bea6-9be0a9d8d7cb",
+        "name": "Jaggery"
+      },
+      {
+        "uuid": "e7e6f4cd-5a08-45e9-a51b-5ffa7e825002",
+        "name": "Sugar"
+      },
+      {
+        "uuid": "218941d6-7078-437a-9255-ab237c852f04",
+        "name": "Jaggery syrup"
+      },
+      {
+        "uuid": "823b4fb5-01b1-467d-a605-02ea8770ed1a",
+        "name": "External milk"
+      },
+      {
+        "uuid": "ec694351-b1cc-42ff-b7fa-4f4aa2461da4",
+        "name": "Ghuti"
+      },
+      {
+        "uuid": "4a8c3947-2d49-45d7-b49c-e5fea11b09e0",
+        "name": "Kathvaat"
+      },
+      {
+        "uuid": "358dc7b9-a0f5-484a-b4b1-da780e17cfb9",
+        "name": "Somvaa 34"
+      },
+      {
+        "uuid": "49dd2b88-782f-4959-9f4e-908a5c110109",
+        "name": "Gripe water"
+      },
+      {
+        "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "name": "Does infant has any difficulty in breastfeeding?",
+    "uuid": "d5993485-2b05-4ef8-a980-0f62a9e2b3e4",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is breastfeed given to infant in last 24 hours?",
+    "uuid": "4f440c38-c2f8-4489-9b98-53e7faebb9f5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "How many times breastfeeding given to child in last 24 hours",
+    "uuid": "6ca3c61e-2dda-49ad-a9b4-7eb719874c27",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "a0c0bb56-2995-4b39-a03d-5b5207093ae4",
+    "name": "More than 5 times"
+  },
+  {
+    "uuid": "51b91c37-c65b-4777-bcf5-aabf5b8735f3",
+    "name": "Less than 5 times"
+  },
+  {
+    "name": "In last 24 hours, for how many times infant passes urine?",
+    "uuid": "fff940b1-7cfc-40b1-8145-1fa3794ebdcd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "a0c0bb56-2995-4b39-a03d-5b5207093ae4",
+        "name": "More than 5 times"
+      },
+      {
+        "uuid": "51b91c37-c65b-4777-bcf5-aabf5b8735f3",
+        "name": "Less than 5 times"
+      }
+    ]
+  },
+  {
+    "uuid": "1be4f4fe-8abb-4afc-ae81-7c9ece00ee74",
+    "name": "On first day"
+  },
+  {
+    "uuid": "6f6ac611-ff9c-4142-b6bc-b54184247722",
+    "name": "In first week"
+  },
+  {
+    "uuid": "9526a9d1-2ef5-490b-8df6-1e7c1799b168",
+    "name": "After 7 days of birth"
+  },
+  {
+    "name": "When to start bathing for infant?",
+    "uuid": "8c18e07c-ca8f-4f62-823d-1618fac5912c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "1be4f4fe-8abb-4afc-ae81-7c9ece00ee74",
+        "name": "On first day"
+      },
+      {
+        "uuid": "6f6ac611-ff9c-4142-b6bc-b54184247722",
+        "name": "In first week"
+      },
+      {
+        "uuid": "9526a9d1-2ef5-490b-8df6-1e7c1799b168",
+        "name": "After 7 days of birth"
+      }
+    ]
+  },
+  {
+    "name": "Is there bleeding from any part of infant's body?",
+    "uuid": "f4d9696d-9075-4b32-bc6a-3f33fd19ef40",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is infant vomiting?",
+    "uuid": "09b4ee52-8d80-48f5-84dd-e375e16bbda9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does infant's abdomen look gasious?",
+    "uuid": "57bf7e17-a75d-4141-ae61-5f9a10b67527",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does infant looks icteric?",
+    "uuid": "bbf0e17f-769e-4389-82e5-01eccb0c745c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does infant looks cynosed?",
+    "uuid": "cfba52eb-6f92-4db8-a42c-8a3623e15bde",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does infant looks abnormal?",
+    "uuid": "d350f4e7-0d54-44d3-aeb0-e47b898b2e8d",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes",
+        "abnormal": true
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is the infant's mouth cleft pallet seen?",
+    "uuid": "b2097167-c02d-4d2d-a9ec-49614027a5ea",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is there visible tumor on back or on head of infant?",
+    "uuid": "4b225831-3670-4537-b663-90c87c417f98",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is foam coming from infant's mouth continuously?",
+    "uuid": "ee670016-5517-4c10-a27a-998bbd94247e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does infant has watery diarrhoea?",
+    "uuid": "477207cd-61ef-46ed-b28d-1c2be3eb6415",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is oral ulcer or thrush seen in infant's mouth",
+    "uuid": "f0bdf6d9-a8f8-439c-88fc-7be3c00e8de1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is there visible pustules on body of infant?",
+    "uuid": "c9468105-56fa-4e41-8ed0-943d106c040e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Todays weight of infant?",
+    "uuid": "d2b5b24b-3c04-4dcb-b705-344fb1313380",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "If infant's weight is less than 2.5kg then did KMC?",
+    "uuid": "d21d1844-362b-426c-a5d4-c45ab5fc1690",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Weight at the time of KMC started to do",
+    "uuid": "81d81392-d0e6-40ce-84bd-4fd0eba04719",
+    "dataType": "Numeric",
+    "unit": "kg"
+  },
+  {
+    "name": "In last 24 hours for how many times did KMC?",
+    "uuid": "4f2cae52-9923-44f3-baf5-b03a62423acb",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "In one time for how many minutes did KMC?",
+    "uuid": "29d4737c-15b3-42f2-b296-632fee9f5fe7",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Weight of infant at time to stoped to do KMC",
+    "uuid": "78511bef-1c10-47a0-98cb-a91aff6f1c3c",
+    "dataType": "Numeric",
+    "unit": "kg"
+  },
+  {
+    "name": "Does child require to refer if morbidity found",
+    "uuid": "e8a74be5-e817-4992-87df-abab41753f38",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "If yes then refered?",
+    "uuid": "61be533a-98a6-4a73-919f-79c1f4fd4cfc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "uuid": "ca103da5-3221-487c-b687-4f43bc434c0c",
+    "name": "Date of refer",
+    "dataType": "Date"
+  },
+  {
+    "uuid": "12835d9b-7c4d-4c7a-9a27-c5d9f597c986",
+    "name": "A.S"
+  },
+  {
+    "uuid": "ee608e7d-2354-4bb9-beb2-de29fcd40764",
+    "name": "Supervisor"
+  },
+  {
+    "uuid": "c4500d32-b826-4d83-9389-0bbe76bbad32",
+    "name": "CI"
+  },
+  {
+    "uuid": "6d86cca8-6525-47dd-9045-8509fe0ad4eb",
+    "name": "Doctor"
+  },
+  {
+    "uuid": "a5ea10fe-146f-4f37-9975-6c8e1294291d",
+    "name": "Self"
+  },
+  {
+    "uuid": "49435918-b799-4b6d-a9fb-4e9158c3b091",
+    "name": "Nurse"
+  },
+  {
+    "uuid": "2085df38-3f49-4dc7-93c0-ddbb89a5b512",
+    "name": "AASHA"
+  },
+  {
+    "name": "Who refered?",
+    "uuid": "1aa46e35-6256-40cd-a026-8c825565a98f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "12835d9b-7c4d-4c7a-9a27-c5d9f597c986",
+        "name": "A.S"
+      },
+      {
+        "uuid": "ee608e7d-2354-4bb9-beb2-de29fcd40764",
+        "name": "Supervisor"
+      },
+      {
+        "uuid": "c4500d32-b826-4d83-9389-0bbe76bbad32",
+        "name": "CI"
+      },
+      {
+        "uuid": "6d86cca8-6525-47dd-9045-8509fe0ad4eb",
+        "name": "Doctor"
+      },
+      {
+        "uuid": "a5ea10fe-146f-4f37-9975-6c8e1294291d",
+        "name": "Self"
+      },
+      {
+        "uuid": "49435918-b799-4b6d-a9fb-4e9158c3b091",
+        "name": "Nurse"
+      },
+      {
+        "uuid": "2085df38-3f49-4dc7-93c0-ddbb89a5b512",
+        "name": "AASHA"
+      }
+    ]
+  },
+  {
+    "uuid": "23bf2ac6-4abc-4bd4-9a3e-52c5c6e3f9e1",
+    "name": "PHC"
+  },
+  {
+    "name": "Place of refer",
+    "uuid": "38fa0a7d-7bb6-4e84-a5d8-2b1b9c463f6b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "0097d74d-c046-4504-9efe-e9811f6363af",
+        "name": "State hospital"
+      },
+      {
+        "uuid": "f85a0321-e224-4829-8d4d-074c75cf4028",
+        "name": "CHC PINDVAL"
+      },
+      {
+        "uuid": "3eacbba3-32aa-489e-844f-6600950f5fa6",
+        "name": "CHC NANAPONDHA"
+      },
+      {
+        "uuid": "29f824b6-e09e-429a-b261-90d062d19afa",
+        "name": "CHC KAPRADA"
+      },
+      {
+        "uuid": "55520393-af5d-406b-b734-8810e2164d15",
+        "name": "SRH"
+      },
+      {
+        "uuid": "23bf2ac6-4abc-4bd4-9a3e-52c5c6e3f9e1",
+        "name": "PHC"
+      },
+      {
+        "uuid": "5ab46f09-23a8-439b-9e8e-484b56220753",
+        "name": "Private Hospital"
+      }
+    ]
+  },
+  {
+    "name": "Baby Warming Dos",
+    "uuid": "f006c0b1-d6ad-44b4-b347-0f8ba148048d",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Baby Warming Donts",
+    "uuid": "7113c221-0113-4593-b23a-b7f9495da255",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Breast Feeding - Do's",
+    "uuid": "3657a1ae-83cb-4204-82b0-0745d29541c2",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Hygiene",
+    "uuid": "73187abb-c46f-4b07-ae8f-8832850f911c",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Child PNC Weight -Do's",
+    "uuid": "063fd686-1070-405b-89a6-cbf5e3c79f0f",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Registration Immunisation - Do's",
+    "uuid": "c13e5e72-2c93-4462-be0b-010263bb2e02",
+    "dataType": "Coded",
+    "answers": []
+  }
+]

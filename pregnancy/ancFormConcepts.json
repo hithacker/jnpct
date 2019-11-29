@@ -1,0 +1,1554 @@
+[
+  {
+    "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+    "name": "Yes"
+  },
+  {
+    "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+    "name": "No"
+  },
+  {
+    "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+    "name": "Not yet decided"
+  },
+  {
+    "name": "Mamta card",
+    "uuid": "4bb3dbde-01df-4f6d-85aa-41a38c8ee3d3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Do you have Iron/Folic acid tablets",
+    "uuid": "3ae2d1a2-734a-4dbf-a1bc-adc19e4e7fff",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is she taking iron/folic acid tablet?",
+    "uuid": "734d46fe-363a-4037-afb4-89ff87fbac5b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "IF YES THEN WRITE NUMBER OF TABLET SWALLOWED",
+    "uuid": "eccf536c-efbd-4705-9d13-5eaceab49e51",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "Do you have Calcium tablets?",
+    "uuid": "bc5c6259-d504-4041-bacd-bbb718d8a845",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Is she taking calcium tablet?",
+    "uuid": "2c2c44c6-b2c9-4c99-a0da-fcee2cddd14c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "IF YES THEN WRITE NUMBER OF CALCIUM TABLET SWALLOWED",
+    "uuid": "7fd17431-fada-43e3-891b-d9b311cce9f0",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "TT 1",
+    "uuid": "515b0e64-4621-4f0e-8636-4b68a922decf",
+    "dataType": "Date"
+  },
+  {
+    "name": "TT 2",
+    "uuid": "4ad7f1d8-fa36-47b7-a3b6-83b8909c49ac",
+    "dataType": "Date"
+  },
+  {
+    "name": "TT Booster",
+    "uuid": "afdec7b2-ecb2-409a-a506-d6ae3c5f9676",
+    "dataType": "Date"
+  },
+  {
+    "name": "Does she using iodised salt?",
+    "uuid": "8b69adbf-2209-4b80-922d-676e4566d43a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does she get snacks from Anganwadi",
+    "uuid": "8058e4f8-c64a-446f-a5a7-3b7b0f111fa5",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Does she eat all the snacks",
+    "uuid": "09019dea-c24f-46da-bd2f-a2b2e7e5fd88",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Height",
+    "uuid": "7d9af174-9e58-4e96-a77c-8351a5a4152d",
+    "dataType": "Numeric",
+    "lowAbsolute": 20,
+    "highAbsolute": 300,
+    "lowNormal": 30,
+    "highNormal": 200,
+    "unit": "cm"
+  },
+  {
+    "name": "Weight",
+    "uuid": "bab98eac-14a5-43c4-80ff-ccdb8c3ddf1b",
+    "dataType": "Numeric",
+    "lowAbsolute": 0,
+    "highAbsolute": 300,
+    "lowNormal": 1,
+    "highNormal": 100,
+    "unit": "kg"
+  },
+  {
+    "name": "BMI",
+    "uuid": "27803190-b702-4223-b9b4-64c75fdcf588",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "MUAC (in cms)",
+    "uuid": "915a4d71-6267-4190-af9f-882bbd07629e",
+    "dataType": "Numeric"
+  },
+  {
+    "name": "B.P - Systolic",
+    "uuid": "d5d860cc-9165-45b5-8795-065c2ee0e5aa",
+    "dataType": "Numeric",
+    "lowAbsolute": 20,
+    "highAbsolute": 190,
+    "lowNormal": 90,
+    "highNormal": 140,
+    "unit": "mm Hg"
+  },
+  {
+    "name": "B.P - Diastolic",
+    "uuid": "378241fc-b879-4037-bdc3-4746a7a11682",
+    "dataType": "Numeric",
+    "lowAbsolute": 10,
+    "highAbsolute": 120,
+    "lowNormal": 50,
+    "highNormal": 90,
+    "unit": "mm Hg"
+  },
+  {
+    "uuid": "2bd804c1-d267-410f-81b5-390a39e6c6b2",
+    "name": "A+",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "2af7b3a0-8646-4d58-abc4-fceac927d940",
+    "name": "B+",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "0dab0fe3-bf6f-4d37-9d50-5c2dec5bd156",
+    "name": "AB+",
+    "dataType": "NA"
+
+  },
+  {
+    "uuid": "09a6c715-da7b-4dd5-aa73-4949be64f083",
+    "name": "O+",
+    "dataType": "NA"
+
+  },
+  {
+    "uuid": "48458cb4-6bcc-4474-bcc0-cd9e3e4712d1",
+    "name": "A-",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "3067e276-7793-4906-a6e3-045822b0ffee",
+    "name": "B-",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "f8ef2109-67f9-47cc-a461-10d02066c414",
+    "name": "AB-",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "d75b6736-7c92-42ac-aa89-0d63093805ff",
+    "name": "O-",
+    "dataType": "NA"
+  },
+  {
+    "uuid": "18fc80be-129b-4346-9a25-9e99bccc7ec6",
+    "name": "Don't Know",
+    "dataType": "NA"
+  },
+  {
+    "name": "Blood Group",
+    "uuid": "1ba17bfc-1a27-4660-9ec5-e3e314d5eb2c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "2bd804c1-d267-410f-81b5-390a39e6c6b2",
+        "name": "A+"
+      },
+      {
+        "uuid": "2af7b3a0-8646-4d58-abc4-fceac927d940",
+        "name": "B+"
+      },
+      {
+        "uuid": "0dab0fe3-bf6f-4d37-9d50-5c2dec5bd156",
+        "name": "AB+"
+      },
+      {
+        "uuid": "09a6c715-da7b-4dd5-aa73-4949be64f083",
+        "name": "O+"
+      },
+      {
+        "uuid": "48458cb4-6bcc-4474-bcc0-cd9e3e4712d1",
+        "name": "A-"
+      },
+      {
+        "uuid": "3067e276-7793-4906-a6e3-045822b0ffee",
+        "name": "B-"
+      },
+      {
+        "uuid": "f8ef2109-67f9-47cc-a461-10d02066c414",
+        "name": "AB-"
+      },
+      {
+        "uuid": "d75b6736-7c92-42ac-aa89-0d63093805ff",
+        "name": "O-"
+      },
+      {
+        "uuid": "18fc80be-129b-4346-9a25-9e99bccc7ec6",
+        "name": "Don't Know"
+      }
+    ]
+  },
+  {
+    "name": "Temperature",
+    "uuid": "51f90d12-e4fb-4cb9-89d4-0c0b45629dbe",
+    "dataType": "Numeric",
+    "lowNormal": 36.11,
+    "highNormal": 37.2,
+    "unit": "°C"
+  },
+  {
+    "name": "pedal oedema is present",
+    "uuid": "a82b2939-1298-4283-b08b-cbdc8616a54a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "IF yes then since how many days",
+    "uuid": "7b2672ae-c6ad-4e12-a408-9feac01183bf",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+    "name": "Present"
+  },
+  {
+    "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+    "name": "Absent"
+  },
+  {
+    "name": "Pallor",
+    "uuid": "b537a20f-7459-4e7d-9436-d6c702b2403e",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+        "name": "Present",
+        "abnormal": true
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      }
+    ]
+  },
+  {
+    "name": "Has she been having convulsions?",
+    "uuid": "4e7ac362-0578-4b7b-9c3c-1bba0f14e691",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+        "name": "Present",
+        "abnormal": true
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      }
+    ]
+  },
+  {
+    "name": "Jaundice (Icterus)",
+    "uuid": "efd91533-e2d0-497e-a4dc-0b66a30ef233",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "69f28ae9-7ef7-4602-a575-69034521d02a",
+        "name": "Present",
+        "abnormal": true
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      }
+    ]
+  },
+  {
+    "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+    "name": "Normal"
+  },
+  {
+    "uuid": "60332376-c494-42f2-ac70-5da910f2ddb9",
+    "name": "Retracted"
+  },
+  {
+    "uuid": "c9c4d34d-260b-4fce-a7ef-d92d94e7351e",
+    "name": "Flat"
+  },
+  {
+    "name": "Breast Examination - Nipple",
+    "uuid": "e6228ce1-29af-4c48-b41a-858802a5cbc6",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal"
+      },
+      {
+        "uuid": "60332376-c494-42f2-ac70-5da910f2ddb9",
+        "name": "Retracted",
+        "abnormal": true
+      },
+      {
+        "uuid": "c9c4d34d-260b-4fce-a7ef-d92d94e7351e",
+        "name": "Flat",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "uuid": "59bbe194-20a5-484f-8fc8-7c29bf97aefb",
+    "name": "Malaria"
+  },
+  {
+    "uuid": "5aeae397-60e2-4bc0-9813-1ce8125d700d",
+    "name": "eclampsia"
+  },
+  {
+    "uuid": "56331346-a084-4205-88e1-acc7fcb9faee",
+    "name": "APH"
+  },
+  {
+    "uuid": "581e95c2-319c-43a6-a0f9-1dc93963813e",
+    "name": "Foul smelling menses"
+  },
+  {
+    "uuid": "440291c1-9b98-4089-89b4-a7585bcedb55",
+    "name": "twin pregnancy"
+  },
+  {
+    "uuid": "137958fa-4666-44b2-880e-d5f1a639bb79",
+    "name": "fever"
+  },
+  {
+    "uuid": "338c4e61-0bbc-4488-9c93-84912f87eb59",
+    "name": "difficult breathing"
+  },
+  {
+    "uuid": "5f7c7a32-792f-4c09-9341-8f5ea0ded551",
+    "name": "severe vomiting"
+  },
+  {
+    "uuid": "526b364e-97a0-4e70-9a53-97530e25989d",
+    "name": "problems in laboratory report"
+  },
+  {
+    "uuid": "b794dcd7-1983-4296-bc5a-ab29d9f49392",
+    "name": "Blurred vision"
+  },
+  {
+    "uuid": "7d7b2fb5-9a5a-4795-ac92-0da3f3920b1f",
+    "name": "Reduced fetal movement"
+  },
+  {
+    "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+    "name": "Other"
+  },
+  {
+    "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
+    "name": "None"
+  },
+  {
+    "name": "Is there any danger sign",
+    "uuid": "c23f62f9-9f8f-48bf-8549-a15f0165adf1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "59bbe194-20a5-484f-8fc8-7c29bf97aefb",
+        "name": "Malaria",
+        "abnormal": true
+      },
+      {
+        "uuid": "5aeae397-60e2-4bc0-9813-1ce8125d700d",
+        "name": "eclampsia",
+        "abnormal": true
+      },
+      {
+        "uuid": "56331346-a084-4205-88e1-acc7fcb9faee",
+        "name": "APH",
+        "abnormal": true
+      },
+      {
+        "uuid": "581e95c2-319c-43a6-a0f9-1dc93963813e",
+        "name": "Foul smelling menses",
+        "abnormal": true
+      },
+      {
+        "uuid": "440291c1-9b98-4089-89b4-a7585bcedb55",
+        "name": "twin pregnancy",
+        "abnormal": true
+      },
+      {
+        "uuid": "137958fa-4666-44b2-880e-d5f1a639bb79",
+        "name": "fever",
+        "abnormal": true
+      },
+      {
+        "uuid": "338c4e61-0bbc-4488-9c93-84912f87eb59",
+        "name": "difficult breathing",
+        "abnormal": true
+      },
+      {
+        "uuid": "5f7c7a32-792f-4c09-9341-8f5ea0ded551",
+        "name": "severe vomiting",
+        "abnormal": true
+      },
+      {
+        "uuid": "526b364e-97a0-4e70-9a53-97530e25989d",
+        "name": "problems in laboratory report",
+        "abnormal": true
+      },
+      {
+        "uuid": "b794dcd7-1983-4296-bc5a-ab29d9f49392",
+        "name": "Blurred vision",
+        "abnormal": true
+      },
+      {
+        "uuid": "7d7b2fb5-9a5a-4795-ac92-0da3f3920b1f",
+        "name": "Reduced fetal movement",
+        "abnormal": true
+      },
+      {
+        "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+        "name": "Other",
+        "abnormal": true
+      },
+      {
+        "uuid": "540cc15d-2ad4-496c-8514-64031f08290a",
+        "name": "None",
+        "unique": true
+      }
+    ]
+  },
+  {
+    "name": "Other complications?",
+    "uuid": "1dc2c60f-e1a8-4f9f-9b05-c8bc96110a91",
+    "dataType": "Text"
+  },
+  {
+    "uuid": "8c69760a-cb15-450d-b8f6-30894d9f3dd3",
+    "name": "Reduced"
+  },
+  {
+    "name": "Foetal movements",
+    "uuid": "d7ff8486-11bf-4e7a-ba53-acc443923a2c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal"
+      },
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent",
+        "abnormal": true
+      },
+      {
+        "uuid": "8c69760a-cb15-450d-b8f6-30894d9f3dd3",
+        "name": "Reduced",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Blood Examination Date",
+    "uuid": "4b30fd1a-ed33-499b-81ea-9dbdfe917b08",
+    "dataType": "Date"
+  },
+  {
+    "name": "H.B",
+    "uuid": "057ab538-63ef-4c56-b37c-03651ad823e2",
+    "dataType": "Numeric",
+    "lowNormal": 12,
+    "highNormal": 15.5,
+    "unit": "g/dL"
+  },
+  {
+    "name": "Blood Sugar",
+    "uuid": "23cbc12a-64f7-438f-accb-a1736ea3cc03",
+    "dataType": "Numeric"
+  },
+  {
+    "uuid": "55451fda-7cc3-454b-b632-6925801c97d2",
+    "name": "Positive"
+  },
+  {
+    "uuid": "40677daf-6062-4ba9-a2a2-2771df1af583",
+    "name": "Negative"
+  },
+  {
+    "name": "VDRL",
+    "uuid": "5a48f80d-e956-403d-b192-93a80389faf2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "55451fda-7cc3-454b-b632-6925801c97d2",
+        "name": "Positive",
+        "abnormal": true
+      },
+      {
+        "uuid": "40677daf-6062-4ba9-a2a2-2771df1af583",
+        "name": "Negative"
+      }
+    ]
+  },
+  {
+    "name": "HIV/AIDS Test",
+    "uuid": "9c3f92c9-f3a6-49bc-a15e-e7909c8b61cc",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "55451fda-7cc3-454b-b632-6925801c97d2",
+        "name": "Positive",
+        "abnormal": true
+      },
+      {
+        "uuid": "40677daf-6062-4ba9-a2a2-2771df1af583",
+        "name": "Negative"
+      }
+    ]
+  },
+  {
+    "name": "HbsAg",
+    "uuid": "737145a8-3259-4afc-9523-ed5d5f2d9a5f",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "55451fda-7cc3-454b-b632-6925801c97d2",
+        "name": "Positive",
+        "abnormal": true
+      },
+      {
+        "uuid": "40677daf-6062-4ba9-a2a2-2771df1af583",
+        "name": "Negative"
+      }
+    ]
+  },
+  {
+    "name": "Sickle cell test  done",
+    "uuid": "a226cc07-ea19-4bd1-9040-b3c3fdcb5363",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "uuid": "e141d616-3d4d-4934-ba9e-75d61914d25a",
+    "name": "DISEASE"
+  },
+  {
+    "uuid": "5a807893-c34a-41f0-8be3-35416a55f0e4",
+    "name": "TRAIT"
+  },
+  {
+    "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+    "name": "Normal"
+  },
+  {
+    "name": "IF YES, result of sickle cell test",
+    "uuid": "c8722864-8f31-4e58-8a3b-ce2c8a549f2b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "e141d616-3d4d-4934-ba9e-75d61914d25a",
+        "name": "DISEASE",
+        "abnormal": true
+      },
+      {
+        "uuid": "5a807893-c34a-41f0-8be3-35416a55f0e4",
+        "name": "TRAIT",
+        "abnormal": true
+      },
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal"
+      }
+    ]
+  },
+  {
+    "uuid": "ae09c05f-b0e6-492f-bae0-321335aacf84",
+    "name": "Trace"
+  },
+  {
+    "uuid": "57d1fde3-57c1-4c2f-bcbf-293987661e4c",
+    "name": "+1"
+  },
+  {
+    "uuid": "1fd8daa1-1695-488d-9fd1-ccef866f874a",
+    "name": "+2"
+  },
+  {
+    "uuid": "982911aa-17c7-4970-ba74-a1d0c5fb9d62",
+    "name": "+3"
+  },
+  {
+    "uuid": "d1d21757-9104-404c-b3e6-5473d7127508",
+    "name": "+4"
+  },
+  {
+    "name": "Urine Albumin",
+    "uuid": "ddefc442-cb1f-432a-8e3d-0665dc620272",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      },
+      {
+        "uuid": "ae09c05f-b0e6-492f-bae0-321335aacf84",
+        "name": "Trace",
+        "abnormal": true
+      },
+      {
+        "uuid": "57d1fde3-57c1-4c2f-bcbf-293987661e4c",
+        "name": "+1",
+        "abnormal": true
+      },
+      {
+        "uuid": "1fd8daa1-1695-488d-9fd1-ccef866f874a",
+        "name": "+2",
+        "abnormal": true
+      },
+      {
+        "uuid": "982911aa-17c7-4970-ba74-a1d0c5fb9d62",
+        "name": "+3",
+        "abnormal": true
+      },
+      {
+        "uuid": "d1d21757-9104-404c-b3e6-5473d7127508",
+        "name": "+4",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Urine Sugar",
+    "uuid": "b6291b90-6f6e-4b15-be79-51e3284c4c81",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
+        "name": "Absent"
+      },
+      {
+        "uuid": "ae09c05f-b0e6-492f-bae0-321335aacf84",
+        "name": "Trace",
+        "abnormal": true
+      },
+      {
+        "uuid": "57d1fde3-57c1-4c2f-bcbf-293987661e4c",
+        "name": "+1",
+        "abnormal": true
+      },
+      {
+        "uuid": "1fd8daa1-1695-488d-9fd1-ccef866f874a",
+        "name": "+2",
+        "abnormal": true
+      },
+      {
+        "uuid": "982911aa-17c7-4970-ba74-a1d0c5fb9d62",
+        "name": "+3",
+        "abnormal": true
+      },
+      {
+        "uuid": "d1d21757-9104-404c-b3e6-5473d7127508",
+        "name": "+4",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Complete hospital checkup done",
+    "uuid": "b9bd871d-cb06-4895-907b-adda2572b8c9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "If YES then write E.D.D as per USG",
+    "uuid": "0f2f8288-126f-4976-a7bb-09999f7d870e",
+    "dataType": "Date"
+  },
+  {
+    "uuid": "0b67e02e-6b31-4f07-83a0-24210af3a994",
+    "name": "One"
+  },
+  {
+    "uuid": "71be1f71-6589-46a5-9a50-c77a1dd93a04",
+    "name": "Two"
+  },
+  {
+    "uuid": "05568801-d09e-49b2-a392-7f5d9f84fdd3",
+    "name": "Three"
+  },
+  {
+    "uuid": "1eaf3f52-b4f6-43bc-998f-44dfed64246d",
+    "name": "More than Three"
+  },
+  {
+    "name": "USG Scanning Report - Number of foetus",
+    "uuid": "ba8274a2-5817-4f1b-a379-f945a285bb25",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "0b67e02e-6b31-4f07-83a0-24210af3a994",
+        "name": "One"
+      },
+      {
+        "uuid": "71be1f71-6589-46a5-9a50-c77a1dd93a04",
+        "name": "Two",
+        "abnormal": true
+      },
+      {
+        "uuid": "05568801-d09e-49b2-a392-7f5d9f84fdd3",
+        "name": "Three",
+        "abnormal": true
+      },
+      {
+        "uuid": "1eaf3f52-b4f6-43bc-998f-44dfed64246d",
+        "name": "More than Three",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "uuid": "c6b2e6f5-ee9f-47ea-bcef-d679c8a66acd",
+    "name": "Increased"
+  },
+  {
+    "uuid": "3bf8c853-cc5a-410e-80d1-a94bd08a76cb",
+    "name": "Decreased"
+  },
+  {
+    "name": "USG Scanning Report - Liquour",
+    "uuid": "0197f0ee-97a8-4f68-8049-083f7e81b1dd",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
+        "name": "Normal"
+      },
+      {
+        "uuid": "c6b2e6f5-ee9f-47ea-bcef-d679c8a66acd",
+        "name": "Increased",
+        "abnormal": true
+      },
+      {
+        "uuid": "3bf8c853-cc5a-410e-80d1-a94bd08a76cb",
+        "name": "Decreased",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "uuid": "1bcf80d6-e958-4401-af72-159700d8eb9a",
+    "name": "Previa"
+  },
+  {
+    "uuid": "2b37a7d3-3e0c-493b-a0c8-db68e4e90ce3",
+    "name": "Not Previa"
+  },
+  {
+    "name": "USG Scanning Report - Placenta Previa",
+    "uuid": "5aeb53d9-96a4-4e17-8b06-dd58df20771a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "1bcf80d6-e958-4401-af72-159700d8eb9a",
+        "name": "Previa",
+        "abnormal": true
+      },
+      {
+        "uuid": "2b37a7d3-3e0c-493b-a0c8-db68e4e90ce3",
+        "name": "Not Previa"
+      }
+    ]
+  },
+  {
+    "uuid": "0e4215f6-6f95-4939-b16f-197b6b4cb2e9",
+    "name": "Cephalic"
+  },
+  {
+    "uuid": "dd5c1140-bf9c-46d1-9003-0a7e7e2def6d",
+    "name": "Breech"
+  },
+  {
+    "uuid": "0a62c84f-a546-4f6c-bf0f-2ec57a86cf24",
+    "name": "Transverse"
+  },
+  {
+    "name": "Foetal presentation",
+    "uuid": "b0e836a1-8878-4798-881a-57a113824f0a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "0e4215f6-6f95-4939-b16f-197b6b4cb2e9",
+        "name": "Cephalic"
+      },
+      {
+        "uuid": "dd5c1140-bf9c-46d1-9003-0a7e7e2def6d",
+        "name": "Breech",
+        "abnormal": true
+      },
+      {
+        "uuid": "0a62c84f-a546-4f6c-bf0f-2ec57a86cf24",
+        "name": "Transverse",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "uuid": "4b938434-c187-48e0-a136-3899b6b3b95d",
+    "name": "Piyar"
+  },
+  {
+    "uuid": "a85fff2b-063b-413a-98c8-85a5039a2429",
+    "name": "Sasru"
+  },
+  {
+    "name": "Plan to do delivery?",
+    "uuid": "89265b99-db8c-483f-9ee9-c3b1bab45d91",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "4b938434-c187-48e0-a136-3899b6b3b95d",
+        "name": "Piyar"
+      },
+      {
+        "uuid": "a85fff2b-063b-413a-98c8-85a5039a2429",
+        "name": "Sasru"
+      },
+      {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
+      }
+    ]
+  },
+  {
+    "name": "Place of delivery",
+    "uuid": "95ee3ade-e926-4f8e-a6b9-6c4086a4db3a",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "8cfae1cd-3e75-40e9-9244-6d083c0d86f7",
+        "name": "Home"
+      },
+      {
+        "uuid": "fcca20e2-f837-4b78-a52f-1d187bca389a",
+        "name": "Hospital"
+      },
+      {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
+      },
+      {
+        "uuid": "0c773b70-4b20-4713-a45c-c0f3b39db87f",
+        "name": "On the way"
+      }
+    ]
+  },
+  
+  {
+    "uuid": "5f068502-a4e2-4598-b54a-74716d8020be",
+    "name": "Sister"
+  },
+  {
+    "uuid": "e49ada2c-266c-49b1-8244-08035052ea0c",
+    "name": "Sister-in-law"
+  },
+  {
+    "uuid": "538d4324-3870-46f9-8172-e2f300da51f8",
+    "name": "Brother-in-law"
+  },
+  {
+    "uuid": "aa4ea2ad-9bc9-4a60-8778-fcfa84f01378",
+    "name": "Other relatives"
+  },
+  {
+    "name": "Who will be accompaning you at the time of delivery?",
+    "uuid": "348bda11-61e5-4feb-bdc9-f6d40cc51614",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "7d24f498-bd92-4f6e-9408-de1c154dbfc2",
+        "name": "Husband"
+      },
+      {
+        "uuid": "b232bcab-0b3f-4d56-ae8b-e0267f0a6738",
+        "name": "Mother"
+      },
+      {
+        "uuid": "edba6b48-d111-4379-81df-20f5d547904c",
+        "name": "Mother-in-law"
+      },
+      {
+        "uuid": "5f068502-a4e2-4598-b54a-74716d8020be",
+        "name": "Sister"
+      },
+      {
+        "uuid": "e49ada2c-266c-49b1-8244-08035052ea0c",
+        "name": "Sister-in-law"
+      },
+      {
+        "uuid": "b7d4cfd4-7bd4-4e12-bd9b-5a4f4427bc20",
+        "name": "Brother"
+      },
+      {
+        "uuid": "60bd2230-5ada-451a-a020-532d48173a8c",
+        "name": "Father"
+      },
+      {
+        "uuid": "08258f9a-4cd4-4ccb-8c31-549033f34a3e",
+        "name": "Father-in-law"
+      },
+      {
+        "uuid": "538d4324-3870-46f9-8172-e2f300da51f8",
+        "name": "Brother-in-law"
+      },
+      {
+        "uuid": "aa4ea2ad-9bc9-4a60-8778-fcfa84f01378",
+        "name": "Other relatives"
+      },
+      {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
+      }
+    ]
+  },
+  {
+    "name": "COUNSELLING FOR 108",
+    "uuid": "7b0fffa6-e9ee-408f-9d41-e86ba9a9371c",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "uuid": "0097d74d-c046-4504-9efe-e9811f6363af",
+    "name": "State hospital"
+  },
+  {
+    "uuid": "f85a0321-e224-4829-8d4d-074c75cf4028",
+    "name": "CHC PINDVAL"
+  },
+  {
+    "uuid": "3eacbba3-32aa-489e-844f-6600950f5fa6",
+    "name": "CHC NANAPONDHA"
+  },
+  {
+    "uuid": "29f824b6-e09e-429a-b261-90d062d19afa",
+    "name": "CHC KAPRADA"
+  },
+  {
+    "uuid": "55520393-af5d-406b-b734-8810e2164d15",
+    "name": "SRH"
+  },
+  {
+    "uuid": "9d81d66f-dd69-46b4-85b3-525080b33d67",
+    "name": "PRIVATE"
+  },
+  {
+    "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+    "name": "Other"
+  },
+  {
+    "name": "PLAN IN WHICH HOSPITAL",
+    "uuid": "5faf735d-40b1-4542-8dae-24a3f02603f1",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "0097d74d-c046-4504-9efe-e9811f6363af",
+        "name": "State hospital"
+      },
+      {
+        "uuid": "f85a0321-e224-4829-8d4d-074c75cf4028",
+        "name": "CHC PINDVAL"
+      },
+      {
+        "uuid": "3eacbba3-32aa-489e-844f-6600950f5fa6",
+        "name": "CHC NANAPONDHA"
+      },
+      {
+        "uuid": "29f824b6-e09e-429a-b261-90d062d19afa",
+        "name": "CHC KAPRADA"
+      },
+      {
+        "uuid": "55520393-af5d-406b-b734-8810e2164d15",
+        "name": "SRH"
+      },
+      {
+        "uuid": "9d81d66f-dd69-46b4-85b3-525080b33d67",
+        "name": "PRIVATE"
+      },
+      {
+        "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+        "name": "Other"
+      },
+       {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
+      }
+    ]
+  },
+  {
+    "name": "MONEY SAVED",
+    "uuid": "247d2f74-8404-4d7e-8873-60ed1c9e71c9",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Who will give blood if required",
+    "uuid": "477bdbfa-5f15-460c-93d9-fa60ad3ce387",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "7d24f498-bd92-4f6e-9408-de1c154dbfc2",
+        "name": "Husband"
+      },
+      {
+        "uuid": "b7d4cfd4-7bd4-4e12-bd9b-5a4f4427bc20",
+        "name": "Brother"
+      },
+      {
+        "uuid": "60bd2230-5ada-451a-a020-532d48173a8c",
+        "name": "Father"
+      },
+      {
+        "uuid": "08258f9a-4cd4-4ccb-8c31-549033f34a3e",
+        "name": "Father-in-law"
+      },
+      {
+        "uuid": "538d4324-3870-46f9-8172-e2f300da51f8",
+        "name": "Brother-in-law"
+      },
+      {
+        "uuid": "aa4ea2ad-9bc9-4a60-8778-fcfa84f01378",
+        "name": "Other relatives"
+      },
+      {
+        "uuid": "ec8a2653-e9cc-4912-8a3b-24701ba7ad09",
+        "name": "Not yet decided"
+      }
+    ]
+  },
+  {
+    "name": "MAKE CLOTHES READY FOR THE DELIVERY AND NEW BORN BABY",
+    "uuid": "c3f20991-a82e-4ce5-9f13-473256e52114",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Counselling Done for the risk factors / Morbidities to all Family members",
+    "uuid": "c9d2db85-7709-4109-83cf-f6951ab4dbc3",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Counselling done for the Government Scheme?",
+    "uuid": "f630f5ae-15bd-489d-9258-a989a70166a2",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Chiranjivi yojna form is ready?",
+    "uuid": "b8576eff-bb29-49c6-ad34-d9970d7e5b36",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Have you enrolled in any government scheme?",
+    "uuid": "5587d35b-de18-436c-832d-2dc1295407df",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "uuid": "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+        "name": "Yes"
+      },
+      {
+        "uuid": "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+        "name": "No"
+      }
+    ]
+  },
+  {
+    "name": "Irregular weight gain",
+    "uuid": "11826355-4123-49ad-bf3a-ad35bf9f2f83"
+  },
+  {
+    "name": "Low BMI",
+    "uuid": "150537e9-0243-4494-98b0-e463ca542f67"
+  },
+  {
+    "name": "High BMI",
+    "uuid": "6f183da6-a9f1-4552-a91a-70fc89268af0"
+  },
+  {
+    "name": "Rh Negative Blood Group",
+    "uuid": "3f09b215-43b9-4919-8b62-f9ec5559aa25",
+    "dataType": "NA"
+  },
+  {
+    "name": "Pedal Edema Present",
+    "uuid": "14b52e4a-5403-436d-8ac8-017712a6377a"
+  },
+  {
+    "uuid": "8166f673-2822-4673-9620-d42e75dad085",
+    "name": "Hypertension"
+  },
+  {
+    "uuid": "b92892c5-2c24-40f9-9c1d-f7b657879ab3",
+    "name": "Severe Anemia"
+  },
+  {
+    "uuid": "e52a66a9-539b-4380-9f97-6c5fb2e07d21",
+    "name": "Moderate Anemia"
+  },
+  {
+    "uuid": "338225e9-ce9a-427c-86c7-6d2f848afb7f",
+    "name": "High blood sugar"
+  },
+  {
+    "uuid": "ab68f724-ef71-485c-8d5c-62e18b6ce92e",
+    "name": "High Temperature"
+  },
+  {
+    "name": "Pallor Present",
+    "uuid": "d20958e6-97a0-4a0b-b528-f149357756a3"
+  },
+  {
+    "name": "Having convulsions",
+    "uuid": "6da5f403-7f53-44e3-a5a0-9f709fd6bc37"
+  },
+  {
+    "name": "Breast Examination -Nipple not normal",
+    "uuid": "f9d18a55-fca1-4fcc-9fbe-dcb98511b565"
+  },
+  {
+    "name": "Danger sign(s) present",
+    "uuid": "3cd32356-b5da-44fb-b005-b636c29e2925"
+  },
+  {
+    "name": "VDRL Postitve",
+    "uuid": "e9973f97-506d-4b7e-9959-2dc4d1f5b96e"
+  },
+  {
+    "name": "HIV/AIDS Positive",
+    "uuid": "f10358ee-145c-422e-b5d6-70f4df8f5c87"
+  },
+  {
+    "name": "HbsAg Positive",
+    "uuid": "aa7c5a0e-f7a8-4c8a-a9cc-c07259282e8d"
+  },
+  {
+    "name": "Sickle cell present",
+    "uuid": "3b8759ee-ee1c-41af-ac0d-b7870ef6f52c"
+  },
+  {
+    "name": "Foetal movements not normal",
+    "uuid": "8dfba5d6-20ad-469a-804b-2e62260d0bcf"
+  },
+  {
+    "name": "Foetal presentation not Cephalic",
+    "uuid": "4896c66f-cf76-4e3a-8efd-12f118e9b0d3"
+  },
+  {
+    "name": "Number of foetus more than 1",
+    "uuid": "80e65127-670c-446d-99da-9cff76691a8e"
+  },
+  {
+    "name": "Liquour is not at normal level",
+    "uuid": "6674da47-27b4-4c87-bed1-f5feb298b80a"
+  },
+  {
+    "name": "Placenta Previa present",
+    "uuid": "af829866-636c-47c4-8eff-7ff8bca88c59"
+  },
+  {
+    "name": "Urine Sugar present",
+    "uuid": "27484286-2788-4f06-b275-bf90cbf196a7"
+  },
+  {
+    "name": "Urine Albumin present",
+    "uuid": "f20a0c5e-449d-4fb1-ade2-870aac1dc699"
+  },
+  {
+    "name": "High Risk Conditions",
+    "uuid": "0ca1c6a2-001b-475a-9813-1d905df9e81b",
+    "dataType": "Coded",
+    "answers": [
+      {
+        "name": "Irregular weight gain",
+        "uuid": "11826355-4123-49ad-bf3a-ad35bf9f2f83",
+        "abnormal": true
+      },
+      {
+        "name": "Low BMI",
+        "uuid": "150537e9-0243-4494-98b0-e463ca542f67",
+        "abnormal": true
+      },
+      {
+        "name": "High BMI",
+        "uuid": "6f183da6-a9f1-4552-a91a-70fc89268af0",
+        "abnormal": true
+      },
+      {
+        "name": "Rh Negative Blood Group",
+        "uuid": "3f09b215-43b9-4919-8b62-f9ec5559aa25"
+      },
+      {
+        "name": "Pedal Edema Present",
+        "uuid": "14b52e4a-5403-436d-8ac8-017712a6377a",
+        "abnormal": true
+      },
+      {
+        "name": "Having convulsions",
+        "uuid": "6da5f403-7f53-44e3-a5a0-9f709fd6bc37",
+        "abnormal": true
+      },
+      {
+        "name": "Jaundice (Icterus)",
+        "uuid": "efd91533-e2d0-497e-a4dc-0b66a30ef233",
+        "abnormal": true
+      },
+      {
+        "name": "Breast Examination -Nipple not normal",
+        "uuid": "f9d18a55-fca1-4fcc-9fbe-dcb98511b565",
+        "abnormal": true
+      },
+      {
+        "uuid": "8166f673-2822-4673-9620-d42e75dad085",
+        "name": "Hypertension",
+        "abnormal": true
+      },
+      {
+        "uuid": "b92892c5-2c24-40f9-9c1d-f7b657879ab3",
+        "name": "Severe Anemia",
+        "abnormal": true
+      },
+      {
+        "uuid": "e52a66a9-539b-4380-9f97-6c5fb2e07d21",
+        "name": "Moderate Anemia",
+        "abnormal": true
+      },
+      {
+        "uuid": "338225e9-ce9a-427c-86c7-6d2f848afb7f",
+        "name": "High blood sugar",
+        "abnormal": true
+      },
+      {
+        "name": "VDRL Postitve",
+        "uuid": "e9973f97-506d-4b7e-9959-2dc4d1f5b96e",
+        "abnormal": true
+      },
+      {
+        "name": "HIV/AIDS Positive",
+        "uuid": "f10358ee-145c-422e-b5d6-70f4df8f5c87",
+        "abnormal": true
+      },
+      {
+        "name": "HbsAg Positive",
+        "uuid": "aa7c5a0e-f7a8-4c8a-a9cc-c07259282e8d",
+        "abnormal": true
+      },
+      {
+        "name": "Sickle cell present",
+        "uuid": "3b8759ee-ee1c-41af-ac0d-b7870ef6f52c",
+        "abnormal": true
+      },
+      {
+        "name": "Urine Albumin present",
+        "uuid": "f20a0c5e-449d-4fb1-ade2-870aac1dc699",
+        "abnormal": true
+      },
+      {
+        "name": "Urine Sugar present",
+        "uuid": "27484286-2788-4f06-b275-bf90cbf196a7",
+        "abnormal": true
+      },
+      {
+        "name": "Number of foetus more than 1",
+        "uuid": "80e65127-670c-446d-99da-9cff76691a8e",
+        "abnormal": true
+      },
+      {
+        "name": "Liquour is not at normal level",
+        "uuid": "6674da47-27b4-4c87-bed1-f5feb298b80a",
+        "abnormal": true
+      },
+      {
+        "name": "Placenta Previa present",
+        "uuid": "af829866-636c-47c4-8eff-7ff8bca88c59",
+        "abnormal": true
+      },
+      {
+        "name": "Foetal presentation not Cephalic",
+        "uuid": "4896c66f-cf76-4e3a-8efd-12f118e9b0d3",
+        "abnormal": true
+      },
+      {
+        "uuid": "ab68f724-ef71-485c-8d5c-62e18b6ce92e",
+        "name": "High Temperature",
+        "abnormal": true
+      },
+      {
+        "name": "Pallor Present",
+        "uuid": "d20958e6-97a0-4a0b-b528-f149357756a3",
+        "abnormal": true
+      },
+      {
+        "name": "Foetal movements not normal",
+        "uuid": "8dfba5d6-20ad-469a-804b-2e62260d0bcf",
+        "abnormal": true
+      },
+      {
+        "name": "Danger sign(s) present",
+        "uuid": "3cd32356-b5da-44fb-b005-b636c29e2925",
+        "abnormal": true
+      }
+    ]
+  },
+  {
+    "name": "Diet Advice Do's",
+    "uuid": "5d5b9e5d-0d66-4138-b6a4-c3c7ba321960",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Diet Advice Don'ts",
+    "uuid": "7cdd0689-e7fc-43c2-b4fb-ef168fb7d9b0",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Supplementary nutritional therapy (advice)",
+    "uuid": "e6b81ecb-6261-4ea7-822b-efbd84b16ecd",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Rest and sleep (advice)",
+    "uuid": "0b18da58-4e5d-4af0-ad82-c2cb67175e1a",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Immunization Counselling (advice)",
+    "uuid": "43f54817-6701-416f-a391-fb1cc4133cd8",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Coitus/Sex Counselling (advice)",
+    "uuid": "5ec93cdf-007e-4027-8935-cc9df95fb3a1",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Illness management (advice)",
+    "uuid": "77436bac-3168-40a9-8114-ffa2ce0b04fa",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Finance management (advice)",
+    "uuid": "cf4a12aa-476f-478c-a6eb-644012117159",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Government scheme information (advice)",
+    "uuid": "9f88aa7e-5983-4b18-98ad-7e62ac628272",
+    "dataType": "Coded",
+    "answers": []
+  },
+  {
+    "name": "Ambulance services information (advice)",
+    "uuid": "350b9426-48ab-4a72-9e67-af6017518786",
+    "dataType": "Coded",
+    "answers": []
+  }
+]

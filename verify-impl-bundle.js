@@ -11,16 +11,16 @@ and new file
  */
 
 const concepts = require("./concepts");
-const registrationConcepts = require("./registration/registrationConcepts");
-const eligibleCoupleConcepts = require("./eligibleCouple/eligibleCoupleConcepts");
-const pregnancyEnrolmentConcepts = require("./pregnancy/pregnancyEnrolmentConcepts");
-const ancFormConcepts = require("./pregnancy/ancFormConcepts");
-const childBirthConcepts = require("./child/childBirthConcepts");
-const deliveryConcepts = require("./pregnancy/deliveryConcepts");
-const abortionConcepts = require("./pregnancy/abortionConcepts");
-const childConcepts = require("./child/childConcepts");
-const childPNCConcepts = require("./child/childPNCConcepts");
-const childFollowupConcepts = require("./child/childFollowupConcepts");
+// const registrationConcepts = require("./registration/registrationConcepts");
+// const eligibleCoupleConcepts = require("./eligibleCouple/eligibleCoupleConcepts");
+// const pregnancyEnrolmentConcepts = require("./pregnancy/pregnancyEnrolmentConcepts");
+// const ancFormConcepts = require("./pregnancy/ancFormConcepts");
+// const childBirthConcepts = require("./child/childBirthConcepts");
+// const deliveryConcepts = require("./pregnancy/deliveryConcepts");
+// const abortionConcepts = require("./pregnancy/abortionConcepts");
+// const childConcepts = require("./child/childConcepts");
+// const childPNCConcepts = require("./child/childPNCConcepts");
+// const childFollowupConcepts = require("./child/childFollowupConcepts");
 const lodash = require("lodash");
 
 const oldRegistrationForm = require("./registration/registrationForm");
@@ -60,100 +60,100 @@ const newchildPNCForm = require("./forms/Child PNC Form");
 
 const oldchildFollowupForm = require("./child/childFollowupForm");
 const newchildFollowupForm = require("./forms/Child Followup Form");
-let newUUID = [];
-concepts.map(m => {
-  newUUID.push(m.uuid);
-});
+// let newUUID = [];
+// concepts.map(m => {
+//   newUUID.push(m.uuid);
+// });
 
-let oldConceptCount = 0;
-let oldUUID = [];
-let count = 0;
-oldConceptCount += registrationConcepts.length;
-registrationConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// let oldConceptCount = 0;
+// let oldUUID = [];
+// let count = 0;
+// oldConceptCount += registrationConcepts.length;
+// registrationConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += eligibleCoupleConcepts.length;
-eligibleCoupleConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// oldConceptCount += eligibleCoupleConcepts.length;
+// eligibleCoupleConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += pregnancyEnrolmentConcepts.length;
-pregnancyEnrolmentConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// oldConceptCount += pregnancyEnrolmentConcepts.length;
+// pregnancyEnrolmentConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += ancFormConcepts.length;
+// oldConceptCount += ancFormConcepts.length;
 
-ancFormConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// ancFormConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += childBirthConcepts.length;
+// oldConceptCount += childBirthConcepts.length;
 
-childBirthConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// childBirthConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += deliveryConcepts.length;
-deliveryConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// oldConceptCount += deliveryConcepts.length;
+// deliveryConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += abortionConcepts.length;
-abortionConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// oldConceptCount += abortionConcepts.length;
+// abortionConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += childConcepts.length;
-childConcepts.map(m => {
-  oldUUID.push(m.uuid);
-});
+// oldConceptCount += childConcepts.length;
+// childConcepts.map(m => {
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += childPNCConcepts.length;
-childPNCConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// oldConceptCount += childPNCConcepts.length;
+// childPNCConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-oldConceptCount += childFollowupConcepts.length;
-childFollowupConcepts.map(m => {
-  if (oldUUID.includes(m.uuid)) {
-    count++;
-  }
-  oldUUID.push(m.uuid);
-});
+// oldConceptCount += childFollowupConcepts.length;
+// childFollowupConcepts.map(m => {
+//   if (oldUUID.includes(m.uuid)) {
+//     count++;
+//   }
+//   oldUUID.push(m.uuid);
+// });
 
-console.log(`Bundle concept length: ${concepts.length}`);
-console.log(`Old concept count:: ${oldConceptCount}`);
-console.log(`Declare same concept multiple times in old:: ${count}`);
-console.log(`Old UUID length : ${oldUUID.length}`);
-console.log(`New UUID length : ${newUUID.length}`);
-console.log(`New Concept diff: ${lodash.difference(newUUID, oldUUID)} `);
-console.log(`Old Concept diff: ${lodash.difference(oldUUID, newUUID)} `);
+// console.log(`Bundle concept length: ${concepts.length}`);
+// console.log(`Old concept count:: ${oldConceptCount}`);
+// console.log(`Declare same concept multiple times in old:: ${count}`);
+// console.log(`Old UUID length : ${oldUUID.length}`);
+// console.log(`New UUID length : ${newUUID.length}`);
+// console.log(`New Concept diff: ${lodash.difference(newUUID, oldUUID)} `);
+// console.log(`Old Concept diff: ${lodash.difference(oldUUID, newUUID)} `);
 
 let oldFormElementCount = 0;
 let oldFormGroupCount = 0;
