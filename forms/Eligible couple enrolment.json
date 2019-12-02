@@ -18,8 +18,6 @@
       "type" : "SingleSelect",
       "mandatory" : false,
       "voided" : true
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+    } ]
+  } ]
 }

@@ -16,8 +16,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Height",
       "uuid" : "eae703df-616b-48c9-a7e0-35cdc8c5253f",
@@ -27,8 +26,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "MUAC (in cms)",
       "uuid" : "4f5b5b1a-628c-4247-a557-6522dc4b782e",
@@ -38,8 +36,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "BMI",
       "uuid" : "aca35dab-46d0-46e8-8c51-1f85963058a0",
@@ -52,8 +49,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does she missed period",
       "uuid" : "bebfa848-8aa4-4b79-8771-4fff7cc75620",
@@ -63,8 +59,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "LMP Date",
       "uuid" : "78500354-c256-45b9-b363-7c985cc07313",
@@ -74,8 +69,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is She Pregnant?",
       "uuid" : "77c6bc40-ad90-42ce-ad16-5a321f4c52ba",
@@ -85,10 +79,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : true
+    } ]
+  } ]
 }

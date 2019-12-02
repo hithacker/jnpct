@@ -16,8 +16,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Then write the problem",
       "uuid" : "7016022f-395e-4ab1-ac45-a5f27c541095",
@@ -27,10 +26,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "1f103af0-b01d-4cd3-a692-6079f1f354cf",
     "name" : "check for general Danger signs",
@@ -45,8 +42,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does the child vomits everything",
       "uuid" : "aa62b3c4-e2d8-4ab9-abf1-43272c555a55",
@@ -56,8 +52,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Has the child had convulsion",
       "uuid" : "b6f2d70f-2237-49e9-95db-7bb21b5f2851",
@@ -67,8 +62,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "See the child is lethargic or unconsious",
       "uuid" : "c7b21109-78e1-414f-a375-6541d3ec9b0d",
@@ -78,8 +72,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there general danger sign",
       "uuid" : "885937e3-a5be-40df-a9f7-6ec9488c8173",
@@ -89,8 +82,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "child is referred?",
       "uuid" : "72e183c7-5d87-4e73-a1dc-9983a486a1a5",
@@ -100,10 +92,8 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "4a03637f-f689-4f2f-99be-9756f3775011",
     "name" : "Ask about main symptoms",
@@ -118,8 +108,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Since how many days",
       "uuid" : "3824afaa-4ce1-482a-8db3-7f5882723967",
@@ -129,8 +118,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "count breaths in one minute",
       "uuid" : "37a3f7a9-c7df-4635-971b-fd78379a4bb8",
@@ -140,8 +128,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does the child has fast breathing",
       "uuid" : "2bfd0515-35ff-485b-bbf8-0421a3d8251c",
@@ -151,8 +138,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "look for chest indrwaning",
       "uuid" : "535d8ada-e917-45c1-880e-783f39d29f09",
@@ -162,10 +148,8 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "278a9e93-0c47-43ae-8802-286b98c38047",
     "name" : "check for Diarrhoea",
@@ -180,8 +164,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "for how long days",
       "uuid" : "350d44d8-0c45-4c8d-9791-d882b1598b81",
@@ -191,8 +174,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "is there any blood in the stool",
       "uuid" : "6b073d6e-1c0a-480f-a809-567f29dc277c",
@@ -202,8 +184,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "check the childs general condition,is the child lethargic or unconsious ?",
       "uuid" : "ac2d6a4d-a469-4989-b70e-2bdecabec1b5",
@@ -213,8 +194,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "restless or irritable",
       "uuid" : "01429182-feaf-4f17-980b-3d14438b3ec1",
@@ -224,8 +204,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "look for sunken eyes",
       "uuid" : "248b6ae5-ba21-4760-99ad-c3c8215b3e99",
@@ -235,8 +214,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "offer the child fluid , is the child unable to drink or drinking poorly",
       "uuid" : "e8bde2fb-3d6d-41de-904a-ed45e729a903",
@@ -246,8 +224,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "drinking eagerly",
       "uuid" : "9d4663f2-c969-44da-bf7c-99d4a657da3d",
@@ -257,8 +234,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is the child thirsty",
       "uuid" : "8888da40-e423-4b79-aeeb-e08904517cc8",
@@ -268,8 +244,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Pinch the skin of the abdomen . Does it go back very slowly (Longer than 2 seconds )",
       "uuid" : "8182ee28-4d9e-4589-bc93-1c41c92014e0",
@@ -279,8 +254,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "does it go back slowly(less than 2 second)",
       "uuid" : "034210cc-d50c-4534-b10d-20a85b771088",
@@ -290,10 +264,8 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "c97da1f6-b2df-475a-9ecd-00d520b2719f",
     "name" : "check for Fever",
@@ -308,8 +280,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "does child feels hot by touch",
       "uuid" : "0c4032f6-6084-4de9-b32f-5c1b17e3a5d9",
@@ -319,8 +290,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "what is the axillary temprature (in degree Centigrade)",
       "uuid" : "acab11ee-19ed-48d6-b62c-24ce979d2ca3",
@@ -330,8 +300,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "fever since how many days",
       "uuid" : "04e1b202-ba74-4b6f-949a-c20bfad284d4",
@@ -341,8 +310,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "if fever since more than 7 days then look for stiff neck",
       "uuid" : "66fbe7d5-b3e9-4977-ada5-611cb4f948b0",
@@ -352,8 +320,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "does child has daily fever",
       "uuid" : "8eff8aa1-31ba-45d4-9209-f25014d7c3f8",
@@ -363,10 +330,8 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "e4f5d6d3-0c22-4fff-8b4b-70a6b74b4efd",
     "name" : "check for Malnutrition",
@@ -381,8 +346,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "if child age is 2-6 month then according to age and weight in which grade",
       "uuid" : "660f7014-1d18-4bab-9d2d-28ea06c356de",
@@ -392,8 +356,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "does child have visible severe wasting",
       "uuid" : "fb7b0d07-6b1e-415d-aa51-a68cdf474064",
@@ -403,8 +366,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "is there oedema on both feet",
       "uuid" : "cfe732b4-7364-491d-87c2-6e8d73a32db3",
@@ -414,8 +376,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "ACOORING TO OEDEMA ON BOTH FEET CHILD IS IN WHICH GRADE",
       "uuid" : "dcd574d6-51ec-42df-8e96-206146c5c28e",
@@ -425,8 +386,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "weight",
       "uuid" : "92b50a33-a86a-4adb-95e2-677e5f0ac7e1",
@@ -436,8 +396,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "height of child",
       "uuid" : "f49df10b-62b7-4a5d-82f2-1df6dee91b1f",
@@ -447,8 +406,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "according to Weight for age child is in which grade",
       "uuid" : "ed644c60-4417-46ed-a93d-075622f6dbc7",
@@ -458,8 +416,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "MUAC of child",
       "uuid" : "fecd8d0d-66de-4d6d-977f-9f60640e1e8c",
@@ -469,8 +426,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "according to MUAC child is in which grade",
       "uuid" : "c90096eb-db43-4701-9664-4933fd1ec170",
@@ -480,8 +436,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "if  child is in SAM then refered to CMTC ?",
       "uuid" : "e3530c64-ef7f-4fd2-8bbf-aa25a740cb46",
@@ -491,8 +446,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "refer date",
       "uuid" : "f48961f7-396c-46e1-8a26-645f47180d88",
@@ -502,10 +456,8 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "Check for Anemia",
     "name" : "8fd98e0e-b2b2-4203-b3dd-e6b321e63b65",
@@ -520,8 +472,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "If child is very weak or very anemic then check for his food",
       "uuid" : "a711d347-64db-4ff3-884a-a3a4570a319f",
@@ -531,8 +482,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Whether child still get breastfeed",
       "uuid" : "a5d0cb0d-d687-4580-abba-476360906b1e",
@@ -542,8 +492,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "if yes then how many times in 24 hour",
       "uuid" : "b7dbbbed-d51d-44da-85b8-78eb1a036e70",
@@ -553,8 +502,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "breast feed given in night also",
       "uuid" : "4dac258f-e4d3-44f3-826d-dbd8db337081",
@@ -564,8 +512,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "does child recived any kind of liquid or solid food",
       "uuid" : "fb4fec9b-4310-4bb2-91c4-08c4973eea13",
@@ -575,8 +522,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "how many times in 24 hours",
       "uuid" : "61a8168c-07e7-4eaf-8250-6e7cc7779a4e",
@@ -586,8 +532,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "how much food is given",
       "uuid" : "918fe172-592e-46f2-b4bb-2d89ade17280",
@@ -597,10 +542,8 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "c6481c90-9b2f-4367-a175-944a8637593b",
     "name" : "Ask for other complaints",
@@ -615,8 +558,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "write the complaint",
       "uuid" : "c2015860-f2a5-41ad-b0de-d5188170b6ce",
@@ -626,10 +568,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "feebfdda-1228-4e42-94d4-2b4f9639243d",
     "name" : "Facility",
@@ -644,8 +584,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "recived food packets from anganwadi",
       "uuid" : "64bc341c-2678-49ae-9798-0be02cc8ac74",
@@ -655,8 +594,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "does child went to VHND",
       "uuid" : "ed3c86dc-7f19-449d-b4bb-af6c27bd5550",
@@ -666,8 +604,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "does child require to refer",
       "uuid" : "12cb3d02-9805-4585-98f5-05ebbbfb70e0",
@@ -677,8 +614,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Child Referred ?",
       "uuid" : "38ad372d-6380-4fd5-8519-eb763b955ca1",
@@ -688,8 +624,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "who refered ?",
       "uuid" : "25668684-13c8-44b5-9148-63488bc4c626",
@@ -699,8 +634,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Place of referral",
       "uuid" : "8af80895-a598-4ba5-8b7a-7840808ffc93",
@@ -710,10 +644,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : true
+    } ]
+  } ]
 }

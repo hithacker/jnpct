@@ -16,8 +16,7 @@
       },
       "displayOrder" : 0.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Place of delivery",
       "uuid" : "1bfbcd60-5b30-4f84-9427-323f966dd167",
@@ -27,8 +26,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Delivery pack used ?",
       "uuid" : "64029f75-6bd2-4c4b-b02d-f7f0248831f5",
@@ -38,8 +36,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Date of discharge",
       "uuid" : "110f012a-21d0-43d6-a188-a18aaa042cf4",
@@ -49,8 +46,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Number of days stayed at the hospital",
       "uuid" : "42174d8d-245b-4f55-afb6-d30e0c6f7966",
@@ -63,8 +59,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Week of Gestation",
       "uuid" : "33e0b29d-2f8c-4a56-850a-f36ed433b1d2",
@@ -77,8 +72,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Delivered By",
       "uuid" : "649bc752-52c0-4628-a364-ccb0c43b1f29",
@@ -88,10 +82,8 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "94047386-ae36-4048-9151-e7137f66992b",
     "name" : "Mother Delivery Medical Details",
@@ -106,8 +98,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Delivery outcome",
       "uuid" : "53eeceaa-f625-4726-9313-4ab416e9fed1",
@@ -117,8 +108,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Delivery complication",
       "uuid" : "0f4173e9-c781-4df4-9d7c-5a71c0394578",
@@ -128,8 +118,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Number of babies",
       "uuid" : "6f648ce4-14bb-4914-a218-64be66902d58",
@@ -139,8 +128,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Gender of Newborn1",
       "uuid" : "d09d9fbd-2641-4527-aa8b-67f2939b610b",
@@ -150,8 +138,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Weight of Newborn1",
       "uuid" : "3a014d28-36fc-4552-b8c1-51fbd928f64d",
@@ -161,8 +148,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Gender of Newborn2",
       "uuid" : "f8c7dd61-453e-4066-a884-96c68071a81b",
@@ -172,8 +158,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Weight of Newborn2",
       "uuid" : "653ab723-416c-40eb-8f88-c42eab46c760",
@@ -183,8 +168,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Gender of Newborn3",
       "uuid" : "199e2105-da61-4550-9635-b1ae6b436fe7",
@@ -194,8 +178,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Weight of Newborn3",
       "uuid" : "9fd5b4d0-c1b4-4053-85fb-9a64f31311c2",
@@ -205,8 +188,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Number of Stillborn babies",
       "uuid" : "6e538df9-95d6-4ef3-829f-164ca4b737ea",
@@ -216,8 +198,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Gender of Stillborn1",
       "uuid" : "ff596e91-ac66-4612-b085-af07f6230b40",
@@ -227,8 +208,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Weight of Stillborn1",
       "uuid" : "b44b7c3c-57b0-454a-9a3c-53e5964c97e6",
@@ -238,8 +218,7 @@
       },
       "displayOrder" : 13.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Gender of Stillborn2",
       "uuid" : "21af3a23-f874-4135-94f0-c1e17dabba64",
@@ -249,8 +228,7 @@
       },
       "displayOrder" : 14.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Weight of Stillborn2 (in Gms)",
       "uuid" : "cc42a064-8487-46cd-99eb-8d4040fbe5be",
@@ -260,8 +238,7 @@
       },
       "displayOrder" : 15.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Gender of Stillborn3",
       "uuid" : "c5f50f20-2590-41c8-a515-befcc5649c54",
@@ -271,8 +248,7 @@
       },
       "displayOrder" : 16.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Weight of Stillborn3 (in Gms)",
       "uuid" : "89415fb1-3d96-4189-9cf0-07347a9b3d97",
@@ -282,8 +258,7 @@
       },
       "displayOrder" : 17.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Mother with high risk",
       "uuid" : "06241845-7f32-466f-99f6-e7a578af9ef9",
@@ -293,8 +268,7 @@
       },
       "displayOrder" : 18.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Aarogya Saheli present durinng the time of delivery?",
       "uuid" : "7ee51734-bd5e-478a-9274-8893a8700467",
@@ -304,10 +278,7 @@
       },
       "displayOrder" : 19.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : true
+    } ]
+  } ]
 }

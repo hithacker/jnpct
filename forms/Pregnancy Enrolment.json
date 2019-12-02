@@ -16,8 +16,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "EDD",
       "uuid" : "e7161a0d-f5cf-4433-8da6-6f7ae0f9c069",
@@ -30,10 +29,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "4275613d-833c-4b65-97b9-2fe488d4f7d6",
     "name" : "Medical History",
@@ -48,8 +45,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Other previous history of disease - Please specify",
       "uuid" : "e4dde0c3-71fe-46cf-bb24-8e4f31d1c701",
@@ -59,10 +55,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "0c7d44b7-387b-49d2-a9eb-dd7d87a8e577",
     "name" : "Pregnancy History",
@@ -77,8 +71,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Parity",
       "uuid" : "27cded88-492f-4fa8-9706-be2bafa99f7a",
@@ -88,8 +81,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Number of Abortion",
       "uuid" : "e052a944-390c-449c-9efa-176859e1d3a1",
@@ -99,8 +91,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Number of live childrens",
       "uuid" : "ef5214d1-26a2-4a30-a52b-a6879096d1e1",
@@ -110,8 +101,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "MALE",
       "uuid" : "038a674f-e534-4b80-9376-d84cdec53984",
@@ -121,8 +111,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "FEMALE",
       "uuid" : "d25d3fe3-d713-4643-ba7d-33e98fd7d7e7",
@@ -132,8 +121,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Result of last delivery",
       "uuid" : "54e526d4-36ef-47e1-8253-c7d3004a06bf",
@@ -143,8 +131,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Age of Youngest child",
       "uuid" : "83179a86-bc39-434c-9a78-369157c1d284",
@@ -157,8 +144,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Place of last delivery",
       "uuid" : "e69dffe1-819b-4140-916b-3c73940560d5",
@@ -168,8 +154,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Risk in the last pregnancy",
       "uuid" : "7b252441-63e9-4674-a795-f8db4196856b",
@@ -179,8 +164,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "what kind of risk occurred",
       "uuid" : "7fcba7da-d23d-43b9-b303-64a8e9f0ad54",
@@ -190,10 +174,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : true
+    } ]
+  } ]
 }

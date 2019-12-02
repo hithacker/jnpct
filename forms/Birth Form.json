@@ -16,8 +16,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Birth Weight",
       "uuid" : "e8f903e7-643e-4835-8f22-7dfa3206f078",
@@ -27,8 +26,7 @@
       },
       "displayOrder" : 1.1,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Gestational age category at birth",
       "uuid" : "337757cb-49d2-4f92-ad21-e3a690b3c7e6",
@@ -38,8 +36,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Did the baby cry soon after birth?",
       "uuid" : "b0d617d3-55c2-453d-b641-50dd966b60f7",
@@ -49,8 +46,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Did breast feeding start within 1 hour of birth?",
       "uuid" : "6bcc6558-e097-4b75-a598-7bdafd1dc74a",
@@ -60,8 +56,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "When did breast feeding start?",
       "uuid" : "2d3bbf5a-554d-4fcc-bba9-5e089a01638b",
@@ -71,8 +66,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Was colostrum given?",
       "uuid" : "749926cf-52f5-419c-8e59-eebc6fc85329",
@@ -82,8 +76,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Was any kind of sweet liquid tried to child?",
       "uuid" : "89a294a2-2698-497e-873e-a6d918a3b0db",
@@ -93,8 +86,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Was child wrapped in 3-4 folded clothes?",
       "uuid" : "7592f9f7-8cf1-4f2d-9901-ee291fdfe8cf",
@@ -104,10 +96,8 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "1de92f1d-ae08-4ce6-859d-0796f4ee1713",
     "name" : "Physical Examination",
@@ -122,8 +112,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Other Birth Defect",
       "uuid" : "fb2df593-f09d-4f5a-a7c9-90d1d16506fa",
@@ -133,8 +122,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Colour of child",
       "uuid" : "a480265a-7b1c-49bc-b5d2-a4237e679b1e",
@@ -144,8 +132,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Icterus present within 24 hrs of birth?",
       "uuid" : "ec9bbf15-47c0-47f5-8c43-6f9b11b161f1",
@@ -155,8 +142,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is child breathing regularly?",
       "uuid" : "7db29f53-99c9-4092-aa36-2fa76a7f0b16",
@@ -166,8 +152,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there life threatening abnormality?",
       "uuid" : "b76fd4fa-5663-4563-8370-9e9779f3e860",
@@ -177,8 +162,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is foam coming out from child's mouth?",
       "uuid" : "4717e787-4535-4102-bb1e-64d400f06bba",
@@ -188,8 +172,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is any kind of cyst or tumor present on neck, back and on lower back?",
       "uuid" : "4e084005-51f6-4dfb-8cea-e4092e528201",
@@ -199,8 +182,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is umbelical cord of newborn tied properly?",
       "uuid" : "692910e5-500d-4017-bd0a-4ca51955c4af",
@@ -210,8 +192,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is blood coming out from any part of body ( cord ,head ,mouth, anus )?",
       "uuid" : "86f6c11c-cd8b-4d6d-8b83-b4b521517416",
@@ -221,10 +202,8 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "9c3e8a9c-52d4-41f5-8d6a-935a3432709d",
     "name" : "Vitals",
@@ -239,8 +218,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Respiratory Rate",
       "uuid" : "c56de068-60ca-4bdb-921f-51b7d20e4b55",
@@ -250,10 +228,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : true
+    } ]
+  } ]
 }

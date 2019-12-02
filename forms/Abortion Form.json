@@ -16,8 +16,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Whether Abortion or MTP",
       "uuid" : "e1a0f778-be03-4072-ad85-7ddcffffca3c",
@@ -27,8 +26,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Type of Abortion",
       "uuid" : "1a6b50a6-4860-4daa-9acd-27a7737f24db",
@@ -38,8 +36,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Period of gestation in weeks at the time of Abortion/MTP",
       "uuid" : "519979c6-289b-435a-8f0c-73f88ecd0c65",
@@ -49,8 +46,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Place of Abortion",
       "uuid" : "13257891-940a-4890-957f-e6dbc7165e1c",
@@ -60,8 +56,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Date of discharge from hospital",
       "uuid" : "24e868e9-c105-42ae-a9f2-e66e2b07b0d5",
@@ -71,8 +66,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Post Abortion/MTP Complications",
       "uuid" : "a90a68d0-6417-49dc-8033-10ade840ad4a",
@@ -82,8 +76,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Other Post Abortion/MTP complication",
       "uuid" : "6cb50e49-06b9-496a-af40-8f08c0e93892",
@@ -93,10 +86,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : true
+    } ]
+  } ]
 }

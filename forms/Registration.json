@@ -16,8 +16,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Number of family members",
       "uuid" : "3b2e9bff-eb4c-4d84-accd-9d74e5edd67e",
@@ -27,8 +26,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Who is decision making person in family",
       "uuid" : "ab1a7479-35b4-4469-93f6-94fcfe91996c",
@@ -38,8 +36,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Ration card",
       "uuid" : "8644b68d-81ef-41c3-9c28-55f9ae33328b",
@@ -49,8 +46,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Caste",
       "uuid" : "bd8811a7-3d02-45c4-ac3e-a3a017ea9341",
@@ -60,8 +56,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Subcaste",
       "uuid" : "7c6f8ba5-8015-4b85-bdeb-212dcca7a160",
@@ -71,8 +66,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Religion",
       "uuid" : "826a15fb-258b-41e5-a329-f7f7e084d85f",
@@ -82,8 +76,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Satipati family",
       "uuid" : "d7710e31-173a-4547-bed3-4c5b3de14599",
@@ -93,8 +86,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Addiction",
       "uuid" : "0dedd3e8-7bb8-44ba-8322-602db8012de5",
@@ -104,8 +96,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Addiction - Please specify",
       "uuid" : "ce47c898-0f17-40f7-80c2-4d7a83ce267b",
@@ -115,8 +106,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Very poor family",
       "uuid" : "6d62de04-bdb6-4728-9e32-ce45d9bac129",
@@ -126,8 +116,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Occupation of mother",
       "uuid" : "c60b9c11-c6cd-4fd3-a202-bf0512bd4bcb",
@@ -137,8 +126,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Occupation of husband",
       "uuid" : "e5315158-8257-49c0-bdf6-13d66d4cc53b",
@@ -148,8 +136,7 @@
       },
       "displayOrder" : 13.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Mother's education",
       "uuid" : "940bcc92-47a8-4f79-b27f-15a3231e5e75",
@@ -159,8 +146,7 @@
       },
       "displayOrder" : 14.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Mobile number",
       "uuid" : "f1d84e47-6017-4a18-b909-ee0ece2e33f7",
@@ -174,8 +160,7 @@
         "regex" : "^[0-9]{10}$",
         "descriptionKey" : "Required10Digits"
       },
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Specialy abled",
       "uuid" : "afeb9ee9-7423-436d-973b-53f32a4d2a62",
@@ -185,8 +170,7 @@
       },
       "displayOrder" : 16.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Specially abled - Please specify",
       "uuid" : "10cffd1e-db4f-449d-9cf5-8b8e7fb6f81a",
@@ -196,8 +180,7 @@
       },
       "displayOrder" : 17.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any long-term illnesses",
       "uuid" : "87f91861-f71b-4689-abce-fcda31db2ae2",
@@ -207,8 +190,7 @@
       },
       "displayOrder" : 18.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Long-term illness - Please specify",
       "uuid" : "6dbb497a-43cb-4f8c-b7f4-ac970c9df796",
@@ -218,8 +200,7 @@
       },
       "displayOrder" : 19.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Toilet facility present",
       "uuid" : "4fce85a7-cf35-41bd-b232-02ffc46791cb",
@@ -229,8 +210,7 @@
       },
       "displayOrder" : 20.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Using the toilet regularly",
       "uuid" : "c12f8d4b-7b9f-4564-b645-ff94d8fab9e8",
@@ -240,8 +220,7 @@
       },
       "displayOrder" : 21.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Source of drinking water",
       "uuid" : "8bbd207b-90eb-49e0-82e1-b8f914eab552",
@@ -251,8 +230,7 @@
       },
       "displayOrder" : 22.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Aadhaar card",
       "uuid" : "11e2b227-1fb1-4e4b-b306-429564b31937",
@@ -266,10 +244,7 @@
         "regex" : "^[0-9]{12}$",
         "descriptionKey" : "Required12Digits"
       },
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : true
+    } ]
+  } ]
 }

@@ -16,8 +16,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is the child pinkish in colour?",
       "uuid" : "b3c777e1-fa00-4242-9308-b76000dd5f85",
@@ -27,8 +26,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is body temprature warm?",
       "uuid" : "45fbb928-74ce-4867-b480-2621a24804bb",
@@ -38,8 +36,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there active movement of hands and legs?",
       "uuid" : "ee2b2e6e-e3ac-4a36-82a6-208093a41566",
@@ -49,8 +46,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there any life threatening abnormality?",
       "uuid" : "684cf48f-43e9-4f84-8295-8a6e73d38367",
@@ -60,8 +56,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Examine for cleft palate/lips in child's mouth?",
       "uuid" : "e6267e66-c9b5-49dc-8caf-a49e861d7009",
@@ -71,8 +66,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does foam coming out from child's mouth?",
       "uuid" : "5bc8b18e-3878-4ab9-b9b4-3e4f85333702",
@@ -82,8 +76,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does child paases stool and urine within 24  hour",
       "uuid" : "01e95368-a48c-45d0-a8d8-650610a22009",
@@ -93,8 +86,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there anal opening present?",
       "uuid" : "665cf018-f9bc-4623-891e-d9b797700694",
@@ -104,8 +96,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does any kind of cyst or tumor present on neck, back and on lower back?",
       "uuid" : "c58d90a7-051f-4ecf-a950-a6fbe8210bdd",
@@ -115,8 +106,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does umbelical cord of newborn tied properly?",
       "uuid" : "d4903487-3bda-45f7-bbb8-c68ce2931628",
@@ -126,8 +116,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is blood coming out from any part of body ( cord ,head ,mouth, anus )?",
       "uuid" : "c030f86e-9e67-42d6-b072-0931fe293a39",
@@ -137,8 +126,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there visible jaundice?",
       "uuid" : "99a23986-6e20-4599-b151-f81b2ae5c496",
@@ -148,10 +136,8 @@
       },
       "displayOrder" : 13.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "d9ff7c3f-7192-4bc3-94eb-707a8749e398",
     "name" : "Physical Examination",
@@ -166,8 +152,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Specify the problem",
       "uuid" : "eb16e5bb-ce59-414c-86b0-966cad701473",
@@ -177,8 +162,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Count the breaths in one minute",
       "uuid" : "4d0034c1-d25c-4238-b263-f4fcd4c44cc6",
@@ -188,8 +172,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Look and listen: Is there any grunting sound",
       "uuid" : "7c53e4cd-33dc-449f-8eae-7b5fb570388f",
@@ -199,8 +182,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there chest indrawing?",
       "uuid" : "1f50c855-685e-436b-a999-5aeda17160e3",
@@ -210,8 +192,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there nasal flaring?",
       "uuid" : "e7296e29-c005-4418-ad97-20166d01dae1",
@@ -221,8 +202,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "How is the colour of infant",
       "uuid" : "35420f08-a015-46f5-9bf0-017faff882a0",
@@ -232,8 +212,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Look at the infants movement",
       "uuid" : "4b2ef587-f5f0-4ec6-89ae-2e3d0feb5e81",
@@ -243,8 +222,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is anything applied on umbelicus?",
       "uuid" : "c9d5a653-1624-4b60-a658-62c71e66774f",
@@ -254,8 +232,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is infant coverred with 3-4 folded cloth?",
       "uuid" : "7deed285-1512-4abd-a225-4b746f9b76f0",
@@ -265,10 +242,8 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "07f91e8b-bbdb-45c0-a2df-31276fad9a47",
     "name" : "Temperature",
@@ -283,8 +258,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Measure the auxillary temprature of infant",
       "uuid" : "203a7f35-c2bb-425c-86e6-07dadcd77567",
@@ -294,8 +268,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Reason for not recording temperature",
       "uuid" : "78dacf7c-79b4-40c1-b1e2-5041d188cc78",
@@ -305,8 +278,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "How you feel infants temprature on touch?",
       "uuid" : "9ebcd5b3-34af-49f4-aed4-d424b369587b",
@@ -316,8 +288,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "How is the condition of umbelicus",
       "uuid" : "638489d6-24d4-4a4a-b2b5-00da16b4d3a5",
@@ -327,10 +298,8 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "f34ff772-94fa-42d5-8a74-68706e07c790",
     "name" : "Observe infant for 4-5 minutes while breastfeeding to check whether infant sucking well .",
@@ -345,8 +314,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "How is the infant attachment while sucking?",
       "uuid" : "bf187997-3bd2-401c-8c67-7e3a85e242a5",
@@ -356,8 +324,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is mouth wide open",
       "uuid" : "df793a5a-aa24-4839-864c-2e32386ca458",
@@ -367,8 +334,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is lower lip turned outword",
       "uuid" : "1a3a5c4b-8d5c-4172-ae3e-eea51d317476",
@@ -378,8 +344,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is more areola visible above than below the mouth",
       "uuid" : "9425a952-f6c4-4e01-b98d-a9e485117b5e",
@@ -389,8 +354,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Not suckling at all?",
       "uuid" : "62086778-fff3-4632-a546-2d7b11b4626b",
@@ -400,8 +364,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Not suckling effectively",
       "uuid" : "233db56b-08cc-4330-a6d3-3536e82eb79f",
@@ -411,8 +374,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Suckling effectively",
       "uuid" : "959f05a4-1147-4dac-8cbe-0875e8e01e6a",
@@ -433,8 +395,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Things given other than bresatfeeding",
       "uuid" : "22a53602-4f6a-40d0-a13f-a5d6428f2f51",
@@ -444,8 +405,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does infant has any difficulty in breastfeeding?",
       "uuid" : "f2a63b07-bbd3-421d-bb90-b251f0efedf8",
@@ -455,8 +415,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is breastfeed given to infant in last 24 hours?",
       "uuid" : "78d64520-f7e9-4f42-bc20-793737990987",
@@ -466,8 +425,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "How many times breastfeeding given to child in last 24 hours",
       "uuid" : "5c881c13-3657-4b9a-9cd9-65f7607cb09c",
@@ -477,8 +435,7 @@
       },
       "displayOrder" : 13.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "In last 24 hours, for how many times infant passes urine?",
       "uuid" : "a10d6e96-4665-4042-9f31-67694f5e9189",
@@ -488,8 +445,7 @@
       },
       "displayOrder" : 14.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "When to start bathing for infant?",
       "uuid" : "9071933d-711e-470f-8299-7dd9f3559e51",
@@ -499,10 +455,8 @@
       },
       "displayOrder" : 15.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "9f653a37-af1b-43ad-bce8-cb0dd36aa0cc",
     "name" : "Examine the infant for other danger sign of morbidity",
@@ -517,8 +471,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is infant vomiting?",
       "uuid" : "ed4c36f3-8f27-487b-b06f-c46693a047f5",
@@ -528,8 +481,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does infant's abdomen look gasious?",
       "uuid" : "62877240-0ab9-428f-9c00-3633f1f7866a",
@@ -539,8 +491,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does infant looks icteric?",
       "uuid" : "95a1fe24-f111-428f-b434-72c5036d11ab",
@@ -550,8 +501,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does infant looks cynosed?",
       "uuid" : "18d2f56d-311b-458b-b7c6-3c165cbd55eb",
@@ -561,8 +511,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does infant looks abnormal?",
       "uuid" : "d4a2d2b8-f1fa-4546-b520-52e57e4aca91",
@@ -572,8 +521,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is the infant's mouth cleft pallet seen?",
       "uuid" : "4df25726-234a-48f7-be3e-e0ef6cb3a1ea",
@@ -583,8 +531,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there visible tumor on back or on head of infant?",
       "uuid" : "919c5c57-64ef-42c3-9bc2-0ecef21bf93a",
@@ -594,8 +541,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is foam coming from infant's mouth continuously?",
       "uuid" : "3b0224c0-4d7c-4b2f-8830-26848a36cd10",
@@ -605,8 +551,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does infant has watery diarrhoea?",
       "uuid" : "60ab511b-c43f-40ea-9ad9-187a425a5900",
@@ -616,8 +561,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is oral ulcer or thrush seen in infant's mouth",
       "uuid" : "f2ed2fac-ce6a-4691-883a-bae52533261a",
@@ -627,8 +571,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Is there visible pustules on body of infant?",
       "uuid" : "08f70f7b-93a9-4680-85a4-6e5d91708884",
@@ -638,8 +581,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Todays weight of infant?",
       "uuid" : "36dda6af-c6de-4fb6-a93f-d03508b09d55",
@@ -649,8 +591,7 @@
       },
       "displayOrder" : 13.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "If infant's weight is less than 2.5kg then did KMC?",
       "uuid" : "99437511-fc72-4b14-929e-54d3e0cf538e",
@@ -660,8 +601,7 @@
       },
       "displayOrder" : 14.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Weight at the time of KMC started to do",
       "uuid" : "a6b96e9b-4119-4c65-a849-183ab6b4fed4",
@@ -671,8 +611,7 @@
       },
       "displayOrder" : 15.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "In last 24 hours for how many times did KMC?",
       "uuid" : "24240f6f-3911-4d56-84cc-9cef11a1e25e",
@@ -682,8 +621,7 @@
       },
       "displayOrder" : 16.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "In one time for how many minutes did KMC?",
       "uuid" : "47274072-1ea4-496e-b479-f9438f960f5f",
@@ -693,8 +631,7 @@
       },
       "displayOrder" : 17.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Weight of infant at time to stoped to do KMC",
       "uuid" : "981d83aa-e8f0-4987-8a69-8ad0beef427e",
@@ -704,8 +641,7 @@
       },
       "displayOrder" : 18.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does child require to refer if morbidity found",
       "uuid" : "d35edaa9-3077-41d5-b3ff-3ff7b858d746",
@@ -715,8 +651,7 @@
       },
       "displayOrder" : 19.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "If yes, then refered?",
       "uuid" : "b58e485f-9591-43ef-96cf-26905237101c",
@@ -726,8 +661,7 @@
       },
       "displayOrder" : 20.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Date of refer",
       "uuid" : "3566b691-d7c7-4ba0-984a-afa90ad797ec",
@@ -737,8 +671,7 @@
       },
       "displayOrder" : 21.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Who refered?",
       "uuid" : "99128624-b77e-49c8-af43-a5c996dd6b6a",
@@ -748,8 +681,7 @@
       },
       "displayOrder" : 22.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Place of refer",
       "uuid" : "8accb432-4057-474d-b100-aef8dae0bed0",
@@ -759,10 +691,8 @@
       },
       "displayOrder" : 23.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "74d14a57-af10-4dd7-994a-11b4421b88af",
     "name" : "Baby warming Counselling",
@@ -777,8 +707,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Baby Warming Donts",
       "uuid" : "5fddd664-fcf5-4c35-b533-020fc6bac235",
@@ -799,8 +728,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Child PNC - Hygiene - Dos",
       "uuid" : "8daa96de-df99-491c-9a11-144c72ef5fc4",
@@ -810,8 +738,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Child PNC - Weight - Dos",
       "uuid" : "d39d3772-bae1-4c51-8d92-c4459ee19aba",
@@ -821,8 +748,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Child PNC - Registration Immunisation - Dos",
       "uuid" : "226f3464-3941-4fff-94e9-6f6c3e59e086",
@@ -832,10 +758,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : false
+    } ]
+  } ]
 }

@@ -19,10 +19,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "25e0dfc5-b206-478c-9dff-a35cf3c2f072",
     "name" : "PNC Vitals",
@@ -37,8 +35,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Bp Diastolic",
       "uuid" : "0014d9e3-fffe-4627-a1c9-053e2fc3744f",
@@ -48,8 +45,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Temperature",
       "uuid" : "ae3328a3-a39b-45e7-b370-0b4e4b37d3f6",
@@ -59,8 +55,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Hb % Level",
       "uuid" : "27d42d35-46e4-4df7-b9be-70645c66debd",
@@ -70,10 +65,8 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : false
+    } ]
   }, {
     "uuid" : "c6634add-c1a6-40cd-b6e3-7506f88fa81b",
     "name" : "Danger Signs",
@@ -88,8 +81,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any abdominal problems",
       "uuid" : "3081e791-8f6d-4121-b53a-c7fb10801970",
@@ -99,8 +91,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any vaginal problems",
       "uuid" : "2cea627d-b24a-4ad4-ac15-749eb4cfb316",
@@ -110,8 +101,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any difficulties with urinating",
       "uuid" : "f3837b4d-f7d9-4ede-b9d2-1576a6a420a1",
@@ -121,8 +111,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any breast problems",
       "uuid" : "009e6cd0-8180-4033-a13f-5fb1d7e15595",
@@ -132,8 +121,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Other breast related problems",
       "uuid" : "44a9c788-d94d-4d1e-9bcb-bfcfc62484ae",
@@ -143,8 +131,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does feel hot or have the chills?",
       "uuid" : "582d630b-a8a1-4172-a151-33d53120c8d9",
@@ -154,8 +141,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Convulsions",
       "uuid" : "d5d12e4a-c67d-43b3-9370-5098510f9452",
@@ -165,8 +151,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Post partum dipression symptoms",
       "uuid" : "9b2e05f0-3cce-4a5b-b2b5-061b0184cc55",
@@ -176,10 +161,8 @@
       },
       "displayOrder" : 9.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "ffdb96d7-e84b-4d70-a758-f52703a7a5e9",
     "name" : "Nutritional Counselling",
@@ -194,8 +177,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Diet Advice Donts",
       "uuid" : "11bce9ff-3c85-45b5-8dae-32ca374c44c7",
@@ -205,8 +187,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Supplementary nutritional therapy",
       "uuid" : "3cad3c12-156c-4cf3-9b2b-7e8b9a96c194",
@@ -216,10 +197,8 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : false
+    } ]
   }, {
     "uuid" : "a0f352fb-0cbe-4bce-9320-e19549b93827",
     "name" : "General Counselling",
@@ -234,8 +213,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Rest and sleep advice Donts",
       "uuid" : "354dd381-630b-48f5-bdbc-573f502705a6",
@@ -245,10 +223,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : false
+    } ]
   }, {
     "uuid" : "5b7a7ead-dc80-4a09-81e3-eac079489506",
     "name" : "Hygiene",
@@ -263,10 +239,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : false
+    } ]
+  } ]
 }

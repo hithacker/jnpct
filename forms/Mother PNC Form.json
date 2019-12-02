@@ -19,10 +19,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "80b0e095-edac-4518-8440-d9778168aa7e",
     "name" : "PNC Vitals",
@@ -37,8 +35,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Bp Diastolic",
       "uuid" : "d2ce264b-523a-4efa-bd0f-36bf71e5e612",
@@ -48,8 +45,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Temperature",
       "uuid" : "f7c91c42-9157-46ac-ac42-fa4e34499686",
@@ -59,8 +55,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Hb % Level",
       "uuid" : "e4ccff8b-9928-40c8-8fb8-28af231aca6d",
@@ -70,10 +65,8 @@
       },
       "displayOrder" : 4.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : false
+    } ]
   }, {
     "uuid" : "157fa13a-f5ad-401d-8f42-d11481df6764",
     "name" : "Danger Signs",
@@ -88,8 +81,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any abdominal problems",
       "uuid" : "bf11b4c8-ac5d-4265-a1c6-9a2eee16a2e0",
@@ -99,8 +91,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any vaginal problems",
       "uuid" : "5e0052a2-3f78-4095-956f-b5a2ad3f796e",
@@ -110,8 +101,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any difficulties with urinating",
       "uuid" : "31595288-d1fc-4256-854a-b99535217f96",
@@ -121,8 +111,7 @@
       },
       "displayOrder" : 4.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Any breast problems",
       "uuid" : "f1225dbb-6dae-493e-a978-a8b8492f061d",
@@ -132,8 +121,7 @@
       },
       "displayOrder" : 5.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Other breast related problems",
       "uuid" : "812557cf-110a-470b-933b-527ec9090c7e",
@@ -143,8 +131,7 @@
       },
       "displayOrder" : 6.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "How is the incision area?",
       "uuid" : "7375afc9-378f-425d-9b7a-e1d2db741bbf",
@@ -154,8 +141,7 @@
       },
       "displayOrder" : 7.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does feel hot or have the chills?",
       "uuid" : "52b44d11-845a-4337-aeb2-faac89c19472",
@@ -165,8 +151,7 @@
       },
       "displayOrder" : 8.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Convulsions",
       "uuid" : "2960f101-44e9-4a2c-81f9-1407fa9b6a55",
@@ -176,8 +161,7 @@
       },
       "displayOrder" : 9.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Post partum dipression symptoms",
       "uuid" : "f68c181b-c889-4a4e-bbf1-88a187c2170f",
@@ -187,8 +171,7 @@
       },
       "displayOrder" : 10.0,
       "type" : "MultiSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Pain in hypogastrium?",
       "uuid" : "a4babe9c-9a9b-4c31-b761-ca701d4fc5f0",
@@ -198,8 +181,7 @@
       },
       "displayOrder" : 11.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Burning micturation?",
       "uuid" : "40380a3a-53f0-4a4d-a7a2-8fc67488bc1f",
@@ -209,8 +191,7 @@
       },
       "displayOrder" : 12.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "How many pads changed?",
       "uuid" : "2b4b87cc-94a3-48c8-b024-cf973ee2b016",
@@ -220,8 +201,7 @@
       },
       "displayOrder" : 13.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does she taking iron tablet?",
       "uuid" : "b78aed33-860c-47b5-af52-04dab561a803",
@@ -231,8 +211,7 @@
       },
       "displayOrder" : 14.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "IF YES THEN WRITE NUMBER OF TABLET SWALLOWED",
       "uuid" : "a43602fe-3e77-426f-b14e-436dd5398307",
@@ -242,8 +221,7 @@
       },
       "displayOrder" : 15.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "Does she taking calcium tablet?",
       "uuid" : "436ed776-5a5a-4001-805e-8b0390a6c5d2",
@@ -253,8 +231,7 @@
       },
       "displayOrder" : 16.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
+      "mandatory" : true
     }, {
       "name" : "IF YES THEN WRITE NUMBER OF CALCIUM TABLET SWALLOWED",
       "uuid" : "ab537351-5dd6-4c6d-a556-4e2a02f777ed",
@@ -264,10 +241,8 @@
       },
       "displayOrder" : 17.0,
       "type" : "SingleSelect",
-      "mandatory" : true,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : true
+    } ]
   }, {
     "uuid" : "70ff6d7c-50aa-4282-a357-2f2aa48bfcd0",
     "name" : "Nutritional Counselling",
@@ -282,8 +257,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Diet Advice Donts",
       "uuid" : "f6a21214-0986-4da1-9c9e-8f2a6dfc2e6e",
@@ -293,8 +267,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Supplementary nutritional therapy",
       "uuid" : "f758f5e6-25dd-4b1b-b91e-600c0a630fda",
@@ -304,10 +277,8 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : false
+    } ]
   }, {
     "uuid" : "1a409181-888b-4407-89b1-0ed4ff10211e",
     "name" : "General Counselling",
@@ -322,8 +293,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Rest and sleep advice Donts",
       "uuid" : "559ef34b-11f1-4012-bf70-8f28dfd58f5d",
@@ -333,10 +303,8 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : false
+    } ]
   }, {
     "uuid" : "bb8d08de-a51c-4da3-b88d-f8aab57cd31f",
     "name" : "Breast Feeding",
@@ -351,10 +319,8 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : false
+    } ]
   }, {
     "uuid" : "7910a319-7d4a-4bb1-86e2-c7c94b6ce4f9",
     "name" : "Hygiene",
@@ -369,10 +335,8 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
+      "mandatory" : false
+    } ]
   }, {
     "uuid" : "96c7f466-53c4-4cae-8fcf-c0ebf99f9664",
     "name" : "Immunization and Family planning",
@@ -387,8 +351,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Family Planning advice Dos",
       "uuid" : "abfb7954-a1f1-48f4-88d6-26961f14e3ca",
@@ -398,8 +361,7 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
+      "mandatory" : false
     }, {
       "name" : "Family Planning advice Donts",
       "uuid" : "f6a9d8ea-9ff4-4dfd-8b3d-971e75cde158",
@@ -409,10 +371,7 @@
       },
       "displayOrder" : 3.0,
       "type" : "SingleSelect",
-      "mandatory" : false,
-      "voided" : false
-    } ],
-    "voided" : false
-  } ],
-  "voided" : false
+      "mandatory" : false
+    } ]
+  } ]
 }
