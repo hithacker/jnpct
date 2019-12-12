@@ -71,7 +71,7 @@ class childFollowupHandler {
         statusBuilder.show().when.valueInEncounter('does child has history of fever')
             .containsAnswerConceptName('Yes')
     }
-
+    @WithName('weight of child')
     @WithName('if child age is 2-6 month then according to age and weight in which grade')
     @WithStatusBuilder
     cf6([programEncounter], statusBuilder) {

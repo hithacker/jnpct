@@ -1012,46 +1012,46 @@
   "answers" : [ {
     "name" : "Keep child warm in cloths",
     "uuid" : "707730c0-8429-4bf2-ab42-4759a5ca8158",
-    "order" : 1.0
+    "order" : 0.0
   }, {
     "name" : "Keep child in 3-4 folded cloths",
     "uuid" : "cbccf058-9a17-44a2-8609-7e9168c2c310",
-    "order" : 2.0
+    "order" : 1.0
   }, {
     "name" : "Give PCM",
     "uuid" : "abac7686-a4bf-4213-8063-af0576bfba80",
-    "order" : 3.0
-  }, {
-    "name" : "apply 0.25%GV lotion, give first dose of cotri",
-    "uuid" : "05768762-83eb-4a1d-a447-8c9eb5469728",
-    "order" : 4.0
+    "order" : 2.0
   }, {
     "name" : "Explain mother for proper suckling position",
     "uuid" : "c89a4329-6282-4053-928d-61a9764e3a24",
-    "order" : 5.0
+    "order" : 4.0
   }, {
     "name" : "Expain mother for exclusive breastfeeding",
     "uuid" : "b30b55a8-de5d-4017-b371-2239ccf6a73a",
-    "order" : 6.0
+    "order" : 5.0
   }, {
     "name" : "Expain mother for breastfeeding more than 10 times",
     "uuid" : "c5f41477-5f6d-43bd-95d4-7ffc981b3f06",
-    "order" : 7.0
+    "order" : 6.0
   }, {
     "name" : "Expain mother to increase frequency of breastfeeding",
     "uuid" : "0bdbedd8-5031-4c51-aca0-e502635fa90f",
-    "order" : 8.0
+    "order" : 7.0
   }, {
     "name" : "Give primary treatment",
     "uuid" : "b789d3ad-dadf-41d8-9e0f-f38a05c3f91e",
-    "order" : 9.0
+    "order" : 8.0
   }, {
     "name" : "Apply 0.25 % GV lotion  two times a day",
     "uuid" : "20937379-c6b8-4edf-a01b-f0639b8291ee",
-    "order" : 10.0
+    "order" : 9.0
   }, {
     "name" : "if 10 or above pustules are present then give primary treatment and refer , if less than 10 pustule then apply 0.5% GV lotion and give cotri syrup two times for 5 days.",
     "uuid" : "1de1865b-0376-4e93-9d0c-a08974c2671c",
+    "order" : 10.0
+  }, {
+    "name" : "apply 0.25%GV lotion, give first dose of cotri",
+    "uuid" : "05768762-83eb-4a1d-a447-8c9eb5469728",
     "order" : 11.0
   } ]
 }, {
@@ -3035,6 +3035,20 @@
     "order" : 3.0
   } ]
 }, {
+  "name" : "Is blood coming out from any part of body ( cord ,head ,mouth, anus )?",
+  "uuid" : "60746eac-8f88-4c59-b107-bb8f64406f1f",
+  "dataType" : "Coded",
+  "answers" : [ {
+    "name" : "Yes",
+    "uuid" : "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
+    "abnormal" : true,
+    "order" : 0.0
+  }, {
+    "name" : "No",
+    "uuid" : "16092a1e-4a02-4ffd-a3a9-47f07f147a12",
+    "order" : 1.0
+  } ]
+}, {
   "name" : "Is blood coming out from any part of body?",
   "uuid" : "09573558-edb4-41c6-a2a7-55484158c96e",
   "dataType" : "Coded",
@@ -4914,13 +4928,13 @@
   "uuid" : "7c958617-ad77-41ac-b125-d9f33569e202",
   "dataType" : "Coded",
   "answers" : [ {
-    "name" : "Not able to drink or breastfeed",
-    "uuid" : "66049e8d-3dbb-402b-a05d-5f22993d40c1",
+    "name" : "Low Systolic",
+    "uuid" : "263244f7-ef63-406d-a4ad-74ef254bc13e",
     "abnormal" : true,
     "order" : 1.0
   }, {
-    "name" : "Low Systolic",
-    "uuid" : "263244f7-ef63-406d-a4ad-74ef254bc13e",
+    "name" : "Not able to drink or breastfeed",
+    "uuid" : "66049e8d-3dbb-402b-a05d-5f22993d40c1",
     "abnormal" : true,
     "order" : 1.0
   }, {
@@ -4929,8 +4943,8 @@
     "abnormal" : true,
     "order" : 1.0
   }, {
-    "name" : "Child Vomiting everything",
-    "uuid" : "4fea6cf0-8b8f-4123-8549-cbece07bca69",
+    "name" : "High Systolic",
+    "uuid" : "9c0e3992-3f72-4efe-aca8-fb160676fc1e",
     "abnormal" : true,
     "order" : 2.0
   }, {
@@ -4939,13 +4953,13 @@
     "abnormal" : true,
     "order" : 2.0
   }, {
-    "name" : "High Systolic",
-    "uuid" : "9c0e3992-3f72-4efe-aca8-fb160676fc1e",
+    "name" : "Child Vomiting everything",
+    "uuid" : "4fea6cf0-8b8f-4123-8549-cbece07bca69",
     "abnormal" : true,
     "order" : 2.0
   }, {
-    "name" : "Foam coming out from child's mouth",
-    "uuid" : "6de7ea7d-311a-4e9a-af33-bd46ef1baa1f",
+    "name" : "child had convulsion",
+    "uuid" : "842b726a-0113-46db-bb4d-3d567d008169",
     "abnormal" : true,
     "order" : 3.0
   }, {
@@ -4954,13 +4968,13 @@
     "abnormal" : true,
     "order" : 3.0
   }, {
-    "name" : "child had convulsion",
-    "uuid" : "842b726a-0113-46db-bb4d-3d567d008169",
+    "name" : "Foam coming out from child's mouth",
+    "uuid" : "6de7ea7d-311a-4e9a-af33-bd46ef1baa1f",
     "abnormal" : true,
     "order" : 3.0
   }, {
-    "name" : "High Diastolic",
-    "uuid" : "88038bd6-5a24-457b-9505-02a9bdf0ff8a",
+    "name" : "child is lethargic or unconsious",
+    "uuid" : "5ea7e960-5387-432b-a670-e526cccb8795",
     "abnormal" : true,
     "order" : 4.0
   }, {
@@ -4969,10 +4983,15 @@
     "abnormal" : true,
     "order" : 4.0
   }, {
-    "name" : "child is lethargic or unconsious",
-    "uuid" : "5ea7e960-5387-432b-a670-e526cccb8795",
+    "name" : "High Diastolic",
+    "uuid" : "88038bd6-5a24-457b-9505-02a9bdf0ff8a",
     "abnormal" : true,
     "order" : 4.0
+  }, {
+    "name" : "High Fever",
+    "uuid" : "6a2300f3-d135-4f42-aab4-132f0b375af0",
+    "abnormal" : true,
+    "order" : 5.0
   }, {
     "name" : "there is general danger sign",
     "uuid" : "1b996172-4564-4930-bd65-8b750c58f989",
@@ -4984,18 +5003,13 @@
     "abnormal" : true,
     "order" : 5.0
   }, {
-    "name" : "High Fever",
-    "uuid" : "6a2300f3-d135-4f42-aab4-132f0b375af0",
-    "abnormal" : true,
-    "order" : 5.0
-  }, {
-    "name" : "Not breathing properly",
-    "uuid" : "047586ed-c286-4ccd-a93e-c66f02a44b5f",
+    "name" : "Fast breathing",
+    "uuid" : "0a9709cb-daf3-433d-8bb6-444fafe50c3d",
     "abnormal" : true,
     "order" : 6.0
   }, {
-    "name" : "Fast breathing",
-    "uuid" : "0a9709cb-daf3-433d-8bb6-444fafe50c3d",
+    "name" : "Not breathing properly",
+    "uuid" : "047586ed-c286-4ccd-a93e-c66f02a44b5f",
     "abnormal" : true,
     "order" : 6.0
   }, {
@@ -5004,8 +5018,8 @@
     "abnormal" : true,
     "order" : 6.0
   }, {
-    "name" : "Post-Partum Haemorrhage symptoms",
-    "uuid" : "3d99ab9e-9cf5-4db2-a8e9-e5054242dcd2",
+    "name" : "chest indrwaning",
+    "uuid" : "97926f28-83e5-41f9-a1d1-ee042e394509",
     "abnormal" : true,
     "order" : 7.0
   }, {
@@ -5014,10 +5028,15 @@
     "abnormal" : true,
     "order" : 7.0
   }, {
-    "name" : "chest indrwaning",
-    "uuid" : "97926f28-83e5-41f9-a1d1-ee042e394509",
+    "name" : "Post-Partum Haemorrhage symptoms",
+    "uuid" : "3d99ab9e-9cf5-4db2-a8e9-e5054242dcd2",
     "abnormal" : true,
     "order" : 7.0
+  }, {
+    "name" : "palate/lips in child's mouth",
+    "uuid" : "719cb646-6fc5-450d-b92a-42010e7ed6c2",
+    "abnormal" : true,
+    "order" : 8.0
   }, {
     "name" : "Abdominal problems",
     "uuid" : "a1f6ba05-1e8d-4039-8b06-2569632c93e3",
@@ -5026,11 +5045,6 @@
   }, {
     "name" : "child has complaint",
     "uuid" : "267da749-df63-4733-8a05-04516b33e934",
-    "abnormal" : true,
-    "order" : 8.0
-  }, {
-    "name" : "palate/lips in child's mouth",
-    "uuid" : "719cb646-6fc5-450d-b92a-42010e7ed6c2",
     "abnormal" : true,
     "order" : 8.0
   }, {
@@ -5054,33 +5068,33 @@
     "abnormal" : true,
     "order" : 10.0
   }, {
-    "name" : "Breast-related problems",
-    "uuid" : "65db42a2-d8cc-463d-8dc5-58614cb42cfb",
-    "abnormal" : true,
-    "order" : 11.0
-  }, {
     "name" : "There is grunting sound",
     "uuid" : "635ecfd4-6af0-4a53-a79f-d5eb45b4e3eb",
     "abnormal" : true,
     "order" : 11.0
   }, {
-    "name" : "Abnormal Color",
-    "uuid" : "b78f15e1-9806-4eba-a0b6-a4e0c7b3a926",
+    "name" : "Breast-related problems",
+    "uuid" : "65db42a2-d8cc-463d-8dc5-58614cb42cfb",
     "abnormal" : true,
-    "order" : 12.0
+    "order" : 11.0
   }, {
     "name" : "Feels hot or have the chills",
     "uuid" : "0c2874d3-b923-4ff9-a61a-6a66695017a4",
     "abnormal" : true,
     "order" : 12.0
   }, {
-    "name" : "Convulsions present",
-    "uuid" : "84a28076-4cb2-48bc-bdb4-04f7759458bd",
+    "name" : "Abnormal Color",
+    "uuid" : "b78f15e1-9806-4eba-a0b6-a4e0c7b3a926",
     "abnormal" : true,
-    "order" : 13.0
+    "order" : 12.0
   }, {
     "name" : "Less Infants Movement",
     "uuid" : "3e78d599-6ea6-4086-a685-e90cb6d32713",
+    "abnormal" : true,
+    "order" : 13.0
+  }, {
+    "name" : "Convulsions present",
+    "uuid" : "84a28076-4cb2-48bc-bdb4-04f7759458bd",
     "abnormal" : true,
     "order" : 13.0
   }, {
@@ -5104,13 +5118,13 @@
     "abnormal" : true,
     "order" : 15.0
   }, {
-    "name" : "Abnormal Condition of umbelicus",
-    "uuid" : "58521c2d-3793-41aa-b3a2-2e12990e2f44",
+    "name" : "Pain in hypogastrium",
+    "uuid" : "80142eb2-e7ea-400f-825c-13ba46c3e891",
     "abnormal" : true,
     "order" : 16.0
   }, {
-    "name" : "Pain in hypogastrium",
-    "uuid" : "80142eb2-e7ea-400f-825c-13ba46c3e891",
+    "name" : "Abnormal Condition of umbelicus",
+    "uuid" : "58521c2d-3793-41aa-b3a2-2e12990e2f44",
     "abnormal" : true,
     "order" : 16.0
   }, {
@@ -5124,13 +5138,13 @@
     "abnormal" : true,
     "order" : 17.0
   }, {
-    "name" : "Not suckling",
-    "uuid" : "78714944-8141-45c8-8a1e-8a805a26f14f",
+    "name" : "PPH",
+    "uuid" : "6308907f-0238-4916-bbda-d44e8b439b63",
     "abnormal" : true,
     "order" : 18.0
   }, {
-    "name" : "PPH",
-    "uuid" : "6308907f-0238-4916-bbda-d44e8b439b63",
+    "name" : "Not suckling",
+    "uuid" : "78714944-8141-45c8-8a1e-8a805a26f14f",
     "abnormal" : true,
     "order" : 18.0
   }, {

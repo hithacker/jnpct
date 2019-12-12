@@ -129,7 +129,7 @@ class ChildPNCHandler {
         statusBuilder.show().whenItem(condition1 && condition2).is.truthy;
     }
 
-    @WithName("Is blood coming out from any part of body ( cord ,head ,mouth, anus )?")
+    @WithName("Is blood coming out from any part of body ( cord ,head ,mouth, anus )")
     @WithStatusBuilder
     dummy22([programEncounter], statusBuilder) {
         const birthPlace = programEncounter.programEnrolment.findLatestObservationInEntireEnrolment("Place of Birth");
@@ -260,7 +260,7 @@ class PncDecision {
             .when.valueInEncounter("How you feel infants temprature on touch?")
             .containsAnswerConceptName("Abdomen and limbs feel cold on touch");
 
-        decisionBuilder.addComplication("apply 0.25%GV lotion, give first dose of cotri ")
+        decisionBuilder.addComplication("apply 0.25%GV lotion, give first dose of cotri")
             .when.valueInEncounter("Condition of umbelicus")
             .containsAnswerConceptNameOtherThan("Normal");
 
@@ -278,7 +278,7 @@ class PncDecision {
 
         decisionBuilder.addComplication("Expain mother to increase frequency of breastfeeding")
             .when.valueInEncounter("In last 24 hours, for how many times infant passes urine?")
-            .is.lessThan(5);
+            .containsAnswerConceptName("Less than 5 times");
 
         decisionBuilder.addComplication("Give primary treatment")
             .when.valueInEncounter("Is there bleeding from any part of infant's body?")
@@ -329,11 +329,6 @@ class PncDecision {
             .is.yes;
 
 
-
-
-
-
-
         return decisionBuilder.getComplications();
     }
 
@@ -372,7 +367,7 @@ class PncDecision {
 
         decisionBuilder.addComplication("High respiratory rate")
             .when.valueInEncounter("Child Respiratory Rate")
-            .is.greaterThan(60);
+            .is.greaterThan(59);
 
         decisionBuilder.addComplication("There is grunting sound")
             .when.valueInEncounter("Is there any grunting sound?")
