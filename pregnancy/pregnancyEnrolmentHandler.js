@@ -142,7 +142,7 @@ class PregnancyEnrolmentViewFilterHandlerJNPCT {
  }
 
     static exec(programEnrolment, decisions, context, today) {
-        decisions.encounterDecisions.push(PregnancyFormDecisionHandler.conditionDecisions(programEnrolment));
+        decisions.enrolmentDecisions.push(PregnancyFormDecisionHandler.conditionDecisions(programEnrolment));
         return decisions;
  }
 

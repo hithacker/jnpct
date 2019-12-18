@@ -13,5 +13,6 @@ module.exports = _.merge({},
     require('./child/childBirthFormHandler.js'),
     require('./child/childPNCHandler.js'),
     require('./child/childFollowupHandler.js'),
-    require('./child/checklistRules.js')
+    require('./child/checklistRules.js'),
+    require('./metadata/rules/visitScheduler.js')
 );
