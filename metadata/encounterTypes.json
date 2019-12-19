@@ -25,16 +25,15 @@
   },
   {
     "uuid": "d029ef9a-04ca-4364-b447-9a2c1f0e2fa9",
-    "name": "Abortion Followup Form"
+    "name": "Abortion Followup"
   },
   {
     "uuid": "a2e2aee7-5226-4a94-9cec-00e5bfa137a4",
-    "name": "Mother PNC Form"
-  }
-,
+    "name": "PNC"
+  },
   {
     "uuid": "3348db59-a01d-447e-a4b6-0d369023152d",
-    "name": "Child Followup Form"
+    "name": "Child Followup"
   }
 
 
