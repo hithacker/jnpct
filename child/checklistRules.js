@@ -6,11 +6,11 @@ import {
     WithName
 } from 'rules-config/rules';
 
-const ViewFilter = RuleFactory("d712105c-14d9-4c64-b5e0-6150cf88f7a2", "ViewFilter");
+const ViewFilter = RuleFactory("9222dd4c-1d80-40f0-8ca7-5637ad7ceb6b", "ViewFilter");
 const WithStatusBuilder = StatusBuilderAnnotationFactory('checklistItem', 'formElement');
 const EnrolmentChecklists = RuleFactory("95796c7b-cb70-48f5-893f-c0c8afbc3785", "Checklists");
 
-@ViewFilter("7e8ac8d3-a6f8-41f8-851f-b973c3f2a285", "JNPCT List View Filter", 100.0, {})
+@ViewFilter("8133024e-542f-4558-acbf-cd2d703ad528", "JNPCT List View Filter", 100.0, {})
 class CheckListViewFilterJNPCT {
     static exec(checklistItem, formElementGroup, today) {
         return FormElementsStatusHelper
@@ -46,7 +46,7 @@ class CheckListViewFilterJNPCT {
     }
 }
 
-@EnrolmentChecklists("fae40f1f-3669-452f-ab99-b5323346ef4c", "Child vaccination schedule", 1.0)
+@EnrolmentChecklists("6870c764-1bc7-4dce-af7e-bb5956c00ea0", "Child vaccination schedule", 1.0)
 class ChildVaccinationChecklist {
     static exec(enrolment, checklistDetails) {
         const vaccinationDetails = checklistDetails.find(cd => cd.name === 'Vaccination');

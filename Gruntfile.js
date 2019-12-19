@@ -32,10 +32,13 @@ module.exports = IDI.configure(
       formDeletions: [],
       formAdditions: [],
       catchments: ["metadata/catchments.json"],
-      checklistDetails: ["child/checklist.json"],
-      concepts: ["concepts.json",
-                 "child/vaccinationConcepts.json",
-                 "child/checklistConcepts.json"],
+      checklistDetails: [
+        "child/checklist.json"
+      ],
+      concepts: [ "concepts.json",
+                  "child/checklistConcepts.json",
+                  "child/vaccinationConcepts.json"
+              ],
       locations: ["metadata/locations.json"],
       programs: ["programs.json"],
       encounterTypes: ["metadata/encounterTypes.json"],
