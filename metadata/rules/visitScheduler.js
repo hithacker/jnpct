@@ -2,13 +2,18 @@ import moment from 'moment';
 import {RuleFactory} from 'rules-config/rules';
 import RuleHelper from "./RuleHelper";
 import lib from './lib';
+import _ from 'lodash';
 
 const hasExitedProgram = programEncounter => programEncounter.programEnrolment.programExitDateTime;
 
-const getEarliestDate = programEncounter =>
-    moment(programEncounter.earliestVisitDateTime)
+const getEarliestDate = programEnrolment =>
+    moment(programEnrolment.earliestVisitDateTime)
         .startOf("day")
         .toDate();
+
+const getEarliestECFollowupDate = (eventDate) => {
+            return moment(eventDate).add(2, 'months').toDate();
+        };
 
         const encounterSchedule = {
             "ANC 2": {earliest: 168, max: 197},
@@ -37,6 +42,16 @@ class ScheduleVisitDuringPregnantWomanEnrolment {
             maxDateOffset = 8;
       
         RuleHelper.addSchedule(scheduleBuilder, 'ANC 1','ANC', getEarliestDate(programEnrolment.enrolmentDateTime), maxDateOffset);
+        return scheduleBuilder.getAllUnique("encounterType");
+    }
+}
+
+@RuleFactory("0b37b679-a33f-42b3-a455-a84eaea7b5d8", "VisitSchedule")
+("0f481c77-ffb2-46ee-9b93-8de09e0074c7", "JNPCT Eligible Couple Enrolment Visit schedule", 100.0)
+class ScheduleVisitDuringEligibleCoupleEnrolment {
+    static exec(programEnrolment, visitSchedule = [], scheduleConfig) {
+        let scheduleBuilder = RuleHelper.createEnrolmentScheduleBuilder(programEnrolment, visitSchedule);
+        RuleHelper.addSchedule(scheduleBuilder, 'Eligible Couple Followup','Eligible Couple Followup', getEarliestECFollowupDate(programEnrolment.enrolmentDateTime), 15);
         return scheduleBuilder.getAllUnique("encounterType");
     }
 }
@@ -120,7 +135,7 @@ class ScheduleVisitsDuringPNC {
            addEncounter(deliveryDate, 'PNC', 'PNC 2');
         else if (programEncounter.name === 'PNC 2') 
            addEncounter(deliveryDate, 'PNC', 'PNC 3');   
-        }    
+        }
     }
         return encounters;
     }
@@ -146,6 +161,9 @@ class ScheduleVisitsDuringAbortionFollowup {
         const encounters = [];
         var schedule = [];
       
+    const programName = enc.programEnrolment.program.operationalProgramName 
+                        || enc.programEnrolment.program.name;
+    
     const addEncounter = function (baseDate, encounterType, name) {        
         if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
         schedule = encounterSchedule[name === undefined ? encounterType : name];
@@ -158,23 +176,53 @@ class ScheduleVisitsDuringAbortionFollowup {
                 });       
      };
 
+    //  const addECEncounter = function (programEncounter) {        
+    //     if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
+    //     schedule = encounterSchedule[name === undefined ? encounterType : name];
+    //     console.log('abortionDate schedule',schedule);
+    //     encounters.push({
+    //                 name: name,
+    //                 encounterType: encounterType,
+    //                 earliestDate: lib.C.addDays(baseDate, schedule.earliest),
+    //                 maxDate:lib.C.addDays(baseDate, schedule.max)
+    //             });       
+    //  };
+            
     if (!hasExitedProgram(programEncounter)){         
        if (abortionDate) {
            if (programEncounter.name === 'Abortion Followup Visit-1') 
            addEncounter(abortionDate, 'Abortion Followup', 'Abortion Followup Visit-2');
            else if (programEncounter.name === 'Abortion Followup Visit-2') 
            addEncounter(abortionDate, 'Abortion Followup', 'Abortion Followup Visit-3');   
+        //    else if (programEncounter.name === 'Abortion Followup Visit-3' && programName === 'Eligible couple')
+        //    addECEncounter(programEncounter);
         }    
     }
         return encounters;
     }
 }
 
+@RuleFactory("1c8bd246-f46e-4250-88bc-1ca567ba03ce", "VisitSchedule")
+("c96af83f-5f11-4b6a-92c3-2dcd4b0341c4", "ScheduleVisitsDuringECFollowup", 10.0)
+class ScheduleVisitsDuringECFollowup {
+    static exec(programEncounter, visitSchedule = [], scheduleConfig) {   
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
+        const isPregnant = programEncounter.getObservationReadableValue('Is She Pregnant?');
+        
+        if(!_.isEqual(isPregnant,'Yes') && !hasExitedProgram(programEncounter)){
+        RuleHelper.addSchedule(scheduleBuilder, 'Eligible Couple Followup','Eligible Couple Followup', getEarliestECFollowupDate(programEncounter.earliestVisitDateTime), 15);
+        }
+        return scheduleBuilder.getAllUnique("encounterType");
+    }
+}
+
 export {
     ScheduleVisitDuringPregnantWomanEnrolment,
+    ScheduleVisitDuringEligibleCoupleEnrolment,
     ScheduleVisitsDuringANC,
     ScheduleVisitDuringDelivery,
     ScheduleVisitsDuringPNC,
     ScheduleVisitDuringAbortion,
-    ScheduleVisitsDuringAbortionFollowup
+    ScheduleVisitsDuringAbortionFollowup,
+    ScheduleVisitsDuringECFollowup
 }
