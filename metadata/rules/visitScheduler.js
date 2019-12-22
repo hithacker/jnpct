@@ -21,7 +21,8 @@ const getEarliestECFollowupDate = (eventDate) => {
             "PNC 2": {earliest: 28, max: 36},
             "PNC 3": {earliest: 50, max: 61},
             "Abortion Followup Visit-2": {earliest: 28, max: 36},
-            "Abortion Followup Visit-3": {earliest: 50, max: 61}
+            "Abortion Followup Visit-3": {earliest: 50, max: 61},
+            // "Eligible Couple Followup": {earliest: 51, max: 65}
         };
 
         const encounterScheduleHighRisk = {
@@ -117,6 +118,11 @@ class ScheduleVisitsDuringPNC {
         const deliveryDate = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of delivery')
         const encounters = [];
         var schedule = [];
+        const programNames = [];
+
+    // const enrolments = programEncounter.programEnrolment.individual.enrolments;
+    // enrolments.forEach(e => programNames.push(e.program.operationalProgramName || e.program.name));
+    // console.log('programNames',programNames);
       
     const addEncounter = function (baseDate, encounterType, name) {        
         if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
@@ -135,6 +141,8 @@ class ScheduleVisitsDuringPNC {
            addEncounter(deliveryDate, 'PNC', 'PNC 2');
         else if (programEncounter.name === 'PNC 2') 
            addEncounter(deliveryDate, 'PNC', 'PNC 3');   
+        // else if (programEncounter.name === 'PNC 3' && lib.C.contains(programNames,'Eligible couple')) 
+        //    addEncounter(abortionDate, 'Eligible Couple Followup', 'Eligible Couple Followup'); 
         }
     }
         return encounters;
@@ -159,11 +167,13 @@ class ScheduleVisitsDuringAbortionFollowup {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {   
         const abortionDate = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP')
         const encounters = [];
+        const programNames = [];
         var schedule = [];
-      
-    const programName = enc.programEnrolment.program.operationalProgramName 
-                        || enc.programEnrolment.program.name;
-    
+
+    // const enrolments = programEncounter.programEnrolment.individual.enrolments;
+    // enrolments.forEach(e => programNames.push(e.program.operationalProgramName || e.program.name));
+    // console.log('programNames',programNames);
+     
     const addEncounter = function (baseDate, encounterType, name) {        
         if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
         schedule = encounterSchedule[name === undefined ? encounterType : name];
@@ -176,17 +186,6 @@ class ScheduleVisitsDuringAbortionFollowup {
                 });       
      };
 
-    //  const addECEncounter = function (programEncounter) {        
-    //     if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
-    //     schedule = encounterSchedule[name === undefined ? encounterType : name];
-    //     console.log('abortionDate schedule',schedule);
-    //     encounters.push({
-    //                 name: name,
-    //                 encounterType: encounterType,
-    //                 earliestDate: lib.C.addDays(baseDate, schedule.earliest),
-    //                 maxDate:lib.C.addDays(baseDate, schedule.max)
-    //             });       
-    //  };
             
     if (!hasExitedProgram(programEncounter)){         
        if (abortionDate) {
@@ -194,8 +193,8 @@ class ScheduleVisitsDuringAbortionFollowup {
            addEncounter(abortionDate, 'Abortion Followup', 'Abortion Followup Visit-2');
            else if (programEncounter.name === 'Abortion Followup Visit-2') 
            addEncounter(abortionDate, 'Abortion Followup', 'Abortion Followup Visit-3');   
-        //    else if (programEncounter.name === 'Abortion Followup Visit-3' && programName === 'Eligible couple')
-        //    addECEncounter(programEncounter);
+        //    else if (programEncounter.name === 'Abortion Followup Visit-3' && lib.C.contains(programNames,'Eligible couple')) 
+        //    addEncounter(abortionDate, 'Eligible Couple Followup', 'Eligible Couple Followup'); 
         }    
     }
         return encounters;
