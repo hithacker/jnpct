@@ -26,7 +26,8 @@ module.exports = IDI.configure(
         "forms/Birth Form.json",
         "forms/Child PNC Form.json",
         "forms/Child Followup Form.json",
-        "forms/checklistForm.json"
+        "forms/checklistForm.json",
+        "forms/Program Exit Form.json"
       ],
       formMappings: ["metadata/formMappings.json"],
       formDeletions: [],

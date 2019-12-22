@@ -14,5 +14,6 @@ module.exports = _.merge({},
     require('./child/childPNCHandler.js'),
     require('./child/childFollowupHandler.js'),
     require('./child/checklistRules.js'),
-    require('./metadata/rules/visitScheduler.js')
+    require('./metadata/rules/visitScheduler.js'),
+    require('./metadata/rules/viewFilters.js')
 );

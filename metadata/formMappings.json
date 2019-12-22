@@ -84,5 +84,19 @@
     "encounterTypeUUID": "a2e2aee7-5226-4a94-9cec-00e5bfa137a4",
     "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
     "comment": "Mother PNC Form"
+  },
+  {
+    "uuid": "075844d7-443c-4041-b867-543e7208a387",
+    "formUUID": "3db7f626-bc87-4cd1-b897-486c9d431905",
+    "encounterTypeUUID": null,
+    "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
+    "comment": "Pregnant Woman program Exit"
+  },
+  {
+    "uuid": "3c30d703-e148-464c-b490-0db11d2dace5",
+    "formUUID": "3db7f626-bc87-4cd1-b897-486c9d431905",
+    "encounterTypeUUID": null,
+    "programUUID": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
+    "comment": "Eligible Couple program Exit"
   }
 ]
