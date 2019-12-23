@@ -3,6 +3,35 @@
   "settings": {
     "languages": [
       "en"
-    ]
+    ],
+    "searchFilters": [
+      {
+      "type": "Name",
+      "titleKey": "Name",
+      "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
+      },
+      {
+      "type": "Age",
+      "titleKey": "Age",
+      "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
+      },
+      {
+      "type": "Address",
+      "titleKey": "Address",
+      "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
+      },
+      {
+      "type": "SearchAll",
+      "titleKey": "SearchAll",
+      "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
+      }
+      ],
+      "myDashboardFilters": [
+      {
+      "type": "Address",
+      "titleKey": "Address",
+      "subjectTypeUUID": "9f2af1f9-e150-4f8e-aad3-40bb7eb05aa3"
+      }
+      ]
   }
 }
