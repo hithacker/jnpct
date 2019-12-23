@@ -18,6 +18,13 @@
     "comment": "Eligible Couple Followup"
   },
   {
+    "uuid": "ed89c6e0-ff08-4c11-9126-fef2122cbb70",
+    "formUUID": "406738d4-c96c-498c-99e7-4389cb454d5c",
+    "encounterTypeUUID": "c487771e-738b-41f2-852e-d60c25d8afea",
+    "programUUID": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
+    "comment": "Eligible Couple Followup Cancel"
+  },
+  {
     "uuid": "a3f855b8-557f-4033-b5b0-1af6ecac66fc",
     "formUUID": "d40e8aa2-8cae-4b09-ad30-2da6c1690206",
     "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
@@ -29,6 +36,13 @@
     "encounterTypeUUID": "0a0504d7-a420-4b00-ab03-c620071efa41",
     "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
     "comment": "ANC"
+  },
+  {
+    "uuid": "d6a20ecc-3582-42d0-9dd2-1ba5a02c19fb",
+    "formUUID": "406738d4-c96c-498c-99e7-4389cb454d5c",
+    "encounterTypeUUID": "0a0504d7-a420-4b00-ab03-c620071efa41",
+    "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
+    "comment": "Pregnant Woman ANC Cancel"
   },
   {
     "uuid": "900c2641-e546-485d-ba06-ae893a435219",
@@ -79,11 +93,25 @@
     "comment": "Abortion Followup"
   },
   {
+    "uuid": "ece45c7a-6ddc-4d3a-b999-02e10502a615",
+    "formUUID": "406738d4-c96c-498c-99e7-4389cb454d5c",
+    "encounterTypeUUID": "d029ef9a-04ca-4364-b447-9a2c1f0e2fa9",
+    "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
+    "comment": "Abortion Followup Cancel"
+  },
+  {
     "uuid": "3c9c76d9-0e78-49d1-a391-ee617e42a96f",
     "formUUID": "c4123189-c7b6-49e1-bbf3-82b3127750b2",
     "encounterTypeUUID": "a2e2aee7-5226-4a94-9cec-00e5bfa137a4",
     "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
     "comment": "Mother PNC Form"
+  },
+  {
+    "uuid": "abb98064-aa60-45f9-8133-bdf9a60872f9",
+    "formUUID": "406738d4-c96c-498c-99e7-4389cb454d5c",
+    "encounterTypeUUID": "a2e2aee7-5226-4a94-9cec-00e5bfa137a4",
+    "programUUID": "26d3e45e-7174-433f-b4a7-db1524648252",
+    "comment": "Mother PNC Cancel"
   },
   {
     "uuid": "075844d7-443c-4041-b867-543e7208a387",
@@ -99,4 +127,5 @@
     "programUUID": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
     "comment": "Eligible Couple program Exit"
   }
+
 ]

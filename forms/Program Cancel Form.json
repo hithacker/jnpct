@@ -1,0 +1,37 @@
+{
+    "name": "Program Encounter Cancellation Form",
+    "uuid": "406738d4-c96c-498c-99e7-4389cb454d5c",
+    "formType": "ProgramEncounterCancellation",
+    "formElementGroups": [
+      {
+        "uuid": "724168bb-0567-410a-8c53-0fcd3b5ff36a",
+        "name": "Cancel Details",
+        "display": "Cancel Details",
+        "displayOrder": 1,     
+        "formElements": [
+          {
+            "name": "Cancel reason",
+            "uuid": "8a485cfe-9c24-467e-8a4b-158909953d4d",
+            "concept": {
+              "uuid": "0066a0f7-c087-40f4-ae44-a3e931967767",
+              "comment": "Visit cancel reason"
+            },
+            "displayOrder": 1,
+            "mandatory": true
+          },
+          {
+            "name": "Other reason",
+            "uuid": "52b0c453-13c4-4ad9-a18a-06934be4c852",
+            "keyValues": [],
+            "concept": {
+              "uuid":"fadd881a-beed-47ea-a4d6-700009a61a32",
+              "comment":"Other reason for cancelling"
+            },
+            "displayOrder": 2,
+            "mandatory": true
+          }
+        ]
+      }
+    ]
+  }
+  

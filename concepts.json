@@ -6485,4 +6485,57 @@
       "name": "Other"
     }
   ]
-} ]
+},
+{
+  "uuid": "47a1cc61-cc0d-446c-b021-31207c16e572",
+  "name": "Hospitalization",
+  "dataType" : "NA"
+},{
+  "name": "Out of Village",
+  "uuid": "52e2c882-e44f-4915-b099-e4138207d84c",
+  "dataType" : "NA"
+},
+{
+  "uuid": "378d582c-8da6-4ec4-a676-f05fae2f2f7b",
+  "name": "Field Worker is on Leave",
+  "dataType" : "NA"
+},
+{
+  "name": "Visit cancel reason",
+  "uuid": "0066a0f7-c087-40f4-ae44-a3e931967767",
+  "dataType": "Coded",
+  "answers": [
+    {
+      "uuid": "47a1cc61-cc0d-446c-b021-31207c16e572",
+      "name": "Hospitalization"
+    },
+    {
+      "uuid": "edc26b08-3b8c-42f1-bc45-77b4649b3d86",
+      "name": "Parmanent Migration"
+    },
+    {
+      "uuid": "655722fa-5764-432b-8559-ec9948369178",
+      "name": "Maternal Death"
+    },
+    {
+      "name": "Out of Village",
+      "uuid": "52e2c882-e44f-4915-b099-e4138207d84c"
+    },
+    {
+      "uuid": "378d582c-8da6-4ec4-a676-f05fae2f2f7b",
+      "name": "Field Worker is on Leave"
+    },
+    {
+      "uuid": "c802a91a-7b34-4416-be89-4197227ded2b",
+      "name": "Other"
+    }
+  ]
+},
+{
+  "name": "Other reason for cancelling",
+  "uuid": "fadd881a-beed-47ea-a4d6-700009a61a32",
+  "dataType": "Text"
+}
+
+
+]
