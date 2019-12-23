@@ -14,6 +14,18 @@ const ProgramExitViewFilter = RuleFactory("3db7f626-bc87-4cd1-b897-486c9d431905"
         return FormElementsStatusHelper.getFormElementsStatuses(new ProgramExitViewFilterHandler(), programExit, formElementGroup);
     }
 
+    reasonForExit(programExit, formElement) {
+        const statusBuilder = this._getStatusBuilder(programExit, formElement);
+        const programName = programExit.program.name;
+
+        if(programName === 'Child')
+        statusBuilder.skipAnswers("Maternal Death");
+        else if(programName === 'Pregnancy' || programName === 'Eligible couple')
+        statusBuilder.skipAnswers("Child Death");
+        
+        return statusBuilder.build();
+    }
+
    otherReasonPleaseSpecify(programExit, formElement) {
         const statusBuilder = this._getStatusBuilder(programExit, formElement);
         statusBuilder.show().when.valueInExit("Reason for exit").containsAnswerConceptName("Other");
@@ -32,7 +44,7 @@ const ProgramExitViewFilter = RuleFactory("3db7f626-bc87-4cd1-b897-486c9d431905"
 
 const statusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
 const filters = RuleFactory("406738d4-c96c-498c-99e7-4389cb454d5c", "ViewFilter");
-@filters("6bf17e6e-cb3a-4928-a99c-6e150e1015a2", "Cancel Form filters", 121.0, {})
+@filters("7fe6d073-b628-4e2b-a1b8-fb65dade96f5", "Cancel Form filters", 121.0, {})
 class ProgramCancellationFormFilters {
 
   

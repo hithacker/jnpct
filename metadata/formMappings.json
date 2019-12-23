@@ -126,6 +126,13 @@
     "encounterTypeUUID": null,
     "programUUID": "4d56583f-76a7-4027-9d3d-6adc5a34a4b3",
     "comment": "Eligible Couple program Exit"
+  },
+  {
+    "uuid": "01ed9bec-f7c1-46e4-a14e-2ddc70e69915",
+    "formUUID": "3db7f626-bc87-4cd1-b897-486c9d431905",
+    "encounterTypeUUID": null,
+    "programUUID": "b54328b6-3e9a-4df7-915e-5b54cd772d43",
+    "comment": "Child program Exit"
   }
 
 ]

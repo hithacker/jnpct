@@ -6440,7 +6440,12 @@
 },
 {
   "uuid": "edc26b08-3b8c-42f1-bc45-77b4649b3d86",
-  "name": "Parmanent Migration",
+  "name": "Permanent Migration",
+  "dataType" : "NA"
+},
+{
+  "uuid": "cbb0969c-c7fe-4ce4-b8a2-670c4e3c5039",
+  "name": "Child Death",
   "dataType" : "NA"
 },
 {
@@ -6470,11 +6475,15 @@
     },
     {
       "uuid": "edc26b08-3b8c-42f1-bc45-77b4649b3d86",
-      "name": "Parmanent Migration"
+      "name": "Permanent Migration"
     },
     {
       "uuid": "655722fa-5764-432b-8559-ec9948369178",
       "name": "Maternal Death"
+    },
+    {
+      "uuid": "cbb0969c-c7fe-4ce4-b8a2-670c4e3c5039",
+      "name": "Child Death"
     },
     {
       "uuid": "e98549d0-16fb-4e12-bc18-9a603cd2eb8d",
@@ -6511,11 +6520,15 @@
     },
     {
       "uuid": "edc26b08-3b8c-42f1-bc45-77b4649b3d86",
-      "name": "Parmanent Migration"
+      "name": "Permanent Migration"
     },
     {
       "uuid": "655722fa-5764-432b-8559-ec9948369178",
       "name": "Maternal Death"
+    },
+    {
+      "uuid": "cbb0969c-c7fe-4ce4-b8a2-670c4e3c5039",
+      "name": "Child Death"
     },
     {
       "name": "Out of Village",
