@@ -156,43 +156,18 @@
   "uuid" : "cdd86de1-ff2c-4fe9-b49f-b2a3975def41",
   "dataType" : "NA"
 }, {
-  "name" : "according to MUAC child is in which grade",
+  "name" : "Nutritional status of Child",
   "uuid" : "22c77594-fb97-4ea4-8da3-ce5ee54b6d1b",
-  "dataType" : "Coded",
-  "answers" : [ {
-    "name" : "SAM",
-    "uuid" : "bd16daeb-739b-4ed1-9a97-356ca363f8b3",
-    "order" : 1.0
-  }, {
-    "name" : "MAM",
-    "uuid" : "0a2cd0e0-0358-4c0c-b13f-9dcee247cd4d",
-    "order" : 2.0
-  }, {
-    "name" : "Normal",
-    "uuid" : "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
-    "order" : 3.0
-  } ]
+  "dataType" : "Text"
 }, {
-  "name" : "according to Weight for age child is in which grade",
+  "name" : "Current nutritional status according to weight and age",
   "uuid" : "68a6a336-4a91-468b-9b7d-ff37e637f5b7",
-  "dataType" : "Coded",
-  "answers" : [ {
-    "name" : "Underweight",
-    "uuid" : "d1fef660-c8c0-449a-a34c-45cb32322d92",
-    "order" : 1.0
-  }, {
-    "name" : "Moderate",
-    "uuid" : "31bc8ca1-1c52-421b-be6e-05874c97e6bb",
-    "order" : 2.0
-  }, {
-    "name" : "Normal",
-    "uuid" : "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca",
-    "order" : 3.0
-  } ]
+  "dataType" : "Text"
 }, {
-  "name" : "ACOORING TO OEDEMA ON BOTH FEET CHILD IS IN WHICH GRADE",
+  "name" : "ACOORDING TO OEDEMA ON BOTH FEET CHILD IS IN WHICH GRADE",
   "uuid" : "52453b5e-6755-4abf-a967-2026fc0d4837",
   "dataType" : "Coded",
+  "voided":true,
   "answers" : [ {
     "name" : "Underweight",
     "uuid" : "d1fef660-c8c0-449a-a34c-45cb32322d92",
@@ -2412,7 +2387,7 @@
   "highNormal" : 200.0,
   "unit" : "cm"
 }, {
-  "name" : "height of child",
+  "name" : "Height of child",
   "uuid" : "aa3f48b6-aab1-474e-a20f-f6847d9d0b0e",
   "dataType" : "Numeric"
 }, {
@@ -2982,7 +2957,7 @@
     "order" : 2.0
   } ]
 }, {
-  "name" : "if  child is in SAM then refered to CMTC ?",
+  "name" : "If child is in SAM then refered to CMTC?",
   "uuid" : "6df74fa2-036c-45c6-a6c2-de4c25d89695",
   "dataType" : "Coded",
   "answers" : [ {
@@ -3790,7 +3765,7 @@
     "order" : 2.0
   } ]
 }, {
-  "name" : "is there oedema on both feet",
+  "name" : "Is there oedema on both feet",
   "uuid" : "c749befc-bc3e-4495-92db-5d2ffa5cd8c9",
   "dataType" : "Coded",
   "answers" : [ {
@@ -6598,6 +6573,12 @@
   "highNormal" : 100.0,
   "unit" : "kg"
 }, {
+  "name" : "Weight of child",
+  "uuid" : "4c4f2c8a-191a-4610-bc12-0268011fb1fb",
+  "dataType" : "Numeric",
+  "unit" : "kg",
+  "voided" :true
+}, {
   "name" : "Weight at the time of KMC started to do",
   "uuid" : "81d81392-d0e6-40ce-84bd-4fd0eba04719",
   "dataType" : "Numeric",
@@ -6605,7 +6586,8 @@
 }, {
   "name" : "weight for child",
   "uuid" : "189d5713-3902-4b82-a17c-7e4517918229",
-  "dataType" : "Numeric"
+  "dataType" : "Numeric",
+  "voided" :true
 }, {
   "name" : "Weight of infant at time to stoped to do KMC",
   "uuid" : "78511bef-1c10-47a0-98cb-a91aff6f1c3c",
@@ -7074,4 +7056,118 @@
   "name" : "Yes",
   "uuid" : "3a9fe9a1-a866-47ed-b75c-c0071ea22d97",
   "dataType" : "NA"
-} ]
+} ,
+{
+  "name": "Moderately Underweight",
+  "uuid": "9e5f5c29-5b28-4059-a666-bc401c909715",
+  "dataType" : "NA"
+},
+{
+  "name": "Severely Underweight",
+  "uuid": "8bb79806-27a6-4d40-b0a6-9ed0c93367c6",
+  "dataType" : "NA"
+},
+{
+  "name": "Possible risk of overweight",
+  "uuid": "d538227b-efa4-442f-9209-47210a885859",
+  "dataType" : "NA"
+},
+{
+  "name": "Obese",
+  "uuid": "277f9b9c-f770-4048-8b49-c1b4523ac317",
+  "dataType" : "NA"
+},
+{
+  "name": "Wasted",
+  "uuid": "d37e6a36-2143-4e6a-bd53-974992fbce45",
+  "dataType" : "NA"
+},
+{
+  "name": "Severely wasted",
+  "uuid": "25bfd9aa-3b37-49ee-9a9f-2ce30b3f4c9f",
+  "dataType" : "NA"
+},
+{
+  "name": "Weight for age z-score",
+  "uuid": "dc6d2a87-32e8-49b0-bbc3-028676eb2633",
+  "dataType": "Numeric",
+  "lowNormal": -2,
+  "highNormal": 2
+},
+{
+  "name": "Weight for age Grade",
+  "uuid": "dd0f12c6-ebc6-49f2-ad61-bb07ed730914",
+  "dataType": "Numeric"
+},
+{
+  "name": "Weight for age Status",
+  "uuid": "ed36fbbd-64b8-4802-a7c5-1496f774666b",
+  "dataType": "Coded",
+  "answers": [
+    {
+      "name": "Normal",
+      "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca"
+    },
+    {
+      "name": "Moderately Underweight",
+      "uuid": "9e5f5c29-5b28-4059-a666-bc401c909715",
+      "abnormal": true
+    },
+    {
+      "name": "Severely Underweight",
+      "uuid": "8bb79806-27a6-4d40-b0a6-9ed0c93367c6",
+      "abnormal": true
+    }
+  ]
+},
+{
+  "name": "Weight for Height Status",
+  "uuid": "7eda50e3-bb1e-4182-8fb9-664d6ca94553",
+  "dataType": "Coded",
+  "answers": [
+    {
+      "name": "Normal",
+      "uuid": "eae1e6a3-b8ad-4716-9a52-a5677fb1f4ca"
+    },
+    {
+      "name": "Possible risk of overweight",
+      "uuid": "d538227b-efa4-442f-9209-47210a885859",
+      "abnormal": true
+    },
+    {
+      "name": "Overweight",
+      "uuid": "755af092-b04e-430c-a3d1-06608fb92c02",
+      "abnormal": true
+    },
+    {
+      "name": "Obese",
+      "uuid": "277f9b9c-f770-4048-8b49-c1b4523ac317",
+      "abnormal": true
+    },
+    {
+      "name": "Wasted",
+      "uuid": "d37e6a36-2143-4e6a-bd53-974992fbce45",
+      "abnormal": true
+    },
+    {
+      "name": "Severely wasted",
+      "uuid": "25bfd9aa-3b37-49ee-9a9f-2ce30b3f4c9f",
+      "abnormal": true
+    }
+  ]
+},
+{
+  "name": "Weight for height z-score",
+  "uuid": "41d75a7b-54f7-4ec3-8b0a-b91e78e35095",
+  "dataType": "Numeric",
+  "lowNormal": -2,
+  "highNormal": 2
+},
+
+{
+  "name": "Height for age z-score",
+  "uuid": "35a2f148-2ccb-4146-82a6-74b405449385",
+  "dataType": "Numeric",
+  "lowNormal": -2,
+  "highNormal": 2
+}]

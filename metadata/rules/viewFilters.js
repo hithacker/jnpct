@@ -48,6 +48,13 @@ const filters = RuleFactory("406738d4-c96c-498c-99e7-4389cb454d5c", "ViewFilter"
 class ProgramCancellationFormFilters {
 
   
+    @WithName('Cancel reason')
+    @statusBuilder
+    a11([], statusBuilder) {
+        statusBuilder.skipAnswers("Child Death");
+    }
+
+
     otherReason(programEncounter, formElement) {
         const cancelReasonObs = programEncounter.findCancelEncounterObservation('Visit cancel reason');
         const answer = cancelReasonObs && cancelReasonObs.getReadableValue();

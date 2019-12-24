@@ -346,6 +346,7 @@
       },
       "displayOrder" : 1.0,
       "type" : "SingleSelect",
+      "voided": true,
       "mandatory" : true
     }, {
       "name" : "if child age is 2-6 month then according to age and weight in which grade",
@@ -356,9 +357,10 @@
       },
       "displayOrder" : 2.0,
       "type" : "SingleSelect",
+      "voided":true,
       "mandatory" : true
     }, {
-      "name" : "does child have visible severe wasting",
+      "name" : "Does child have visible severe wasting",
       "uuid" : "fb7b0d07-6b1e-415d-aa51-a68cdf474064",
       "keyValues" : [ ],
       "concept" : {
@@ -368,7 +370,7 @@
       "type" : "SingleSelect",
       "mandatory" : true
     }, {
-      "name" : "is there oedema on both feet",
+      "name" : "Is there oedema on both feet",
       "uuid" : "cfe732b4-7364-491d-87c2-6e8d73a32db3",
       "keyValues" : [ ],
       "concept" : {
@@ -378,7 +380,7 @@
       "type" : "SingleSelect",
       "mandatory" : true
     }, {
-      "name" : "ACOORING TO OEDEMA ON BOTH FEET CHILD IS IN WHICH GRADE",
+      "name" : "ACOORDING TO OEDEMA ON BOTH FEET CHILD IS IN WHICH GRADE",
       "uuid" : "dcd574d6-51ec-42df-8e96-206146c5c28e",
       "keyValues" : [ ],
       "concept" : {
@@ -386,36 +388,41 @@
       },
       "displayOrder" : 5.0,
       "type" : "SingleSelect",
+      "voided": true,
       "mandatory" : true
     }, {
-      "name" : "weight",
+      "name" : "Weight",
       "uuid" : "92b50a33-a86a-4adb-95e2-677e5f0ac7e1",
       "keyValues" : [ ],
       "concept" : {
-        "uuid" : "4c4f2c8a-191a-4610-bc12-0268011fb1fb"
+        "uuid" : "3a97f7b0-990c-4b2b-b0e1-a4c8b45c3573"
       },
-      "displayOrder" : 6.0,
+      "displayOrder" : 6.2,
       "type" : "SingleSelect",
       "mandatory" : true
     }, {
-      "name" : "height of child",
+      "name" : "Height",
       "uuid" : "f49df10b-62b7-4a5d-82f2-1df6dee91b1f",
       "keyValues" : [ ],
       "concept" : {
-        "uuid" : "aa3f48b6-aab1-474e-a20f-f6847d9d0b0e"
+        "uuid" : "7d9af174-9e58-4e96-a77c-8351a5a4152d"
       },
-      "displayOrder" : 7.0,
+      "displayOrder" : 6.1,
       "type" : "SingleSelect",
       "mandatory" : true
     }, {
-      "name" : "according to Weight for age child is in which grade",
+      "name" : "Current nutritional status according to weight and age",
       "uuid" : "ed644c60-4417-46ed-a93d-075622f6dbc7",
-      "keyValues" : [ ],
+      "keyValues": [
+        {
+          "key": "editable",
+          "value": false
+        }
+      ],
       "concept" : {
         "uuid" : "68a6a336-4a91-468b-9b7d-ff37e637f5b7"
       },
       "displayOrder" : 8.0,
-      "type" : "SingleSelect",
       "mandatory" : false
     }, {
       "name" : "MUAC of child",
@@ -428,17 +435,21 @@
       "type" : "SingleSelect",
       "mandatory" : true
     }, {
-      "name" : "according to MUAC child is in which grade",
+      "name" : "Nutritional status of Child",
       "uuid" : "c90096eb-db43-4701-9664-4933fd1ec170",
-      "keyValues" : [ ],
+      "keyValues" : [ 
+        {
+          "key": "editable",
+          "value": false
+        }
+        ],
       "concept" : {
         "uuid" : "22c77594-fb97-4ea4-8da3-ce5ee54b6d1b"
       },
       "displayOrder" : 10.0,
-      "type" : "SingleSelect",
       "mandatory" : false
     }, {
-      "name" : "if  child is in SAM then refered to CMTC ?",
+      "name" : "If child is in SAM then refered to CMTC?",
       "uuid" : "e3530c64-ef7f-4fd2-8bbf-aa25a740cb46",
       "keyValues" : [ ],
       "concept" : {
