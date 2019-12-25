@@ -67,9 +67,10 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
     @WithName("Height")
     @WithStatusBuilder
     a4([], statusBuilder) {
-    statusBuilder.show().when.valueInEncounter("Height").is.defined
-    .or.when.latestValueInPreviousEncounters("Height").is.notDefined;
-    }
+    // statusBuilder.show().when.valueInEncounter("Height").is.defined
+    // .or.when.latestValueInPreviousEncounters("Height").is.notDefined;
+    statusBuilder.show().when.latestValueInPreviousEncounters("Height").is.notDefined;
+     }
 
     bmi(programEncounter, formElement) {
         let weight = programEncounter.getObservationValue('Weight');

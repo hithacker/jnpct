@@ -7,7 +7,7 @@ import _ from 'lodash';
 const hasExitedProgram = programEncounter => programEncounter.programEnrolment.programExitDateTime;
 
 const getEarliestDate = programEnrolment =>
-    moment(programEnrolment.earliestVisitDateTime)
+    moment(programEnrolment.enrolmentDateTime)
         .startOf("day")
         .toDate();
 
@@ -58,7 +58,7 @@ const getEarliestECFollowupDate = (eventDate) => {
         const addEncounter = function (baseDate, encounterType, name) {        
             if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
             schedule = encounterSchedule[name === undefined ? encounterType : name];
-            console.log('abortionDate schedule',schedule);
+            // console.log('abortionDate schedule',schedule);
 
             scheduleBuilder.add({
                                 name: name,
@@ -162,7 +162,8 @@ class ScheduleVisitDuringPregnantWomanEnrolment {
         if (enrolmentHighRisk) 
             maxDateOffset = 8;
       
-        RuleHelper.addSchedule(scheduleBuilder, 'ANC 1','ANC', getEarliestDate(programEnrolment.enrolmentDateTime), maxDateOffset);
+        RuleHelper.addSchedule(scheduleBuilder, 'ANC 1','ANC', getEarliestDate(programEnrolment), maxDateOffset);
+        // .enrolmentDateTime
         return scheduleBuilder.getAllUnique("encounterType");
     }
 }
@@ -172,7 +173,8 @@ class ScheduleVisitDuringPregnantWomanEnrolment {
 class ScheduleVisitDuringEligibleCoupleEnrolment {
     static exec(programEnrolment, visitSchedule = [], scheduleConfig) {
         let scheduleBuilder = RuleHelper.createEnrolmentScheduleBuilder(programEnrolment, visitSchedule);
-        RuleHelper.addSchedule(scheduleBuilder, 'Eligible Couple Followup','Eligible Couple Followup', getEarliestECFollowupDate(programEnrolment.enrolmentDateTime), 15);
+        RuleHelper.addSchedule(scheduleBuilder, 'Eligible Couple Followup','Eligible Couple Followup', 
+        getEarliestECFollowupDate(programEnrolment.enrolmentDateTime), 15);
         return scheduleBuilder.getAllUnique("encounterType");
     }
 }
@@ -194,7 +196,6 @@ class ScheduleVisitDuringAbortion {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
         let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);      
         const abortionDate = programEncounter.getObservationValue('Date of Abortion/MTP');
-
         RuleHelper.addSchedule(scheduleBuilder, 'Abortion Followup Visit-1','Abortion Followup', abortionDate, 8);
         return scheduleBuilder.getAllUnique("encounterType");
     }
