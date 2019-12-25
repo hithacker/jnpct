@@ -32,6 +32,126 @@ const getEarliestECFollowupDate = (eventDate) => {
             "ANC 5": {earliest: 224, max: 235}            
         };
 
+        const scheduleVisitsDuringECFollowup = (programEncounter, scheduleBuilder) => {
+              const isPregnant = programEncounter.getObservationReadableValue('Is She Pregnant?');
+                if(!_.isEqual(isPregnant,'Yes') && !hasExitedProgram(programEncounter)){
+                    scheduleBuilder.add({
+                        name: 'Eligible Couple Followup',
+                        encounterType: 'Eligible Couple Followup',
+                        earliestDate: getEarliestECFollowupDate(programEncounter.earliestVisitDateTime),
+                        maxDate: lib.C.addDays(getEarliestECFollowupDate(programEncounter.earliestVisitDateTime), 15)
+                        });  
+                }
+            return ;
+        }
+
+        const scheduleVisitsDuringAbortionFollowup = (programEncounter, scheduleBuilder) => {
+            const abortionDate = programEncounter.programEnrolment
+            .getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP');
+            var schedule = [];
+
+        // const programNames = [];
+        // const enrolments = programEncounter.programEnrolment.individual.enrolments;
+        // enrolments.forEach(e => programNames.push(e.program.operationalProgramName || e.program.name));
+        // console.log('programNames',programNames);
+        
+        const addEncounter = function (baseDate, encounterType, name) {        
+            if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
+            schedule = encounterSchedule[name === undefined ? encounterType : name];
+            console.log('abortionDate schedule',schedule);
+
+            scheduleBuilder.add({
+                                name: name,
+                                encounterType: encounterType,
+                                earliestDate: lib.C.addDays(baseDate, schedule.earliest),
+                                maxDate:lib.C.addDays(baseDate, schedule.max)
+                                });  
+        };
+         
+        if (!hasExitedProgram(programEncounter)){         
+        if (abortionDate) {
+            if (programEncounter.name === 'Abortion Followup Visit-1') 
+            addEncounter(abortionDate, 'Abortion Followup', 'Abortion Followup Visit-2');
+            else if (programEncounter.name === 'Abortion Followup Visit-2') 
+            addEncounter(abortionDate, 'Abortion Followup', 'Abortion Followup Visit-3');   
+            //    else if (programEncounter.name === 'Abortion Followup Visit-3' && lib.C.contains(programNames,'Eligible couple')) 
+            //    addEncounter(abortionDate, 'Eligible Couple Followup', 'Eligible Couple Followup'); 
+            }    
+        }
+            return;
+        }
+
+        const scheduleVisitsDuringANC = (programEncounter, scheduleBuilder) => {
+            const lmpDate = programEncounter.programEnrolment.getObservationValue('Last menstrual period');
+            const highRiskANC = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('High Risk Conditions');
+            const encounters = [];
+            var schedule = [];
+
+            const addEncounter = function (baseDate, encounterType, name) {    
+                if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;           
+                if(highRiskANC){
+                    schedule = encounterScheduleHighRisk[name === undefined ? encounterType : name];
+                } else {
+                    schedule = encounterSchedule[name === undefined ? encounterType : name];
+                }
+                scheduleBuilder.add({
+                    name: name,
+                    encounterType: encounterType,
+                    earliestDate: lib.C.addDays(baseDate, schedule.earliest),
+                    maxDate:lib.C.addDays(baseDate, schedule.max)
+                    });  
+            };
+
+            if (!hasExitedProgram(programEncounter)){             
+            if (lmpDate) {
+                if (programEncounter.name === 'ANC 1') 
+                addEncounter(lmpDate, 'ANC', 'ANC 2');
+                else if (programEncounter.name === 'ANC 2') 
+                addEncounter(lmpDate, 'ANC', 'ANC 3'); 
+                else if (programEncounter.name === 'ANC 3' && highRiskANC)
+                addEncounter(lmpDate, 'ANC', 'ANC 4'); 
+                else if (programEncounter.name === 'ANC 4' && highRiskANC)
+                        addEncounter(lmpDate, 'ANC', 'ANC 5');            
+            }    
+            }
+
+        return ;
+        }
+
+        const scheduleVisitsDuringPNC = (programEncounter, scheduleBuilder) => {
+            const deliveryDate = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of delivery');
+            var schedule = [];
+        
+            // const programNames = [];
+            // const enrolments = programEncounter.programEnrolment.individual.enrolments;
+            // enrolments.forEach(e => programNames.push(e.program.operationalProgramName || e.program.name));
+            // console.log('programNames',programNames);
+      
+            const addEncounter = function (baseDate, encounterType, name) {        
+                if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
+                schedule = encounterSchedule[name === undefined ? encounterType : name];
+                    scheduleBuilder.add({
+                        name: name,
+                        encounterType: encounterType,
+                        earliestDate: lib.C.addDays(baseDate, schedule.earliest),
+                        maxDate:lib.C.addDays(baseDate, schedule.max)
+                        });      
+            };
+
+            if (!hasExitedProgram(programEncounter)){             
+            if (deliveryDate) {
+                if (programEncounter.name === 'PNC 1') 
+                addEncounter(deliveryDate, 'PNC', 'PNC 2');
+                else if (programEncounter.name === 'PNC 2') 
+                addEncounter(deliveryDate, 'PNC', 'PNC 3');   
+                // else if (programEncounter.name === 'PNC 3' && lib.C.contains(programNames,'Eligible couple')) 
+                //    addEncounter(abortionDate, 'Eligible Couple Followup', 'Eligible Couple Followup'); 
+                }
+            }
+            return ;
+        }
+
+
 @RuleFactory("d40e8aa2-8cae-4b09-ad30-2da6c1690206", "VisitSchedule")
 ("3d13cc9a-c1fe-49e9-8980-360378f8199d", "JNPCT Pregnant Woman Enrolment Visit schedule", 100.0)
 class ScheduleVisitDuringPregnantWomanEnrolment {
@@ -57,95 +177,14 @@ class ScheduleVisitDuringEligibleCoupleEnrolment {
     }
 }
 
-@RuleFactory("9bf17b07-3e6b-414a-a96e-086fc9c5ef6a", "VisitSchedule")
-("f3c6201c-d800-4db9-92cc-f1151afa718b", "ScheduleVisitsDuringANC", 10.0)
-class ScheduleVisitsDuringANC {
-    static exec(programEncounter, visitSchedule = [], scheduleConfig) { 
-        const lmpDate = programEncounter.programEnrolment.getObservationValue('Last menstrual period');
-        const highRiskANC = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('High Risk Conditions');
-        const encounters = [];
-        var schedule = [];
-
-    const addEncounter = function (baseDate, encounterType, name) {    
-        if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;           
-        if(highRiskANC){
-            schedule = encounterScheduleHighRisk[name === undefined ? encounterType : name];
-        } else {
-            schedule = encounterSchedule[name === undefined ? encounterType : name];
-        }
-        encounters.push({
-                    name: name,
-                    encounterType: encounterType,
-                    earliestDate: lib.C.addDays(baseDate, schedule.earliest),
-                    maxDate:lib.C.addDays(baseDate, schedule.max)
-                });
-     };
-
-    if (!hasExitedProgram(programEncounter)){             
-       if (lmpDate) {
-        if (programEncounter.name === 'ANC 1') 
-           addEncounter(lmpDate, 'ANC', 'ANC 2');
-        else if (programEncounter.name === 'ANC 2') 
-           addEncounter(lmpDate, 'ANC', 'ANC 3'); 
-        else if (programEncounter.name === 'ANC 3' && highRiskANC)
-           addEncounter(lmpDate, 'ANC', 'ANC 4'); 
-        else if (programEncounter.name === 'ANC 4' && highRiskANC)
-                addEncounter(lmpDate, 'ANC', 'ANC 5');            
-       }    
-    }
-
-    return encounters;
-    }
-}
-
 @RuleFactory("cbe0f44c-580a-4311-ae34-cef2e4b35330", "VisitSchedule")
 ("e0a84446-c388-4ce6-b740-a949ffff6c42", "JNPCT PNC Visit schedule", 100.0)
 class ScheduleVisitDuringDelivery {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {
         let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);      
         const deliveryDate = programEncounter.getObservationValue('Date of delivery');
-
         RuleHelper.addSchedule(scheduleBuilder, 'PNC 1','PNC', deliveryDate, 8);
         return scheduleBuilder.getAllUnique("encounterType");
-    }
-}
-
-
-@RuleFactory("c4123189-c7b6-49e1-bbf3-82b3127750b2", "VisitSchedule")
-("c66ae70a-b5d0-42a0-8b61-293169de26d0", "ScheduleVisitsDuringPNC", 10.0)
-class ScheduleVisitsDuringPNC {
-    static exec(programEncounter, visitSchedule = [], scheduleConfig) {    
-        const deliveryDate = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of delivery')
-        const encounters = [];
-        var schedule = [];
-        const programNames = [];
-
-    // const enrolments = programEncounter.programEnrolment.individual.enrolments;
-    // enrolments.forEach(e => programNames.push(e.program.operationalProgramName || e.program.name));
-    // console.log('programNames',programNames);
-      
-    const addEncounter = function (baseDate, encounterType, name) {        
-        if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
-        schedule = encounterSchedule[name === undefined ? encounterType : name];
-        encounters.push({
-                    name: name,
-                    encounterType: encounterType,
-                    earliestDate: lib.C.addDays(baseDate, schedule.earliest),
-                    maxDate: lib.C.addDays(baseDate, schedule.max)
-                });       
-     };
-
-    if (!hasExitedProgram(programEncounter)){             
-       if (deliveryDate) {
-        if (programEncounter.name === 'PNC 1') 
-           addEncounter(deliveryDate, 'PNC', 'PNC 2');
-        else if (programEncounter.name === 'PNC 2') 
-           addEncounter(deliveryDate, 'PNC', 'PNC 3');   
-        // else if (programEncounter.name === 'PNC 3' && lib.C.contains(programNames,'Eligible couple')) 
-        //    addEncounter(abortionDate, 'Eligible Couple Followup', 'Eligible Couple Followup'); 
-        }
-    }
-        return encounters;
     }
 }
 
@@ -161,57 +200,69 @@ class ScheduleVisitDuringAbortion {
     }
 }
 
+@RuleFactory("9bf17b07-3e6b-414a-a96e-086fc9c5ef6a", "VisitSchedule")
+("f3c6201c-d800-4db9-92cc-f1151afa718b", "ScheduleVisitsDuringANC", 10.0)
+class ScheduleVisitsDuringANC {
+    static exec(programEncounter, visitSchedule = [], scheduleConfig) { 
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);          
+        scheduleVisitsDuringANC(programEncounter,scheduleBuilder);
+        return scheduleBuilder.getAllUnique("encounterType");
+    }
+}
+
+@RuleFactory("c4123189-c7b6-49e1-bbf3-82b3127750b2", "VisitSchedule")
+("c66ae70a-b5d0-42a0-8b61-293169de26d0", "ScheduleVisitsDuringPNC", 10.0)
+class ScheduleVisitsDuringPNC {
+    static exec(programEncounter, visitSchedule = [], scheduleConfig) {    
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);          
+        scheduleVisitsDuringPNC(programEncounter,scheduleBuilder);
+        return scheduleBuilder.getAllUnique("encounterType");
+    }
+}
+
 @RuleFactory("20e3c4e9-1e58-4a11-ba5c-9f3c745c7ef7", "VisitSchedule")
 ("64e95c2f-e754-44fe-81d4-2c9289e0da16", "ScheduleVisitsDuringAbortionFollowup", 10.0)
 class ScheduleVisitsDuringAbortionFollowup {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {   
-        const abortionDate = programEncounter.programEnrolment.getObservationReadableValueInEntireEnrolment('Date of Abortion/MTP')
-        const encounters = [];
-        const programNames = [];
-        var schedule = [];
-
-    // const enrolments = programEncounter.programEnrolment.individual.enrolments;
-    // enrolments.forEach(e => programNames.push(e.program.operationalProgramName || e.program.name));
-    // console.log('programNames',programNames);
-     
-    const addEncounter = function (baseDate, encounterType, name) {        
-        if (programEncounter.programEnrolment.hasEncounter(encounterType, name)) return;  
-        schedule = encounterSchedule[name === undefined ? encounterType : name];
-        console.log('abortionDate schedule',schedule);
-        encounters.push({
-                    name: name,
-                    encounterType: encounterType,
-                    earliestDate: lib.C.addDays(baseDate, schedule.earliest),
-                    maxDate:lib.C.addDays(baseDate, schedule.max)
-                });       
-     };
-
-            
-    if (!hasExitedProgram(programEncounter)){         
-       if (abortionDate) {
-           if (programEncounter.name === 'Abortion Followup Visit-1') 
-           addEncounter(abortionDate, 'Abortion Followup', 'Abortion Followup Visit-2');
-           else if (programEncounter.name === 'Abortion Followup Visit-2') 
-           addEncounter(abortionDate, 'Abortion Followup', 'Abortion Followup Visit-3');   
-        //    else if (programEncounter.name === 'Abortion Followup Visit-3' && lib.C.contains(programNames,'Eligible couple')) 
-        //    addEncounter(abortionDate, 'Eligible Couple Followup', 'Eligible Couple Followup'); 
-        }    
-    }
-        return encounters;
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);          
+        scheduleVisitsDuringAbortionFollowup(programEncounter,scheduleBuilder);
+        return scheduleBuilder.getAllUnique("encounterType");
     }
 }
 
 @RuleFactory("1c8bd246-f46e-4250-88bc-1ca567ba03ce", "VisitSchedule")
 ("c96af83f-5f11-4b6a-92c3-2dcd4b0341c4", "ScheduleVisitsDuringECFollowup", 10.0)
 class ScheduleVisitsDuringECFollowup {
-    static exec(programEncounter, visitSchedule = [], scheduleConfig) {   
-        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
-        const isPregnant = programEncounter.getObservationReadableValue('Is She Pregnant?');
-        
-        if(!_.isEqual(isPregnant,'Yes') && !hasExitedProgram(programEncounter)){
-        RuleHelper.addSchedule(scheduleBuilder, 'Eligible Couple Followup','Eligible Couple Followup', getEarliestECFollowupDate(programEncounter.earliestVisitDateTime), 15);
-        }
+    static exec(programEncounter, visitSchedule = [], scheduleConfig) {       
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);          
+        scheduleVisitsDuringECFollowup(programEncounter,scheduleBuilder);
         return scheduleBuilder.getAllUnique("encounterType");
+   }
+}
+
+@RuleFactory("406738d4-c96c-498c-99e7-4389cb454d5c", "VisitSchedule")
+("aa7e471c-60fe-43f2-973b-454b0acd8b2a", "ScheduleVisitsOnCancel", 10.0)
+class ScheduleVisitsOnCancel {
+    static exec(programEncounter, visitSchedule = [], scheduleConfig) {
+        let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);          
+
+        if (!hasExitedProgram(programEncounter)) {
+            switch(programEncounter.encounterType.name) {
+                case 'Eligible Couple Followup':
+                    scheduleVisitsDuringECFollowup(programEncounter, scheduleBuilder);
+                    break;
+                case 'Abortion Followup':
+                    scheduleVisitsDuringAbortionFollowup(programEncounter, scheduleBuilder);
+                    break;
+                case 'ANC':
+                    scheduleVisitsDuringANC(programEncounter, scheduleBuilder);
+                    break;
+                case 'PNC':
+                    scheduleVisitsDuringPNC(programEncounter, scheduleBuilder);
+                    break;                
+            }
+        }
+        return scheduleBuilder.getAllUnique("encounterType", true);
     }
 }
 
@@ -223,5 +274,6 @@ export {
     ScheduleVisitsDuringPNC,
     ScheduleVisitDuringAbortion,
     ScheduleVisitsDuringAbortionFollowup,
-    ScheduleVisitsDuringECFollowup
+    ScheduleVisitsDuringECFollowup,
+    ScheduleVisitsOnCancel
 }
