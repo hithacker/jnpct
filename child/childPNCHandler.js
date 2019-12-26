@@ -6,7 +6,6 @@ import {
     complicationsBuilder as ComplicationsBuilder,
 } from 'rules-config/rules';
 import _ from 'lodash';
-import lib from "../../sewa-rural/lib";
 
 const filter = RuleFactory('62b5b7ae-f0b3-49c0-b7cb-eb2b616bc89b', 'ViewFilter');
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');
@@ -217,51 +216,7 @@ class ChildPNCHandler {
     dummy9([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter('Does child require to refer if morbidity found').containsAnswerConceptName('Yes')
     }
-
-    @WithName("Weight Grade of Child")
-    @WithStatusBuilder
-    bmi([programEncounter], statusBuilder) {
-        let weight = programEncounter.getObservationValue("Todays weight of infant?");
-        const height = 0;
-        const encounterDateTime = programEncounter.encounterDateTime;
-        const individual = programEncounter.programEnrolment.individual;
-        const nutritionalStatus = nutritionalStatusForChild(individual, encounterDateTime, weight, height);
-        let formElmentStatus = statusBuilder.build();
-        formElmentStatus.value = nutritionalStatus.wfaStatus;
-        return formElmentStatus;
-    }
 }
-
-const nutritionalStatusForChild = (individual, asOnDate, weight, height) => {
-
-    const zScoresForChild = ruleServiceLibraryInterfaceForSharingModules.common.getZScore(individual, asOnDate, weight, height);
-
-    const wfaGrade = getGradeforZscore(zScoresForChild.wfa);
-    const wfaStatus = zScoreGradeStatusMappingWeightForAge[wfaGrade];
-
-    return {
-        wfa: zScoresForChild.wfa,
-        wfaGrade: wfaGrade,
-        wfaStatus: wfaStatus
-    }
-};
-const zScoreGradeStatusMappingWeightForAge = {
-    '1': 'Normal',
-    '2': 'Moderately Underweight',
-    '3': 'Severely Underweight'
-};
-
-const getGradeforZscore = (zScore) => {
-    let grade;
-    if (zScore <= -3) {
-        grade = 3;
-    } else if (zScore > -3 && zScore < -2) {
-        grade = 2;
-    } else if (zScore >= -2) {
-        grade = 1;
-    }
-    return grade;
-};
 
 @pncDecision("fe55d4d9-9e7f-4332-9535-7eb014ac2a79", "PNC Decisions", 100)
 class PncDecision {
@@ -435,19 +390,19 @@ class PncDecision {
 
         decisionBuilder.addComplication("High Temperature of infant")
             .when.valueInEncounter("How you feel infants temprature on touch?")
-            .containsAnswerConceptName("Abdomen and limbs all feel hot on touch");
+            .containsAnswerConceptName("Abdomen and limbs all feel hot on touch")
 
         decisionBuilder.addComplication("Low Temperature of infant")
             .when.valueInEncounter("How you feel infants temprature on touch?")
-            .containsAnswerConceptName("Abdomen and limbs feel cold on touch");
+            .containsAnswerConceptName("Abdomen and limbs feel cold on touch")
 
         decisionBuilder.addComplication("Abnormal Condition of umbelicus")
             .when.valueInEncounter("Condition of umbelicus")
-            .containsAnswerConceptNameOtherThan("Normal");
+            .containsAnswerConceptNameOtherThan("Normal")
 
         decisionBuilder.addComplication("Abnormal attachment while sucking")
             .when.valueInEncounter("How is the infant attachment while sucking?")
-            .containsAnswerConceptNameOtherThan("Good - Normal");
+            .containsAnswerConceptNameOtherThan("Good - Normal")
 
         decisionBuilder.addComplication("Not suckling")
             .when.valueInEncounter("Not suckling at all?")
