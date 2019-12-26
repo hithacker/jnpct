@@ -689,7 +689,10 @@
     }, {
       "name" : "Date of refer",
       "uuid" : "3566b691-d7c7-4ba0-984a-afa90ad797ec",
-      "keyValues" : [ ],
+      "keyValues" : [ {
+        "key" : "datePickerMode",
+        "value" : "Calender"
+      } ],
       "concept" : {
         "uuid" : "ca103da5-3221-487c-b687-4f43bc434c0c"
       },
