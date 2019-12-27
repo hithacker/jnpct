@@ -37,7 +37,7 @@ const zScoreGradeStatusMappingWeightForHeight = [
 ];
 
 const weightForHeightStatus = function (zScore) {
-    console.log('zScore',zScore);
+    // console.log('zScore',zScore);
     let found = _.find(zScoreGradeStatusMappingWeightForHeight, function (currentStatus) {
         return zScore <= currentStatus[1];
     });
@@ -46,7 +46,7 @@ const weightForHeightStatus = function (zScore) {
 
 const nutritionalStatusForChild = (individual, asOnDate, weight, height) => {
     const zScoresForChild = ruleServiceLibraryInterfaceForSharingModules.common.getZScore(individual, asOnDate, weight, height);
-    console.log('zScoresForChild',zScoresForChild);
+    // console.log('zScoresForChild',zScoresForChild);
     const wfaGrade = getGradeforZscore(zScoresForChild.wfa);
     const wfaStatus = zScoreGradeStatusMappingWeightForAge[wfaGrade];
     const wfh = zScoresForChild.wfh; //weightForHeightStatus(zScoresForChild.wfh);
@@ -80,15 +80,16 @@ class childFollowupHandler {
     }
 
 
-    nutritionalStatusOfChild(programEncounter, formElement) {  
+    nutritionalStatusOfChild(programEncounter, formElement) {
+        const age = programEncounter.programEnrolment.individual.getAgeInMonths();
         var value = '';
         const muac = programEncounter.getObservationValue("MUAC of child");  
         const isOedema = programEncounter.getObservationReadableValue("Is there oedema on both feet");  
         const nutritionalStatus = getNutritionalStatusForChild(programEncounter);
         
-        // console.log("muac",muac);
-        // console.log('isOedema',isOedema);
-        // console.log('nutritionalStatus weight for height',nutritionalStatus.wfh);   
+        console.log("muac",muac);
+        console.log('isOedema',isOedema);
+        console.log('nutritionalStatus weight for height',nutritionalStatus.wfh);
       
         if(muac <= 11.5 || _.isEqual(isOedema,'Yes'))
             value = 'SAM';
@@ -96,7 +97,7 @@ class childFollowupHandler {
             value = 'MAM';
         else value = 'Normal';
 
-        return new FormElementStatus(formElement.uuid, true, value);
+        return new FormElementStatus(formElement.uuid, age > 6, value);
     }
 
     currentNutritionalStatusAccordingToWeightAndAge(programEncounter, formElement) {
@@ -229,11 +230,17 @@ class childFollowupHandler {
     }
 
     @WithName('Child Referred ?')
-    @WithName('who refered ?')
-    @WithName('Place of referral')
+
     @WithStatusBuilder
     cf14([], statusBuilder) {
         statusBuilder.show().when.valueInEncounter('does child require to refer')
+            .containsAnswerConceptName('Yes')
+    }
+    @WithName('who refered ?')
+    @WithName('Place of referral')
+    @WithStatusBuilder
+    abc([], statusBuilder) {
+        statusBuilder.show().when.valueInEncounter('Child Referred ?')
             .containsAnswerConceptName('Yes')
     }
 
