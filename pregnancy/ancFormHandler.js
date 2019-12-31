@@ -208,25 +208,25 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
 
 
     @WithName("Complete hospital checkup done")
-    a31(programEncounter,formElement) {
-        const context = {programEncounter, formElement};
-        
+    @WithStatusBuilder
+    a31([], statusBuilder) {
+        statusBuilder.show().when.latestValueInPreviousEncounters('Complete hospital checkup done')
+            .containsAnswerConceptName("No");
+            
+        // const context = {programEncounter, formElement};        
         // statusBuilder.show.whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
         //  .and.when.latestValueInPreviousEncounters("Complete hospital checkup done").not.containsAnswerConceptName("Yes");
 
-         if (new RuleCondition(context).whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
-                .and.when.latestValueInPreviousEncounters("Complete hospital checkup done").is.notDefined.matches()) {
-            return new FormElementStatus(formElement.uuid, true);
-        }
-
-        if (new RuleCondition(context).whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
-            .and.when.latestValueInPreviousEncounters("Complete hospital checkup done")
-            .containsAnswerConceptName("No").matches()) {
-            return new FormElementStatus(formElement.uuid, true);
-        }
-
-
-         return new FormElementStatus(formElement.uuid, false);
+        //  if (new RuleCondition(context).whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
+        //         .and.when.latestValueInPreviousEncounters("Complete hospital checkup done").is.notDefined.matches()) {
+        //     return new FormElementStatus(formElement.uuid, true);
+        // }
+        // if (new RuleCondition(context).whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
+        //     .and.when.latestValueInPreviousEncounters("Complete hospital checkup done")
+        //     .containsAnswerConceptName("No").matches()) {
+        //     return new FormElementStatus(formElement.uuid, true);
+        // }
+        //  return new FormElementStatus(formElement.uuid, false);
     }
 
     @WithName("If YES then write E.D.D as per USG")
