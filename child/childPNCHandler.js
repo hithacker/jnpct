@@ -6,7 +6,7 @@ import {
     complicationsBuilder as ComplicationsBuilder,
 } from 'rules-config/rules';
 import _ from 'lodash';
-import lib from "../../sewa-rural/lib";
+import lib from '../lib';
 
 const filter = RuleFactory('62b5b7ae-f0b3-49c0-b7cb-eb2b616bc89b', 'ViewFilter');
 const WithStatusBuilder = StatusBuilderAnnotationFactory('programEncounter', 'formElement');

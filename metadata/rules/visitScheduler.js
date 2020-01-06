@@ -283,6 +283,58 @@ const getEarliestECFollowupDate = (eventDate) => {
             return ;
         }
 
+        const scheduleVisitsDuringChildFollowup = (programEncounter, scheduleBuilder) => {
+            const birthDate = programEncounter.programEnrolment.individual.dateOfBirth;
+            const currentWeight = programEncounter.getObservationReadableValue('Current Weight');
+            const ageOfChildInMonths = programEncounter.programEnrolment.individual.getAgeInMonths();   
+            const nutritionalStatus = programEncounter.getObservationValue('Nutritional status of Child');
+            console.log('ageOfChildInMonths',ageOfChildInMonths);
+            console.log('currentWeight',currentWeight);
+        
+            if(currentWeight < 3 && ageOfChildInMonths < 2)
+            RuleHelper.addSchedule(scheduleBuilder, 'Child Followup','Child Followup', 
+            lib.C.addDays(getEarliestEncounterDate(programEncounter), 7) ,4);
+
+            if(ageOfChildInMonths >= 2 && ageOfChildInMonths <= 6){
+            RuleHelper.addSchedule(scheduleBuilder, 'Child Followup-2','Child Followup',
+            lib.C.addDays(birthDate, 160),8);
+            }else {
+            console.log('nutritionalStatus',nutritionalStatus);
+            switch(nutritionalStatus) {
+                case 'Normal':
+                    scheduleVisitsDuringChildFollowupNormal(programEncounter,scheduleBuilder);
+                break;
+                case 'SAM':
+                    scheduleVisitsDuringChildFollowupSAM(programEncounter,scheduleBuilder);
+                break;
+                case 'MAM':
+                    scheduleVisitsDuringChildFollowupMAM(programEncounter,scheduleBuilder);
+                break;
+            }
+        }
+          return ;
+      }
+
+      const scheduleVisitsDuringBirth = (programEncounter, scheduleBuilder) => {
+        RuleHelper.addSchedule(scheduleBuilder, 'Child PNC 1','Child PNC', getEarliestEncounterDate(programEncounter), 8);
+       
+        let birthWeight = programEncounter.getObservationReadableValue('Birth Weight');
+        const ageOfChildInMonths = programEncounter.programEnrolment.individual.getAgeInMonths();   
+        console.log('ageOfChildInMonths',ageOfChildInMonths); 
+
+        if(birthWeight < 2 || ageOfChildInMonths < 2){
+        RuleHelper.addSchedule(scheduleBuilder, 'Child Followup','Child Followup', 
+        lib.C.addDays(getEarliestEncounterDate(programEncounter), 7) ,4);
+        }
+
+        const birthDate = programEncounter.programEnrolment.individual.dateOfBirth;           
+        if(ageOfChildInMonths >= 2 && ageOfChildInMonths <= 6)
+        RuleHelper.addSchedule(scheduleBuilder, 'Child Followup-1','Child Followup', 
+        lib.C.addDays(birthDate, 110),10);
+      return ;
+  }
+
+
 @RuleFactory("d40e8aa2-8cae-4b09-ad30-2da6c1690206", "VisitSchedule")
 ("3d13cc9a-c1fe-49e9-8980-360378f8199d", "JNPCT Pregnant Woman Enrolment Visit schedule", 100.0)
 class ScheduleVisitDuringPregnantWomanEnrolment {
@@ -393,22 +445,7 @@ class ScheduleVisitDuringChildEnrolment {
 class ScheduleVisitsDuringBirth {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {       
         let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
-        RuleHelper.addSchedule(scheduleBuilder, 'Child PNC 1','Child PNC', getEarliestEncounterDate(programEncounter), 8);
-       
-        let birthWeight = programEncounter.getObservationReadableValue('Birth Weight');
-        const ageOfChildInMonths = programEncounter.programEnrolment.individual.getAgeInMonths();   
-        console.log('ageOfChildInMonths',ageOfChildInMonths); 
-
-        if(birthWeight < 2 || ageOfChildInMonths < 2){
-        RuleHelper.addSchedule(scheduleBuilder, 'Child Followup','Child Followup', 
-        lib.C.addDays(getEarliestEncounterDate(programEncounter), 7) ,4);
-        }
-
-        const birthDate = programEncounter.programEnrolment.individual.dateOfBirth;           
-        if(ageOfChildInMonths >= 2 && ageOfChildInMonths <= 6)
-        RuleHelper.addSchedule(scheduleBuilder, 'Child Followup-1','Child Followup', 
-        lib.C.addDays(birthDate, 110),10);
-            
+        scheduleVisitsDuringBirth(programEncounter,scheduleBuilder); 
         return scheduleBuilder.getAllUnique("encounterType");
    }
 }
@@ -428,35 +465,7 @@ class ScheduleVisitsDuringChildPNC {
 class ScheduleVisitsDuringChildFollowup {
     static exec(programEncounter, visitSchedule = [], scheduleConfig) {       
         let scheduleBuilder = RuleHelper.createProgramEncounterVisitScheduleBuilder(programEncounter, visitSchedule);
-        const birthDate = programEncounter.programEnrolment.individual.dateOfBirth;
-        const currentWeight = programEncounter.getObservationReadableValue('Current Weight');
-        const ageOfChildInMonths = programEncounter.programEnrolment.individual.getAgeInMonths();   
-        const nutritionalStatus = programEncounter.getObservationValue('Nutritional status of Child');
-        console.log('ageOfChildInMonths',ageOfChildInMonths);
-        console.log('currentWeight',currentWeight);
-      
-        if(currentWeight < 3 && ageOfChildInMonths < 2)
-        RuleHelper.addSchedule(scheduleBuilder, 'Child Followup','Child Followup', 
-        lib.C.addDays(getEarliestEncounterDate(programEncounter), 7) ,4);
-
-        if(ageOfChildInMonths >= 2 && ageOfChildInMonths <= 6){
-        RuleHelper.addSchedule(scheduleBuilder, 'Child Followup-2','Child Followup',
-         lib.C.addDays(birthDate, 160),8);
-        }else {
-        console.log('nutritionalStatus',nutritionalStatus);
-        switch(nutritionalStatus) {
-            case 'Normal':
-                scheduleVisitsDuringChildFollowupNormal(programEncounter,scheduleBuilder);
-            break;
-            case 'SAM':
-                scheduleVisitsDuringChildFollowupSAM(programEncounter,scheduleBuilder);
-            break;
-            case 'MAM':
-                scheduleVisitsDuringChildFollowupMAM(programEncounter,scheduleBuilder);
-            break;
-        }
-    }
-
+        scheduleVisitsDuringChildFollowup(programEncounter,scheduleBuilder);
         return scheduleBuilder.getAllUnique("encounterType");
    }
 }
@@ -480,7 +489,16 @@ class ScheduleVisitsOnCancel {
                     break;
                 case 'PNC':
                     scheduleVisitsDuringPNC(programEncounter, scheduleBuilder);
-                    break;                
+                    break; ;
+                case 'Birth Form':
+                    scheduleVisitsDuringBirth(programEncounter,scheduleBuilder);
+                    break;   
+                case 'Child PNC':
+                    scheduleVisitsDuringChildPNC(programEncounter,scheduleBuilder);     
+                    break;
+                case 'Child Followup':
+                    scheduleVisitsDuringChildFollowup(programEncounter,scheduleBuilder);
+                    break;       
             }
         }
         return scheduleBuilder.getAllUnique("encounterType", true);
