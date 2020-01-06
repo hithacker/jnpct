@@ -40,7 +40,12 @@
     }, {
       "name" : "Period of gestation in weeks at the time of Abortion/MTP",
       "uuid" : "519979c6-289b-435a-8f0c-73f88ecd0c65",
-      "keyValues" : [ ],
+      "keyValues" : [
+        {
+          "key" : "editable",
+          "value" : false
+        } 
+       ],
       "concept" : {
         "uuid" : "d0c0173f-fb19-4735-98b3-5e190c646e54"
       },

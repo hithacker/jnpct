@@ -6721,27 +6721,39 @@
 }, {
   "name" : "Weight of Newborn1",
   "uuid" : "f0a5edd9-5250-4f27-bc0d-0536b13c8a25",
-  "dataType" : "Numeric"
+  "dataType" : "Numeric",
+  "lowNormal" : 2.5,
+  "unit" : "kg"
 }, {
   "name" : "Weight of Newborn2",
   "uuid" : "b24b1d7d-5c08-495e-a8fc-e0c2c854d694",
-  "dataType" : "Numeric"
+  "dataType" : "Numeric",
+  "lowNormal" : 2.5,
+  "unit" : "kg"
 }, {
   "name" : "Weight of Newborn3",
   "uuid" : "fe7784c0-61ef-481a-98be-7ebeff7cfdde",
-  "dataType" : "Numeric"
+  "dataType" : "Numeric",
+  "lowNormal" : 2.5,
+  "unit" : "kg"
 }, {
   "name" : "Weight of Stillborn1",
   "uuid" : "69114ef1-3fd1-4a57-b58d-c6e7169fd65c",
-  "dataType" : "Numeric"
+  "dataType" : "Numeric",
+  "lowNormal" : 2.5,
+  "unit" : "kg"
 }, {
-  "name" : "Weight of Stillborn2 (in Gms)",
+  "name" : "Weight of Stillborn2",
   "uuid" : "bed2de93-e2ea-4677-8301-2e6b1173b248",
-  "dataType" : "Numeric"
+  "dataType" : "Numeric",
+  "lowNormal" : 2.5,
+  "unit" : "kg"
 }, {
-  "name" : "Weight of Stillborn3 (in Gms)",
+  "name" : "Weight of Stillborn3",
   "uuid" : "46601220-c8f7-4e1a-bab2-8176ca92f130",
-  "dataType" : "Numeric"
+  "dataType" : "Numeric",
+  "lowNormal" : 2.5,
+  "unit" : "kg"
 }, {
   "name" : "Well",
   "uuid" : "de4b5bc6-942d-43ca-b79e-c6ba255e2cd9",

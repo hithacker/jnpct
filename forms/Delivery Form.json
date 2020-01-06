@@ -230,7 +230,7 @@
       "type" : "SingleSelect",
       "mandatory" : false
     }, {
-      "name" : "Weight of Stillborn2 (in Gms)",
+      "name" : "Weight of Stillborn2",
       "uuid" : "cc42a064-8487-46cd-99eb-8d4040fbe5be",
       "keyValues" : [ ],
       "concept" : {
