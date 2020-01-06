@@ -50,9 +50,26 @@ class ProgramCancellationFormFilters {
   
     @WithName('Cancel reason')
     @statusBuilder
-    a11([], statusBuilder) {
+    a11([programEncounter], statusBuilder) {
+
+        // cancelReason(programEncounter,formElement){
+        // const statusBuilder = this._getStatusBuilder(programEncounter, formElement);
+        const programName = programEncounter.programEnrolment.program.name;
+        console.log('programName',programEncounter.programEnrolment.program.name);
+
+        if(programName === 'Child')
+        statusBuilder.skipAnswers("Maternal Death");
+        else if(programName === 'Pregnancy' || programName === 'Eligible couple')
         statusBuilder.skipAnswers("Child Death");
+        
+        // return statusBuilder.build();
     }
+
+    // @WithName('Cancel reason')
+    // @statusBuilder
+    // a11([], statusBuilder) {
+    //     statusBuilder.skipAnswers("Away from village","Absent");
+    // }
 
 
     otherReason(programEncounter, formElement) {
