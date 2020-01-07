@@ -2515,6 +2515,11 @@
     "uuid" : "87ff2ecc-7121-44a3-a78a-5fe427bac895",
     "abnormal" : true,
     "order" : 7.0
+  },
+  {
+    "name" : "Birth Defects",
+    "uuid" : "a6ad7816-154d-4007-8fb5-ef36ed19af95",
+    "abnormal" : true
   } ]
 }, {
   "name" : "High Risk Conditions",
