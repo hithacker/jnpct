@@ -235,7 +235,6 @@ class ChildPNCHandler {
 const nutritionalStatusForChild = (individual, asOnDate, weight, height) => {
 
     const zScoresForChild = ruleServiceLibraryInterfaceForSharingModules.common.getZScore(individual, asOnDate, weight, height);
-
     const wfaGrade = getGradeforZscore(zScoresForChild.wfa);
     const wfaStatus = zScoreGradeStatusMappingWeightForAge[wfaGrade];
 

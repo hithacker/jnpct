@@ -210,9 +210,9 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
     @WithName("Complete hospital checkup done")
     @WithStatusBuilder
     a31([], statusBuilder) {
-        statusBuilder.show().when.latestValueInPreviousEncounters('Complete hospital checkup done')
-            .containsAnswerConceptName("No");
-            
+        statusBuilder.show().when.latestValueInPreviousEncounters("Complete hospital checkup done")
+        .is.notDefined.or.containsAnswerConceptName("No");
+
         // const context = {programEncounter, formElement};        
         // statusBuilder.show.whenItem(getCurrentTrimester(programEncounter)).is.equals(1)
         //  .and.when.latestValueInPreviousEncounters("Complete hospital checkup done").not.containsAnswerConceptName("Yes");
@@ -555,11 +555,11 @@ class PregnancyAncFormViewFilterHandlerJNPCT {
                     .is.lessThanOrEqualTo(7);
 
        complicationsBuilder
-                   .addComplication("Moderate")
-                   .when.valueInEncounter("Hb")
+                   .addComplication("Moderate Anemia")
+                   .when.valueInEncounter("H.B")
                    .is.greaterThanOrEqualTo(7.1)
                    .and.valueInEncounter("H.B")
-                   .is.lessThanOrEqualTo(10);
+                   .is.lessThanOrEqualTo(11);
 
     return complicationsBuilder.getComplications();
 

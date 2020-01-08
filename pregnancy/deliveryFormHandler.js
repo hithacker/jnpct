@@ -158,7 +158,7 @@ class PregnancyDeliveryFormViewFilterJNPCT {
          return statusBuilder.build();
      }
 
-    weightOfStillborn2InGms(programEncounter, formElement, no) {
+    weightOfStillborn2(programEncounter, formElement, no) {
          const statusBuilder = new FormElementStatusBuilder({
              programEncounter: programEncounter,
              formElement: formElement
@@ -178,7 +178,7 @@ class PregnancyDeliveryFormViewFilterJNPCT {
          return statusBuilder.build();
     }
 
-    weightOfStillborn3InGms(programEncounter, formElement, no) {
+    weightOfStillborn3(programEncounter, formElement, no) {
          const statusBuilder = new FormElementStatusBuilder({
              programEncounter: programEncounter,
              formElement: formElement
