@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/OpenCHS/jnpct#readme",
   "dependencies": {
-    "openchs-idi": "github:openchs/openchs-idi#950376ac50ad66b4d2559226bda1eea3ed8da3ed",
+    "openchs-idi": "github:openchs/openchs-idi#3a4c5f9fc43f147c69e8c39a3320ca13e3058e56",
     "rules-config": "github:openchs/rules-config#24cc3d6fba5f7f4e8938f25a732f3594897232c1"
   },
   "devDependencies": {
