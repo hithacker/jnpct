@@ -30,10 +30,10 @@ module.exports = IDI.configure(
         "forms/Program Exit Form.json",
         "forms/Program Cancel Form.json"
       ],
-      formMappings: ["metadata/formMappings.json"],
+      formMappings: ["formMappings.json"],
       formDeletions: [],
       formAdditions: [],
-      catchments: ["metadata/catchments.json"],
+      catchments: ["catchments.json"],
       checklistDetails: [
         "child/checklist.json"
       ],
@@ -41,13 +41,13 @@ module.exports = IDI.configure(
                   "child/checklistConcepts.json",
                   "child/vaccinationConcepts.json"
               ],
-      locations: ["metadata/locations.json"],
+      locations: ["locations.json"],
       programs: ["programs.json"],
-      encounterTypes: ["metadata/encounterTypes.json"],
-      operationalEncounterTypes: ["metadata/operationalEncounterTypes.json"],
-      operationalPrograms: ["metadata/operationalPrograms.json"],
+      encounterTypes: ["encounterTypes.json"],
+      operationalEncounterTypes: ["operationalEncounterTypes.json"],
+      operationalPrograms: ["operationalPrograms.json"],
       subjectTypes: ["subjectTypes.json"],
-      operationalSubjectTypes: ["metadata/operationalSubjectTypes.json"],
+      operationalSubjectTypes: ["operationalSubjectTypes.json"],
       users: {
         dev: ["users/dev-users.json"]
       },
