@@ -1,7 +1,7 @@
 {
   "name": "jnpct",
   "version": "1.0.0",
-  "description": "Jashoda Narottam Public Charitable Trust OpenCHS implementation repository",
+  "description": "Setco Avni implementation repository",
   "main": "index.js",
   "scripts": {
     "test": "jest"

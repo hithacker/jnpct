@@ -3,4 +3,4 @@ deps:; npm i -g grunt; npm install
 
 #######################################
 
-org_admin_name=admin@jnpct
+org_admin_name=admin@setco

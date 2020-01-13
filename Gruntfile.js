@@ -3,10 +3,10 @@ const IDI = require("openchs-idi");
 
 module.exports = IDI.configure(
   {
-    name: "jnpct",
+    name: "setco",
     "chs-admin": "admin",
-    "org-name": "JNPCT",
-    "org-admin": "admin@jnpct",
+    "org-name": "Setco",
+    "org-admin": "admin@setco",
     secrets: "../secrets.json",
     files: {
       adminUsers: {
@@ -56,7 +56,8 @@ module.exports = IDI.configure(
         /* "create_organisation.sql"*/
       ],
       organisationConfig: ["organisationConfig.json"],
-      translations: ["translations/en.json"]
+      translations: ["translations/en.json"],
+      genders: ["genders.json"]
     }
   },
   rulesConfigInfra

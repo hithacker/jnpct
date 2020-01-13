@@ -1,11 +1,11 @@
 [
   {
-    "uuid": "726991ca-78de-4982-a677-278a3df64401",
-    "name": "admin@jnpct",
+    "uuid": "caa00151-1f5b-474f-8485-631cf32c0b53",
+    "name": "admin@setco",
     "password": "password",
-    "email": "openchssupport+staging+sewa@samanvayfoundation.org",
+    "email": "openchssupport+setco+admin@samanvayfoundation.org",
     "phoneNumber": "+919999999999",
-    "organisationUUID": "2a8b0070-8869-41b6-94f8-c90a35d094f9",
+    "organisationUUID": "b3198ab7-ff6a-4924-8316-460aae0d377d",
     "operatingIndividualScope": "None",
     "admin": false,
     "orgAdmin": true
